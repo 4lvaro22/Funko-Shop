@@ -1,7 +1,8 @@
 # Proyecto-Interfaces-Grupo-H
 Alvaro Portales Luna  
 Teodoro Hidalgo Guerrero  
-Olivier Gabana Gomez  
+Olivier Gabana Gomez 
+Jose Francisco Ruiz Sierras 
 
 # Temática
 Nuestra página estará centrada en la compra de figuras sobre series, videojuegos y otras temáticas llamadas Funkos Pop.  
