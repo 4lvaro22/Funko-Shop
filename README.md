@@ -1,4 +1,4 @@
 # Proyecto-Interfaces-Grupo-H
-Alvaro Portales Luna__
-Teodoro Hidalgo Guerrero__
+Alvaro Portales Luna  
+Teodoro Hidalgo Guerrero  
 Olivier Gabana Gomez
