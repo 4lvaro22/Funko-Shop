@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Tienda de Funko">
         <meta name="keywords" content="Funko, Harry Potter, Marvel, GoT, Juego de Tronos, Pop, Figuras">
-
+        <link rel="stylesheet" href="styles/commonStyles.css" type="text/css">
     </head>
 
     
     <body>
         <!-- HEADER -->
-        <header> <h1>FunkoShop</h1>   <button id="Login">Log in</button> <button id="signup">Sign up</button> </header>
+        <header> <h1>FunkoShop</h1> <button id="login">Log in</button> <button id="signup">Sign up</button> </header>
 
         <nav> <!-- Buscador por palabras -->
             <input type="text" placeholder="Buscar....">
@@ -27,7 +27,7 @@
         <section>
             <h2>Catálogo</h2>
 
-            <div id="funko_harryPotter">
+            <div class="funko" id="funko_harryPotter">
                 <a href="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg"><img src="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Imagen de Funko" title="Funko Harry Potter"></a>
                 <p>Harry Potter</p>
                 
@@ -40,11 +40,27 @@
 
         <!-- Footer -->
         <footer>
-            <ul>
-                <li id="instagram">FunkoShop</li>
-                <li id="twitter">funkoshop</li>
-                <li id="facebook">funkoshop</li>
+            <ul id="redess">
+                <li id="instagram"> <img src="images/Instagram-Icon.png"><a href="https://www.instagram.com/">FunkoShopInterfaces</a></li>
+                <li id="facebook"><img src="images/Facebook.png"><a href="https://es-es.facebook.com/">FunkoShopInterfaces</a></li>
+                <li id="twitter"><img src="images/twitter.png" ><a href="https://twitter.com/">FunkoShopInterfaces</a></li>
             </ul>
+            <div id="info">
+                <div>
+                    <a href="#">Condiciones de uso</a>
+                    <a href="#">Sobre nosotros</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Localización</a>
+                </div>
+    
+                <div>
+                    <p>© 2023 FunkoShopInterfaces</p>
+                </div>
+            </div>
+            
+            <div id="idioma">
+                <p><img src="images/Spain.png">ES</p>
+            </div>
             
         </footer> <!--Informacion de contacto, dirección de la tienda, -->
         
