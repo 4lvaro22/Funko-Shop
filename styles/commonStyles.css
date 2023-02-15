@@ -91,11 +91,16 @@ footer ul li {
     font-weight: bold;
 }
 
+footer ul li a{
+    text-decoration: none;
+}
+
 li#instagram img{
     position: relative;
     top: 7px;
-    margin-right: 5px;
+    margin-right: 8px;
     left:-3px;
+    width:25px;
 }
 
 li#facebook img{
@@ -103,6 +108,7 @@ li#facebook img{
     top: 7px;
     margin-right: 8px;
     left:-3px;
+    width:25px;
 }
 
 li#twitter img{
@@ -110,6 +116,8 @@ li#twitter img{
     top: 7px;
     margin-right: 8px;
     left:-3px;
+    filter: invert(100%); 
+    width:25px;
 }
 
 footer ul li a {
@@ -125,6 +133,8 @@ footer div#info{
 
 footer div#info a{
     margin: 15px;
+    text-decoration: none;
+    color: #fff;
 }
 
 footer div#info p{
@@ -139,22 +149,13 @@ footer div#idioma{
     left: 500px;
 }
 
-footer div#idioma a{
-    display: inline-block;
-}
-
-footer div#idioma p{
-    display: inline-block;
-}
-
-footer div#idioma a img{
+footer div#idioma P img{
     position: relative;
     top: 7px;
+    margin-right: 8px;
+    width:25px;
 }
 
-footer div#idioma a#espana img{
-    top: 7px;
-}
 
 
 /* Estilo de funkos */
