@@ -146,18 +146,13 @@ footer div#idioma a{
 footer div#idioma p{
     display: inline-block;
 }
+
 footer div#idioma a img{
     position: relative;
     top: 7px;
 }
 
-footer div#idioma a#espana{
-    color: #4d4949;
-}
-
 footer div#idioma a#espana img{
-    filter: grayscale(100%);
-    position: relative;
     top: 7px;
 }
 
