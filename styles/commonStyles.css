@@ -58,7 +58,7 @@ section {
     background-color: #fff;
     padding: 10px;
     text-align: center;
-    height: 900px;
+    height: 1500px;
 }
 
 section h2 {
@@ -69,27 +69,96 @@ footer {
     position:relative;
     left:0px;
     bottom:0px;
-    height:100px;
+    height: 170px;
     width:100%;
     background-color: #000;
     color: #fff;
     padding: 10px;
-    text-align: center;
+    text-align: start;
 }
 
 footer ul {
+    display: inline-block;
     list-style: none;
-    margin: 0;
+    margin-left: 50px;
     padding: 0;
+    width: 25%;
 }
 
 footer ul li {
-    display: inline-block;
-    margin: 0 10px;
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+li#instagram img{
+    position: relative;
+    top: 7px;
+    margin-right: 5px;
+    left:-3px;
+}
+
+li#facebook img{
+    position: relative;
+    top: 7px;
+    margin-right: 8px;
+    left:-3px;
+}
+
+li#twitter img{
+    position: relative;
+    top: 7px;
+    margin-right: 8px;
+    left:-3px;
 }
 
 footer ul li a {
     color: #fff;
+}
+
+footer div#info{
+    margin-left: 150px;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+
+footer div#info a{
+    margin: 15px;
+}
+
+footer div#info p{
+    margin-top: 50px;
+}
+
+
+footer div#idioma{
+    display: inline-block;
+    position: relative;
+    top: -66.5px;
+    left: 500px;
+}
+
+footer div#idioma a{
+    display: inline-block;
+}
+
+footer div#idioma p{
+    display: inline-block;
+}
+footer div#idioma a img{
+    position: relative;
+    top: 7px;
+}
+
+footer div#idioma a#espana{
+    color: #4d4949;
+}
+
+footer div#idioma a#espana img{
+    filter: grayscale(100%);
+    position: relative;
+    top: 7px;
 }
 
 
