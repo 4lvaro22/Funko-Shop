@@ -29,6 +29,17 @@ header button {
     cursor: pointer;
 }
 
+button {
+    
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 nav {
     background-color: #fff;
     padding: 10px;
@@ -47,6 +58,7 @@ aside {
     background-color: #fff;
     padding: 10px;
     text-align: center;
+    float: right;
 }
 
 aside h2 {
