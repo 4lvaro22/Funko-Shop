@@ -1,27 +1,25 @@
 import './assets/App.css';
 import {Home} from './pages/Home';
 import {Layout} from './pages/Layout';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter as Router, Route, Routes} from "react-router-dom";
+import {Login} from "./pages/Login";
 
 export const BASE_PATH = "/Proyecto-Interfaces-Grupo-H";
 
 function App() {
     return (
-        <BrowserRouter>
+        <Router>
             <Routes>
                 <Route path="/" element={<Layout/>}>
-                    <Route path={BASE_PATH}>
-                        <Route index element={<Home/>}/>
-                        <Route path="*" element={<h1>404: Not Found</h1>}/>
-                    </Route>
-
+                    <Route index element={<Home/>}/>
+                    <Route path={"Login"} element={<Login/>}/>
                     <Route path="*" element={<h1>404: Not Found</h1>}/>
                     {/*<Route path="*">*/}
                     {/*    <Redirect to="/Proyecto-Interfaces-Grupo-H"/>*/}
                     {/*</Route>*/}
                 </Route>
             </Routes>
-        </BrowserRouter>
+        </Router>
     );
 }
 
