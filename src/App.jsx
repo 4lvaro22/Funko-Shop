@@ -1,8 +1,8 @@
-import './assets/App.css';
 import {Home} from './pages/Home';
 import {Layout} from './pages/Layout';
 import {HashRouter as Router, Route, Routes} from "react-router-dom";
 import {Login} from "./pages/Login";
+import './assets/styles/App.css'
 
 export const BASE_PATH = "/Proyecto-Interfaces-Grupo-H";
 
