@@ -20,7 +20,7 @@ export const Home = () => {
                         src="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg"
                         alt="Imagen de Funko" title="Funko Harry Potter"/></a>
                     <p>Harry Potter</p>
-
+                    
                     <div className="funko_item_priceSection">
                         <p id="funko_harryPotter_price" className="funko_item_price"><strong>7.99 $</strong></p>
                         <button id="funko_harryPotter_buy">Comprar</button>
