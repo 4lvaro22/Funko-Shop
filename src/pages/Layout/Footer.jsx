@@ -2,6 +2,7 @@ import instagram from "../../assets/images/Instagram-Icon.png";
 import facebook from "../../assets/images/Facebook.png";
 import twitter from "../../assets/images/twitter.png";
 import spanish from "../../assets/images/Spain.png";
+import {Link} from "react-router-dom";
 
 export const Footer = () => {
     return (
@@ -14,8 +15,8 @@ export const Footer = () => {
                 </ul>
                 <div id="info">
                     <div>
-                        <a href="#">Condiciones de uso</a>
-                        <a href="#">Sobre nosotros</a>
+                        <Link to={"/TermsAndConditions"}>Términos y Condiciones</Link>
+                        <Link to={"/AboutUs"}>Sobre nosotros</Link>
                         <a href="#">Contacto</a>
                         <a href="#">Localización</a>
                     </div>
