@@ -1,6 +1,6 @@
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/images/logo.svg";
 
-export const Login = () => {
+export const Profile = () => {
     return (
         <div className="App">
             <header className="App-header">

@@ -1,12 +1,12 @@
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/images/logo.svg";
 
-export const SignUp = () => {
+export const Login = () => {
     return (
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
-                    Edit <code>src/App.js</code> and save to reload.
+                    Test Login.
                 </p>
                 <a
                     className="App-link"
