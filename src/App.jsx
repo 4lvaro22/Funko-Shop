@@ -4,6 +4,7 @@ import {HashRouter as Router, Route, Routes} from "react-router-dom";
 import {Login} from "./pages/Login";
 import {AboutUs} from "./pages/AboutUs";
 import { TermsAndConditions } from './pages/TermsAndConditions';
+import {SignUp} from "./pages/SignUp";
 import './assets/styles/App.css'
 
 export const BASE_PATH = "/Proyecto-Interfaces-Grupo-H";
@@ -17,6 +18,7 @@ function App() {
                     <Route path={"Login"} element={<Login/>}/>
                     <Route path={"AboutUs"} element={<AboutUs/>}/>
                     <Route path={"TermsAndConditions"} element={<TermsAndConditions/>}/>
+                    <Route path={"SignUp"} element={<SignUp/>}/>
                     <Route path="*" element={<h1>404: Not Found</h1>}/>
                     {/*<Route path="*">*/}
                     {/*    <Redirect to="/Proyecto-Interfaces-Grupo-H"/>*/}
