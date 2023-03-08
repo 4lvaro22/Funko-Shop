@@ -3,36 +3,36 @@ import {Link} from "react-router-dom";
 export const Home = () => {
     return (
         <>
-            <div className="input-group rounded w-25">
-            <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-            <span className="input-group-text border-0" id="search-addon">
-                <i className="fas fa-search"></i>
-            </span>
-            </div>
+        <div className="input-group rounded w-25">
+        <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+        <span className="input-group-text border-0" id="search-addon">
+            <i className="fas fa-search"></i>
+        </span>
+        </div>
 
-            {/*<-- Lado -->*/}
-            <aside>  {/*<-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... -->*/}
-                <h2>Filtros</h2>
-            </aside>
+        {/*<-- Lado -->*/}
+        <aside>  {/*<-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... -->*/}
+            <h2>Filtros</h2>
+        </aside>
 
-            {/*<-- Seccion -->*/}
-            <section>
-                <h2>Catálogo</h2>
+        {/*<-- Seccion -->*/}
+        <section>
+            <h2>Catálogo</h2>
 
-                <div className="funko" id="funko_harryPotter">
-                    <a href="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg"><img
-                        src="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg"
-                        alt="Imagen de Funko" title="Funko Harry Potter"/></a>
-                    <p>Harry Potter</p>
+            <div className="funko" id="funko_harryPotter">
+                <a href="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg"><img
+                    src="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg"
+                    alt="Imagen de Funko" title="Funko Harry Potter"/></a>
+                <p>Harry Potter</p>
+                
+                <div className="funko_item_priceSection">
+                    <p id="funko_harryPotter_price" className="funko_item_price"><strong>7.99 $</strong></p>
+
+                    <Link to={"/Funko"}> <button id="funko_harryPotter_buy">Comprar</button> </Link>
                     
-                    <div className="funko_item_priceSection">
-                        <p id="funko_harryPotter_price" className="funko_item_price"><strong>7.99 $</strong></p>
-
-                        <Link to={"/Funko"}> <button id="funko_harryPotter_buy">Comprar</button> </Link>
-                        
-                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
         </>
     );
 }
