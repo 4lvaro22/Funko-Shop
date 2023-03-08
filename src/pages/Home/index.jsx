@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export const Home = () => {
     return (
         <>
@@ -23,7 +25,9 @@ export const Home = () => {
                     
                     <div className="funko_item_priceSection">
                         <p id="funko_harryPotter_price" className="funko_item_price"><strong>7.99 $</strong></p>
-                        <button id="funko_harryPotter_buy">Comprar</button>
+
+                        <Link to={"/Funko"}> <button id="funko_harryPotter_buy">Comprar</button> </Link>
+                        
                     </div>
                 </div>
             </section>
