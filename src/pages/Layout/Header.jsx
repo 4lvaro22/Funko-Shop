@@ -2,10 +2,7 @@ import {Link} from "react-router-dom";
 import cart from "../../assets/images/cart.svg";
 import icono from "../../assets/images/funkopop.png";
 
-const divStyle = {
-    color: 'white',
-    textDecoration: 'none',
-};
+
 export const Header = () => {
     return (
         <>
