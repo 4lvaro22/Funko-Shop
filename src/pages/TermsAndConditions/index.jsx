@@ -2,7 +2,7 @@ import logo from "../../assets/images/logo.svg";
 
 export const TermsAndConditions = () => {
     return (
-        <div className="App">
+        <div>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
@@ -20,3 +20,5 @@ export const TermsAndConditions = () => {
         </div>
     );
 }
+
+export default TermsAndConditions;
