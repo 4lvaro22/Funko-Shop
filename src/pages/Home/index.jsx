@@ -1,3 +1,4 @@
+import "bootstrap-icons/font/bootstrap-icons.css";
 import {Link} from "react-router-dom";
 
 export const Home = () => {
@@ -5,8 +6,8 @@ export const Home = () => {
         <>
         <div className="input-group rounded w-25">
         <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <i className="bi bi-search"></i>
         <span className="input-group-text border-0" id="search-addon">
-            <i className="fas fa-search"></i>
         </span>
         </div>
 
