@@ -15,9 +15,9 @@ export const Header = () => {
                         <h1>FunkoShop</h1>
                     </span>
                     <span className="col-4">
-                        <Link to={"/Login"} style={divStyle}><button id="login">Log in</button></Link>
-                        <Link to={"/SignUp"} style={divStyle}><button id="signup">Sign up</button></Link>
-                        <Link to={"/Cart"} style={divStyle}><button id="cart"><img src={cart}></img>Cart</button></Link>
+                        <Link to={"/Login"} ><button id="login">Log in</button></Link>
+                        <Link to={"/SignUp"} ><button id="signup">Sign up</button></Link>
+                        <Link to={"/Cart"} ><button id="cart"><img src={cart}></img>Cart</button></Link>
                     </span>
                 </div>
             </header>
