@@ -17,7 +17,7 @@ export const Header = () => {
                         <Link to={"/Login"} ><button id="login">Log in</button></Link>
                         <Link to={"/SignUp"} ><button id="signup">Sign up</button></Link>
                         <Link to={"/Cart"} ><button id="cart"><img src={cart}></img>Cart</button></Link>
-                      <Link to={"/Profile"} style={divStyle}><button id="profile">Profile</button></Link>
+                        <Link to={"/Profile"}><button id="profile">Profile</button></Link>
                     </span>
                 </div>
             </header>
