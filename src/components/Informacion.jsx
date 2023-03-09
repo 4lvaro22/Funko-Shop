@@ -1,9 +1,10 @@
+import {Link} from "react-router-dom";
 
 export const Informacion = () => {
     return (
-        <i class="bi bi-info-circle"></i>
+        <i className="bi bi-info-circle"></i>
     );
 }
 
 
-export default LoremIpsum;
+export default Informacion;
