@@ -1,12 +1,12 @@
 import logo from "../../assets/images/logo.svg";
 
-export const SignUp = () => {
+export const TermsAndConditions = () => {
     return (
-        <div className="App">
+        <div>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
-                    Esto es el SignUp
+                    Edit <code>src/App.js</code> and save to reload.
                 </p>
                 <a
                     className="App-link"
@@ -20,3 +20,5 @@ export const SignUp = () => {
         </div>
     );
 }
+
+export default TermsAndConditions;
