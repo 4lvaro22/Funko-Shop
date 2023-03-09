@@ -1,10 +1,14 @@
 export const Home = () => {
+
+    console.log("Home");
+
     return (
         <>
             <nav>
                 {/*Buscador por palabras*/}
                 <input type="text" placeholder="Buscar...."/>
             </nav>
+            
 
             {/*<-- Lado -->*/}
             <aside>  {/*<-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... -->*/}

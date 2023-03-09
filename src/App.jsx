@@ -5,13 +5,19 @@ import {Login} from "./pages/Login";
 import {Profile} from "./pages/Profile";
 
 import './assets/styles/App.css'
+import { PaymentSection } from './pages/Profile/Payments';
 
 export const BASE_PATH = "/Proyecto-Interfaces-Grupo-H";
 
 const testUser = {
     name: "Test User",
     img: "https://st3.depositphotos.com/1017228/18878/i/450/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg",
-
+    email: "test@gmail.com",
+    card: {
+        number: "1234 5678 9012 3456",
+        exp: "12/24",
+        cvv: "123"
+    }
 }
 
 function App() {
