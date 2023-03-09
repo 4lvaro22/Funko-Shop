@@ -1,22 +1,29 @@
 import logo from "../../assets/images/logo.svg";
 
-export const Profile = () => {
+
+export const Profile = (props) => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
+        <>
+
+            {/* Create a profile header with the img at props.user.photo and its name in props.user.name using bootstrap*/}
+            <div className="card">
+                <div className="card-body">
+                    <div className="row">
+                        <div className="col-2">
+                            <img src={props.user.img} className={"rounded-circle "}></img>
+                        </div>
+                        <div className="col-10">
+                            <h1>{props.user.name}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </>
     );
 }
+
+
+// Foto - 
