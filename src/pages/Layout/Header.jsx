@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom";
 import cart from "../../assets/images/cart.svg";
-import icono from "../../assets/images/funkopop.png";
 
 
 export const Header = () => {
@@ -9,11 +8,7 @@ export const Header = () => {
             <header>
                 <div className="container mw-100 center-block">
                     <span className="col-4">
-                        <Link to={"/"}>
-                            <div className="col-3 inline-block">
-                                <img className="w-75" src={icono}></img>
-                            </div>
-                        </Link>
+                        
                     </span>
                     <span className="col-4 text-center">
                         <h1>FunkoShop</h1>
