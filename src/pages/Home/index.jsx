@@ -1,23 +1,28 @@
+import "bootstrap-icons/font/bootstrap-icons.css";
 import {Link} from "react-router-dom";
 import {Funko} from "./../FunkoInfo";
 
 export const Home = () => {
+
+    console.log("Home");
+
     return (
         <>
-            <nav>
-                {/*Buscador por palabras*/}
-                <input type="text" placeholder="Buscar...."/>
-            </nav>
+        <div className="input-group rounded w-25">
+        <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <i className="bi bi-search"></i>
+        <span className="input-group-text border-0" id="search-addon">
+        </span>
+        </div>
 
-            {/*<-- Lado -->*/}
-            <aside>  {/*<-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... -->*/}
-                <h2>Filtros</h2>
-            </aside>
+        {/*<-- Lado -->*/}
+        <aside>  {/*<-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... -->*/}
+            <h2>Filtros</h2>
+        </aside>
 
-            {/*<-- Seccion -->*/}
-            <section>
-                <h2>Catálogo</h2>
-
+        {/*<-- Seccion -->*/}
+        <section>
+            <h2>Catálogo</h2>
                 <div className="funko" id="funko_harryPotter">
                     <a href="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg">
                     <Link to={"/Funko"}> <img src="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Imagen de Funko" title="Funko Harry Potter"/> </Link> </a> 
@@ -30,7 +35,8 @@ export const Home = () => {
                         
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         </>
     );
 }
