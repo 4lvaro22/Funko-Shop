@@ -2,21 +2,19 @@ import logo from "../../assets/images/logo.svg";
 
 export const Login = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Test Login.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+        <div className="w-75 bg-light mx-auto">
+            <h3 className="m-2">Login:</h3>
+
+            <div>
+                <label className="d-block" htmlFor={"email"}>Correo electrónico:</label>
+                <input className="d-block" id={"email"} type={"email"}></input>
+                <label className="d-block" htmlFor={"password"}>Contraseña:</label>
+                <input className="d-block" id={"password"} type={"password"}></input>
+                <label className="d-block" htmlFor={"passwordRepeat"}>Repite la contraseña:</label>
+                <input className="d-block" id={"passwordRepeat"} type={"password"}></input>
+            </div>
+
+
         </div>
     );
 }
