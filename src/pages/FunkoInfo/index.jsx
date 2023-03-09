@@ -23,7 +23,7 @@ export const Funko = (props) => {
 
                 <h1 className="p-1">{props.name}</h1>
                 
-                <h3 className="p-1"><i>Aqui va la descripcion en caso de que la encontremos</i></h3>
+                <h4 className="p-1"><i>Aqui va la descripcion en caso de que la encontremos</i></h4>
                 
                 <div className="dropdown p-1">
                 Seleccionar cantidad: &nbsp;
@@ -43,12 +43,6 @@ export const Funko = (props) => {
                 <div className="p-2">
                     <button id="añadirCesta">Añadir a la cesta</button>
                 </div>
-                
-                <div className="p-2">
-                    <Link to={"/Home"}> <button id="volver">Volver a página principal</button> </Link>
-                </div>
-           
-
             </div>
 
         </div>
