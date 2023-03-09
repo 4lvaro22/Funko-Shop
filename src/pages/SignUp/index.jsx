@@ -1,22 +1,46 @@
 import logo from "../../assets/images/logo.svg";
+import { Link } from "react-router-dom";
 
 export const SignUp = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Esto es el SignUp
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+        <div class="container mt-5">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-3">
+                    <div className="Auth-form-container">
+                        <form className="Auth-form">
+                        <div className="Auth-form-content">
+                            <h2 className="Auth-form-title">Registrarme</h2>
+                            <div className="form-group mt-3">
+                                <label>Nombre</label>
+                                <input type="name" className="form-control mt-1" />
+                            </div>
+                            <div className="form-group mt-3">
+                                <label>Apellido</label>
+                                <input type="surname" className="form-control mt-1"/>
+                            </div>
+                            <div className="form-group mt-3">
+                                <label>CorreoElectronico</label>
+                                <input type="email" className="form-control mt-1"/>
+                            </div>
+                            <div className="form-group mt-3">
+                                <label>Contraseña</label>
+                                <input type="password" className="form-control mt-1"/>
+                            </div>
+                            <div className="d-grid gap-2 mt-5">
+                                <button type="submit" className="btn btn-primary">
+                                    Enviar
+                                </button>
+                            </div>
+
+                        </div>
+                        </form>
+                    </div>
+
+                    
+                </div>
+             </div>
         </div>
+
+   
     );
 }
