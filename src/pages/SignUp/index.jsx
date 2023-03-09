@@ -1,10 +1,14 @@
 import logo from "../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
+import logoFunko from "../../assets/images/funkoIcono.png"
 
 export const SignUp = () => {
     return (
         <div class="container mt-5">
         <div class="row justify-content-md-center">
+            <div className="col col-lg-3">
+                <img src={logoFunko}></img>
+            </div>
             <div class="col col-lg-3">
                     <div className="Auth-form-container">
                         <form className="Auth-form">
