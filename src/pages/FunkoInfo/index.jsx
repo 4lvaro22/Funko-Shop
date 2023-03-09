@@ -41,7 +41,7 @@ export const Funko = (props) => {
                 </div>
                 
                 <div className="p-2">
-                    <button id="añadirCesta">Añadir a la cesta</button>
+                    <button class=" btn btn-dark m-1" id="añadirCesta">Añadir a la cesta</button>
                 </div>
             </div>
 

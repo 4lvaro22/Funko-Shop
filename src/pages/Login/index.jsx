@@ -1,20 +1,43 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.svg";
 
 export const Login = () => {
     return (
-        <div className="w-75 bg-light mx-auto">
-            <h3 className="m-2">Login:</h3>
+       
+        <div class="container mt-5">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-3">
+                    <div className="Auth-form-container">
+                        <form className="Auth-form">
+                        <div className="Auth-form-content">
+                            <h2 className="Auth-form-title">Iniciar Sesión</h2>
+                            <div className="form-group mt-3">
+                                <label>Correo Electronico</label>
+                                <input type="email" className="form-control mt-1" />
+                            </div>
+                            <div className="form-group mt-3">
+                                <label>Contraseña</label>
+                                <input type="password" className="form-control mt-1" />
+                            </div>
+                            <div className="d-grid gap-2 mt-5">
+                                <button type="submit" className="btn btn-primary">
+                                    Enviar
+                                </button>
+                            </div>
 
-            <div>
-                <label className="d-block" htmlFor={"email"}>Correo electrónico:</label>
-                <input className="d-block" id={"email"} type={"email"}></input>
-                <label className="d-block" htmlFor={"password"}>Contraseña:</label>
-                <input className="d-block" id={"password"} type={"password"}></input>
-                <label className="d-block" htmlFor={"passwordRepeat"}>Repite la contraseña:</label>
-                <input className="d-block" id={"passwordRepeat"} type={"password"}></input>
+                            <p className="forgot-password text-center mt-3"> Olivadaste tu <a href="#">contraseña?</a></p>
+
+                        </div>
+                        </form>
+                    </div>
+
+                    <div class="text-center">
+                        <p>No te has registrado? <Link to={"/SignUp"}>Registrarme</Link></p>
+                    </div>
+                </div>
             </div>
-
-
         </div>
+
+       
     );
 }
