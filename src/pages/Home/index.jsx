@@ -8,11 +8,13 @@ export const Home = () => {
 
     return (
         <>
-        <div className="input-group rounded w-25">
-        <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-            <i className="bi bi-search"></i>
-        <span className="input-group-text border-0" id="search-addon">
-        </span>
+        <div className="container-fluid my-3">
+            <div className="row">
+                <div class="input-group mb-2 w-25">
+                    <input type="text" className="form-control" aria-label="Buscador" aria-describedby="Buscar"/>
+                    <button className="btn btn-outline-secondary" type="button" id="button-addon2"><i className="bi bi-search"></i></button>
+                </div>
+            </div>
         </div>
 
         {/*<-- Lado -->*/}
