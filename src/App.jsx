@@ -16,6 +16,7 @@ export const BASE_PATH = "/Proyecto-Interfaces-Grupo-H";
 
 const testUser = {
     name: "Test User",
+    surname: "apellido",
     img: "https://st3.depositphotos.com/1017228/18878/i/450/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg",
     email: "test@gmail.com",
     card: {
