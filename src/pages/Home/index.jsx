@@ -2,6 +2,9 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import {Link} from "react-router-dom";
 
 export const Home = () => {
+
+    console.log("Home");
+
     return (
         <>
         <div className="input-group rounded w-25">
