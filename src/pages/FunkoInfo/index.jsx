@@ -19,7 +19,21 @@ export const Funko = (props) => {
             <br></br>
             <br></br>
             <br></br>
-            Seleccionar cantidad: dropdown button 1..10
+           <div class="dropdown">
+           Seleccionar cantidad: &nbsp;
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cantidad
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">1</a></li>
+                    <li><a class="dropdown-item" href="#">2</a></li>
+                    <li><a class="dropdown-item" href="#">3</a></li>
+                    <li><a class="dropdown-item" href="#">4</a></li>
+                    <li><a class="dropdown-item" href="#">5</a></li>
+                    <li><a class="dropdown-item" href="#">6</a></li>
+                </ul>
+            </div>
+            
             <br></br>
             <br></br>
             <button id="añadirCesta">Añadir a la cesta</button>
