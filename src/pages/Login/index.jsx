@@ -16,7 +16,7 @@ export const Login = () => {
                         <div className="Auth-form-content">
                             <h2 className="Auth-form-title">Iniciar Sesión</h2>
                             <div className="form-group mt-3">
-                                <label>Correo Electronico</label>
+                                <label>Correo Electrónico</label>
                                 <input type="email" className="form-control mt-1" />
                             </div>
                             <div className="form-group mt-3">
