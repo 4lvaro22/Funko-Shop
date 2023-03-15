@@ -5,7 +5,7 @@ import {Login} from "./pages/Login";
 import {AboutUs} from "./pages/AboutUs";
 import {TermsAndConditions} from './pages/TermsAndConditions';
 import {SignUp} from "./pages/SignUp";
-import {Funko} from "./pages/FunkoInfo";
+import {FunkoInfo} from "./pages/FunkoInfo";
 import { Cart } from './pages/Cart';
 import './assets/styles/App.css';
 import {Profile} from "./pages/Profile";
@@ -37,7 +37,7 @@ function App() {
                     <Route path={"AboutUs"} element={<AboutUs/>}/>
                     <Route path={"Terms"} element={<TermsAndConditions/>}/>
                     <Route path={"SignUp"} element={<SignUp/>}/>
-                    <Route path={"Funko"} element={<Funko name="Funko HarryPotter" price="7.00" image="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg"/>}/>
+                    <Route path={"Funko"} element={<FunkoInfo name="Funko HarryPotter" price="7.00" image="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg"/>}/>
                     <Route path={"Cart"} element={<Cart/>}/>
                     <Route path={"Profile"} element={<Profile user={testUser} />}/>
                     <Route path="*" element={<h1>404: Not Found</h1>}/>
