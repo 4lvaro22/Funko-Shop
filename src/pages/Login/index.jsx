@@ -29,7 +29,7 @@ export const Login = () => {
                                 </button>
                             </div>
 
-                            <p className="forgot-password text-center mt-3"> Olivadaste tu <a href="#">contraseña?</a></p>
+                            <p className="forgot-password text-center mt-3"> Olvidaste tu <a href="#">contraseña?</a></p>
 
                         </div>
                         </form>
@@ -45,3 +45,5 @@ export const Login = () => {
        
     );
 }
+
+export default Login;

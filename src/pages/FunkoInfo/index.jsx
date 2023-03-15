@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Funko = (props) => {
+export const FunkoInfo = (props) => {
 
 
 
@@ -54,4 +54,4 @@ export const Funko = (props) => {
     );
 
 }
-export default Funko;
+export default FunkoInfo;
