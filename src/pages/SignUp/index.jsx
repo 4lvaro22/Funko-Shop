@@ -38,8 +38,8 @@ export const SignUp = () => {
               </div>
             </form>
           </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+        </div>   
+    );
+}
+
+export default SignUp;
