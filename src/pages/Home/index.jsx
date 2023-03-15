@@ -8,14 +8,18 @@ export const Home = () => {
 
     return (
         <>
-        <div className="container-fluid my-3">
+        <nav className="container-fluid bg-dark">
             <div className="row">
-                <div class="input-group mb-2 w-25">
-                    <input type="text" className="form-control" aria-label="Buscador" aria-describedby="Buscar"/>
-                    <button className="btn btn-outline-secondary" type="button" id="button-addon2"><i className="bi bi-search"></i></button>
+                <div className="col-4"></div>
+                <div className="col-4">
+                    <span className="input-group mb-2 d-flex justify-content-center">
+                        <input type="text" className="form-control" aria-label="Buscador" aria-describedby="Buscar"/>
+                        <button className="btn btn-outline-secondary" type="button" id="button-addon2"><i className="bi bi-search"></i></button>
+                    </span>
                 </div>
+                <div className="col-4"></div>
             </div>
-        </div>
+        </nav>
 
         {/*<-- Lado -->*/}
         <aside>  {/*<-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... -->*/}
