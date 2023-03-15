@@ -7,6 +7,7 @@ import {TermsAndConditions} from './pages/TermsAndConditions';
 import {SignUp} from "./pages/SignUp";
 import {Funko} from "./pages/FunkoInfo";
 import { Cart } from './pages/Cart';
+import {Faq} from "./pages/Faq";
 import './assets/styles/App.css';
 import {Profile} from "./pages/Profile";
 import './assets/styles/App.css'
@@ -35,7 +36,8 @@ function App() {
                     <Route path={"Login"} element={<Login/>}/>
                     <Route path={"Home"} element={<Home/>}/>
                     <Route path={"AboutUs"} element={<AboutUs/>}/>
-                    <Route path={"Terms"} element={<TermsAndConditions/>}/>
+                    <Route path={"TermsAndConditions"} element={<TermsAndConditions/>}/>
+                    <Route path={"Faq"} element={<Faq/>}/>
                     <Route path={"SignUp"} element={<SignUp/>}/>
                     <Route path={"Funko"} element={<Funko name="Funko HarryPotter" price="7.00" image="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg"/>}/>
                     <Route path={"Cart"} element={<Cart/>}/>
