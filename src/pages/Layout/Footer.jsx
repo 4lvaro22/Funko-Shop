@@ -64,9 +64,15 @@ export const Footer = () => {
                 <a href="#" className="link-light text-decoration-none mx-2">
                   Contacto
                 </a>
-                <a href="#" className="link-light text-decoration-none mx-2">
+                <a href="https://goo.gl/maps/douTAYgW9ja5h5VN6" className="link-light text-decoration-none mx-2">
                   Localización
                 </a>
+                <Link 
+                  to={"/Faq"}
+                  className="text-white text-decoration-none mx-2"
+                >
+                  ¿Necesitas Ayuda?
+                </Link>
               </span>
 
               <span className="block d-flex justify-content-center m-2">
