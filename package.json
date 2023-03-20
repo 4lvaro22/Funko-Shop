@@ -26,12 +26,12 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-testing-library": "^5.10.2",
     "gh-pages": "^5.0.0",
-    "standard": "^17.0.0",
+    "semistandard": "^16.0.1",
     "vite": "^4.1.0"
   },
   "eslintConfig": {
     "extends": [
-      "./node_modules/standard/eslintrc.json"
+      "./node_modules/semistandard/eslintrc.json"
     ]
   },
   "browserslist": {
