@@ -1,6 +1,5 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Link } from 'react-router-dom';
-import { funko } from './../../components/funko';
+import { Funko } from './../../components/funko';
 
 export const Home = () => {
   console.log('Home');
@@ -24,7 +23,7 @@ export const Home = () => {
       {/* <-- Seccion --> */}
       <section>
         <h2>Catálogo</h2>
-        <funko />
+        <Funko />
       </section>
     </>
   );
