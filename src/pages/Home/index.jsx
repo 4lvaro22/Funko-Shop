@@ -1,8 +1,9 @@
-import "bootstrap-icons/font/bootstrap-icons.css";
-import {Link} from "react-router-dom";
-import {Funko} from "./../FunkoInfo";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { Link } from 'react-router-dom';
+import { funko } from './../../components/funko';
 
 export const Home = () => {
+  console.log('Home');
 
     console.log("Home");
 
@@ -21,28 +22,17 @@ export const Home = () => {
             </div>
         </nav>
 
-        {/*<-- Lado -->*/}
-        <aside>  {/*<-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... -->*/}
-            <h2>Filtros</h2>
-        </aside>
+      {/* <-- Lado --> */}
+      <aside>  {/* <-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... --> */}
+        <h2>Filtros</h2>
+      </aside>
 
-        {/*<-- Seccion -->*/}
-        <section>
-            <h2>Catálogo</h2>
-                <div className="funko" id="funko_harryPotter">
-                    <a href="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg">
-                    <Link to={"/Funko"}> <img src="https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Imagen de Funko" title="Funko Harry Potter"/> </Link> </a> 
-                    <p>Harry Potter</p>
-                    
-                    <div className="funko_item_priceSection">
-                        <p id="funko_harryPotter_price" className="funko_item_price"><strong>7.99 $</strong></p>
-
-                        <Link to={"/Funko"}> <button id="funko_harryPotter_buy">Añadir a la cesta</button> </Link>
-                        
-                    </div>
-                </div>
-        </section>
-        </>
-    );
-}
+      {/* <-- Seccion --> */}
+      <section>
+        <h2>Catálogo</h2>
+        <funko />
+      </section>
+    </>
+  );
+};
 export default Home;
