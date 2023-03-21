@@ -41,6 +41,7 @@ const getFunkosByPriceRange = (min, max) => {
 };
 
 const getSeries = () => {
+  console.log(csvObj);
   const set = new Set();
   csvObj.forEach((funko) => {
     funko.series.forEach((serie) => {

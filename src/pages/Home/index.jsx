@@ -2,6 +2,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link } from 'react-router-dom';
 import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
+import { getSeries } from './../../data';
 
 const funko_prueba = {
   handle: 'rhaenyra-targaryen',
@@ -21,6 +22,16 @@ const funko_prueba = {
 };
 
 export const Home = () => {
+  const items = [];
+
+  getSeries()
+    .forEach(item => items.push(
+      <label class='list-group-item border-0'>
+        <input class='form-check-input me-1' type='checkbox' value='' />
+        {item}
+      </label>
+    ));
+
   console.log('Home');
 
   console.log('Home');
@@ -47,26 +58,7 @@ export const Home = () => {
           <div className='border rounded p-2'>
             <div class='list-group'>
               <h6 className='mx-2'>Marca:</h6>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Marvel
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Harry Potter
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Juego de Tronos
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Star Wars
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Dragon Ball
-              </label>
+              {items}
             </div>
 
             <div class='list-group'>
