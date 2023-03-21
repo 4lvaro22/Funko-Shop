@@ -1,8 +1,6 @@
-import { data } from './../assets/db.json';
-
 const fs = require('fs');
 
-const jsonData = fs.readFileSync({ data });
+const jsonData = fs.readFileSync('./../assets/db.json');
 let loaded = false;
 
 let csvObj;
