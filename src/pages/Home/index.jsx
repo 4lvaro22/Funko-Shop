@@ -1,8 +1,8 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
+import { getSeries } from './../../data';
 
 const funko_prueba = {
   handle: 'rhaenyra-targaryen',
@@ -24,6 +24,17 @@ const funko_prueba = {
 export const Home = () => {
   const [form, toggleForm] = useState(false);
   const [search, setSearch] = useState('');
+  const items = [];
+
+  getSeries()
+    .forEach(item => items.push(
+      <label class='list-group-item border-0'>
+        <input class='form-check-input me-1' type='checkbox' value='' />
+        {item}
+      </label>
+    ));
+
+  console.log('Home');
 
   useEffect(() => {
     if (search.length > 0) {
@@ -59,26 +70,7 @@ export const Home = () => {
           <div className='border rounded p-2'>
             <div class='list-group'>
               <h6 className='mx-2'>Marca:</h6>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Marvel
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Harry Potter
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Juego de Tronos
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Star Wars
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Dragon Ball
-              </label>
+              {items}
             </div>
 
             <div class='list-group'>
