@@ -10,7 +10,7 @@
 //     }
 // }
 
-import Input from './Input'
+import Input from './Input';
 
 const Data = ({ user }) => {
   return (
@@ -42,7 +42,7 @@ const Data = ({ user }) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Data
+export default Data;

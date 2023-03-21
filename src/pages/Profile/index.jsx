@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import { Link, Outlet } from 'react-router-dom'
-import Data from './Data'
-import { PaymentSection } from './Payments'
+import { useState } from 'react';
+import Data from './Data';
+import { PaymentSection } from './Payments';
 
 const getButtonClass = (page, currentPage) => {
-  return page === currentPage ? 'btn-primary' : 'btn-secondary'
-}
+  return page === currentPage ? 'btn-primary' : 'btn-secondary';
+};
 
 export const Profile = ({
   user
@@ -20,7 +19,7 @@ export const Profile = ({
   //     }
   // }
 }) => {
-  const [page, setPage] = useState('payments')
+  const [page, setPage] = useState('payments');
 
   return (
     <>
@@ -71,5 +70,5 @@ export const Profile = ({
         </div>
       </div>
     </>
-  )
-}
+  );
+};

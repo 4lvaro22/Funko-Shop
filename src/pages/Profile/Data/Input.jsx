@@ -9,7 +9,7 @@ const Input = ({ label, name, type, value, onChange }) => {
       </div>
       <div className='col-md-auto' />
     </div>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
