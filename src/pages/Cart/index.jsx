@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 export const Cart = (props) => {
   return (
@@ -8,10 +9,10 @@ export const Cart = (props) => {
 
         <div className='col'>
 
-          <img src={props.funko.imageName} width='150' height='200' className='mt-5 mb-5 mx-5' />
+          <Link to='/Funko'> <img src={props.funko.imageName} width='150' height='200' className='mt-5 mb-5 mx-5' /></Link>
         </div>
 
-        <div className='col' style={{}}>
+        <div className='col'>
           <h4 className='text-center '>{props.funko.title}</h4>
         </div>
 
@@ -36,7 +37,7 @@ export const Cart = (props) => {
         </div>
 
         <div className='col'>
-          <h6 className='text-center'>{props.funko.price}€</h6>
+          <h4 className='text-center'>{props.funko.price}€</h4>
         </div>
 
         <div className='col'>

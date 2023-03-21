@@ -13,7 +13,6 @@ import { Profile } from './pages/Profile';
 import { PaymentSection } from './pages/Profile/Payments';
 import Contact from './pages/Contact';
 
-
 export const BASE_PATH = '/Proyecto-Interfaces-Grupo-H';
 
 const testUser = {
@@ -27,7 +26,6 @@ const testUser = {
     cvv: '123'
   }
 };
-
 
 const funko_prueba = {
   handle: 'rhaenyra-targaryen',
@@ -60,7 +58,7 @@ function App () {
           <Route path='Faq' element={<Faq />} />
           <Route path='SignUp' element={<SignUp />} />
           <Route path='Funko' element={<FunkoInfo funko={funko_prueba} />} />
-          <Route path='Cart' element={<Cart name='Funko HarryPotter' price='7.00' image='https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg' funko={funko_prueba} />} />
+          <Route path='Cart' element={<Cart funko={funko_prueba} />} />
           <Route path='Profile' element={<Profile user={testUser} />} />
           <Route path='*' element={<h1>404: Not Found</h1>} />
           {/* <Route path="*"> */}
