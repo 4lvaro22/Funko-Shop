@@ -11,6 +11,7 @@ import { Faq } from './pages/Faq';
 import './assets/styles/App.css';
 import { Profile } from './pages/Profile';
 import { PaymentSection } from './pages/Profile/Payments';
+import Contact from './pages/Contact';
 
 export const BASE_PATH = '/Proyecto-Interfaces-Grupo-H';
 
@@ -35,6 +36,7 @@ function App () {
           <Route path='Login' element={<Login />} />
           <Route path='Home' element={<Home />} />
           <Route path='AboutUs' element={<AboutUs />} />
+          <Route path='Contact' element={<Contact />} />
           <Route path='TermsAndConditions' element={<TermsAndConditions />} />
           <Route path='Faq' element={<Faq />} />
           <Route path='SignUp' element={<SignUp />} />

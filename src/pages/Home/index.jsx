@@ -26,7 +26,7 @@ export const Home = () => {
                 value={search}
                 onChange={e => setSearch(e.target.value)}
               />
-              <button className={'btn btn-outline-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2'><i className='bi bi-search' /></button>
+              <button className={'btn btn-outline-' + (form ? 'dark' : 'white') + ' bg-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2'><i className='bi bi-search' /></button>
             </span>
           </div>
           <div className='col-4' />
