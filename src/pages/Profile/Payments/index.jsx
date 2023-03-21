@@ -1,10 +1,10 @@
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import card from '../../../assets/images/payment/card.png'
-import { PaymentForm } from './form'
-import { useState } from 'react'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import card from '../../../assets/images/payment/card.png';
+import { PaymentForm } from '../form';
+import { useState } from 'react';
 
 export const PaymentSection = ({ user }) => {
-  const [form, toggleForm] = useState(false)
+  const [form, toggleForm] = useState(false);
 
   return (
     <>
@@ -25,5 +25,5 @@ export const PaymentSection = ({ user }) => {
 
       {form ? <PaymentForm /> : null}
     </>
-  )
-}
+  );
+};

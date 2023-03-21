@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Funko = (props) => {
+export const FunkoInfo = (props) => {
 
 
 
@@ -44,17 +44,7 @@ export const Funko = (props) => {
                     <button class=" btn btn-dark m-1" id="añadirCesta">Añadir a la cesta</button>
                 </div>
             </div>
-          <br></br>
-          <br></br>
-          <button id="añadirCesta">Añadir a la cesta</button>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <Link to={"/Home"}>
-            {" "}
-            <button id="volver">Volver a página principal</button>{" "}
-          </Link>
+         
         </div>
 
     </div>
@@ -64,4 +54,4 @@ export const Funko = (props) => {
     );
 
 }
-export default Funko;
+export default FunkoInfo;
