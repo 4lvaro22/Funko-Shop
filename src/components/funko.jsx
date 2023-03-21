@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export const Funko = (props) => {
   return (
-    <div className='funko' id='funko_harryPotter'>
+    <div className='funko mt-4 mx-4 mb-4' id='funko_harryPotter'>
       <a href='https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg'>
         <Link to='/Funko'> <img src='https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg' alt='Imagen de Funko' title='Funko Harry Potter' /> </Link>
       </a>

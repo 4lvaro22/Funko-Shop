@@ -36,7 +36,7 @@ export const Cart = (props) => {
         </div>
 
         <div className='col'>
-          <h6 className='text-center'>{props.funko.price}€</h6>
+          <h4 className='text-center'>{props.funko.price}€</h4>
         </div>
 
         <div className='col'>
