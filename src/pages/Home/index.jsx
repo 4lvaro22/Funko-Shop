@@ -1,8 +1,25 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link } from 'react-router-dom';
-import { funko } from './../../components/funko';
+import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
 
+
+const funko_prueba = {
+  handle: 'rhaenyra-targaryen',
+  title: 'Rhaenyra Targaryen',
+  imageName: 'https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1324888/Rhaenyra_Targaryen_Vinyl_Art_Toys_4fb7ebdb-25d5-4aaa-9071-633c0513cdb2.png',
+  series: [
+    'Pop! Vinyl',
+    'Pop! Digital'
+  ],
+  scale: '3.75',
+  released: {
+    month: 'Feb',
+    year: '2023'
+  },
+  price: '85',
+  rating: '3.00'
+};
 
 
 export const Home = () => {
@@ -82,6 +99,7 @@ export const Home = () => {
             </div>
         </>
     );
+
 };
 export default Home;
 
