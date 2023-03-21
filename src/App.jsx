@@ -12,6 +12,7 @@ import './assets/styles/App.css';
 import { Profile } from './pages/Profile';
 import { PaymentSection } from './pages/Profile/Payments';
 
+
 export const BASE_PATH = '/Proyecto-Interfaces-Grupo-H';
 
 const testUser = {
@@ -25,6 +26,7 @@ const testUser = {
     cvv: '123'
   }
 };
+
 
 const funko_prueba = {
   handle: 'rhaenyra-targaryen',
