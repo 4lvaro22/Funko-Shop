@@ -1,4 +1,5 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
@@ -21,9 +22,16 @@ const funko_prueba = {
 };
 
 export const Home = () => {
-  console.log('Home');
+  const [form, toggleForm] = useState(false);
+  const [search, setSearch] = useState('');
 
-  console.log('Home');
+  useEffect(() => {
+    if (search.length > 0) {
+      toggleForm(true);
+    } else {
+      toggleForm(false);
+    }
+  }, [search]);
 
   return (
     <>
@@ -32,8 +40,12 @@ export const Home = () => {
           <div className='col-4' />
           <div className='col-4'>
             <span className='input-group mb-2 d-flex justify-content-center'>
-              <input id='buscador' type='text' className='form-control' aria-label='Buscador' aria-describedby='Buscar' />
-              <button className='btn btn-outline-dark bg-primary' type='button' id='searchButton'><i className='bi bi-search' /></button>
+              <input
+                type='text' className='form-control' id='buscador' aria-label='Buscador' aria-describedby='Buscar'
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+              />
+              <button className={'btn btn-outline-' + (form ? 'dark' : 'white') + ' bg-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2'><i className='bi bi-search' /></button>
             </span>
           </div>
           <div className='col-4' />
