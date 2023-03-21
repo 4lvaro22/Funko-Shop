@@ -1,5 +1,4 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
