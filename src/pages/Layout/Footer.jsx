@@ -8,7 +8,7 @@ export const Footer = () => {
       <footer className='mt-5'>
         <div
           id='footer'
-          className='container-fluid bg-dark position-relative'
+          className='container-fluid bg-dark align-bottom'
         >
           <div className='row p-3'>
             <div className='col-2' id='redes'>
