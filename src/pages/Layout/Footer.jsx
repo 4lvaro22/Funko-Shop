@@ -61,9 +61,12 @@ export const Footer = () => {
                 >
                   Sobre nosotros
                 </Link>
-                <a href='#' className='link-light text-decoration-none mx-2'>
+                <Link
+                  to='/Contact'
+                  className='text-white text-decoration-none mx-2'
+                >
                   Contacto
-                </a>
+                </Link>
                 <a href='https://goo.gl/maps/douTAYgW9ja5h5VN6' className='link-light text-decoration-none mx-2'>
                   Localización
                 </a>

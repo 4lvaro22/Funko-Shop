@@ -1,45 +1,43 @@
-const fs = require('fs');
 
-const jsonData = fs.readFileSync('./../assets/db.json');
+import db from './../assets/db.json?raw';
 let loaded = false;
 
 let csvObj;
 
 if (!loaded) {
-  csvObj = JSON.parse(jsonData);
+  csvObj = JSON.parse(db);
   loaded = true;
 }
 
-const getFunkos = () => {
+export const getFunkos = () => {
   return csvObj;
 };
 
-const getFunkoById = (id) => {
+export const getFunkoById = (id) => {
   return csvObj.find((funko) => funko.handle === id);
 };
 
-const getFunkosByName = (name) => {
+export const getFunkosByName = (name) => {
   return csvObj.filter((funko) => funko.name.includes(name));
 };
 
-const getFunkosBySerie = (serie) => {
+export const getFunkosBySerie = (serie) => {
   return csvObj.filter((funko) => funko.series.includes(serie));
 };
 
-const getFunkosByScaleRange = (min, max) => {
+export const getFunkosByScaleRange = (min, max) => {
   if (min === undefined) min = 0;
   if (max === undefined) max = 100;
   return csvObj.filter((funko) => funko.scale >= min && funko.scale <= max);
 };
 
-const getFunkosByPriceRange = (min, max) => {
+export const getFunkosByPriceRange = (min, max) => {
   if (min === undefined) min = 0;
   if (max === undefined) max = 10000;
   return csvObj.filter((funko) => funko.price >= min && funko.price <= max);
 };
 
-const getSeries = () => {
-  console.log(csvObj);
+export const getSeries = () => {
   const set = new Set();
   csvObj.forEach((funko) => {
     funko.series.forEach((serie) => {
@@ -49,4 +47,12 @@ const getSeries = () => {
   return set;
 };
 
-export default { getFunkos, getFunkosByName, getFunkoById, getFunkosBySerie, getFunkosByPriceRange, getFunkosByScaleRange, getSeries };
+export default {
+  getFunkos,
+  getFunkosByName,
+  getFunkoById,
+  getFunkosBySerie,
+  getFunkosByPriceRange,
+  getFunkosByScaleRange,
+  getSeries
+};
