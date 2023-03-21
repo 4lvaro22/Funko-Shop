@@ -1,22 +1,21 @@
-import { Link } from 'react-router-dom';
 
 export const Cart = (props) => {
   return (
 
     <div className='container'>
 
-      <div className='row border border-2' style={{ marginTop: '5%' }}>
+      <div className=' row border border-2 d-flex align-items-center' style={{ marginTop: '5%' }}>
 
         <div className='col'>
 
-          <img src={props.image} style={{ marginTop: '15%', scale: '50%' }} />
+          <img src={props.funko.imageName} width='150' height='200' className='mt-5 mb-5 mx-5' />
         </div>
 
-        <div className='col' style={{ marginTop: '15%' }}>
-          <h4 className='text-center'>{props.name}</h4>
+        <div className='col' style={{}}>
+          <h4 className='text-center '>{props.funko.title}</h4>
         </div>
 
-        <div className='col' style={{ marginTop: '15%' }}>
+        <div className='col'>
           <div className='dropdown p-1 text-center'>
             <button className='btn btn-secondary dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
               Editar Cantidad
@@ -36,11 +35,11 @@ export const Cart = (props) => {
 
         </div>
 
-        <div className='col' style={{ marginTop: '15%' }}>
-          <h6 className='text-center'>{props.price}€</h6>
+        <div className='col'>
+          <h6 className='text-center'>{props.funko.price}€</h6>
         </div>
 
-        <div className='col' style={{ marginTop: '15%' }}>
+        <div className='col'>
           <button id='login' class=' btn btn-danger mx-1'>Eliminar Funko</button>
         </div>
 
@@ -48,9 +47,9 @@ export const Cart = (props) => {
 
       <div className='mt-5 border border-2'>
 
-        <div>
-          <h4 className='mt-3'>&nbsp; Total articulos: 7.00€</h4>
-          <h4>&nbsp; Envío: 2.00€ <button type='button' class='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' /></h4>
+        <div className='mx-2'>
+          <h4 className='mt-3'>Total articulos: 85.00€</h4>
+          <h4>Envío: 2.00€ <button type='button' class='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' /></h4>
 
           <div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
             <div class='modal-dialog'>
@@ -71,10 +70,10 @@ export const Cart = (props) => {
 
         </div>
 
-        <div className='mb-3'>
-          <h2 style={{ float: 'left' }}>&nbsp; Total a pagar:</h2>
+        <div className='mb-3 mx-2'>
+          <h2 style={{ float: 'left' }}> Total a pagar:</h2>
 
-          <h3 className='text-end'>9.00€ &nbsp;</h3>
+          <h3 className='text-end'>87.00€</h3>
         </div>
 
       </div>

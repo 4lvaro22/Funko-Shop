@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 
 export const FunkoInfo = (props) => {
   return (
@@ -12,14 +11,24 @@ export const FunkoInfo = (props) => {
           <div className='col'>
 
             {/*  */}
-            <img src={props.image} style={{ marginLeft: '15%', marginTop: '15%' }} />
+            <img src={props.funko.imageName} width='300' height='400' style={{ marginLeft: '15%', marginTop: '15%' }} />
           </div>
 
           <div className='col d-grid gap-3'>
 
-            <h1 className='p-1'>{props.name}</h1>
+            <h1 className='p-1 mt-5'>{props.funko.title}</h1>
 
-            <h4 className='p-1'><i>Aqui va la descripcion en caso de que la encontremos</i></h4>
+            <div className='p-1'>
+              <ul>
+                <li><strong>Series:</strong> {props.funko.series.join(', ')}</li>
+                <li><strong>Escala:</strong>  {props.funko.scale}</li>
+                <li><strong>Fecha de lanzamiento:</strong>  {props.funko.released.year}</li>
+                <li><strong>Valoracion:</strong> {props.funko.rating} <i class='bi bi-star-fill' /></li>
+              </ul>
+
+              <h4 className='mt-5' style={{}}>Precio: {props.funko.price} €</h4>
+
+            </div>
 
             <div className='dropdown p-1'>
               Seleccionar cantidad: &nbsp;

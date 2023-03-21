@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export const Funko = () => {
+export const Funko = (props) => {
   return (
     <div className='funko' id='funko_harryPotter'>
       <a href='https://m.media-amazon.com/images/I/61rvig8NbQL.__AC_SX300_SY300_QL70_ML2_.jpg'>
