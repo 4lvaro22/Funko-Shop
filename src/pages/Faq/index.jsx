@@ -96,10 +96,10 @@ export const Faq = () => {
   return (
     <>
       <section>
-        <label for='faq' className='d-flex justify-content-center mt-3 mb-5 underline'><h1><strong><i>Preguntas Frecuentes</i></strong></h1></label>
-        <div className='my-3' id='faq'>
-          <div className='row mx-4 d-flex justify-items-center'>
-            <div className='col-6'>
+        <div className='row mt-5'>
+          <label for='faq' className='d-flex justify-content-center m-2 underline'><h1><strong><i>Preguntas Frecuentes</i></strong></h1></label>
+          <div className='p-5 mb-5' id='faq'>
+            <div className='row mx-4 d-flex justify-items-center'>
               <FaqCategory
                 theme='Productos'
                 questions={ProductsQuestions}
@@ -109,9 +109,7 @@ export const Faq = () => {
                 theme='Devoluciones'
                 questions={RefundQuestions}
               />
-            </div>
 
-            <div className='col-6'>
               <FaqCategory
                 theme='Pedidos'
                 questions={OrdersQuestions}
