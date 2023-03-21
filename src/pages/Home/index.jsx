@@ -2,6 +2,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link } from 'react-router-dom';
 import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
+import { getSeries } from './../../data';
 
 const funko_prueba = {
   handle: 'rhaenyra-targaryen',
@@ -21,9 +22,27 @@ const funko_prueba = {
 };
 
 export const Home = () => {
-  console.log('Home');
+  const [form, toggleForm] = useState(false);
+  const [search, setSearch] = useState('');
+  const items = [];
+
+  getSeries()
+    .forEach(item => items.push(
+      <label class='list-group-item border-0'>
+        <input class='form-check-input me-1' type='checkbox' value='' />
+        {item}
+      </label>
+    ));
 
   console.log('Home');
+
+  useEffect(() => {
+    if (search.length > 0) {
+      toggleForm(true);
+    } else {
+      toggleForm(false);
+    }
+  }, [search]);
 
   return (
     <>
@@ -32,8 +51,12 @@ export const Home = () => {
           <div className='col-4' />
           <div className='col-4'>
             <span className='input-group mb-2 d-flex justify-content-center'>
-              <input id='buscador' type='text' className='form-control' aria-label='Buscador' aria-describedby='Buscar' />
-              <button className='btn btn-outline-dark bg-primary' type='button' id='searchButton'><i className='bi bi-search' /></button>
+              <input
+                type='text' className='form-control' id='buscador' aria-label='Buscador' aria-describedby='Buscar'
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+              />
+              <button className={'btn btn-outline-' + (form ? 'dark' : 'white') + ' bg-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2'><i className='bi bi-search' /></button>
             </span>
           </div>
           <div className='col-4' />
@@ -47,26 +70,7 @@ export const Home = () => {
           <div className='border rounded p-2'>
             <div class='list-group'>
               <h6 className='mx-2'>Marca:</h6>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Marvel
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Harry Potter
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Juego de Tronos
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Star Wars
-              </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
-                Dragon Ball
-              </label>
+              {items}
             </div>
 
             <div class='list-group'>
@@ -92,22 +96,10 @@ export const Home = () => {
         {/* <-- Seccion --> */}
         <section className='col-9 m-4'>
           <h2 className='text-center border-bottom border-top'>Catálogo</h2>
-
           <Funko funko={funko_prueba} />
-
         </section>
       </div>
     </>
   );
 };
 export default Home;
-
-{ /*
-const buscador = document.getElementById("buscador");
-
-buscador.addEventListener("input", changeColor);
-
-function changeColor() {
-    document.getElementById("searchButton").className = "btn btn-outline-dark bg-primary";
-};
-*/ }
