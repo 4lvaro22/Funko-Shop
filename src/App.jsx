@@ -57,7 +57,7 @@ function App () {
           <Route path='TermsAndConditions' element={<TermsAndConditions />} />
           <Route path='Faq' element={<Faq />} />
           <Route path='SignUp' element={<SignUp />} />
-          <Route path='Funko' element={<FunkoInfo funko={funko_prueba} />} />
+          <Route path='Funko/:id' element={<FunkoInfo />} />
           <Route path='Cart' element={<Cart funko={funko_prueba} />} />
           <Route path='Profile' element={<Profile user={testUser} />} />
           <Route path='*' element={<h1>404: Not Found</h1>} />

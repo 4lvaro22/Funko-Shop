@@ -9,7 +9,7 @@ export const Cart = (props) => {
 
         <div className='col'>
 
-          <Link to='/Funko'> <img src={props.funko.imageName} width='150' height='200' className='mt-5 mb-5 mx-5' /></Link>
+          <Link to='/FunkoInfo'> <img src={props.funko.imageName} width='150' height='200' className='mt-5 mb-5 mx-5' /></Link>
         </div>
 
         <div className='col'>
