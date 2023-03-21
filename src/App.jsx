@@ -10,7 +10,6 @@ import { Cart } from './pages/Cart';
 import { Faq } from './pages/Faq';
 import './assets/styles/App.css';
 import { Profile } from './pages/Profile';
-import { PaymentSection } from './pages/Profile/Payments';
 
 export const BASE_PATH = '/Proyecto-Interfaces-Grupo-H';
 
