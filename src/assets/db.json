@@ -1,0 +1,4699 @@
+[
+    {
+        "handle": "khan",
+        "title": "Khan",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1327846/Khan_Vinyl_Art_Toys_399dceda-cfb0-4c4e-a9c5-45afa77008fe.jpeg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "24",
+        "rating": "3.50"
+    },
+    {
+        "handle": "vhagar",
+        "title": "Vhagar",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1324891/Vhagar_Vinyl_Art_Toys_ec3ccb6d-491a-4a06-83cd-92b921a145ec.png",
+        "series": [
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "160",
+        "rating": "4.25"
+    },
+    {
+        "handle": "rhaenyra-targaryen",
+        "title": "Rhaenyra Targaryen",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1324888/Rhaenyra_Targaryen_Vinyl_Art_Toys_4fb7ebdb-25d5-4aaa-9071-633c0513cdb2.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "85",
+        "rating": "3.00"
+    },
+    {
+        "handle": "aemond-targaryen",
+        "title": "Aemond Targaryen",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1324887/Aemond_Targaryen_Vinyl_Art_Toys_c6683be0-ffcd-4f0f-9a7e-53e0190f62db.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "165",
+        "rating": "4.50"
+    },
+    {
+        "handle": "venom",
+        "title": "Venom",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1319644/Venom_Vinyl_Art_Toys_69c9377f-926e-41e4-b615-7dae6f9790bc.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "20",
+            "year": "Mar"
+        },
+        "price": "15",
+        "rating": "2.83"
+    },
+    {
+        "handle": "black-panther",
+        "title": "Black Panther",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1319688/Black_Panther_Vinyl_Art_Toys_c8c644be-7836-4dfd-b97e-211f1213235b.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "24",
+            "year": "Feb"
+        },
+        "price": "30",
+        "rating": "4.90"
+    },
+    {
+        "handle": "devil-dinosaur",
+        "title": "Devil Dinosaur",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1317480/Devil_Dinosaur_Vinyl_Art_Toys_f2861627-c088-44aa-aa8a-65c22646f948.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "8",
+            "year": "Feb"
+        },
+        "price": "25",
+        "rating": "2.75"
+    },
+    {
+        "handle": "inosuke-hashibira",
+        "title": "Inosuke Hashibira",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1316829/Inosuke_Hashibira_Vinyl_Art_Toys_5af28cbf-4d8f-4a87-a05c-43f20e52ed97.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "19",
+            "year": "Feb"
+        },
+        "price": "27",
+        "rating": "3.20"
+    },
+    {
+        "handle": "spider-man-#300",
+        "title": "Spider-Man #300",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1316793/Spider-Man_%2523300_Vinyl_Art_Toys_e501f4c1-6a2b-4517-af0e-f42f1297f2bb.jpeg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Comic Covers"
+        ],
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "36",
+        "rating": "4.77"
+    },
+    {
+        "handle": "bulma",
+        "title": "Bulma",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1311485/Bulma_Vinyl_Art_Toys_552c67bd-bf5d-43dc-8139-3cf247fc950f_large.jpeg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "28",
+        "rating": "3.63"
+    },
+    {
+        "handle": "momoshiki",
+        "title": "Momoshiki",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1330124/Momoshiki_Vinyl_Art_Toys_981b6f18-1cca-4d5d-8017-94a31fadc7b8.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "28",
+        "rating": "3.63"
+    },
+    {
+        "handle": "eric-\"eazy-e\"-wright",
+        "title": "Eric \"Eazy-E\" Wright",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1309971/Eric_%2522Eazy-E%2522_Wright_Vinyl_Art_Toys_2f0dc49d-893d-4e4c-a3f6-d80f7d81a6e7_large.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pops! With Purpose"
+        ],
+        "released": {
+            "month": "24",
+            "year": "Jan"
+        },
+        "price": "21",
+        "rating": "5.00"
+    },
+    {
+        "handle": "ed-big-head",
+        "title": "Ed Big Head",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1309310/Ed_Big_Head_Vinyl_Art_Toys_6ef3ccb8-d3fc-4c15-84cb-9d638894de0f_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "55",
+        "rating": "5.00"
+    },
+    {
+        "handle": "donald-duck",
+        "title": "Donald Duck",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1316572/Donald_Duck_Vinyl_Art_Toys_7a1678e7-a1f6-42f4-a754-339658ee035b.jpeg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "19",
+            "year": "Feb"
+        },
+        "price": "21",
+        "rating": "5.00"
+    },
+    {
+        "handle": "darkwing-duck",
+        "title": "Darkwing Duck",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1305928/Darkwing_Duck_Vinyl_Art_Toys_1d0c162c-6f65-4f07-a9d5-ae265b8d744f.jpg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "25",
+        "rating": "5.00"
+    },
+    {
+        "handle": "moon-girl",
+        "title": "Moon Girl",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1317482/Moon_Girl_Vinyl_Art_Toys_495deff7-b291-4a9c-bf65-cc56b9441570.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "8",
+            "year": "Feb"
+        },
+        "price": "17",
+        "rating": "5.00"
+    },
+    {
+        "handle": "gabriel-\"fluffy\"-iglesias",
+        "title": "Gabriel \"Fluffy\" Iglesias",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1315571/Gabriel_%2528Fluffy%2529_Iglesias_Vinyl_Art_Toys_2f21c181-c2ac-42ea-88c0-ac630f7a3781.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Comedians"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "45",
+        "rating": "5.00"
+    },
+    {
+        "handle": "electro",
+        "title": "Electro",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1308853/Electro_Vinyl_Art_Toys_086ee3a9-7e3d-431b-a800-fcaf62fc584a.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Jan",
+            "year": "2023"
+        },
+        "price": "29",
+        "rating": "5.00"
+    },
+    {
+        "handle": "friendly-neighborhood-spider-man",
+        "title": "Friendly Neighborhood Spider-Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1308857/Friendly_Neighborhood_Spider-Man_Vinyl_Art_Toys_6b052e62-176e-48b3-9c2f-f30ffa6d11dd.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Jan",
+            "year": "2023"
+        },
+        "price": "37",
+        "rating": "4.63"
+    },
+    {
+        "handle": "jinbe",
+        "title": "Jinbe",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1302828/Jinbe_Vinyl_Art_Toys_b51c48f9-9f38-4b44-b13b-418e52f4d5e4.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "55",
+        "rating": "5.00"
+    },
+    {
+        "handle": "jinbe",
+        "title": "Jinbe",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1302827/Jinbe_Vinyl_Art_Toys_a1f96ae7-1188-44ba-91d3-2cfb1effa064.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "hungry-big-mom",
+        "title": "Hungry Big Mom",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1302812/Hungry_Big_Mom_Vinyl_Art_Toys_711177c4-0998-4f9b-8560-1bb1c8cf6857.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "6",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "42",
+        "rating": "5.00"
+    },
+    {
+        "handle": "zombie-hunter-spider-man",
+        "title": "Zombie Hunter Spider-Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1302700/Zombie_Hunter_Spider-Man__Vinyl_Art_Toys_9a8c7510-cf14-47f5-a1c9-c56351334c82.jpg",
+        "series": [
+            "Soda Figures"
+        ],
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "buggy-the-clown",
+        "title": "Buggy the Clown",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1302860/Buggy_the_Clown_Vinyl_Art_Toys_16fb1409-de1e-4d8c-9baa-6ff28523541c.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "50",
+        "rating": "3.64"
+    },
+    {
+        "handle": "iron-man",
+        "title": "Iron Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1301646/Iron_Man_Vinyl_Art_Toys_9f819cb7-1d56-4207-86ce-17ce785c7c85_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Games",
+            "Funko Silver & Red Special Edition Sticker"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "1",
+            "year": "Jan"
+        },
+        "price": "120",
+        "rating": "3.33"
+    },
+    {
+        "handle": "tanjiro-with-noodles",
+        "title": "Tanjiro With Noodles",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1298197/Tanjiro_With_Noodles_Vinyl_Art_Toys_42aca643-3c9a-4691-9e73-3109c2019685.png",
+        "series": [
+            "Pop! Animation"
+        ],
+        "released": {
+            "month": "Apr",
+            "year": "2023"
+        },
+        "price": "25",
+        "rating": "2.00"
+    },
+    {
+        "handle": "kanao-tsuyuri",
+        "title": "Kanao Tsuyuri",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1298179/Kanao_Tsuyuri_Vinyl_Art_Toys_7157cab3-1e15-4796-8ca9-3e0c06aae2ea.png",
+        "series": [
+            "Pop! Animation"
+        ],
+        "released": {
+            "month": "Apr",
+            "year": "2023"
+        },
+        "price": "24",
+        "rating": "2.00"
+    },
+    {
+        "handle": "rui",
+        "title": "Rui",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1298176/Rui_Vinyl_Art_Toys_0bef38cf-8fe2-4ae5-bc85-9580de0a065a.png",
+        "series": [
+            "Pop! Animation"
+        ],
+        "released": {
+            "month": "Apr",
+            "year": "2023"
+        },
+        "price": "15",
+        "rating": "2.75"
+    },
+    {
+        "handle": "kyojuro-rengoku",
+        "title": "Kyojuro Rengoku",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1298159/Kyojuro_Rengoku_Vinyl_Art_Toys_6edadbed-4c44-4327-b6cf-6597e0f3d808.png",
+        "series": [
+            "Pop! Animation"
+        ],
+        "released": {
+            "month": "Apr",
+            "year": "2023"
+        },
+        "price": "16",
+        "rating": "2.00"
+    },
+    {
+        "handle": "ssgss-goku-kaio-ken-times-twenty",
+        "title": "SSGSS Goku (Kaio-Ken Times Twenty)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1297690/SSGSS_Goku_%2528Kaio-Ken_Times_Twenty%2529_Vinyl_Art_Toys_417e543a-a61c-41e4-a103-9be682f41fc0.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "17",
+            "year": "Jan"
+        },
+        "price": "28",
+        "rating": "3.88"
+    },
+    {
+        "handle": "snoop-dogg",
+        "title": "Snoop Dogg",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1296984/Snoop_Dogg_Vinyl_Art_Toys_f1167ba5-7062-4337-89ff-7eeab15d1b50.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Jan",
+            "year": "2023"
+        },
+        "price": "75",
+        "rating": "3.41"
+    },
+    {
+        "handle": "snoop-dogg",
+        "title": "Snoop Dogg",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1296978/Snoop_Dogg_Vinyl_Art_Toys_0b32d230-0490-4a29-9f86-968111c61f04.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "110",
+        "rating": "3.71"
+    },
+    {
+        "handle": "dolly-parton",
+        "title": "Dolly Parton",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1296106/Dolly_Parton_Vinyl_Art_Toys_292cde8a-779d-4539-a992-1b5b3337e58a.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "released": {
+            "month": "Mar",
+            "year": "2023"
+        },
+        "price": "32",
+        "rating": "5.00"
+    },
+    {
+        "handle": "dolly-parton",
+        "title": "Dolly Parton",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1296102/Dolly_Parton_Vinyl_Art_Toys_0a45bc75-cb50-493d-aac7-ab9687c6e4c2.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "released": {
+            "month": "Mar",
+            "year": "2023"
+        },
+        "price": "27",
+        "rating": "5.00"
+    },
+    {
+        "handle": "tanjuro-kamado",
+        "title": "Tanjuro Kamado",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1291678/Tanjuro_Kamado_Vinyl_Art_Toys_2682fc04-97df-46f0-bfa7-54094570bc35.jpeg",
+        "series": [
+            "Pop! Animation"
+        ],
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "24",
+        "rating": "3.50"
+    },
+    {
+        "handle": "shazam!",
+        "title": "Shazam!",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1291103/Shazam_Vinyl_Art_Toys_92b7ef1c-89fc-4360-a7a2-ca617a581a93.jpeg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "36",
+        "rating": "4.75"
+    },
+    {
+        "handle": "goofy",
+        "title": "Goofy",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1290012/Goofy_Vinyl_Art_Toys_9b05d41b-4acc-4baa-a959-31222ed842d5.jpg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "27",
+        "rating": "5.00"
+    },
+    {
+        "handle": "final-battle-series:-spider-man",
+        "title": "Final Battle Series: Spider-Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1286685/Final_Battle_Series%253A_Spider-Man__Vinyl_Art_Toys_e482323a-0284-42e5-8777-483422b16ab1.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Deluxe"
+        ],
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "55",
+        "rating": "5.00"
+    },
+    {
+        "handle": "super-saiyan-rose-goku-black",
+        "title": "Super Saiyan Rose Goku Black",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1317749/Super_Saiyan_Rose_Goku_Black_Vinyl_Art_Toys_2c5503b3-dc50-45c6-88ee-8a2230705187.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "16",
+            "year": "Dec"
+        },
+        "price": "24",
+        "rating": "2.75"
+    },
+    {
+        "handle": "super-saiyan-trunks-with-sword",
+        "title": "Super Saiyan Trunks with Sword",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1282602/Super_Saiyan_Trunks_with_Sword_Vinyl_Art_Toys_629bfb06-5830-4888-a73b-3e462225b48c_large.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "16",
+            "year": "Dec"
+        },
+        "price": "21",
+        "rating": "3.50"
+    },
+    {
+        "handle": "shin",
+        "title": "Shin",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1282600/Kale_Vinyl_Art_Toys_14294088-aa12-4328-886b-bd6626d1724a_large.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "16",
+            "year": "Dec"
+        },
+        "price": "25",
+        "rating": "3.50"
+    },
+    {
+        "handle": "kale",
+        "title": "Kale",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1282595/Kale_Vinyl_Art_Toys_c41cabe2-1e06-47f0-88d7-d9b38b6fbe0b_large.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "16",
+            "year": "Dec"
+        },
+        "price": "17",
+        "rating": "2.75"
+    },
+    {
+        "handle": "jiren",
+        "title": "Jiren",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1282593/Jiren_Vinyl_Art_Toys_d8c85932-07f6-465f-be37-be92a81ac507_large.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "16",
+            "year": "Dec"
+        },
+        "price": "19",
+        "rating": "2.75"
+    },
+    {
+        "handle": "eeyore-flocked",
+        "title": "Eeyore (Flocked)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1281726/Eeyore_%2528Flocked%2529_Vinyl_Art_Toys_a8279cd1-9419-4c87-b929-4ffd2b930264_large.jpg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "24",
+        "rating": "5.00"
+    },
+    {
+        "handle": "pinocchio-and-cricket",
+        "title": "Pinocchio and Cricket",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1280605/Pinocchio_and_Cricket_Vinyl_Art_Toys_a1670fb4-2776-4d95-9d11-5dcb9c573f1f.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "5.00"
+    },
+    {
+        "handle": "elvira",
+        "title": "Elvira",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1279980/Elvira_Vinyl_Art_Toys_2d448f3b-2203-4fd3-9451-a5e52263e0b3.jpg",
+        "series": [
+            "Soda Figures"
+        ],
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "17",
+        "rating": "5.00"
+    },
+    {
+        "handle": "composite-superman",
+        "title": "Composite Superman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1279975/Composite_Superman_Vinyl_Art_Toys_8d399458-a2ae-4452-a93b-464a62e3df86.jpg",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "Jan",
+            "year": "2023"
+        },
+        "price": "24",
+        "rating": "5.00"
+    },
+    {
+        "handle": "mark-hoppus-/-travis-barker-/-tom-delonge-3-pack",
+        "title": "Mark Hoppus / Travis Barker / Tom Delonge (3-Pack)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1279681/Mark_Hoppus_%252F_Travis_Barker_%252F_Tom_Delonge_%25283-Pack%2529_Vinyl_Art_Toys_a5e751da-34d8-4ef2-b227-ab0232d6b9bb_large.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "50",
+        "rating": "4.10"
+    },
+    {
+        "handle": "robert-smith",
+        "title": "Robert Smith",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1279370/Robert_Smith_Vinyl_Art_Toys_e8135196-89e3-4c3b-9cfc-9578c1f8e1b8_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "13",
+            "year": "Dec"
+        },
+        "price": "31",
+        "rating": "4.10"
+    },
+    {
+        "handle": "jack-skellington",
+        "title": "Jack Skellington",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1279368/Jack_Skellington_Vinyl_Art_Toys_cb03805f-ca0a-449b-b711-aa8caf0f019d_large.png",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "13",
+            "year": "Dec"
+        },
+        "price": "26",
+        "rating": "5.00"
+    },
+    {
+        "handle": "kang",
+        "title": "Kang",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1279109/Kang_Vinyl_Art_Toys_4ce4267d-2ac3-4303-beff-1af357cbed41.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "released": {
+            "month": "1",
+            "year": "Dec"
+        },
+        "price": "12",
+        "rating": "5.00"
+    },
+    {
+        "handle": "the-wasp",
+        "title": "The Wasp",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1279103/The_Wasp_Vinyl_Art_Toys_d51ffbef-2161-4d1c-b1ed-d7c936903655.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "1",
+            "year": "Dec"
+        },
+        "price": "11",
+        "rating": "5.00"
+    },
+    {
+        "handle": "enema-of-the-state---mark-hoppus-/-travis-barker-/-tom-delonge",
+        "title": "Enema of the State - Mark Hoppus / Travis Barker / Tom Delonge",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1278976/Enema_of_the_State_-_Mark_Hoppus_%252F_Travis_Barker_%252F_Tom_Delonge_Vinyl_Art_Toys_32efa2c0-ee64-4e65-b6da-5d8f40735602_large.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Albums"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "25",
+            "year": "Nov"
+        },
+        "price": "60",
+        "rating": "5.00"
+    },
+    {
+        "handle": "the-riddler",
+        "title": "The Riddler",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1294860/The_Riddler_Vinyl_Art_Toys_7b1da650-3a04-40c7-aa21-acabce07fc22.jpg",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "22",
+        "rating": "4.77"
+    },
+    {
+        "handle": "ming-ming",
+        "title": "Ming Ming",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1277969/Ming_Ming_Vinyl_Art_Toys_97c4f9d3-8f97-4ad0-9675-9e295bf0c086.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "13",
+            "year": "Dec"
+        },
+        "price": "80",
+        "rating": "3.86"
+    },
+    {
+        "handle": "leon",
+        "title": "Leon",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1277957/Leon_Vinyl_Art_Toys_0eca1c74-c370-474e-bbe9-5c20e34a07f8_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "13",
+            "year": "Dec"
+        },
+        "price": "65",
+        "rating": "3.90"
+    },
+    {
+        "handle": "naruto-uzumaki-as-nine-tails",
+        "title": "Naruto Uzumaki as Nine Tails",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1277834/Naruto_Uzumaki_as_Nine_Tails_Vinyl_Art_Toys_f72a2407-a2ec-43ad-940a-9387de758945_large.jpeg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Deluxe"
+        ],
+        "scale": "6",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "48",
+        "rating": "3.20"
+    },
+    {
+        "handle": "nezuko-kamado-running",
+        "title": "Nezuko Kamado Running",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1277422/Nezuko_Kamado_Running_Vinyl_Art_Toys_71fb5651-ba87-4834-a2fa-ec6eed3e1bc6.jpeg",
+        "series": [
+            "Pop! Animation"
+        ],
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "23",
+        "rating": "2.00"
+    },
+    {
+        "handle": "stitch-in-bathtub",
+        "title": "Stitch in Bathtub",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1279290/Stitch_in_Bathtub_Vinyl_Art_Toys_50b67379-7768-444a-af8b-92aaf3691087_large.jpeg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "13",
+            "year": "Dec"
+        },
+        "price": "34",
+        "rating": "4.67"
+    },
+    {
+        "handle": "walt-disney-with-drawing",
+        "title": "Walt Disney with Drawing",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1289955/Walt_Disney_with_Drawing_Vinyl_Art_Toys_35e45eec-6049-4186-acd8-358e7016ac46.jpeg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Icons"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "22",
+        "rating": "4.75"
+    },
+    {
+        "handle": "pluto",
+        "title": "Pluto",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1276410/Pluto_Vinyl_Art_Toys_ee11db22-82f4-4ef2-aa97-bb5746bf6326_large.jpg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "25",
+            "year": "Nov"
+        },
+        "price": "17",
+        "rating": "5.00"
+    },
+    {
+        "handle": "goofy",
+        "title": "Goofy",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1276408/Goofy_Vinyl_Art_Toys_79495be9-05b5-4cb3-b6a0-b619ab2e0f25_large.jpg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "25",
+            "year": "Nov"
+        },
+        "price": "13",
+        "rating": "5.00"
+    },
+    {
+        "handle": "dale",
+        "title": "Dale",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1276406/Dale_Vinyl_Art_Toys_7557657f-b69c-4f95-b22b-947ae3025897_large.jpg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "25",
+            "year": "Nov"
+        },
+        "price": "13",
+        "rating": "5.00"
+    },
+    {
+        "handle": "daisy-duck",
+        "title": "Daisy Duck",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1276405/Daisy_Duck_Vinyl_Art_Toys_866ca2d0-6489-412c-8f0b-133d6753e0a3_large.jpg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "25",
+            "year": "Nov"
+        },
+        "price": "13",
+        "rating": "5.00"
+    },
+    {
+        "handle": "chip",
+        "title": "Chip",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1276403/Chip_Vinyl_Art_Toys_1b989394-d6dc-433d-b6f1-74412134272a.jpg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "25",
+            "year": "Nov"
+        },
+        "price": "13",
+        "rating": "5.00"
+    },
+    {
+        "handle": "yuletide-freddy",
+        "title": "Yuletide Freddy",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1274968/Yuletide_Freddy__Vinyl_Art_Toys_0d199629-8b8f-44f3-abf5-d8d1bd88832f_large.jpg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "4.17"
+    },
+    {
+        "handle": "grape-nerd",
+        "title": "Grape Nerd",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1273397/Grape_Nerd_Vinyl_Art_Toys_247537d4-796c-4d89-982a-e049bca20797.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Ad Icons"
+        ],
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "33",
+        "rating": "5.00"
+    },
+    {
+        "handle": "ayo",
+        "title": "Ayo",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1282693/Ayo_Vinyl_Art_Toys_75729670-0ece-4204-a16b-c6988259cfe8.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "18",
+        "rating": "4.00"
+    },
+    {
+        "handle": "black-panther",
+        "title": "Black Panther",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1282694/Black_Panther_Vinyl_Art_Toys_f2c7794d-193e-492a-b575-493b7342a4d6.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "24",
+        "rating": "3.00"
+    },
+    {
+        "handle": "polar-bear-cub-/-arctic-puffin-/-mr.-narwhal-/-buddy-elf",
+        "title": "Polar Bear Cub / Arctic Puffin / Mr. Narwhal / Buddy Elf",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1271628/Polar_Bear_Cub_%252F_Arctic_Puffin_%252F_Mr._Narwhal_%252F_Buddy_Elf_Vinyl_Art_Toys_453e2353-c3c6-47b1-b935-9d38474e8543.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Moment"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "80",
+        "rating": "5.00"
+    },
+    {
+        "handle": "remnant-stormtrooper",
+        "title": "Remnant Stormtrooper",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1271326/Remnant_Stormtrooper_Vinyl_Art_Toys_86bb04b1-942e-48dc-a1cb-e17f3894ab7b.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "25",
+            "year": "Nov"
+        },
+        "price": "29",
+        "rating": "4.44"
+    },
+    {
+        "handle": "marv-/-harry-/-kevin",
+        "title": "Marv / Harry / Kevin",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1272535/Marv_%252F_Harry_%252F_Kevin_Vinyl_Art_Toys_48834d60-bd05-44aa-b212-0b3cf42d2adb.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Moment"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "31",
+        "rating": "4.50"
+    },
+    {
+        "handle": "lebron-james",
+        "title": "LeBron James",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1270619/_LeBron_James_Vinyl_Art_Toys_bf6b9298-ec69-4b56-bb32-1fcf4482f966.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Basketball"
+        ],
+        "released": {
+            "month": "Jan",
+            "year": "2023"
+        },
+        "price": "20",
+        "rating": "5.00"
+    },
+    {
+        "handle": "luke-skywalker-with-r2-d2",
+        "title": "Luke Skywalker with R2-D2",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1270494/Luke_Skywalker_with_R2-D2_Vinyl_Art_Toys_7f68c26f-3ab8-48a4-a550-20d5c8841621.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Movie Posters"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "50",
+        "rating": "3.83"
+    },
+    {
+        "handle": "spider-man",
+        "title": "Spider-Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1269932/Spider-Man_Vinyl_Art_Toys_0a05613a-d020-46ee-9d59-cfc839d8ea20.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "20",
+        "rating": "4.90"
+    },
+    {
+        "handle": "armored-chopper",
+        "title": "Armored Chopper",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1269612/Armored_Chopper_Vinyl_Art_Toys_460e2fa1-dc7f-4d47-b9bc-37dd9e042088.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "27",
+            "year": "Dec"
+        },
+        "price": "130",
+        "rating": "3.63"
+    },
+    {
+        "handle": "the-tapatio-man",
+        "title": "The Tapatio Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1269606/The_Tapatio_Man_Vinyl_Art_Toys_712e9518-73f3-4b33-a6c4-c47b2d2cb9c6.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Ad Icons"
+        ],
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "hulk",
+        "title": "Hulk",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1269598/Hulk_Vinyl_Art_Toys_ac84360a-3d77-493d-bf0e-826f20107123.png",
+        "series": [
+            "Soda Figures"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "50",
+        "rating": "5.00"
+    },
+    {
+        "handle": "superman",
+        "title": "Superman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1269099/Superman_Vinyl_Art_Toys_c63dcd06-5033-407a-a4d5-06df646d3cd1.jpg",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "19",
+        "rating": "5.00"
+    },
+    {
+        "handle": "\"live-after-death-|-seventh-son-|-nights-of-the-dead-|-somewhere-in-time-eddie\"-glow-in-the-dark-(4-pack)",
+        "title": "\"Live After Death | Seventh Son | Nights of the Dead | Somewhere in Time Eddie\" (Glow in the Dark) (4-Pack)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1267840/%2522Live_After_Death_%257C_Seventh_Son_%257C_Nights_of_the_Dead_%257C_Somewhere_in_Time_Eddie%2522_%2528Glow_in_the_Dark%2529_%25284-Pack%2529_Vinyl_Art_Toys_5651d36d-0fed-4eea-bcf6-c2dd9d39ed79.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "65",
+        "rating": "3.75"
+    },
+    {
+        "handle": "boyband-stan",
+        "title": "Boyband Stan",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1267827/Boyband_Stan_Vinyl_Art_Toys_eb4cf63d-2fd7-4d1a-bc5f-80ec62900e4a.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! South Park"
+        ],
+        "released": {
+            "month": "May",
+            "year": "2023"
+        },
+        "price": "12",
+        "rating": "4.50"
+    },
+    {
+        "handle": "boyband-kyle",
+        "title": "Boyband Kyle",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1267826/Boyband_Kyle_Vinyl_Art_Toys_fc943f1a-fbba-42d0-bfaa-8396541786be.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! South Park"
+        ],
+        "released": {
+            "month": "May",
+            "year": "2023"
+        },
+        "price": "16",
+        "rating": "5.00"
+    },
+    {
+        "handle": "boyband-kenny",
+        "title": "Boyband Kenny",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1267820/Boyband_Kenny_Vinyl_Art_Toys_3ab38605-57d3-420f-8d59-f45b66356411.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! South Park"
+        ],
+        "released": {
+            "month": "May",
+            "year": "2023"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "boyband-cartman",
+        "title": "Boyband Cartman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1267819/Boyband_Cartman_Vinyl_Art_Toys_bd31c3ef-f8ce-4820-b074-13f3e7285723.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! South Park"
+        ],
+        "released": {
+            "month": "May",
+            "year": "2023"
+        },
+        "price": "16",
+        "rating": "5.00"
+    },
+    {
+        "handle": "clark-griswold-&amp;-cousin-eddie",
+        "title": "Clark Griswold &amp; Cousin Eddie",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1266571/Clark_Griswold_and_Cousin_Eddie_Pins_and_Badges_086db2df-e1d5-4822-a2e5-5144d3ed3ef5_large.jpg",
+        "series": [
+            "Pop! Pins"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "40",
+        "rating": "5.00"
+    },
+    {
+        "handle": "dorothy-/-sophia-/-blanche-/-rose",
+        "title": "Dorothy / Sophia / Blanche / Rose",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1266324/DOROTHY%252FSOPHIA%252FBLANCHE%252FROSE_Vinyl_Art_Toys_Sets_d772225f-e29a-478d-897f-dcbb5f1bd4b3.jpg",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "55",
+        "rating": "5.00"
+    },
+    {
+        "handle": "c-3po-and-r2-d2-gold",
+        "title": "C-3PO and R2-D2 (Gold)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1264204/C-3PO_and_R2-D2_%2528Gold%2529_Christmas_and_Holiday_Ornaments_b33034a9-c35a-4055-8f5d-a52e5276bad2_large.jpg",
+        "series": [
+            "Hallmark Specialty/Gift Ornaments",
+            "POP! Christmas Ornaments"
+        ],
+        "released": {
+            "month": null,
+            "year": "2021"
+        },
+        "price": "19",
+        "rating": "5.00"
+    },
+    {
+        "handle": "owen-grady-and-blue-gold",
+        "title": "Owen Grady and Blue (Gold)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1264193/Owen_Grady_and_Blue_%2528Gold%2529_Christmas_and_Holiday_Ornaments_7b803684-637c-422f-991b-a1d4127bb906_large.png",
+        "series": [
+            "Hallmark Specialty/Gift Ornaments",
+            "POP! Christmas Ornaments"
+        ],
+        "released": {
+            "month": null,
+            "year": "2021"
+        },
+        "price": "30",
+        "rating": "5.00"
+    },
+    {
+        "handle": "miguel",
+        "title": "Miguel",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1263845/Miguel_Vinyl_Art_Toys_5bc91eef-fd81-49ca-83c9-22e448b79bcf.png",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "4",
+            "year": "Nov"
+        },
+        "price": "28",
+        "rating": "5.00"
+    },
+    {
+        "handle": "the-twins",
+        "title": "The Twins",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1263802/The_Twins_Vinyl_Art_Toys_852f8879-5fa0-4e23-833f-85d5d9ee8fbe_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "135",
+        "rating": "4.25"
+    },
+    {
+        "handle": "neytiri",
+        "title": "Neytiri",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1261013/Neytiri_Vinyl_Art_Toys_6c8441b4-0f49-4ec7-b36a-4a1061694102.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Jan",
+            "year": "2023"
+        },
+        "price": "12",
+        "rating": "5.00"
+    },
+    {
+        "handle": "grogu-macy's-thanksgiving-day-parade",
+        "title": "Grogu Macy's Thanksgiving Day Parade",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1260053/Grogu_Macy%2527s_Thanksgiving_Day_Parade_Vinyl_Art_Toys_a8e507ee-33a0-43c8-89e5-09836e46433f.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "10",
+        "released": {
+            "month": "2",
+            "year": "Nov"
+        },
+        "price": "50",
+        "rating": "5.00"
+    },
+    {
+        "handle": "champ-bear",
+        "title": "Champ Bear",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1260043/Champ_Bear_Vinyl_Art_Toys_6def2726-fa92-4c85-a0c2-3eb1bbab5aa7.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "wish-bear",
+        "title": "Wish Bear",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1260030/Wish_Bear_Vinyl_Art_Toys_89d51885-f6a5-4feb-ba07-4d099c0018de.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "5.00"
+    },
+    {
+        "handle": "wish-bear",
+        "title": "Wish Bear",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1260022/Wish_Bear_Vinyl_Art_Toys_35e8e06a-967c-4fe1-b4b7-c664e5880fd4.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "hopeful-heart-bear",
+        "title": "Hopeful Heart Bear",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1260010/Hopeful_Heart_Bear_Vinyl_Art_Toys_bbf12547-e31f-4c95-9b50-652492cebe1c.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "true-heart-bear",
+        "title": "True Heart Bear",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1259997/True_Heart_Bear_Vinyl_Art_Toys_25529431-4732-4567-abce-82bb673f9bdc.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "5.00"
+    },
+    {
+        "handle": "blue-raspberry-sour-patch-kid",
+        "title": "Blue Raspberry Sour Patch Kid",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1261116/Blue_Raspberry_Sour_Patch_Kid_Vinyl_Art_Toys_e0635afe-4de4-4acb-8cd2-ce2d858f7946.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Candy"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Aug",
+            "year": "2022"
+        },
+        "price": "28",
+        "rating": "5.00"
+    },
+    {
+        "handle": "miles-morales-spider-man",
+        "title": "Miles Morales Spider-Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1258956/Miles_Morales_Spider-Man_Vinyl_Art_Toys_2b72d089-fbfc-4b7a-aa6d-27f25635dd19.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel",
+            "Pop! Art Series"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "25",
+        "rating": "5.00"
+    },
+    {
+        "handle": "the-nun-with-painting",
+        "title": "The Nun with Painting",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1257153/The_Nun_with_Painting_Vinyl_Art_Toys_613e7e4e-769d-4465-b375-b094707efdfb_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "270",
+        "rating": "3.78"
+    },
+    {
+        "handle": "elsa",
+        "title": "Elsa",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1256774/Elsa_Vinyl_Art_Toys_13223031-fc4f-44ec-bf76-309d317f4cc5.jpeg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "4.83"
+    },
+    {
+        "handle": "shuri",
+        "title": "Shuri",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1256747/Shuri_Vinyl_Art_Toys_d679aae6-8390-4d83-8748-05f0d4598b51.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "11",
+        "rating": "5.00"
+    },
+    {
+        "handle": "caraxes",
+        "title": "Caraxes",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1256428/Caraxes_Vinyl_Art_Toys_c47b0a9a-8435-4f59-9e22-c4cb0d000fb8.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "House of the Dragon"
+        ],
+        "released": {
+            "month": "18",
+            "year": "Oct"
+        },
+        "price": "75",
+        "rating": "5.00"
+    },
+    {
+        "handle": "batman-hush",
+        "title": "Batman (Hush)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1255019/Batman_%2528Hush%2529_Vinyl_Art_Toys_c1b50224-02af-425e-b3ca-b5cabda2ebf6.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "19",
+        "rating": "5.00"
+    },
+    {
+        "handle": "longshot",
+        "title": "Longshot",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1253662/Longshot_Vinyl_Art_Toys_f42f0c58-ac4e-4e16-adce-72d00f24a8c3.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "22",
+        "rating": "5.00"
+    },
+    {
+        "handle": "black-panther",
+        "title": "Black Panther",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1257627/Black_Panther_Vinyl_Art_Toys_87318459-9ec3-4052-b7b9-d9e6c81a9ff6.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Die-Cast"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "125",
+        "rating": "5.00"
+    },
+    {
+        "handle": "batman",
+        "title": "Batman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1252903/Batman_Vinyl_Art_Toys_2adcc143-c896-44df-b3ab-9a0ef82ec439.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "28",
+        "rating": "5.00"
+    },
+    {
+        "handle": "mysterio-616",
+        "title": "Mysterio 616",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1252796/Mysterio_616_Vinyl_Art_Toys_80c62f49-291a-4c1c-a998-c7bd0e562c05.jpeg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "stan-lee",
+        "title": "Stan Lee",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1252176/Stan_Lee_Vinyl_Art_Toys_12a08d46-fc08-4a0e-8dab-1638f72ef305.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Comic Covers"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2023"
+        },
+        "price": "21",
+        "rating": "5.00"
+    },
+    {
+        "handle": "cinnamoroll",
+        "title": "Cinnamoroll",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251304/Cinnamoroll_Vinyl_Art_Toys_2f65c60d-8d86-45fa-a44e-5438e3f73c56.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "5.00"
+    },
+    {
+        "handle": "hello-kitty",
+        "title": "Hello Kitty",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251295/Hello_Kitty_Vinyl_Art_Toys_1dfe446f-d7c1-4c0c-bc75-8e83c62c6815.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "my-melody",
+        "title": "My Melody",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251289/My_Melody_Vinyl_Art_Toys_557b339c-a0a3-4fc0-ae61-cff1272e1981.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "she-hulk",
+        "title": "She-Hulk",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1249479/She-Hulk_Vinyl_Art_Toys_0e2f9cef-743b-4ca3-bd5c-f57cf7db1cbc.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "37",
+        "rating": "4.75"
+    },
+    {
+        "handle": "jack-o-lantern-freddy",
+        "title": "Jack-o-Lantern Freddy",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1249170/Jack-o-Lantern_Freddy_Vinyl_Art_Toys_c42f69fd-06f8-4b42-9781-0478923179f8_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "165",
+        "rating": "4.44"
+    },
+    {
+        "handle": "doc-with-helmet",
+        "title": "Doc with Helmet",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251285/Doc_with_Helmet_Vinyl_Art_Toys_2b5edc5f-54d9-4c4c-a25b-7d1dc9070826.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "4.50"
+    },
+    {
+        "handle": "freddy-funko-as-they-live-alien",
+        "title": "Freddy Funko as They Live Alien",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251247/Freddy_Funko_as_They_Live_Alien_Vinyl_Art_Toys_92c6037e-54e9-4add-bdcd-c429c21c42a3.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "7",
+            "year": "Oct"
+        },
+        "price": "190",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-as-the-creep-from-the-tv-series",
+        "title": "Freddy Funko as The Creep from the TV Series",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251244/Freddy_Funko_as_The_Creep_from_the_TV_Series_Vinyl_Art_Toys_9c2ab495-9db9-4814-b3f8-6344820ab1ef.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "7",
+            "year": "Oct"
+        },
+        "price": "110",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-as-masked-worker-sealed-can",
+        "title": "Freddy Funko as Masked Worker Sealed Can",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1248422/Freddy_Funko_as_Masked_Worker_Sealed_Can_Collectible_Packaging_ce9b2188-3182-4039-8ca1-b723ca6edf34_large.png",
+        "series": [
+            "Soda Figures"
+        ],
+        "released": {
+            "month": "30",
+            "year": "Sep"
+        },
+        "price": "30",
+        "rating": "3.50"
+    },
+    {
+        "handle": "freddy-funko-sealed-can",
+        "title": "Freddy Funko Sealed Can",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1248165/Freddy_Funko_Sealed_Can_Collectible_Packaging_9ef4a023-4fea-486b-bb72-c4e7db5551eb_large.jpg",
+        "series": [
+            "Soda Figures"
+        ],
+        "released": {
+            "month": "30",
+            "year": "Sep"
+        },
+        "price": "36",
+        "rating": "5.00"
+    },
+    {
+        "handle": "wednesday-addams",
+        "title": "Wednesday Addams",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1247328/Wednesday_Addams_Vinyl_Art_Toys_9e9ba3e5-af73-42f7-964b-5588a53d1bc8.png",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "5.00"
+    },
+    {
+        "handle": "spider-man",
+        "title": "Spider-Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1277053/Spider-Man_Vinyl_Art_Toys_ea565046-cd22-47cc-8b03-570e31b02701.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "3.75"
+    },
+    {
+        "handle": "boba-fett",
+        "title": "Boba Fett",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251051/Boba_Fett_Vinyl_Art_Toys_fd9ce883-5686-4c87-bae8-2f5ddf276e2f.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Comic Covers"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2023"
+        },
+        "price": "50",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-sealed-can",
+        "title": "Freddy Funko Sealed Can",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1245039/Freddy_Funko_Collectible_Packaging_7c8013d5-6733-4e50-b908-38662b3e7e37.jpg",
+        "series": [
+            "Soda Figures"
+        ],
+        "released": {
+            "month": "30",
+            "year": "Sep"
+        },
+        "price": "50",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-as-werewolf-sealed-can",
+        "title": "Freddy Funko as Werewolf Sealed Can",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1294700/Freddy_Funko_as_Werewolf_Sealed_Can_Collectible_Packaging_e00e898b-364b-4f0f-9422-cf6e7d55e072.jpeg",
+        "series": [
+            "Soda Figures"
+        ],
+        "released": {
+            "month": "30",
+            "year": "Sep"
+        },
+        "price": "75",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-zombie",
+        "title": "Freddy Zombie",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1301685/Freddy_Zombie_Vinyl_Art_Toys_d7027c44-f859-405b-a704-46d5ba56ccf8.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "30",
+            "year": "Sep"
+        },
+        "price": "60",
+        "rating": "4.00"
+    },
+    {
+        "handle": "freddy-spirit",
+        "title": "Freddy Spirit",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1301672/Freddy_Spirit_Vinyl_Art_Toys_50d41f57-4367-4030-923a-3ff9f4805c4b.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "30",
+            "year": "Sep"
+        },
+        "price": "44",
+        "rating": "3.88"
+    },
+    {
+        "handle": "freddy-funko-as-creature-from-the-black-lagoon",
+        "title": "Freddy Funko As Creature From The Black Lagoon",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1244669/Freddy_Funko_As_Creature_From_The_Black_Lagoon_Vinyl_Art_Toys_ca1dce6f-5ed9-4942-98c3-33765baf3907.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "30",
+            "year": "Sep"
+        },
+        "price": "50",
+        "rating": "3.75"
+    },
+    {
+        "handle": "geicoween-gecko",
+        "title": "Geicoween Gecko",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1243114/Geicoween_Gecko_Vinyl_Art_Toys_3c849d2a-03d3-4cae-986a-b84f20a44479.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Ad Icons"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "23",
+        "rating": "4.40"
+    },
+    {
+        "handle": "geicoween-gecko",
+        "title": "Geicoween Gecko",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1243117/Geicoween_Gecko_Vinyl_Art_Toys_f3dafaf6-1c61-4378-a147-b9d55134420f.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Ad Icons"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-as-hannibal",
+        "title": "Freddy Funko as Hannibal",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1248559/Freddy_Funko_as_Hannibal_Vinyl_Art_Toys_41ca79d3-797e-4acc-9e24-e68f54bf9873_large.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "30",
+            "year": "Sep"
+        },
+        "price": "55",
+        "rating": "4.88"
+    },
+    {
+        "handle": "freddy-funko-as-nosferatu",
+        "title": "Freddy Funko as Nosferatu",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1242898/Freddy_Funko_as_Nosferatu_Vinyl_Art_Toys_3d390608-8095-4166-b4ce-90d8a0063b19.jpeg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "30",
+            "year": "Sep"
+        },
+        "price": "26",
+        "rating": "5.00"
+    },
+    {
+        "handle": "thackery-binx",
+        "title": "Thackery Binx",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1242848/Thackery_Binx_Vinyl_Art_Toys_4dacdfe8-3018-4e81-b418-7c2237613157.png",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "31",
+        "rating": "5.00"
+    },
+    {
+        "handle": "chewbacca",
+        "title": "Chewbacca",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1242835/Chewbacca_Vinyl_Art_Toys_c1041548-4a43-4180-b23e-6d477b708b9b.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "22",
+        "rating": "5.00"
+    },
+    {
+        "handle": "donald-duck",
+        "title": "Donald Duck",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1311321/Donald_Duck_Vinyl_Art_Toys_9959520f-c265-409c-8aa5-e3271763ad47.jpg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "25",
+        "rating": "5.00"
+    },
+    {
+        "handle": "starlord-&amp;-groot",
+        "title": "StarLord &amp; Groot",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1242572/StarLord_and_Groot_Christmas_and_Holiday_Ornaments_9fc780ef-7a59-4684-9c0d-709485c57017.png",
+        "series": [
+            "Hallmark Specialty/Gift Ornaments",
+            "POP! Christmas Ornaments"
+        ],
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "16",
+        "rating": "5.00"
+    },
+    {
+        "handle": "ariel",
+        "title": "Ariel",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1264529/Ariel_Vinyl_Art_Toys_51305d40-7fde-4244-85da-95ad3a45820d_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! VHS Covers"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "55",
+        "rating": "5.00"
+    },
+    {
+        "handle": "fatgum",
+        "title": "Fatgum",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1247067/Fatgum_Vinyl_Art_Toys_671f1248-7754-477b-b80f-ff89d255d830_large.jpg",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "4.00"
+    },
+    {
+        "handle": "suneater",
+        "title": "Suneater",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241428/Tamaki_Amajiki_Vinyl_Art_Toys_ea43f9d2-e8ad-4dd7-9d9a-e0b2b98990e6_large.png",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "18",
+        "rating": "4.00"
+    },
+    {
+        "handle": "mount-lady",
+        "title": "Mount Lady",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241424/Mt._Lady_Vinyl_Art_Toys_4c34b7d8-4687-435e-97c1-0e9a5d834783_large.png",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "31",
+        "rating": "5.00"
+    },
+    {
+        "handle": "yuga-aoyama",
+        "title": "Yuga Aoyama",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241422/Yuga_Aoyama_Vinyl_Art_Toys_d80f006b-ea55-4ed4-8a9b-d1af1a3a1091_large.png",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "3.50"
+    },
+    {
+        "handle": "nejire-hado",
+        "title": "Nejire Hado",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241419/Nejire_Hado_Vinyl_Art_Toys_4df69cda-707d-4b9f-8034-75b9f95df3e0_large.png",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "4.00"
+    },
+    {
+        "handle": "mina-ashido",
+        "title": "Mina Ashido",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241418/Mina_Ashido_Vinyl_Art_Toys_46947d86-cc5e-4b55-a52f-c05cf6eebd48_large.png",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "22",
+        "rating": "4.50"
+    },
+    {
+        "handle": "kyoka-jiro",
+        "title": "Kyoka Jiro",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241414/Kyoka_Jiro_Vinyl_Art_Toys_1b282896-4f30-4a2e-b4a7-5c0b00016b0a_large.png",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "3.50"
+    },
+    {
+        "handle": "hawks",
+        "title": "Hawks",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241413/Hawkes_Vinyl_Art_Toys_33b2cb06-d6d4-42b6-af87-e1624be75159_large.png",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "16",
+        "rating": "3.50"
+    },
+    {
+        "handle": "eri",
+        "title": "Eri",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241412/Eri_Vinyl_Art_Toys_5b4545e2-30f2-4014-8177-1568c9cfecb3_large.png",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "3.50"
+    },
+    {
+        "handle": "lemillion",
+        "title": "Lemillion",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241411/Mirio_Togata_Vinyl_Art_Toys_58ab3f94-d538-4013-8b7d-17fab47c92ad_large.png",
+        "series": [
+            "Mystery Minis"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "8",
+        "rating": "1.50"
+    },
+    {
+        "handle": "gabriel-\"fluffy\"-iglesias",
+        "title": "Gabriel \"Fluffy\" Iglesias",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239754/Gabriel_%2522Fluffy%2522_Iglesias_Vinyl_Art_Toys_c2847198-8b51-4fd9-b228-996572cfdb08_large.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Comedians"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "25",
+            "year": "Jul"
+        },
+        "price": "95",
+        "rating": "5.00"
+    },
+    {
+        "handle": "harley-quinn-with-cards",
+        "title": "Harley Quinn With Cards",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239600/Harley_Quinn_With_Cards_Vinyl_Art_Toys_da3977ae-456e-4d71-b208-7b5ec653a1e6.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "28",
+        "rating": "5.00"
+    },
+    {
+        "handle": "lionel-messi",
+        "title": "Lionel Messi",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239594/Lionel_Messi_Vinyl_Art_Toys_7d7b43a2-574f-4525-9600-8b00f1641ea2.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Football"
+        ],
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "4.38"
+    },
+    {
+        "handle": "might-guy",
+        "title": "Might Guy",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239472/Might_Guy_Vinyl_Art_Toys_9ae887fd-60cd-43cd-a299-9bbbe654afea.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "14",
+        "rating": "5.00"
+    },
+    {
+        "handle": "kotetsu-hagane",
+        "title": "Kotetsu Hagane",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239465/Kotetsu_Hagane_Vinyl_Art_Toys_1ce9a874-8d4a-4d03-8f3f-2177ad1b10a3.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "5.00"
+    },
+    {
+        "handle": "madara-uchiha-six-paths",
+        "title": "Madara Uchiha (Six Paths)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239449/Madara_Uchiha_%2528Six_Paths%2529_Vinyl_Art_Toys_4dfa375a-ff8c-4ebf-b408-e9ee9ce5f9ab.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "4.36"
+    },
+    {
+        "handle": "madara-uchiha-six-paths",
+        "title": "Madara Uchiha (Six Paths)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239434/Madara_Uchiha_%2528Six_Paths%2529_Vinyl_Art_Toys_6bb33f69-2ff4-4b84-8b4d-7b518fa6a9ae.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "3.90"
+    },
+    {
+        "handle": "kuromi-with-baku",
+        "title": "Kuromi With Baku",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239431/Kuromi_With_Baku_Vinyl_Art_Toys_44021850-9661-481a-a70d-2c95d5a98aba.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "4.00"
+    },
+    {
+        "handle": "freddy-funko-as-bugs-bunny",
+        "title": "Freddy Funko as Bugs Bunny",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239175/Freddy_Funko_as_Bugs_Bunny_Vinyl_Art_Toys_6408b62a-97db-4eb9-8006-4c19353e67e8_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "195",
+        "rating": "4.20"
+    },
+    {
+        "handle": "road-runner",
+        "title": "Road Runner",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1239169/Road_Runner_Vinyl_Art_Toys_4aeb0def-c549-48a6-af03-8a5cac622f92_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "120",
+        "rating": "5.00"
+    },
+    {
+        "handle": "clark-griswold",
+        "title": "Clark Griswold",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1236322/Clark_Griswold_Vinyl_Art_Toys_769b255d-c1b1-4ee1-9d0c-927b20630ab7.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! VHS Covers"
+        ],
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "31",
+        "rating": "4.88"
+    },
+    {
+        "handle": "groot",
+        "title": "Groot",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1236241/Groot_Vinyl_Art_Toys_ef70cf29-25be-4b8e-8686-45a1e7c134f3.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel",
+            "D.I.Y."
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "2.25"
+    },
+    {
+        "handle": "hulk",
+        "title": "Hulk",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1236238/Hulk_Vinyl_Art_Toys_d41b0fab-fb15-49b1-a508-b17880a3842e.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel",
+            "D.I.Y."
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "16",
+        "rating": "2.00"
+    },
+    {
+        "handle": "star-lord-with-groot",
+        "title": "Star-Lord with Groot",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1236234/Star-Lord_With_Groot_Vinyl_Art_Toys_6cd72cd8-7ee7-455a-919e-7d495fcb7a55.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "5.00"
+    },
+    {
+        "handle": "yoda",
+        "title": "Yoda",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1236202/Stormtrooper_Vinyl_Art_Toys_0ecbce1a-d0a5-4923-b327-05418ecbc25c.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "24",
+        "rating": "2.17"
+    },
+    {
+        "handle": "stormtrooper",
+        "title": "Stormtrooper",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1236197/Stormtrooper_Vinyl_Art_Toys_e0d63db6-cf7d-45ab-9731-81680ca0a304.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "1.00"
+    },
+    {
+        "handle": "c-3po",
+        "title": "C-3PO",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1236191/C-3PO_Vinyl_Art_Toys_b35261e1-c31d-48b2-9489-0076ff0aa2ae.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "2.88"
+    },
+    {
+        "handle": "r2-d2",
+        "title": "R2-D2",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1236187/R2-D2_Vinyl_Art_Toys_344a2788-509a-49dd-8fc2-f7982dcfdc94.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "18",
+        "rating": "0.75"
+    },
+    {
+        "handle": "wampa",
+        "title": "Wampa",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235951/Wampa_Vinyl_Art_Toys_2649b763-534d-400c-b1ac-9e8ca35686da.jpg",
+        "series": [
+            "Soda Figures"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "65",
+        "rating": "5.00"
+    },
+    {
+        "handle": "superman-in-holiday-sweater",
+        "title": "Superman in Holiday Sweater",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235866/Superman_in_Holiday_Sweater_Vinyl_Art_Toys_736ad154-5f87-4e4c-bb34-2bd6db28cb18.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl",
+            "D.I.Y."
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "25",
+        "rating": "0.50"
+    },
+    {
+        "handle": "gingerbread-batman",
+        "title": "Gingerbread Batman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235856/Gingerbread_Batman_Vinyl_Art_Toys_70d28258-7025-4e3e-8f7d-bf7a2314c0af.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "22",
+        "rating": "4.10"
+    },
+    {
+        "handle": "gingerbread-aquaman",
+        "title": "Gingerbread Aquaman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235843/Gingerbread_Aquaman_Vinyl_Art_Toys_2eba5fea-b472-4fa7-8ea7-fea6a1769641.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "3.50"
+    },
+    {
+        "handle": "gingerbread-wonder-woman",
+        "title": "Gingerbread Wonder Woman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235837/Gingerbread_Wonder_Woman_Vinyl_Art_Toys_d9d28e27-b9bd-4795-bf73-e87fb7a8467c.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "3.50"
+    },
+    {
+        "handle": "gingerbread-superman",
+        "title": "Gingerbread Superman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235828/Gingerbread_Superman_Vinyl_Art_Toys_447d97f5-8997-4d3b-b22e-c4d622dce8af.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "13",
+        "rating": "4.10"
+    },
+    {
+        "handle": "90s-coca-cola-polar-bear",
+        "title": "90s Coca-Cola Polar Bear",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235743/90s_Coca-Cola_Polar_Bear_Vinyl_Art_Toys_12dc40a8-33a0-4984-9482-2d704d746cfd.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Ad Icons"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "37",
+        "rating": "4.75"
+    },
+    {
+        "handle": "coca-cola-santa",
+        "title": "Coca-Cola Santa",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235735/Coca-Cola_Santa_Vinyl_Art_Toys_44bd784e-5618-431c-8859-d460576352a2.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Ad Icons"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "3.83"
+    },
+    {
+        "handle": "jurota-shishida",
+        "title": "Jurota Shishida",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1236761/Jurota_Shishida_Vinyl_Art_Toys_1255b726-d68a-497b-8338-8ca004b44c0f.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "3.88"
+    },
+    {
+        "handle": "snoop-dogg",
+        "title": "Snoop Dogg",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235462/Snoop_Dogg_Vinyl_Art_Toys_fb85948f-64ed-4194-9d2e-9d427818517f.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "65",
+        "rating": "4.35"
+    },
+    {
+        "handle": "snoop-dogg",
+        "title": "Snoop Dogg",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235461/Snoop_Dogg_Vinyl_Art_Toys_67ebb18e-fb0f-4241-b5c5-1b44edf5f69a.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "75",
+        "rating": "4.03"
+    },
+    {
+        "handle": "snoop-dogg",
+        "title": "Snoop Dogg",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235457/Snoop_Dogg_Vinyl_Art_Toys_286a7baa-fbef-46f0-8135-30e127f04a59.png",
+        "series": [
+            "Gold",
+            "Gold Music"
+        ],
+        "scale": "5",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "18",
+        "rating": "2.50"
+    },
+    {
+        "handle": "snoop-dogg",
+        "title": "Snoop Dogg",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235453/Snoop_Dogg_Vinyl_Art_Toys_40d8e253-cdeb-4b4d-806b-05856ae1ab16.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Albums"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "36",
+        "rating": "3.33"
+    },
+    {
+        "handle": "snoop-dogg",
+        "title": "Snoop Dogg",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235450/Snoop_Dogg_Vinyl_Art_Toys_a1454077-35fa-4450-ac76-8ed907b3ef03.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "4.05"
+    },
+    {
+        "handle": "snoop-dogg",
+        "title": "Snoop Dogg",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1235447/Snoop_Dogg_Vinyl_Art_Toys_3eba2ec1-817a-4e7a-88c7-5417dc5b8157.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "2.29"
+    },
+    {
+        "handle": "sabbac",
+        "title": "Sabbac",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234964/Sabbac_Vinyl_Art_Toys_deeb905a-58d5-45aa-adb0-6eba9ebc4dcf.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "5.00"
+    },
+    {
+        "handle": "cyclone",
+        "title": "Cyclone",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234961/Cyclone_Vinyl_Art_Toys_56473ff5-2487-4d8e-8192-3657c83fa6fc.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "5.00"
+    },
+    {
+        "handle": "josh-allen",
+        "title": "Josh Allen",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234869/Josh_Allen_Vinyl_Art_Toys_aeab56e2-eb67-40e5-954e-ad2557e2e3da.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Football (NFL)"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "5.00"
+    },
+    {
+        "handle": "micah-parsons",
+        "title": "Micah Parsons",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234853/Micah_Parsons_Vinyl_Art_Toys_c22a2bdb-9a42-4ee9-926b-1a318d96e58f.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Football (NFL)"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "16",
+        "rating": "2.75"
+    },
+    {
+        "handle": "netero",
+        "title": "Netero",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234758/Netero_Vinyl_Art_Toys_b684ebd5-41c5-4df3-87da-d2428525d70c.png",
+        "series": [
+            "Pop! Animation"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "25",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddie-mercury-/-brian-may-/-roger-taylor-/-john-deacon",
+        "title": "Freddie Mercury / Brian May / Roger Taylor / John Deacon",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234194/Freddie_Mercury_%252F_Brian_May_%252F_Roger_Taylor_%252F_John_Deacon_Vinyl_Art_Toys_aef7179e-7929-4b18-8f02-6fdffec0b375.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "released": {
+            "month": "Jun",
+            "year": "2022"
+        },
+        "price": "75",
+        "rating": "5.00"
+    },
+    {
+        "handle": "justin-herbert",
+        "title": "Justin Herbert",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234136/Justin_Herbert_Vinyl_Art_Toys_ddd4e529-8171-4035-91b9-48146cb57958.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Trading Cards"
+        ],
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "5.00"
+    },
+    {
+        "handle": "michael-jordan",
+        "title": "Michael Jordan",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234080/Michael_Jordan_Vinyl_Art_Toys_03f42dd9-3802-49d9-8615-6449ab7b995e.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Basketball"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "31",
+        "rating": "5.00"
+    },
+    {
+        "handle": "mickey-mouse",
+        "title": "Mickey Mouse",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234068/Mickey_Mouse_Vinyl_Art_Toys_29f1c80c-0baa-4b19-a91f-64bb306b433d.png",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "13",
+        "rating": "5.00"
+    },
+    {
+        "handle": "minnie-mouse-on-prince-charming-regal-carrousel",
+        "title": "Minnie Mouse on Prince Charming Regal Carrousel",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234065/Minnie_Mouse_on_Prince_Charming_Regal_Carrousel_Vinyl_Art_Toys_fd269b56-1273-4982-ac02-dbdf46b91687.png",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "13",
+        "rating": "4.50"
+    },
+    {
+        "handle": "hello-kitty",
+        "title": "Hello Kitty",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1233222/Hello_Kitty_Vinyl_Art_Toys_57579f5c-ce9c-4c40-b027-f3b2077aed78.png",
+        "series": [
+            "Pops! With Purpose"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "black-adam",
+        "title": "Black Adam",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1233217/Black_Adam_Vinyl_Art_Toys_45db297c-9dcd-42a8-a319-da41702e05ce.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "19",
+        "rating": "4.30"
+    },
+    {
+        "handle": "greed",
+        "title": "Greed",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1233200/Lust_Vinyl_Art_Toys_51312544-4303-4da2-b331-f258956b1a24.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "24",
+        "rating": "4.08"
+    },
+    {
+        "handle": "silvio-dante",
+        "title": "Silvio Dante",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1233144/Silvio_Dante_Vinyl_Art_Toys_8d01fdec-b7a8-4bd5-bb29-fca9effe4098.png",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "5.00"
+    },
+    {
+        "handle": "tony-soprano-with-duck",
+        "title": "Tony Soprano with Duck",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1233141/Tony_Soprano_with_Duck_Vinyl_Art_Toys_b02948e0-188b-48c7-8a93-93e770b825da.png",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "33",
+        "rating": "4.93"
+    },
+    {
+        "handle": "tony-soprano",
+        "title": "Tony Soprano",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1233138/Tony_Soprano_Vinyl_Art_Toys_b858ad9d-c8cf-4fc6-b101-86422724ee07.png",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "5.00"
+    },
+    {
+        "handle": "rick-with-memory-vial",
+        "title": "Rick with Memory Vial",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1232858/Rick_with_Memory_Vial_Vinyl_Art_Toys_0495e80d-47af-4cb6-8094-226a9505ee42.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "28",
+        "rating": "5.00"
+    },
+    {
+        "handle": "jax-teller",
+        "title": "Jax Teller",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1232263/Jax_Teller_%2528Autographed_by_Charlie_Hunnam%2529_Vinyl_Art_Toys_dc93a29c-748a-42f3-a9a8-c8088ef8265c_large.jpeg",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": null,
+            "year": "2014"
+        },
+        "price": "270",
+        "rating": "5.00"
+    },
+    {
+        "handle": "2pacalypse-now",
+        "title": "2Pacalypse Now",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1231558/2Pacalypse_Now_Vinyl_Art_Toys_aa2d9c5c-3a50-47f1-afcb-740956727f43.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Albums"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "25",
+        "rating": "5.00"
+    },
+    {
+        "handle": "luke-skywalker",
+        "title": "Luke Skywalker",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1233249/Luke_Skywalker_Vinyl_Art_Toys_6ed9e581-a345-406e-8b41-f1cbbc4cf715.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Comic Covers"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "43",
+        "rating": "5.00"
+    },
+    {
+        "handle": "wolverine",
+        "title": "Wolverine",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1231527/Wolverine_Vinyl_Art_Toys_7c33583c-59a1-4d0d-bdfe-cffeb8e54555.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Comic Covers"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "22",
+        "rating": "4.50"
+    },
+    {
+        "handle": "shuri",
+        "title": "Shuri",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1231514/Shuri_Vinyl_Art_Toys_e5d13bef-1394-4a6d-bd69-7d51fffb2d6e.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Comic Covers"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "37",
+        "rating": "5.00"
+    },
+    {
+        "handle": "batman",
+        "title": "Batman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1230676/Batman_Vinyl_Art_Toys_8d2e9f45-5f7c-4281-8c98-da9b33483e49.jpeg",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl",
+            "Pop! Comic Covers"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "37",
+        "rating": "4.10"
+    },
+    {
+        "handle": "ladybug",
+        "title": "Ladybug",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1230617/Ladybug_Vinyl_Art_Toys_c5ffd3e9-d628-4e77-9aa5-016766e23e75.png",
+        "series": [
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "5.00"
+    },
+    {
+        "handle": "ladybug",
+        "title": "Ladybug",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1230615/Ladybug_Vinyl_Art_Toys_f623e151-370a-4cce-be54-00abbe0522ad.png",
+        "series": [
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "the-wolf",
+        "title": "The Wolf",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1230607/The_Wolf_Vinyl_Art_Toys_a774d43a-5524-455e-908b-2cc63b3c9dcf.png",
+        "series": [
+            "Pop! Movies"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "29",
+        "rating": "5.00"
+    },
+    {
+        "handle": "juzo-honenuki",
+        "title": "Juzo Honenuki",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1233179/Juzo_Honenuki_Vinyl_Art_Toys_482dbdd0-a13d-4e2a-8b90-a02f424b84bd.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": "Aug",
+            "year": "2022"
+        },
+        "price": "25",
+        "rating": "4.83"
+    },
+    {
+        "handle": "drax",
+        "title": "Drax",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241731/Drax_Vinyl_Art_Toys_d817b2be-3b24-488e-84f1-592b9f154c70_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "17",
+        "rating": "5.00"
+    },
+    {
+        "handle": "killer-bee",
+        "title": "Killer Bee",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1229077/Killer_Bee_Vinyl_Art_Toys_195bc439-a4f6-43ec-af13-eb12f1d17fc6.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "55",
+        "rating": "4.67"
+    },
+    {
+        "handle": "killer-bee",
+        "title": "Killer Bee",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1229075/Killer_Bee_Vinyl_Art_Toys_927d6934-527b-4f50-9ec9-ae2d9408b7e2.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "14",
+        "rating": "4.50"
+    },
+    {
+        "handle": "kakashi-hatake",
+        "title": "Kakashi Hatake",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1229073/Kakashi_Hatake_Vinyl_Art_Toys_95ca09d5-2e43-4098-bbce-4fc752f2bf33.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "50",
+        "rating": "5.00"
+    },
+    {
+        "handle": "bullseye",
+        "title": "Bullseye",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1228908/Bullseye_Vinyl_Art_Toys_71ffdc11-582e-4f16-aad2-268329a9b3d0.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Ad Icons"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "23",
+        "rating": "5.00"
+    },
+    {
+        "handle": "mighty-thor",
+        "title": "Mighty Thor",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1269868/Mighty_Thor_Vinyl_Art_Toys_eff7756b-4cbc-48e5-89c8-c869235f3189.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "11",
+        "rating": "4.25"
+    },
+    {
+        "handle": "the-nightmare-before-christmas:-enamel-pin-set",
+        "title": "The Nightmare Before Christmas: Enamel Pin Set",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1224895/Disney%253A_The_Nightmare_Before_Christmas_Enamel_Pin_Set_Pins_and_Badges_93ddaa36-d0ed-4d1b-8ce8-256426ecee18.jpeg",
+        "series": [
+            "Pop! Pins"
+        ],
+        "released": {
+            "month": "Sep",
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "5.00"
+    },
+    {
+        "handle": "villains-assemble:-kronk-and-yzma",
+        "title": "Villains Assemble: Kronk and Yzma",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1227392/Villains_Assemble%253A_Kronk_and_Yzma_Vinyl_Art_Toys_f48d1d03-e228-4363-8a6c-565b76f4fe91.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Moment"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "5.00"
+    },
+    {
+        "handle": "batman",
+        "title": "Batman",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1221118/Batman_Vinyl_Art_Toys_76d75c3a-ab95-42b6-9b02-08db8d7c0a76_large.png",
+        "series": [
+            "Pop! Heroes",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "37",
+        "rating": "4.38"
+    },
+    {
+        "handle": "freddy-funko-megazord",
+        "title": "Freddy Funko Megazord",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1217472/Freddy_Funko_Megazord_Vinyl_Art_Toys_36302ffb-cac0-460b-9cc0-2fca7fdbf04a_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "600",
+        "rating": "5.00"
+    },
+    {
+        "handle": "queen-ramonda",
+        "title": "Queen Ramonda",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1215832/Queen_Ramonda_Vinyl_Art_Toys_78664290-5e5e-4981-8caa-5d3c8b015a17.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "16",
+        "rating": "5.00"
+    },
+    {
+        "handle": "ironheart-mk1",
+        "title": "Ironheart MK1",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1215824/Ironheart_MK1_Vinyl_Art_Toys_dee8ad91-813d-461d-8146-e436ef3d72df.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "5.00"
+    },
+    {
+        "handle": "m'baku",
+        "title": "M'Baku",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1215819/M%2527Baku_Vinyl_Art_Toys_00fa1ce4-2dc3-4d87-be3a-b87ad6ad342c.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "5.00"
+    },
+    {
+        "handle": "einstein",
+        "title": "Einstein",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1262559/Einstein_Vinyl_Art_Toys_af035d99-0efb-4910-974f-d20b3a4dc14a.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pops! With Purpose"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "7",
+            "year": "Nov"
+        },
+        "price": "31",
+        "rating": "5.00"
+    },
+    {
+        "handle": "toto-in-basket",
+        "title": "Toto in Basket",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1262562/Toto_in_Basket_Vinyl_Art_Toys_f9947eb6-7125-4bb6-a502-ccecd72ed49e.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pops! With Purpose"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "7",
+            "year": "Nov"
+        },
+        "price": "28",
+        "rating": "5.00"
+    },
+    {
+        "handle": "bella-poarch",
+        "title": "Bella Poarch",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1233213/Bella_Poarch_Vinyl_Art_Toys_8d0b10a9-1a8b-438a-9faa-e97188f30db8.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "released": {
+            "month": "Aug",
+            "year": "2022"
+        },
+        "price": "29",
+        "rating": "5.00"
+    },
+    {
+        "handle": "kronk",
+        "title": "Kronk",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1214880/Kronk_Vinyl_Art_Toys_231c94ff-e0cc-4896-8b4d-3bfa491ded5a.jpeg",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "9",
+            "year": "Sep"
+        },
+        "price": "33",
+        "rating": "4.50"
+    },
+    {
+        "handle": "jiminy-cricket",
+        "title": "Jiminy Cricket",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234076/Jiminy_Cricket_Vinyl_Art_Toys_81ed7a14-1371-4116-9918-2ed0aad2bc6e.png",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "9",
+            "year": "Sep"
+        },
+        "price": "15",
+        "rating": "4.50"
+    },
+    {
+        "handle": "baymax",
+        "title": "Baymax",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1215288/Baymax_Vinyl_Art_Toys_c0d95f35-3432-4d72-bd59-676226a63aec.jpg",
+        "series": [
+            "Soda Figures"
+        ],
+        "released": {
+            "month": "9",
+            "year": "Sep"
+        },
+        "price": "145",
+        "rating": "4.00"
+    },
+    {
+        "handle": "redberry-sour-patch-kid",
+        "title": "Redberry Sour Patch Kid",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1273015/Redberry_Sour_Patch_Kid_Vinyl_Art_Toys_851daeae-fea5-49ef-8c11-f9b8340984c4.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Candy"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Feb",
+            "year": "2019"
+        },
+        "price": "34",
+        "rating": "4.30"
+    },
+    {
+        "handle": "freddy-mercury",
+        "title": "Freddy Mercury",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1212666/Freddy_Mercury_Vinyl_Art_Toys_c8401581-406e-42d9-ac9a-298b3d0b9513.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Albums"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "24",
+        "rating": "5.00"
+    },
+    {
+        "handle": "sir-mix-a-lot",
+        "title": "Sir Mix-A-Lot",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234085/Sir_Mix-A-Lot_Vinyl_Art_Toys_abe5fca2-899c-4eef-ae6f-ca7685f1106e.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "5.00"
+    },
+    {
+        "handle": "demobat",
+        "title": "Demobat",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1278844/Demobat_Vinyl_Art_Toys_43486381-ce8e-4021-948f-9774b271a471.png",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "24",
+        "rating": "4.50"
+    },
+    {
+        "handle": "steve",
+        "title": "Steve",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1211806/Steve_Vinyl_Art_Toys_c6a69b3e-00d5-4b0d-80e5-fb77dd1c238d.jpg",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "21",
+        "rating": "4.25"
+    },
+    {
+        "handle": "mike",
+        "title": "Mike",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1211805/Mike_Vinyl_Art_Toys_e63bef50-49e4-404d-b1bd-72abc6a20dd4_large.jpg",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "19",
+        "rating": "5.00"
+    },
+    {
+        "handle": "erica",
+        "title": "Erica",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1211801/Erica_Vinyl_Art_Toys_134d5aca-cd72-4e19-a99c-5410341fb395_large.jpg",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "21",
+        "rating": "4.63"
+    },
+    {
+        "handle": "eleven",
+        "title": "Eleven",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1211799/Eleven_Vinyl_Art_Toys_5c68f28b-4c76-4789-abd2-fae5a7d010cd.jpg",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "4.75"
+    },
+    {
+        "handle": "vecna",
+        "title": "Vecna",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1211798/Vecna_Vinyl_Art_Toys_d8706486-694e-4bc5-aea3-1263c2637838.jpg",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "3.90"
+    },
+    {
+        "handle": "zenitsu-agatsuma",
+        "title": "Zenitsu Agatsuma",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1211776/Zenitsu_Agatsuma_Vinyl_Art_Toys_fb6089e4-412c-4867-8d74-61aa8ce38602.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "4",
+        "released": {
+            "month": "11",
+            "year": "Aug"
+        },
+        "price": "32",
+        "rating": "4.50"
+    },
+    {
+        "handle": "shang-chi",
+        "title": "Shang-Chi",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1207853/Shang-Chi_Vinyl_Art_Toys_129c771d-6c9b-48b1-84f8-2aa836e5bfac_large.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel",
+            "Marvel Collector Corps"
+        ],
+        "released": {
+            "month": "Oct",
+            "year": "2021"
+        },
+        "price": "280",
+        "rating": "0.50"
+    },
+    {
+        "handle": "ron-weasley-in-flying-car",
+        "title": "Ron Weasley in Flying Car",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1207700/Ron_Weasley_in_Flying_Car_Vinyl_Art_Toys_b5ee4d57-6474-4d6f-93c4-9ce20a682842.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rides"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "25",
+        "rating": "5.00"
+    },
+    {
+        "handle": "harry-potter",
+        "title": "Harry Potter",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1207685/Harry_Potter__Vinyl_Art_Toys_90126f9d-b305-4c16-8588-21dd3cf1e5ca.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Harry Potter"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "46",
+        "rating": "5.00"
+    },
+    {
+        "handle": "gilderoy-lockhart",
+        "title": "Gilderoy Lockhart",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1207683/Gilderoy_Lockhart_Vinyl_Art_Toys_5b0801d3-57cf-4f5c-921a-a012c1e2cb06.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Harry Potter"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "23",
+        "rating": "4.50"
+    },
+    {
+        "handle": "dobby",
+        "title": "Dobby",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1207679/Dobby_Vinyl_Art_Toys_f0fe4879-7002-4a97-b713-2489ea68f009.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Harry Potter"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "15",
+        "rating": "5.00"
+    },
+    {
+        "handle": "groot",
+        "title": "Groot",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1249862/Groot_Vinyl_Art_Toys_b99c1a9f-03c3-488d-acd3-01181e1d5781.jpeg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel",
+            "Marvel Collector Corps"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Jul",
+            "year": "2022"
+        },
+        "price": "13",
+        "rating": "3.83"
+    },
+    {
+        "handle": "michael-jordan",
+        "title": "Michael Jordan",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1205519/Michael_Jordan_Vinyl_Art_Toys_d5dea44f-22c8-4abe-8b50-17dccaf3437e.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Basketball"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "85",
+        "rating": "3.86"
+    },
+    {
+        "handle": "mark-hoppus-/-travis-barker-/-tom-delonge",
+        "title": "Mark Hoppus / Travis Barker / Tom Delonge",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1203875/Mark_Hoppus_%252F_Travis_Barker_%252F_Tom_Delonge_Vinyl_Art_Toys_169571c3-f854-4fe4-81e9-2d36d51431a1.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "55",
+        "rating": "5.00"
+    },
+    {
+        "handle": "ravager-thor",
+        "title": "Ravager Thor",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1203863/Ravager_Thor_Vinyl_Art_Toys_d72e16e0-c788-4b31-9b01-237121a9f315.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "17",
+        "rating": "4.50"
+    },
+    {
+        "handle": "sal-fisher",
+        "title": "Sal Fisher",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1234762/Sal_Fisher_Vinyl_Art_Toys_cb343baf-884f-4edb-a133-6f2342d9db72.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Games"
+        ],
+        "scale": "4",
+        "released": {
+            "month": "Jul",
+            "year": "2022"
+        },
+        "price": "16",
+        "rating": "5.00"
+    },
+    {
+        "handle": "ebay-player",
+        "title": "eBay Player",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1202250/Ebay_Player_Vinyl_Art_Toys_dde8c93f-d66f-4539-8856-e4f1d0229708_large.jpg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Jul",
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "4.00"
+    },
+    {
+        "handle": "funko-player",
+        "title": "Funko Player",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1241961/Funko_Player_Vinyl_Art_Toys_2941259b-37d8-4e8f-b4a0-ab9952a6d93f.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Jul",
+            "year": "2022"
+        },
+        "price": "24",
+        "rating": "4.00"
+    },
+    {
+        "handle": "gorr",
+        "title": "Gorr",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1202060/Gorr_Vinyl_Art_Toys_52a2264c-cec3-4b98-8c90-6587f0128a0a.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "14",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-in-aang-costume",
+        "title": "Freddy Funko in Aang Costume",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1201642/Freddy_Funko_in_Aang_Costume_Vinyl_Art_Toys_e05c99d9-67bc-41ce-b951-c3d2d1a0ba99.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "135",
+        "rating": "3.50"
+    },
+    {
+        "handle": "varrick",
+        "title": "Varrick",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1201632/Varrick_Vinyl_Art_Toys_3f3a9542-a11f-4cbe-a9f3-ae0dc919f471.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "105",
+        "rating": "5.00"
+    },
+    {
+        "handle": "claire-with-flare",
+        "title": "Claire with Flare",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1201320/Claire_with_Flare_Vinyl_Art_Toys_0ceefb32-7349-464e-8aa1-f2a1fe37bc77.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Moment"
+        ],
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "45",
+        "rating": "3.88"
+    },
+    {
+        "handle": "anna",
+        "title": "Anna",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1198619/Anna_Vinyl_Art_Toys_57df28dd-bb89-4a4c-9cf9-f945a05997de.png",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "25",
+        "rating": "5.00"
+    },
+    {
+        "handle": "cinderella",
+        "title": "Cinderella",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1198616/Cinderella_Vinyl_Art_Toys_ae1f69a5-9fd5-4587-af36-98addabbaed3.png",
+        "series": [
+            "Pop! Disney",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "22",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-summertime",
+        "title": "Freddy Summertime",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197958/Freddy_Summertime_Vinyl_Art_Toys_a22eb917-fb7e-4db5-abc1-c6077210c3c9.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "22",
+            "year": "Jul"
+        },
+        "price": "290",
+        "rating": "5.00"
+    },
+    {
+        "handle": "nakia",
+        "title": "Nakia",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197882/Nakia_Vinyl_Art_Toys_e3b659e0-8237-46ae-8b8f-c5b148121243.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel",
+            "Pop! Art Series"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "25",
+        "rating": "2.75"
+    },
+    {
+        "handle": "shuri",
+        "title": "Shuri",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197875/Shuri_Vinyl_Art_Toys_5bcfdb10-9891-44f8-8234-2cb8bd9e1e0e.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel",
+            "Pop! Art Series"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "25",
+        "rating": "2.13"
+    },
+    {
+        "handle": "m'baku",
+        "title": "M'Baku",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197872/M%2527Baku_Vinyl_Art_Toys_f2821cda-0c34-4dc2-9a9e-ca51c695cb77.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel",
+            "Pop! Art Series"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "41",
+        "rating": "4.25"
+    },
+    {
+        "handle": "black-panther",
+        "title": "Black Panther",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197864/Black_Panther_Vinyl_Art_Toys_75711706-5346-4516-9f24-be6abbc38e52.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel",
+            "Pop! Art Series"
+        ],
+        "released": {
+            "month": "Nov",
+            "year": "2022"
+        },
+        "price": "33",
+        "rating": "3.00"
+    },
+    {
+        "handle": "gamora-&amp;-nebula",
+        "title": "Gamora &amp; Nebula",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197801/Gamora_and_Nebula_Vinyl_Art_Toys_699ed359-821d-4522-9e30-f786eed149e0.jpeg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "36",
+        "rating": "4.75"
+    },
+    {
+        "handle": "freddy-funko-with-mooby-meal",
+        "title": "Freddy Funko with Mooby Meal",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197091/Freddy_Funko_with_Mooby_Meal_Vinyl_Art_Toys_0489ca83-527b-4b6c-adf2-6af8ea9ca23f.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "130",
+        "rating": "5.00"
+    },
+    {
+        "handle": "jay-with-no-pants",
+        "title": "Jay with No Pants",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197081/Jay_with_No_Pants_Vinyl_Art_Toys_dc72ba04-2a42-4f99-906d-109972598f17.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "150",
+        "rating": "5.00"
+    },
+    {
+        "handle": "silent-bob-with-gas-mask",
+        "title": "Silent Bob with Gas Mask",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197077/Silent_Bob_with_Gas_Mask_Vinyl_Art_Toys_eab8801f-f4ff-49a6-8cd0-48bdca1cf707.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "250",
+        "rating": "5.00"
+    },
+    {
+        "handle": "kitty-pryde-with-lockheed",
+        "title": "Kitty Pryde with Lockheed",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1197005/Kate_Pryde_with_Lockheed_Vinyl_Art_Toys_ea497da3-6762-44d7-a107-1214a7305b57.jpg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "6",
+        "released": {
+            "month": "21",
+            "year": "Jul"
+        },
+        "price": "39",
+        "rating": "5.00"
+    },
+    {
+        "handle": "biz-markie",
+        "title": "Biz Markie",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1194981/Biz_Markie_Vinyl_Art_Toys_85fe806b-c3b9-4a6b-9c2e-a8f93ade4b11.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "12",
+        "rating": "4.83"
+    },
+    {
+        "handle": "zayn-malik",
+        "title": "Zayn Malik",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1194979/Zayn_Malik_Vinyl_Art_Toys_c4383680-5968-4c84-ad5c-0ab0add4ced4.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Rocks"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "14",
+        "rating": "5.00"
+    },
+    {
+        "handle": "cyndi-lauper",
+        "title": "Cyndi Lauper",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1194974/Cyndi_Lauper_Vinyl_Art_Toys_7a966b77-9cd9-43a6-bbb2-605e20cf0b94.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Albums"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "20",
+        "rating": "4.50"
+    },
+    {
+        "handle": "astroboy",
+        "title": "AstroBoy",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1276428/AstroBoy_Vinyl_Art_Toys_c222d3c7-dfa7-45dd-bee2-9db6456976b4.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "4.79"
+    },
+    {
+        "handle": "shuri",
+        "title": "Shuri",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1194066/Shuri_Vinyl_Art_Toys_1b73c85b-0402-4077-ab00-250cc0ed6c87.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "23",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-as-masked-soldier",
+        "title": "Freddy Funko as Masked Soldier",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1311079/Freddy_Funko_as_Masked_Soldier_Vinyl_Art_Toys_4b5df394-de33-4df4-bc58-68d9d1ae5549_large.jpg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "40",
+        "rating": "5.00"
+    },
+    {
+        "handle": "fully-hollowfied-ichigo",
+        "title": "Fully-Hollowfied Ichigo",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1193528/Fully-Hollowfied_Ichigo_Vinyl_Art_Toys_58856f20-a42a-4cf1-b90f-3274c9d11e04.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "50",
+        "rating": "4.44"
+    },
+    {
+        "handle": "fully-hollowfied-ichigo",
+        "title": "Fully-Hollowfied Ichigo",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1193526/Fully-Hollowfied_Ichigo_Vinyl_Art_Toys_7d0b051f-5e10-43b9-a8f3-a540fae58fc4.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Oct",
+            "year": "2022"
+        },
+        "price": "27",
+        "rating": "4.29"
+    },
+    {
+        "handle": "four-heavenly-kings",
+        "title": "Four Heavenly Kings",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1193140/Four_Heavenly_Kings_Vinyl_Art_Toys_Sets_03bc1a3a-4102-45a4-aba6-949ca9668c40.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Asia"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "100",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-as-danny-phantom",
+        "title": "Freddy Funko as Danny Phantom",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251330/Freddy_Funko_as_Danny_Phantom_Vinyl_Art_Toys_96968a8b-5782-44ef-ab4d-6fa9425496c4.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "140",
+        "rating": "4.88"
+    },
+    {
+        "handle": "freddy-funko-as-darth-maul",
+        "title": "Freddy Funko as Darth Maul",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251336/Freddy_Funko_as_Darth_Maul_Vinyl_Art_Toys_dd5c038c-c6be-4039-9164-f6181d48c211.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "175",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-fresh",
+        "title": "Freddy Fresh",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1311078/Freddy_Fresh_Vinyl_Art_Toys_953fe350-0da8-4e50-bc4a-94d21e0f215a_large.jpg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "45",
+        "rating": "4.25"
+    },
+    {
+        "handle": "freddy-funko-as-prince-adam",
+        "title": "Freddy Funko as Prince Adam",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251327/Freddy_Funko_as_Prince_Adam_Vinyl_Art_Toys_bb02f005-b827-4572-8997-e66103c71797.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "60",
+        "rating": "3.67"
+    },
+    {
+        "handle": "bayonetta",
+        "title": "Bayonetta",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1229492/Bayonetta_Vinyl_Art_Toys_8885d062-f235-4e56-8a87-904856c2569e.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Games"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Jul",
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "5.00"
+    },
+    {
+        "handle": "tomura-shigaraki",
+        "title": "Tomura Shigaraki",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1192324/Tomura_Shigaraki_Vinyl_Art_Toys_94c53216-b096-4d81-9c57-74534c444f8e.jpg",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "released": {
+            "month": null,
+            "year": "2023"
+        },
+        "price": "55",
+        "rating": "3.10"
+    },
+    {
+        "handle": "freddy-funko-as-han-solo",
+        "title": "Freddy Funko as Han Solo",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251350/Freddy_Funko_as_Han_Solo_Vinyl_Art_Toys_1bdb05e6-d381-4772-ba8b-874992a020c5.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "85",
+        "rating": "4.44"
+    },
+    {
+        "handle": "freddy-funko-as-russell",
+        "title": "Freddy Funko as Russell",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1273076/Freddy_Funko_as_Russell_Vinyl_Art_Toys_38bb9d11-b9e0-41c0-81f5-5dbb9bb06c82.jpg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "46",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-as-carnage",
+        "title": "Freddy Funko as Carnage",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1311068/Freddy_Funko_as_Carnage_Vinyl_Art_Toys_4c2e1323-e903-4e49-9c1a-d98c80db6c32_large.jpg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "105",
+        "rating": "4.25"
+    },
+    {
+        "handle": "freddy-funko-as-masked-manager",
+        "title": "Freddy Funko as Masked Manager",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1273897/Freddy_Funko_as_Masked_Manager_Vinyl_Art_Toys_06d1e5b9-000e-4436-8c93-7fb290b33874.jpg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "42",
+        "rating": "3.00"
+    },
+    {
+        "handle": "freddy-funko-as-masked-worker",
+        "title": "Freddy Funko as Masked Worker",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1191851/Freddy_Funko_as_Masked_Worker_%2528Circle%2529_Vinyl_Art_Toys_8f9ec5e8-eb53-4d15-bc2e-787ce2b9ba91_large.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "32",
+        "rating": "3.88"
+    },
+    {
+        "handle": "freddy-funko-as-the-mandalorian",
+        "title": "Freddy Funko as The Mandalorian",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1191847/Freddy_Funko_as_The_Mandalorian_Vinyl_Art_Toys_0943e4be-1454-4eda-969b-121da53ee516.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "160",
+        "rating": "4.95"
+    },
+    {
+        "handle": "freddy-funko-as-tron",
+        "title": "Freddy Funko as Tron",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1280863/Freddy_Funko_as_Tron_Vinyl_Art_Toys_a476f83d-f59d-44b2-92b2-9386fc2f92f3.jpeg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "80",
+        "rating": "4.43"
+    },
+    {
+        "handle": "proto-robos",
+        "title": "Proto Robos",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1251347/Proto_Robos_Vinyl_Art_Toys_8df3dd70-3b49-4b77-a7f4-c94bd1fbf97f.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "29",
+        "rating": "4.00"
+    },
+    {
+        "handle": "pop-protectors",
+        "title": "Pop Protectors",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1191660/Pop%2521_Protectors_Vinyl_Art_Toys_cc8f94a7-c12b-4eb1-bc7a-411f397c6224.jpg",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "15",
+            "year": "Jul"
+        },
+        "price": "26",
+        "rating": "5.00"
+    },
+    {
+        "handle": "miles-morales",
+        "title": "Miles Morales",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1191080/Miles_Morales_Vinyl_Art_Toys_6c1ed52b-d028-44cf-9937-575535b864be.jpeg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Comic Covers"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "41",
+        "rating": "5.00"
+    },
+    {
+        "handle": "slurpee-maze-cup",
+        "title": "Slurpee (Maze Cup)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1187297/Slurpee_%2528Maze_Cup%2529_Vinyl_Art_Toys_5c7328d5-e5c9-47aa-923f-b8eda4b52869.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Ad Icons"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "11",
+            "year": "Jul"
+        },
+        "price": "20",
+        "rating": "4.67"
+    },
+    {
+        "handle": "merrin-nightsister",
+        "title": "Merrin (Nightsister)",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1187291/Merrin_%2528Nightsister%2529_Vinyl_Art_Toys_96090387-8109-46a7-9bec-0276b17e221d.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "30",
+        "rating": "5.00"
+    },
+    {
+        "handle": "imperial-rocket-trooper",
+        "title": "Imperial Rocket Trooper",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1187289/Imperial_Rocket_Trooper_Vinyl_Art_Toys_0944c000-9abe-49b0-a8b4-597f8553ac47.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "28",
+        "rating": "5.00"
+    },
+    {
+        "handle": "arc-umbra-trooper",
+        "title": "ARC Umbra Trooper",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1187284/ARC_Umbra_Trooper_Vinyl_Art_Toys_dedaabc1-8ef6-4d36-a70b-a1486dbef07d.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Star Wars"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "26",
+        "rating": "5.00"
+    },
+    {
+        "handle": "spider-man",
+        "title": "Spider-Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1184987/Spider-Man__Vinyl_Art_Toys_4cdccbd6-9b7b-474f-a92e-3ddd6fa9481e.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Aug",
+            "year": "2022"
+        },
+        "price": "17",
+        "rating": "4.75"
+    },
+    {
+        "handle": "zeus",
+        "title": "Zeus",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1184986/Zeus_Vinyl_Art_Toys_9066d2f2-7bdc-426b-a7f1-577df936e6d3.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "Dec",
+            "year": "2022"
+        },
+        "price": "16",
+        "rating": "5.00"
+    },
+    {
+        "handle": "kool-aid-man",
+        "title": "Kool-Aid Man",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1261118/Kool-Aid_Man_Vinyl_Art_Toys_4a4dc9b8-d242-4a37-9e57-0abe4f221196.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Ad Icons",
+            "Diamond Collection"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "12",
+            "year": "Jul"
+        },
+        "price": "31",
+        "rating": "5.00"
+    },
+    {
+        "handle": "spider-woman-mattie-franklin",
+        "title": "Spider-Woman Mattie Franklin",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1184700/Spider-Woman_Mattie_Franklin_Vinyl_Art_Toys_bfa1530d-978f-47c1-848d-c4e4ed50bfb2.jpg",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Marvel"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "8",
+            "year": "Jul"
+        },
+        "price": "25",
+        "rating": "5.00"
+    },
+    {
+        "handle": "my-melody",
+        "title": "My Melody",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1183767/My_Melody_Vinyl_Art_Toys_08d4b4c6-c954-40d9-95f4-cb10615d0d7b.png",
+        "series": [
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "23",
+        "rating": "4.50"
+    },
+    {
+        "handle": "samurai-brook",
+        "title": "Samurai Brook",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1183004/Samurai_Brook_Vinyl_Art_Toys_0c950f5c-a1e6-47df-bfeb-45d8bbfe738d.png",
+        "series": [
+            "Pop! Animation",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "350",
+        "rating": "5.00"
+    },
+    {
+        "handle": "freddy-funko-space-ghost-with-blip",
+        "title": "Freddy Funko Space Ghost with Blip",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1177536/Freddy_Funko_Space_Ghost_with_Blip_Vinyl_Art_Toys_74779a0d-3cf9-461f-bfb6-ac43925f44fc_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "270",
+        "rating": "3.63"
+    },
+    {
+        "handle": "astro",
+        "title": "Astro",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1177534/Astro_Vinyl_Art_Toys_b500f3ca-064c-4bc1-a5b8-35056be40d36_large.png",
+        "series": [
+            "Pop! Vinyl",
+            "Pop! Digital"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": null,
+            "year": "2022"
+        },
+        "price": "120",
+        "rating": "5.00"
+    },
+    {
+        "handle": "hopper",
+        "title": "Hopper",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1177525/Hopper_Vinyl_Art_Toys_5f044ef2-f11b-4efa-b9bb-6d1c0c4401d7.jpg",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "1",
+            "year": "Jul"
+        },
+        "price": "27",
+        "rating": "4.92"
+    },
+    {
+        "handle": "joyce",
+        "title": "Joyce",
+        "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1177523/Joyce_Vinyl_Art_Toys_b19403f8-cc9a-4ca5-a468-174fec838f20.jpg",
+        "series": [
+            "Pop! Television",
+            "Pop! Vinyl"
+        ],
+        "scale": "3.75",
+        "released": {
+            "month": "1",
+            "year": "Jul"
+        },
+        "price": "29",
+        "rating": "4.70"
+    }
+]
