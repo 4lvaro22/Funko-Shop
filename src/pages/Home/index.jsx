@@ -2,7 +2,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link } from 'react-router-dom';
 import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
-import { getSeries } from './../../data';
+import { getSeries, getFunkos } from './../../data';
 
 const funko_prueba = {
   handle: 'rhaenyra-targaryen',
@@ -26,6 +26,8 @@ export const Home = () => {
   const [search, setSearch] = useState('');
   const items = [];
 
+  const listaComponentesFunko = [];
+
   getSeries()
     .forEach(item => items.push(
       <label class='list-group-item border-0'>
@@ -33,6 +35,10 @@ export const Home = () => {
         {item}
       </label>
     ));
+
+  getFunkos().forEach(item => listaComponentesFunko.push(
+    <Funko funko={item} />
+  ));
 
   console.log('Home');
 
@@ -96,7 +102,11 @@ export const Home = () => {
         {/* <-- Seccion --> */}
         <section className='col-9 m-4'>
           <h2 className='text-center border-bottom border-top'>Catálogo</h2>
-          <Funko funko={funko_prueba} />
+
+          <div className='flex d-inline'>
+            {listaComponentesFunko}
+          </div>
+
         </section>
       </div>
     </>
