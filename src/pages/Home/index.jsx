@@ -92,20 +92,10 @@ export const Home = () => {
         {/* <-- Seccion --> */}
         <section className='col-9 m-4'>
           <h2 className='text-center border-bottom border-top'>Catálogo</h2>
-          <funko />
+          <Funko />
         </section>
       </div>
     </>
   );
 };
 export default Home;
-
-{ /*
-const buscador = document.getElementById("buscador");
-
-buscador.addEventListener("input", changeColor);
-
-function changeColor() {
-    document.getElementById("searchButton").className = "btn btn-outline-dark bg-primary";
-};
-*/ }
