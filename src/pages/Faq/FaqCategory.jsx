@@ -14,7 +14,7 @@ export const FaqCategory = ({ theme, questions }) => {
   console.log(items);
   return (
     <>
-      <div className='border mb-4'>
+      <div className='border mb-4 h-50 p-3 mb-5'>
         <div onClick={() => toggleForm(!form)}>
           <QuestionTheme name={theme} form={form} />
         </div>
