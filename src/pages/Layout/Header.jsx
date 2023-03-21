@@ -11,13 +11,9 @@ export const Header = () => {
               <Link to='/'><button class='btn btn-light my-2'><i class='bi bi-house-door-fill' /></button></Link>
             </span>
 
-            <span className='col-4'>
-              <span className='text-white row d-flex justify-content-center'>
-                <span className='col-sm-2 my-2 d-flex justify-content-center'>
-                  <img src={icono} className='w-75 h-75 mx-2 mt-1' />
-                  <h1 className='mt-1'>FunkoShop</h1>
-                </span>
-              </span>
+            <span className='col-4 text-white row d-flex justify-content-center my-1'>
+              <img src={icono} className='col-2 img-fluid mx-2 mt-1' />
+              <h1 className='col-5 mt-1'>FunkoShop</h1>
             </span>
 
             <span className='col-4 d-flex align-self-center justify-content-end'>
