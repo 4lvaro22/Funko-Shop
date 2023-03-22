@@ -1,11 +1,9 @@
 import { Link } from 'react-router-dom';
 
 export const Funko = (props) => {
-  console.log(props);
-
   return (
 
-    <div className='border border-2 funko mt-2 mx-2 mb-2 d-inline-block p-3'>
+    <div className=' col-auto border border-2 funko mt-2 mx-2 mb-2 d-inline-block p-3'>
 
       <Link to={`/Funko/${props.funko.handle}`}> <img src={props.funko.imageName} width='250' height='333' alt='Imagen de Funko' title={props.funko.title} /> </Link>
 
