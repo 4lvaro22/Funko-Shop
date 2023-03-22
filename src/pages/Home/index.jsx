@@ -33,7 +33,7 @@ export const Home = () => {
 
   return (
     <>
-      <nav className='container-fluid bg-dark'>
+      <nav className='container-fluid bg-light'>
         <div className='row'>
           <div className='col-4' />
           <div className='col-4'>
