@@ -16,7 +16,7 @@ export const Footer = () => {
                 <div>
                   <a
                     className='link-light text-decoration-none'
-                    href='https://www.instagram.com/'
+                    href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'
                   >
                     <i class='bi bi-instagram' />{' '}
                     <strong>FunkoShopInterfaces</strong>
@@ -27,7 +27,7 @@ export const Footer = () => {
                 <div>
                   <a
                     className='link-light text-decoration-none'
-                    href='https://es-es.facebook.com/'
+                    href='https://es-es.facebook.com/' target='_blank' rel='noreferrer noopener'
                   >
                     <i class='bi bi-facebook' />{' '}
                     <strong>FunkoShopInterfaces</strong>
@@ -38,7 +38,7 @@ export const Footer = () => {
                 <div>
                   <a
                     className='link-light text-decoration-none'
-                    href='https://twitter.com/'
+                    href='https://twitter.com/' target='_blank' rel='noreferrer noopener'
                   >
                     <i class='bi bi-twitter' />{' '}
                     <strong>FunkoShopInterfaces</strong>
@@ -53,7 +53,7 @@ export const Footer = () => {
                   to='/TermsAndConditions'
                   className='text-white text-decoration-none mx-2'
                 >
-                  Términos y Condiciones{' '}
+                  Términos y Condiciones
                 </Link>
                 <Link
                   to='/AboutUs'
@@ -67,7 +67,7 @@ export const Footer = () => {
                 >
                   Contacto
                 </Link>
-                <a href='https://goo.gl/maps/douTAYgW9ja5h5VN6' className='link-light text-decoration-none mx-2'>
+                <a href='https://goo.gl/maps/douTAYgW9ja5h5VN6' className='link-light text-decoration-none mx-2' target='_blank' rel='noreferrer noopener'>
                   Localización
                 </a>
                 <Link
