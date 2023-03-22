@@ -1,55 +1,62 @@
 import { Link } from 'react-router-dom';
+import { FunkoEnCarrito } from './../../components/funkoEnCarrito';
+import { React, useEffect, useState } from 'react';
+import data from '../../data';
+import CartRow from './CartRow';
+
+const useLocalStorage = (storageKey, fallbackState) => {
+  const storedValue = localStorage.getItem(storageKey);
+  const [value, setValue] = useState(
+    storedValue === null || storedValue === undefined ? fallbackState : JSON.parse(storedValue)
+  );
+
+  useEffect(() => {
+    localStorage.setItem(storageKey, JSON.stringify(value));
+  }, [value, storageKey]);
+
+  return [value, setValue];
+};
 
 export const Cart = (props) => {
+  const [funko, setFunko] = useLocalStorage('funko', []);
+  const [items, setItems] = useState([]);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    let newTotal = 0;
+    const itemsList = [];
+
+    funko.forEach(element => {
+      const funkoId = element.id;
+      const quantity = element.quantity;
+
+      const itemFunko = data.getFunkoById(funkoId);
+      if (!itemFunko) { return; }
+
+      newTotal += itemFunko.price * quantity;
+
+      
+        <FunkoEnCarrito funko={props.funko} />
+      itemsList.push(
+        <CartRow key={itemFunko.handle} itemFunko={itemFunko} quantity={quantity} />
+      );
+    });
+    setTotal(newTotal);
+    setItems(itemsList);
+  }, []);
+
   return (
 
     <div className='container'>
 
-      <div className=' row border border-2 d-flex align-items-center' style={{ marginTop: '5%' }}>
-
-        <div className='col'>
-
-          <Link to='/FunkoInfo'> <img src={props.funko.imageName} width='150' height='200' className='mt-5 mb-5 mx-5' /></Link>
-        </div>
-
-        <div className='col'>
-          <h4 className='text-center '>{props.funko.title}</h4>
-        </div>
-
-        <div className='col'>
-          <div className='dropdown p-1 text-center'>
-            <button className='btn btn-secondary dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
-              Editar Cantidad
-            </button>
-            <ul className='dropdown-menu'>
-              <li><a className='dropdown-item' href='#'>1</a></li>
-              <li><a className='dropdown-item' href='#'>2</a></li>
-              <li><a className='dropdown-item' href='#'>3</a></li>
-              <li><a className='dropdown-item' href='#'>4</a></li>
-              <li><a className='dropdown-item' href='#'>5</a></li>
-              <li><a className='dropdown-item' href='#'>6</a></li>
-              <li><a className='dropdown-item' href='#'>7</a></li>
-              <li><a className='dropdown-item' href='#'>8</a></li>
-              <li><a className='dropdown-item' href='#'>9</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div className='col'>
-          <h4 className='text-center'>{props.funko.price}€</h4>
-        </div>
-
-        <div className='col'>
-          <button id='login' class=' btn btn-danger mx-1'>Eliminar Funko</button>
-        </div>
-
+      <div>
+        {items}
       </div>
 
       <div className='mt-5 border border-2'>
 
         <div className='mx-2'>
-          <h4 className='mt-3'>Total articulos: 85.00€</h4>
+          <h4 className='mt-3'>Total articulos: {total}€</h4>
           <h4>Envío: 2.00€ <button type='button' class='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' /></h4>
 
           <div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
@@ -74,12 +81,16 @@ export const Cart = (props) => {
         <div className='mb-3 mx-2'>
           <h2 style={{ float: 'left' }}> Total a pagar:</h2>
 
-          <h3 className='text-end'>87.00€</h3>
+          <h3 className='text-end'>{total + 2}€</h3>
         </div>
 
       </div>
 
-      <button style={{ float: 'right' }} type='button' class='btn btn-success mt-4'>Completar compra</button>
+      <div className='row'>
+        <div className='col-2 offset-md-10'>
+          <button style={{ float: 'right' }} type='button' class='btn btn-success mt-4 mb-4'>Completar compra</button>
+        </div>
+      </div>
 
     </div>
   );
