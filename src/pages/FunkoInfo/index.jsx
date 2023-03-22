@@ -4,6 +4,25 @@ import { getFunkoById } from '../../data';
 import Stars from './Stars';
 import IndividualReview from './IndividualReview';
 
+const addFunko = (funko) => {
+  const storedValue = localStorage.getItem('funko');
+  const value = storedValue === null || storedValue === undefined ? [] : JSON.parse(storedValue);
+
+  let found = value.find((element) => element.id === funko.handle);
+
+  if (found) {
+    found.quantity = found.quantity + 1;
+  } else {
+    found = {
+      id: funko.handle,
+      quantity: 1
+    };
+    value.push(found);
+  }
+
+  localStorage.setItem('funko', JSON.stringify(value));
+};
+
 export const FunkoInfo = (props) => {
   const [funko, setFunko] = useState(
     {
@@ -76,7 +95,7 @@ export const FunkoInfo = (props) => {
             </div>
 
             <div className='p-2'>
-              <button class=' btn btn-dark m-1' id='añadirCesta'>Añadir a la cesta</button>
+              <button class=' btn btn-dark m-1' id='añadirCesta' onClick={() => { addFunko(funko); }}>Añadir a la cesta</button>
             </div>
           </div>
         </div>
