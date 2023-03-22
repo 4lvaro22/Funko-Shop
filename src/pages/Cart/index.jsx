@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FunkoEnCarrito } from './../../components/funkoEnCarrito';
 import { React, useEffect, useState } from 'react';
 import data from '../../data';
 import CartRow from './CartRow';
@@ -34,6 +35,8 @@ export const Cart = (props) => {
 
       newTotal += itemFunko.price * quantity;
 
+      
+        <FunkoEnCarrito funko={props.funko} />
       itemsList.push(
         <CartRow key={itemFunko.handle} itemFunko={itemFunko} quantity={quantity} />
       );
