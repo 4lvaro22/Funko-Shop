@@ -1,5 +1,30 @@
+import { useParams } from 'react-router';
+import { useState, useEffect } from 'react';
+import { getFunkoById } from '../../data';
 
 export const FunkoInfo = (props) => {
+  const [funko, setFunko] = useState(
+    {
+      imageName: '',
+      title: '',
+      scale: '',
+      price: '',
+      rating: '',
+      series: [],
+      released: {
+        year: '',
+        month: ''
+      }
+    }
+  );
+  const { id } = useParams();
+
+  useEffect(() => {
+    setFunko(getFunkoById(id));
+  }, id);
+
+  console.log(funko);
+
   return (
 
     <>
@@ -11,22 +36,22 @@ export const FunkoInfo = (props) => {
           <div className='col'>
 
             {/*  */}
-            <img src={props.funko.imageName} width='300' height='400' style={{ marginLeft: '15%', marginTop: '15%' }} />
+            <img src={funko.imageName} width='300' height='400' style={{ marginLeft: '15%', marginTop: '15%' }} />
           </div>
 
           <div className='col d-grid gap-3'>
 
-            <h1 className='p-1 mt-5'>{props.funko.title}</h1>
+            <h1 className='p-1 mt-5'>{funko.title}</h1>
 
             <div className='p-1'>
               <ul>
-                <li><strong>Series:</strong> {props.funko.series.join(', ')}</li>
-                <li><strong>Escala:</strong>  {props.funko.scale}</li>
-                <li><strong>Fecha de lanzamiento:</strong>  {props.funko.released.year}</li>
-                <li><strong>Valoracion:</strong> {props.funko.rating} <i class='bi bi-star-fill' /></li>
+                <li><strong>Series:</strong> {funko.series.join(', ')}</li>
+                <li><strong>Escala:</strong>  {funko.scale}</li>
+                <li><strong>Fecha de lanzamiento:</strong>  {funko.released.year}</li>
+                <li><strong>Valoracion:</strong> {funko.rating} <i class='bi bi-star-fill' /></li>
               </ul>
 
-              <h4 className='mt-5' style={{}}>Precio: {props.funko.price} €</h4>
+              <h4 className='mt-5' style={{}}>Precio: {funko.price} €</h4>
 
             </div>
 

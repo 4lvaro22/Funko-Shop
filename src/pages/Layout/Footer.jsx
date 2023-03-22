@@ -8,7 +8,7 @@ export const Footer = () => {
       <footer className='mt-5'>
         <div
           id='footer'
-          className='container-fluid bg-dark position-relative'
+          className='container-fluid bg-dark align-bottom'
         >
           <div className='row p-3'>
             <div className='col-2' id='redes'>
@@ -61,9 +61,12 @@ export const Footer = () => {
                 >
                   Sobre nosotros
                 </Link>
-                <a href='#' className='link-light text-decoration-none mx-2'>
+                <Link
+                  to='/Contact'
+                  className='text-white text-decoration-none mx-2'
+                >
                   Contacto
-                </a>
+                </Link>
                 <a href='https://goo.gl/maps/douTAYgW9ja5h5VN6' className='link-light text-decoration-none mx-2'>
                   Localización
                 </a>
