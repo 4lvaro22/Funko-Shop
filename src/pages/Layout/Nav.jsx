@@ -8,7 +8,7 @@ export const Nav = () => {
   return (
     <>
       <nav className='navbar navbar-expand-lg navbar-light bg-light p-2'>
-        <p className='text-dark'> Home {path}</p>
+        <p className='text-dark'><h6>Home {path}</h6></p>
       </nav>
     </>
   );
