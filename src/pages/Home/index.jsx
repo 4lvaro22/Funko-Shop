@@ -4,23 +4,6 @@ import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
 import { getSeries, getFunkos } from './../../data';
 
-const funko_prueba = {
-  handle: 'rhaenyra-targaryen',
-  title: 'Rhaenyra Targaryen',
-  imageName: 'https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1324888/Rhaenyra_Targaryen_Vinyl_Art_Toys_4fb7ebdb-25d5-4aaa-9071-633c0513cdb2.png',
-  series: [
-    'Pop! Vinyl',
-    'Pop! Digital'
-  ],
-  scale: '3.75',
-  released: {
-    month: 'Feb',
-    year: '2023'
-  },
-  price: '85',
-  rating: '3.00'
-};
-
 export const Home = () => {
   const [form, toggleForm] = useState(false);
   const [search, setSearch] = useState('');
@@ -76,10 +59,12 @@ export const Home = () => {
           <div className='border rounded p-2'>
             <div class='list-group'>
               <h6 className='mx-2'>Marca:</h6>
-              {items}
+              <div className='overflow-auto' style={{ 'max-height': '300px' }}>
+                {items}
+              </div>
             </div>
 
-            <div class='list-group'>
+            <div class='list-group my-2'>
               <h6 className='mx-2'>Precio:</h6>
               <label class='list-group-item border-0'>
                 <input class='form-check-input me-1' type='checkbox' value='' />
@@ -95,6 +80,9 @@ export const Home = () => {
               </label>
             </div>
 
+            <div className='list-group'>
+              <button className='float-end btn btn-primary'>Aplicar filtros</button>
+            </div>
           </div>
 
         </aside>
