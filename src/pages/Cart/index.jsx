@@ -1,55 +1,19 @@
 import { Link } from 'react-router-dom';
+import { FunkoEnCarrito } from './../../components/funkoEnCarrito';
 
 export const Cart = (props) => {
   return (
 
     <div className='container'>
 
-      <div className=' row border border-2 d-flex align-items-center' style={{ marginTop: '5%' }}>
+      <FunkoEnCarrito funko={props.funko} />
 
-        <div className='col'>
+      <FunkoEnCarrito funko={props.funko} />
 
-          <Link to='/FunkoInfo'> <img src={props.funko.imageName} width='150' height='200' className='mt-5 mb-5 mx-5' /></Link>
-        </div>
-
-        <div className='col'>
-          <h4 className='text-center '>{props.funko.title}</h4>
-        </div>
-
-        <div className='col'>
-          <div className='dropdown p-1 text-center'>
-            <button className='btn btn-secondary dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
-              Editar Cantidad
-            </button>
-            <ul className='dropdown-menu'>
-              <li><a className='dropdown-item' href='#'>1</a></li>
-              <li><a className='dropdown-item' href='#'>2</a></li>
-              <li><a className='dropdown-item' href='#'>3</a></li>
-              <li><a className='dropdown-item' href='#'>4</a></li>
-              <li><a className='dropdown-item' href='#'>5</a></li>
-              <li><a className='dropdown-item' href='#'>6</a></li>
-              <li><a className='dropdown-item' href='#'>7</a></li>
-              <li><a className='dropdown-item' href='#'>8</a></li>
-              <li><a className='dropdown-item' href='#'>9</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div className='col'>
-          <h4 className='text-center'>{props.funko.price}€</h4>
-        </div>
-
-        <div className='col'>
-          <button id='login' class=' btn btn-danger mx-1'>Eliminar Funko</button>
-        </div>
-
-      </div>
-
-      <div className='mt-5 border border-2'>
+      <div className='row mt-5 border border-2'>
 
         <div className='mx-2'>
-          <h4 className='mt-3'>Total articulos: 85.00€</h4>
+          <h4 className='mt-3'> Subtotal: 85.00€</h4>
           <h4>Envío: 2.00€ <button type='button' class='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' /></h4>
 
           <div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
