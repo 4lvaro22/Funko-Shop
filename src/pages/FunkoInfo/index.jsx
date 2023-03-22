@@ -1,6 +1,7 @@
 import { useParams } from 'react-router';
 import { useState, useEffect } from 'react';
 import { getFunkoById } from '../../data';
+import { Link } from 'react-router-dom';
 import Stars from './Stars';
 import IndividualReview from './IndividualReview';
 
@@ -22,6 +23,7 @@ const addFunko = (funko) => {
 
   localStorage.setItem('funko', JSON.stringify(value));
 };
+
 
 export const FunkoInfo = (props) => {
   const [funko, setFunko] = useState(
@@ -50,7 +52,7 @@ export const FunkoInfo = (props) => {
 
     <>
 
-      <div className='container'>
+      <div className='container mb-5'>
 
         <div className='row my-3'>
 
