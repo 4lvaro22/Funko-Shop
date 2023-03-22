@@ -1,6 +1,7 @@
 import { useParams } from 'react-router';
 import { useState, useEffect } from 'react';
 import { getFunkoById } from '../../data';
+import { Link } from 'react-router-dom';
 
 export const FunkoInfo = (props) => {
   const [funko, setFunko] = useState(
@@ -29,7 +30,7 @@ export const FunkoInfo = (props) => {
 
     <>
 
-      <div className='container'>
+      <div className='container mb-5'>
 
         <div className='row'>
 
@@ -74,7 +75,7 @@ export const FunkoInfo = (props) => {
             </div>
 
             <div className='p-2'>
-              <button class=' btn btn-dark m-1' id='añadirCesta'>Añadir a la cesta</button>
+              <Link to='/Cart'><button class=' btn btn-dark m-1' id='añadirCesta'>Añadir a la cesta</button></Link>
             </div>
           </div>
 

@@ -43,7 +43,11 @@ export const Cart = (props) => {
 
       </div>
 
-      <button style={{ float: 'right' }} type='button' class='btn btn-success mt-4'>Completar compra</button>
+      <div className='row'>
+        <div className='col-2 offset-md-10'>
+          <button style={{ float: 'right' }} type='button' class='btn btn-success mt-4 mb-4'>Completar compra</button>
+        </div>
+      </div>
 
     </div>
   );
