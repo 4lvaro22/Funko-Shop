@@ -1,14 +1,23 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import icono from '../../assets/images/funkoIcono.png';
+import { getFunkosData } from '../../data/storage';
 
 export const Header = () => {
+  const [cart, setCart] = useState(false);
+  // getFunkosData().length !== 0);
+
+  useEffect(() => {
+    setCart(getFunkosData().length !== 0);
+  });
+
   return (
     <>
       <header>
         <div className='container-fluid'>
           <div className='center-block row bg-dark'>
             <span className='col-4 d-flex align-self-center'>
-              <Link to='/'><button class='btn btn-light my-2'><i class='bi bi-house-door-fill' /></button></Link>
+              <Link to='/'><button className='btn btn-light my-2'><i className='bi bi-house-door-fill' /></button></Link>
             </span>
 
             <span className='col-4 text-white row d-flex justify-content-center my-1'>
@@ -17,9 +26,9 @@ export const Header = () => {
             </span>
 
             <span className='col-4 d-flex align-self-center justify-content-end'>
-              <Link to='/Login'><button id='login' class=' btn btn-light mx-1'>Iniciar Sesión</button></Link>
-              <Link to='/SignUp'><button id='signup' class='btn btn-light mx-1'>Registrarse</button></Link>
-              <Link to='/Cart'><button id='cart' class='btn btn-light mx-3'><i class='bi bi-cart' />Carrito</button></Link>
+              <Link to='/Login'><button id='login' className=' btn btn-light mx-1'>Iniciar Sesión</button></Link>
+              <Link to='/SignUp'><button id='signup' className='btn btn-light mx-1'>Registrarse</button></Link>
+              <Link to='/Cart'><button id='cart' className='btn btn-light mx-3'><i className={`bi ${!cart ? 'bi-cart' : 'bi-cart-plus-fill'}`} /> Carrito</button></Link>
             </span>
           </div>
         </div>

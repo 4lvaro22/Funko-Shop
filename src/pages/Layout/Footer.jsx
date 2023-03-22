@@ -18,7 +18,7 @@ export const Footer = () => {
                     className='link-light text-decoration-none'
                     href='https://www.instagram.com/'
                   >
-                    <i class='bi bi-instagram' />{' '}
+                    <i className='bi bi-instagram' />{' '}
                     <strong>FunkoShopInterfaces</strong>
                   </a>
                 </div>
@@ -29,7 +29,7 @@ export const Footer = () => {
                     className='link-light text-decoration-none'
                     href='https://es-es.facebook.com/'
                   >
-                    <i class='bi bi-facebook' />{' '}
+                    <i className='bi bi-facebook' />{' '}
                     <strong>FunkoShopInterfaces</strong>
                   </a>
                 </div>
@@ -40,7 +40,7 @@ export const Footer = () => {
                     className='link-light text-decoration-none'
                     href='https://twitter.com/'
                   >
-                    <i class='bi bi-twitter' />{' '}
+                    <i className='bi bi-twitter' />{' '}
                     <strong>FunkoShopInterfaces</strong>
                   </a>
                 </div>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { addFunko } from '../data/storage';
 
 export const Funko = (props) => {
   return (
@@ -11,7 +12,7 @@ export const Funko = (props) => {
 
       <div>
         <p className='funko_item_price'><strong>{props.funko.price} €</strong></p>
-        <Link to='/Funko'> <button id='anadir'>Añadir a la cesta</button> </Link>
+        <button id='anadir' onClick={() => { addFunko(props.funko, 1); }}>Añadir a la cesta</button>
       </div>
     </div>
   );

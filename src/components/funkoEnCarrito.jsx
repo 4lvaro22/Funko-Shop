@@ -1,41 +1,51 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { changeQuantity } from '../data/storage';
 
-export const FunkoEnCarrito = (props) => {
+const generateOptions = (quantity) => {
+  const options = [];
+  for (let i = 1; i <= quantity; i++) {
+    options.push(<option key={i} value={i}>{i}</option>);
+  }
+  return options;
+};
+
+export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) => {
+  const [quantity, setQuantity] = useState(fixQuantity);
+
+  useEffect(() => {
+    changeQuantity(funko.handle, quantity);
+    updateQuantity();
+  }, [quantity]);
+
   return (
-
     <div className='row border border-2 d-flex align-items-center' style={{ marginTop: '2%' }}>
 
       <div className='col'>
-
-        <Link to='/FunkoInfo'> <img src={props.funko.imageName} width='110' height='145' className='mt-5 mb-5 mx-5' /></Link>
+        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='110' height='145' className='mt-5 mb-5 mx-5' /></Link>
       </div>
 
       <div className='col'>
-        <h4 className='text-center '>{props.funko.title}</h4>
+        <h4 className='text-center '>{funko.title}</h4>
       </div>
 
       <div className='col'>
-        <select class='form-select' aria-label='Default select example'>
-          <option selected>Seleccionar cantidad</option>
-          <option value='1'>1</option>
-          <option value='2'>2</option>
-          <option value='3'>3</option>
-          <option value='4'>4</option>
-          <option value='5'>5</option>
-          <option value='6'>6</option>
-          <option value='7'>7</option>
-          <option value='8'>8</option>
-          <option value='9'>9</option>
+        <select
+          className='form-select' aria-label='Default select example' onChange={(e) => {
+            setQuantity(e.target.value);
+          }} value={quantity}
+        >
+          {generateOptions(50)}
 
         </select>
       </div>
 
       <div className='col'>
-        <h4 className='text-center'>{props.funko.price}€</h4>
+        <h4 className='text-center'>{funko.price * quantity}€</h4>
       </div>
 
       <div className='col'>
-        <button id='login' class=' btn btn-danger mx-1'>Eliminar Funko</button>
+        <button id='login' className=' btn btn-danger mx-1' onClick={() => { remove(funko); }}>Eliminar Funko</button>
       </div>
 
     </div>
