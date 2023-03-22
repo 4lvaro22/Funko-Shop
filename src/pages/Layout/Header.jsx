@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import icono from '../../assets/images/funkoIcono.png';
+import Nav from './Nav';
 
 export const Header = () => {
   return (
@@ -27,6 +28,7 @@ export const Header = () => {
             </span>
           </div>
         </div>
+        <Nav />
       </header>
     </>
   );
