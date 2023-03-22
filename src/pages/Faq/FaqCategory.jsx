@@ -19,7 +19,7 @@ export const FaqCategory = ({ theme, questions }) => {
           <QuestionTheme name={theme} form={form} />
         </div>
 
-        {form ? <hr class='bg-danger border-2 border-top' /> : null}
+        {form ? <hr className='bg-danger border-2 border-top' /> : null}
 
         {form ? <div>{items} </div> : null}
 
