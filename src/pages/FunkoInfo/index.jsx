@@ -70,6 +70,9 @@ export const FunkoInfo = (props) => {
             </div>
 
             <div className='col-2'>
+
+              Cantidad:
+
               <select
                 className='form-select' aria-label='Default select example' onChange={(e) => {
                   setQuantity(e.target.value);
