@@ -5,7 +5,7 @@ export const Reviews = () => {
 
     <>
       <div className='row'>
-        <Stars />
+        <Stars oldRating={2} />
       </div>
 
     </>

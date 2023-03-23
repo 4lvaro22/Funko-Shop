@@ -11,7 +11,7 @@ export const IndividualReview = () => {
         </div>
 
         <div className='col-7 d-flex flex-row justify-content-center row'>
-          <Stars />
+          <Stars oldRating={2} />
           <div className='d-block'><p className='text-center'>Es adictivo el 33 funko que me compro.</p></div>
         </div>
       </div>
