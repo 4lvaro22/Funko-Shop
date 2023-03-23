@@ -16,7 +16,6 @@ const generateOptions = (quantity) => {
   return options;
 };
 
-
 export const FunkoInfo = (props) => {
   const [funko, setFunko] = useState(
     {
@@ -44,7 +43,7 @@ export const FunkoInfo = (props) => {
 
       <div className='container mb-5'>
 
-        <AddedModal />
+        <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
         <div className='row my-3'>
 
           <div className='col'>
