@@ -1,18 +1,28 @@
 import { Link } from 'react-router-dom';
 import { addFunko } from '../data/storage';
 
-export const Funko = (props) => {
+export const Funko = ({ funko }) => {
   return (
 
-    <div className=' col-auto border border-2 funko mt-2 mx-2 mb-2 d-inline-block p-3'>
+    <div
+      className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3'
 
-      <Link to={`/Funko/${props.funko.handle}`}> <img src={props.funko.imageName} width='250' height='333' alt='Imagen de Funko' title={props.funko.title} /> </Link>
+    >
 
-      <p className='mt-3'>{props.funko.title}</p>
+      <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='250' height='333' alt='Imagen de Funko' title={funko.title} /> </Link>
+
+      <h4 className='mt-3'>{funko.title}</h4>
 
       <div>
-        <p className='funko_item_price'><strong>{props.funko.price} €</strong></p>
-        <button id='anadir' onClick={() => { addFunko(props.funko, 1); }}>Añadir a la cesta</button>
+        <div className='mb-3'>
+          <p className='ms-1'><strong>{funko.price} €</strong></p>
+        </div>
+        <div>
+
+          <p className='d-inline ms-1 align-middle'>{funko.rating}  <i className='bi bi-star-fill text-warning' /></p>
+          <button id='anadir' className='btn btn-success btn-sm float-end' onClick={() => { addFunko(funko, 1); }}>Añadir a la cesta</button>
+
+        </div>
       </div>
     </div>
   );

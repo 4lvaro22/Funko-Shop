@@ -12,6 +12,7 @@ import './assets/styles/App.css';
 import { Profile } from './pages/Profile';
 import { PaymentSection } from './pages/Profile/Payments';
 import Contact from './pages/Contact';
+import ScrollTop from './components/ScrollTop';
 
 export const BASE_PATH = '/Proyecto-Interfaces-Grupo-H';
 
@@ -47,6 +48,7 @@ const funko_prueba = {
 function App () {
   return (
     <Router>
+      <ScrollTop />
       {/* <ScrollRestoration /> */}
       <Routes>
         <Route path='/' element={<Layout />}>

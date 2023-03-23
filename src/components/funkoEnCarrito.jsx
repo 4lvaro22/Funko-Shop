@@ -35,7 +35,7 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
             setQuantity(e.target.value);
           }} value={quantity}
         >
-          {generateOptions(50)}
+          {generateOptions(10)}
 
         </select>
       </div>

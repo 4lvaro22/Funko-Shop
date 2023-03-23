@@ -1,4 +1,3 @@
-import { matchPath, resolvePath } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const AddedModal = () => {
