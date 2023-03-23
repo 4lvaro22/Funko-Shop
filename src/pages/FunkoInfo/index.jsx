@@ -1,27 +1,21 @@
 import { useParams } from 'react-router';
 import { useState, useEffect } from 'react';
 import { getFunkoById } from '../../data';
+import { addFunko } from '../../data/storage';
+import { Link } from 'react-router-dom';
 import Stars from './Stars';
 import IndividualReview from './IndividualReview';
+import AddedModal from '../../components/addedModal';
+// import bootstrap from 'bootstrap';
 
-const addFunko = (funko) => {
-  const storedValue = localStorage.getItem('funko');
-  const value = storedValue === null || storedValue === undefined ? [] : JSON.parse(storedValue);
-
-  let found = value.find((element) => element.id === funko.handle);
-
-  if (found) {
-    found.quantity = found.quantity + 1;
-  } else {
-    found = {
-      id: funko.handle,
-      quantity: 1
-    };
-    value.push(found);
+const generateOptions = (quantity) => {
+  const options = [];
+  for (let i = 1; i <= quantity; i++) {
+    options.push(<option key={i} value={i}>{i}</option>);
   }
-
-  localStorage.setItem('funko', JSON.stringify(value));
+  return options;
 };
+
 
 export const FunkoInfo = (props) => {
   const [funko, setFunko] = useState(
@@ -38,20 +32,19 @@ export const FunkoInfo = (props) => {
       }
     }
   );
+  const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
 
   useEffect(() => {
     setFunko(getFunkoById(id));
-  }, id);
-
-  console.log(funko);
+  }, [id]);
 
   return (
-
     <>
 
-      <div className='container'>
+      <div className='container mb-5'>
 
+        <AddedModal />
         <div className='row my-3'>
 
           <div className='col'>
@@ -69,40 +62,39 @@ export const FunkoInfo = (props) => {
                 <li><strong>Series:</strong> {funko.series.join(', ')}</li>
                 <li><strong>Escala:</strong>  {funko.scale}</li>
                 <li><strong>Fecha de lanzamiento:</strong>  {funko.released.year}</li>
-                <li><strong>Valoracion:</strong> {funko.rating} <i class='bi bi-star-fill' /></li>
+                <li><strong>Valoracion:</strong> {funko.rating} <i className='bi bi-star-fill' /></li>
               </ul>
 
               <h4 className='mt-5' style={{}}>Precio: {funko.price} €</h4>
 
             </div>
 
-            <div className='dropdown p-1'>
-              Seleccionar cantidad: &nbsp;
-              <button className='btn btn-secondary dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
-                Cantidad
-              </button>
-              <ul className='dropdown-menu'>
-                <li><a className='dropdown-item' href='#'>1</a></li>
-                <li><a className='dropdown-item' href='#'>2</a></li>
-                <li><a className='dropdown-item' href='#'>3</a></li>
-                <li><a className='dropdown-item' href='#'>4</a></li>
-                <li><a className='dropdown-item' href='#'>5</a></li>
-                <li><a className='dropdown-item' href='#'>6</a></li>
-                <li><a className='dropdown-item' href='#'>7</a></li>
-                <li><a className='dropdown-item' href='#'>8</a></li>
-                <li><a className='dropdown-item' href='#'>9</a></li>
-              </ul>
+            <div className='col-2'>
+              <select
+                className='form-select' aria-label='Default select example' onChange={(e) => {
+                  setQuantity(e.target.value);
+                }} value={quantity}
+              >
+                {generateOptions(50)}
+
+              </select>
             </div>
 
             <div className='p-2'>
-              <button class=' btn btn-dark m-1' id='añadirCesta' onClick={() => { addFunko(funko); }}>Añadir a la cesta</button>
+              <button
+                className=' btn btn-dark m-1' id='añadirCesta' onClick={() => {
+                  addFunko(funko, quantity);
+                  new bootstrap.Modal(document.getElementById('exampleModal')).show();
+                }}
+              >Añadir a la cesta
+              </button>
             </div>
           </div>
         </div>
 
-        <div class='text-center mt-5'>
-          <h2 class='text-h5 px-4 d-inline white'>
-            <hr role='separator' aria-orientation='horizontal' class='my-5 v-divider theme--light' />
+        <div className='text-center mt-5'>
+          <h2 className='text-h5 px-4 d-inline white'>
+            <hr role='separator' aria-orientation='horizontal' className='my-5 v-divider theme--light' />
             <u>Opiniones sobre Funko {funko.title}</u>
           </h2>
           <div className='my-4'>

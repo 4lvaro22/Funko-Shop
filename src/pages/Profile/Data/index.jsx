@@ -19,14 +19,14 @@ const Data = ({ user }) => {
         <h3>
           Datos de {user.name}
         </h3>
-        <hr class='bg-danger border-2 border-top' />
+        <hr className='bg-danger border-2 border-top' />
 
         <div className='grid gap-3 row-gap-3'>
 
           <Input label='Nombre' name='name' type='text' value={user.name} />
           <Input label='Apellido' name='surname' type='text' value={user.surname} />
 
-          <hr class='bg-danger border-2 border-top' />
+          <hr className='bg-danger border-2 border-top' />
 
           <Input label='Correo' name='email' type='password' value={user.email} />
           <Input label='Contraseña' name='password' type='password' value={user.password} />

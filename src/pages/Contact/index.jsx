@@ -66,7 +66,7 @@ export const Contact = () => {
           </fieldset>
           <p>Los campos (<span style={{ color: 'red' }}>*</span>) marcados con un asterisco son obligatorios.</p>
           <div className='d-flex justify-content-center'>
-            <button className='btn btn-primary'>Enviar<i class='bi bi-send mx-1' /></button>
+            <button className='btn btn-primary'>Enviar<i className='bi bi-send mx-1' /></button>
           </div>
         </div>
 
@@ -80,7 +80,7 @@ export const Contact = () => {
               className='link-dark text-decoration-none'
               href='https://www.instagram.com/'
             >
-              <i class='bi bi-instagram d-inline mx-2' />
+              <i className='bi bi-instagram d-inline mx-2' />
               <p className='d-inline'>FunkoShopInterfaces</p>
             </a>
           </p>
@@ -91,7 +91,7 @@ export const Contact = () => {
               className='link-dark text-decoration-none'
               href='https://es-es.facebook.com/'
             >
-              <i class='bi bi-facebook d-inline mx-2' />
+              <i className='bi bi-facebook d-inline mx-2' />
               <p className='d-inline'>FunkoShopInterfaces</p>
             </a>
           </p>
@@ -102,7 +102,7 @@ export const Contact = () => {
               className='link-dark text-decoration-none'
               href='https://twitter.com/'
             >
-              <i class='bi bi-twitter d-inline mx-2' />
+              <i className='bi bi-twitter d-inline mx-2' />
               <p className='d-inline'>FunkoShopInterfaces</p>
             </a>
           </p>

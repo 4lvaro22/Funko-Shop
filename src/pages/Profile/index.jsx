@@ -40,30 +40,30 @@ export const Profile = ({
       </div>
 
       <div className='row justify-center m-2'>
-        <div class='d-flex align-items-start'>
+        <div className='d-flex align-items-start'>
           <div
-            class='nav flex-column m-2 me-3 bg-light gap-2 p-3 col-sm-4 col-md-3 col-lg-2'
+            className='nav flex-column m-2 me-3 bg-light gap-2 p-3 col-sm-4 col-md-3 col-lg-2'
             id='v-pills-tab'
             role='tablist'
             aria-orientation='vertical'
           >
             <button
-              class={'btn ' + getButtonClass('personal', page)}
+              className={'btn ' + getButtonClass('personal', page)}
               type='button'
               onClick={() => setPage('personal')}
             >
               Datos Personales
             </button>
             <button
-              class={'btn ' + getButtonClass('payments', page)}
+              className={'btn ' + getButtonClass('payments', page)}
               type='button'
               onClick={() => setPage('payments')}
             >
-              <i class='bi bi-credit-card' />{' '}
+              <i className='bi bi-credit-card' />{' '}
               {' Métodos de pago '}
             </button>
           </div>
-          <div class='p-3 bg-light w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
+          <div className='p-3 bg-light w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
             {page === 'personal' ? <Data user={user} /> : null}
             {page === 'payments' ? <PaymentSection user={user} /> : null}
           </div>

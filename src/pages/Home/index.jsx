@@ -13,8 +13,8 @@ export const Home = () => {
 
   getSeries()
     .forEach(item => items.push(
-      <label class='list-group-item border-0'>
-        <input class='form-check-input me-1' type='checkbox' value='' />
+      <label className='list-group-item border-0'>
+        <input className='form-check-input me-1' type='checkbox' value='' />
         {item}
       </label>
     ));
@@ -22,8 +22,6 @@ export const Home = () => {
   getFunkos().forEach(item => listaComponentesFunko.push(
     <Funko funko={item} />
   ));
-
-  console.log('Home');
 
   useEffect(() => {
     if (search.length > 0) {
@@ -35,7 +33,7 @@ export const Home = () => {
 
   return (
     <>
-      <nav className='container-fluid bg-dark'>
+      <nav className='container-fluid bg-light'>
         <div className='row'>
           <div className='col-4' />
           <div className='col-4'>
@@ -57,25 +55,25 @@ export const Home = () => {
         <aside className='col-2 m-4'>  {/* <-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... --> */}
           <h2 className='text-center border-bottom border-top'>Filtros</h2>
           <div className='border rounded p-2'>
-            <div class='list-group'>
+            <div className='list-group'>
               <h6 className='mx-2'>Marca:</h6>
               <div className='overflow-auto' style={{ 'max-height': '300px' }}>
                 {items}
               </div>
             </div>
 
-            <div class='list-group my-2'>
+            <div className='list-group my-2'>
               <h6 className='mx-2'>Precio:</h6>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
+              <label className='list-group-item border-0'>
+                <input className='form-check-input me-1' type='checkbox' value='' />
                 Menor a 10€
               </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
+              <label className='list-group-item border-0'>
+                <input className='form-check-input me-1' type='checkbox' value='' />
                 10€ - 20€
               </label>
-              <label class='list-group-item border-0'>
-                <input class='form-check-input me-1' type='checkbox' value='' />
+              <label className='list-group-item border-0'>
+                <input className='form-check-input me-1' type='checkbox' value='' />
                 20€ - 30€
               </label>
             </div>
