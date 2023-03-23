@@ -6,10 +6,10 @@ import { getSeries, getFunkos } from './../../data';
 
 export const Home = () => {
   const [form, toggleForm] = useState(false);
+  const [filter, setFilter] = useState(false);
   const [search, setSearch] = useState('');
+  const [funkoList, setFunkoList] = useState(getFunkos().map(item => <Funko key={item.handle} funko={item} />));
   const items = [];
-
-  const listaComponentesFunko = [];
 
   getSeries()
     .forEach(item => items.push(
@@ -19,10 +19,6 @@ export const Home = () => {
       </label>
     ));
 
-  getFunkos().forEach(item => listaComponentesFunko.push(
-    <Funko funko={item} />
-  ));
-
   useEffect(() => {
     if (search.length > 0) {
       toggleForm(true);
@@ -30,6 +26,21 @@ export const Home = () => {
       toggleForm(false);
     }
   }, [search]);
+
+  const handleBusqueda = () => {
+    console.log('Buscando: ' + search);
+    // setFilter(true);
+    setFunkoList(getFunkos().filter(item => item.title.toLowerCase().includes(search.toLowerCase())).map(element => <Funko key={element.handle} funko={element} />));
+  };
+
+  // useEffect(() => {
+  //   // getFunkos().forEach(item => listaComponentesFunko.push(
+  //   //   <Funko funko={item} />
+  //   // ));
+  //   console.log(funkoList);
+  //   console.log('asd');
+  //   if (filter) { setFilter(false); }
+  // }, [funkoList]);
 
   return (
     <>
@@ -42,8 +53,9 @@ export const Home = () => {
                 type='text' className='form-control' id='buscador' aria-label='Buscador' aria-describedby='Buscar'
                 value={search}
                 onChange={e => setSearch(e.target.value)}
+                onKeyUp={e => e.key === 'Enter' ? handleBusqueda() : null}
               />
-              <button className={'btn btn-outline-' + (form ? 'dark' : 'white') + ' bg-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2'><i className='bi bi-search' /></button>
+              <button className={'btn btn-outline-' + (form ? 'dark' : 'white') + ' bg-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2' onClick={() => handleBusqueda()}><i className='bi bi-search' /></button>
             </span>
           </div>
           <div className='col-4' />
@@ -90,7 +102,7 @@ export const Home = () => {
           <h2 className='text-center border-bottom border-top'>Catálogo</h2>
 
           <div className='row flex d-inline'>
-            {listaComponentesFunko}
+            {funkoList}
           </div>
 
         </section>
