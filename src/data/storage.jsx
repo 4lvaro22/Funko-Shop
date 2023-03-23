@@ -21,6 +21,8 @@ export const addFunko = (funko, quantity) => {
     value.push(found);
   }
 
+  if (found.quantity > 10) found.quantity = 10;
+
   localStorage.setItem('funko', JSON.stringify(value));
 };
 
@@ -31,7 +33,7 @@ export const changeQuantity = (id, newQuantity) => {
   let found = value.find((element) => element.id === id);
 
   if (found) {
-    if (newQuantity === 0) {
+    if (parseInt(newQuantity) === 0) {
       value.splice(value.indexOf(found), 1);
     } else {
       found.quantity = newQuantity;
@@ -43,6 +45,8 @@ export const changeQuantity = (id, newQuantity) => {
     };
     value.push(found);
   }
+
+  if (found.quantity > 10) found.quantity = 10;
 
   localStorage.setItem('funko', JSON.stringify(value));
 };
