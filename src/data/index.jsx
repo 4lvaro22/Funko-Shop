@@ -6,6 +6,19 @@ let csvObj;
 
 if (!loaded) {
   csvObj = JSON.parse(db);
+  const set = new Set();
+  csvObj.forEach((funko) => {
+    funko.handle = funko.handle.replaceAll('/', '_');
+
+    const oldName = funko.handle;
+
+    let i = 0;
+    while (set.has(funko.handle)) {
+      funko.handle = oldName + '_' + i;
+      i++;
+    }
+    set.add(funko.handle);
+  });
   loaded = true;
 }
 
