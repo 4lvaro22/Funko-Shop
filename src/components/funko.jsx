@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 import { addFunko } from '../data/storage';
+import AddedModal from './addedModal';
 
 export const Funko = ({ funko }) => {
   return (
+    <>
+      <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
+      <div className=' col-auto border border-2 funko mt-2 mx-2 mb-2 d-inline-block p-3'>
 
     <div
       className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3'
@@ -24,7 +28,7 @@ export const Funko = ({ funko }) => {
 
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,9 +1,11 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import AddedModal from '../../components/addedModal';
 
 export const Contact = () => {
   return (
     <>
       <div className='container m-4'>
+        <AddedModal alert='Se ha enviado su colicitud correctamente' out='Salir' />
         <h1><strong>Contacta con nosotros</strong></h1>
         <p>Si tienes cualquier duda sobre tu compra o consulta sobre nuestras tiendas, puedes contactar con nosotros como prefieras:</p>
         <p>Puedes enviarnos tu consulta a través de este formulario:</p>
@@ -66,7 +68,12 @@ export const Contact = () => {
           </fieldset>
           <p>Los campos (<span style={{ color: 'red' }}>*</span>) marcados con un asterisco son obligatorios.</p>
           <div className='d-flex justify-content-center'>
-            <button className='btn btn-primary'>Enviar<i className='bi bi-send mx-1' /></button>
+            <button
+              className='btn btn-primary' onClick={() => {
+                new bootstrap.Modal(document.getElementById('exampleModal')).show();
+              }}
+            >Enviar<i className='bi bi-send mx-1' />
+            </button>
           </div>
         </div>
 
