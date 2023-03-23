@@ -16,7 +16,6 @@ const generateOptions = (quantity) => {
   return options;
 };
 
-
 export const FunkoInfo = (props) => {
   const [funko, setFunko] = useState(
     {
@@ -75,7 +74,7 @@ export const FunkoInfo = (props) => {
                   setQuantity(e.target.value);
                 }} value={quantity}
               >
-                {generateOptions(50)}
+                {generateOptions(10)}
 
               </select>
             </div>
