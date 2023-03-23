@@ -9,10 +9,9 @@ export const Footer = () => {
 
         <div className='col-2 mx-2 mt-2' id='redes'>
           <div id='instagram'>
-
             <a
               className='link-light text-decoration-none'
-              href='https://www.instagram.com/'
+              href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'
             >
               <i class='bi bi-instagram' />{' '}
               <strong>FunkoShopInterfaces</strong>
@@ -23,7 +22,7 @@ export const Footer = () => {
 
             <a
               className='link-light text-decoration-none'
-              href='https://es-es.facebook.com/'
+              href='https://es-es.facebook.com/' target='_blank' rel='noreferrer noopener'
             >
               <i class='bi bi-facebook' />{' '}
               <strong>FunkoShopInterfaces</strong>
@@ -34,7 +33,7 @@ export const Footer = () => {
 
             <a
               className='link-light text-decoration-none'
-              href='https://twitter.com/'
+              href='https://twitter.com/' target='_blank' rel='noreferrer noopener'
             >
               <i class='bi bi-twitter' />{' '}
               <strong>FunkoShopInterfaces</strong>
@@ -63,7 +62,7 @@ export const Footer = () => {
             >
               Contacto
             </Link>
-            <a href='https://goo.gl/maps/douTAYgW9ja5h5VN6' className='link-light text-decoration-none mx-2'>
+            <a href='https://goo.gl/maps/douTAYgW9ja5h5VN6' className='link-light text-decoration-none mx-2' target='_blank' rel='noreferrer noopener'>
               Localización
             </a>
             <Link

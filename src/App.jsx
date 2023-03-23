@@ -1,6 +1,6 @@
 import { Home } from './pages/Home';
 import { Layout } from './pages/Layout';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, ScrollRestoration } from 'react-router-dom';
 import { Login } from './pages/Login';
 import { AboutUs } from './pages/AboutUs';
 import { TermsAndConditions } from './pages/TermsAndConditions';
@@ -47,6 +47,7 @@ const funko_prueba = {
 function App () {
   return (
     <Router>
+      {/* <ScrollRestoration /> */}
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />

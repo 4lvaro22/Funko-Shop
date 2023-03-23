@@ -2,25 +2,29 @@ import { Link } from 'react-router-dom';
 import { FunkoEnCarrito } from './../../components/funkoEnCarrito';
 import { React, useEffect, useState } from 'react';
 import data from '../../data';
-import CartRow from './CartRow';
-
-const useLocalStorage = (storageKey, fallbackState) => {
-  const storedValue = localStorage.getItem(storageKey);
-  const [value, setValue] = useState(
-    storedValue === null || storedValue === undefined ? fallbackState : JSON.parse(storedValue)
-  );
-
-  useEffect(() => {
-    localStorage.setItem(storageKey, JSON.stringify(value));
-  }, [value, storageKey]);
-
-  return [value, setValue];
-};
+import { removeFunko, getFunkosData } from '../../data/storage';
 
 export const Cart = (props) => {
-  const [funko, setFunko] = useLocalStorage('funko', []);
+  const [funko, setFunko] = useState(getFunkosData());
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(0);
+
+  const deleteFunkoChild = (funkoItem) => {
+    const funkoCopy = [];
+
+    funko.forEach(element => {
+      if (element.id !== funkoItem.handle) { funkoCopy.push(element); }
+    });
+
+    removeFunko(funkoItem.handle);
+
+    setFunko(funkoCopy);
+  };
+
+  const updateQuantity = () => {
+    const funkosData = getFunkosData();
+    setFunko(funkosData);
+  };
 
   useEffect(() => {
     let newTotal = 0;
@@ -35,15 +39,18 @@ export const Cart = (props) => {
 
       newTotal += itemFunko.price * quantity;
 
-      
-        <FunkoEnCarrito funko={props.funko} />
       itemsList.push(
-        <CartRow key={itemFunko.handle} itemFunko={itemFunko} quantity={quantity} />
+        <FunkoEnCarrito key={itemFunko.handle} funko={itemFunko} fixQuantity={quantity} remove={deleteFunkoChild} updateQuantity={updateQuantity} />
       );
     });
+
     setTotal(newTotal);
     setItems(itemsList);
-  }, []);
+    return () => {
+      setItems([]);
+      setTotal(0);
+    };
+  }, [funko]);
 
   return (
 
@@ -57,20 +64,20 @@ export const Cart = (props) => {
 
         <div className='mx-2'>
           <h4 className='mt-3'>Total articulos: {total}€</h4>
-          <h4>Envío: 2.00€ <button type='button' class='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' /></h4>
+          <h4>Envío: 2.00€ <button type='button' className='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' /></h4>
 
-          <div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
-            <div class='modal-dialog'>
-              <div class='modal-content'>
-                <div class='modal-header'>
-                  <h5 class='modal-title' id='exampleModalLabel'>Precio envios</h5>
-                  <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close' />
+          <div className='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+            <div className='modal-dialog'>
+              <div className='modal-content'>
+                <div className='modal-header'>
+                  <h5 className='modal-title' id='exampleModalLabel'>Precio envios</h5>
+                  <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
                 </div>
-                <div class='modal-body'>
+                <div className='modal-body'>
                   En cualquier pedido, independientemente del coste total de los articulos, se le aplicara un coste de envió total de 2€.
                 </div>
-                <div class='modal-footer'>
-                  <button type='button' class='btn btn-primary' data-bs-dismiss='modal'>Cerrar</button>
+                <div className='modal-footer'>
+                  <button type='button' className='btn btn-primary' data-bs-dismiss='modal'>Cerrar</button>
                 </div>
               </div>
             </div>
