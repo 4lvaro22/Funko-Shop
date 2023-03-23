@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Stars from './Stars';
 import IndividualReview from './IndividualReview';
 import AddedModal from '../../components/addedModal';
+
 // import bootstrap from 'bootstrap';
 
 const generateOptions = (quantity) => {
@@ -74,7 +75,7 @@ export const FunkoInfo = (props) => {
                   setQuantity(e.target.value);
                 }} value={quantity}
               >
-                {generateOptions(50)}
+                {generateOptions(10)}
 
               </select>
             </div>
@@ -98,10 +99,10 @@ export const FunkoInfo = (props) => {
           </h2>
           <div className='my-4'>
             <h4>Puntuación</h4>
-            <Stars />
+            <Stars oldRating={parseInt(funko.rating)} />
           </div>
 
-          <h1><strong>3/5</strong></h1>
+          <h1><strong>{funko.rating}/5</strong></h1>
         </div>
 
         <div className='row my-5 border p-3'>

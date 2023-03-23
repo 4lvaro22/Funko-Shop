@@ -33,7 +33,7 @@ export const Header = () => {
             <span className='col-4 d-flex align-self-center justify-content-end my-auto'>
               <Link to='/Login'><button id='login' class=' btn btn-light mx-1'>Iniciar Sesión</button></Link>
               <Link to='/SignUp'><button id='signup' class='btn btn-light mx-1'>Registrarse</button></Link>
-              <Link to='/Cart'><button id='cart' class='btn btn-light mx-3'><i className={`bi ${!cart ? 'bi-cart' : 'bi-cart-plus-fill'}`} /> Carrito</button></Link>
+              <Link to='/Cart'><button id='cart' class='btn btn-light mx-3'><i className={`bi ${cart ? 'bi-cart' : 'bi-cart-plus-fill'}`} /> Carrito</button></Link>
             </span>
           </div>
         </div>
