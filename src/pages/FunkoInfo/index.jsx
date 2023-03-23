@@ -135,7 +135,7 @@ export const FunkoInfo = (props) => {
           </div>
           <div className='row'>
             <span className='col-4 d-flex justify-content-center'>
-              <button className='btn btn-primary'>Enviar</button>
+              <button className='btn btn-primary'>Publicar</button>
             </span>
           </div>
         </div>
