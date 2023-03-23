@@ -5,10 +5,10 @@ export const Login = () => {
   return (
     <>
 
-      <div class='container my-5'>
-        <div class='row justify-content-md-center'>
+      <div className='container my-5'>
+        <div className='row justify-content-md-center'>
           <div className='col col-lg-5'>
-            <span class='align-middle'><img className='w-100' src={logoFunko} /></span>
+            <span className='align-middle'><img className='w-100' src={logoFunko} /></span>
           </div>
           <div className='col col-lg-5'>
             <div className='Auth-form-container'>
@@ -35,7 +35,7 @@ export const Login = () => {
               </form>
             </div>
 
-            <div class='text-center'>
+            <div className='text-center'>
               <Link to='/SignUp' className='text-decoration-none text-black'><p>No te has registrado? <u>Registrarme</u></p></Link>
             </div>
           </div>

@@ -9,7 +9,7 @@ export const SignUp = () => {
       <div className='container my-5'>
         <div className='row justify-content-md-center'>
           <div className='col col-lg-5'>
-            <span class='align-middle'><img className='w-100' src={logoFunko} /></span>
+            <span className='align-middle'><img className='w-100' src={logoFunko} /></span>
           </div>
           <div className='col col-lg-5'>
             <div className='Auth-form-container'>
@@ -45,7 +45,7 @@ export const SignUp = () => {
                     <label>Direccion</label>
                     <div className='input-group'>
                       <div className='input-group-prepend'>
-                        <span className='input-group-text'><i class='bi bi-house' /></span>
+                        <span className='input-group-text'><i className='bi bi-house' /></span>
                       </div>
                       <input id='txtDireccion' type='text' className='form-control' />
                     </div>
@@ -55,7 +55,7 @@ export const SignUp = () => {
                     <label>Teléfono</label>
                     <div className='input-group'>
                       <div className='input-group-prepend'>
-                        <span className='input-group-text'><i class='bi bi-telephone' /></span>
+                        <span className='input-group-text'><i className='bi bi-telephone' /></span>
                       </div>
                       <input id='txtTelefono' type='tel' className='form-control' />
                     </div>
@@ -77,7 +77,7 @@ export const SignUp = () => {
                     <label>Password <span style={{ color: 'red' }}>*</span></label>
                     <div className='input-group'>
                       <div className='input-group-prepend'>
-                        <span className='input-group-text'><i class='bi bi-lock-fill' /></span>
+                        <span className='input-group-text'><i className='bi bi-lock-fill' /></span>
                       </div>
                       <input ID='txtPassword' type='Password' className='form-control' />
                     </div>
