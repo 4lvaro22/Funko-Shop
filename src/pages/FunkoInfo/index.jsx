@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Stars from './Stars';
 import IndividualReview from './IndividualReview';
 import AddedModal from '../../components/addedModal';
+
 // import bootstrap from 'bootstrap';
 
 const generateOptions = (quantity) => {
@@ -43,7 +44,7 @@ export const FunkoInfo = (props) => {
 
       <div className='container mb-5'>
 
-        <AddedModal />
+        <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
         <div className='row my-3'>
 
           <div className='col'>
@@ -69,6 +70,9 @@ export const FunkoInfo = (props) => {
             </div>
 
             <div className='col-2'>
+
+              Cantidad:
+
               <select
                 className='form-select' aria-label='Default select example' onChange={(e) => {
                   setQuantity(e.target.value);
@@ -98,10 +102,10 @@ export const FunkoInfo = (props) => {
           </h2>
           <div className='my-4'>
             <h4>Puntuación</h4>
-            <Stars />
+            <Stars oldRating={parseInt(funko.rating)} />
           </div>
 
-          <h1><strong>3/5</strong></h1>
+          <h1><strong>{funko.rating}/5</strong></h1>
         </div>
 
         <div className='row my-5 border p-3'>

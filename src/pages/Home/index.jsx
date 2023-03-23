@@ -100,8 +100,7 @@ export const Home = () => {
         {/* <-- Seccion --> */}
         <section className='col-9 m-4'>
           <h2 className='text-center border-bottom border-top'>Catálogo</h2>
-
-          <div className='row flex d-inline'>
+          <div className='row'>
             {funkoList}
           </div>
 

@@ -1,17 +1,35 @@
-export const Stars = () => {
-  return (
+import { useState } from 'react';
 
-    <>
-      <div className='row text-center'>
-        <span style={{ fontSize: '100%' }}>
-          <i className='bi bi-star-fill text-warning mx-2' />
-          <i className='bi bi-star-fill text-warning mx-2' />
-          <i className='bi bi-star-fill text-warning mx-2' />
-          <i className='bi bi-star-half text-warning mx-2' />
-          <i className='bi bi-star text-warning mx-2' />
-        </span>
-      </div>
-    </>
+export const Stars = ({ oldRating }) => {
+  const [rating, setRating] = useState(oldRating ?? 0);
+  const [hover, setHover] = useState(0);
+
+  return (
+    <div>
+      {[...Array(5)].map((star, index) => {
+        index += 1;
+        return (
+          <button
+            type='button'
+            key={index}
+            className={index <= (hover || rating) ? 'on' : 'off'}
+            onClick={() => { if (oldRating === undefined) setRating(index); }}
+            onMouseEnter={() => { if (oldRating === undefined) setHover(index); }}
+            onMouseLeave={() => { if (oldRating === undefined) setHover(rating); }}
+            style={{
+              backgroundColor: 'transparent',
+              border: 'none',
+              outline: 'none',
+              cursor: 'pointer',
+              fontSize: '1.2rem',
+              color: `${index <= (hover || rating) ? '#FFE400' : '#ccc'}`
+            }}
+          >
+            <span className='star'><i className={index <= (hover || rating) ? 'bi bi-star-fill shadow-sm' : 'bi bi-star shadow-sm'} /></span>
+          </button>
+        );
+      })}
+    </div>
   );
 };
 
