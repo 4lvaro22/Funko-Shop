@@ -29,16 +29,17 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
         <h4 className='text-center '>{funko.title}</h4>
       </div>
 
-      <div className='col'>
+      <span className='col'>
+        Cantidad:
         <select
-          className='form-select' aria-label='Default select example' onChange={(e) => {
+          className='form-select w-50' aria-label='Default select example' onChange={(e) => {
             setQuantity(e.target.value);
           }} value={quantity}
         >
           {generateOptions(50)}
 
         </select>
-      </div>
+      </span>
 
       <div className='col'>
         <h4 className='text-center'>{funko.price * quantity}€</h4>
