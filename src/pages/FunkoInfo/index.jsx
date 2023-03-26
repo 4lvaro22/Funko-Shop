@@ -45,7 +45,7 @@ export const FunkoInfo = (props) => {
 
       <div className='container mb-5'>
 
-        <AddedModal />
+        <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
         <div className='row my-3'>
 
           <div className='col'>
@@ -71,6 +71,9 @@ export const FunkoInfo = (props) => {
             </div>
 
             <div className='col-2'>
+
+              Cantidad:
+
               <select
                 className='form-select' aria-label='Default select example' onChange={(e) => {
                   setQuantity(e.target.value);
