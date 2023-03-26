@@ -102,10 +102,10 @@ export const FunkoInfo = (props) => {
           </h2>
           <div className='my-4'>
             <h4>Puntuación</h4>
-            <Stars oldRating={parseInt(funko.rating)} />
+            {/* <Stars oldRating={parseInt(funko.rating)} /> */}
+            <h1><strong>{funko.rating}/5</strong></h1>
           </div>
 
-          <h1><strong>{funko.rating}/5</strong></h1>
         </div>
 
         <div className='row my-5 border p-3'>
