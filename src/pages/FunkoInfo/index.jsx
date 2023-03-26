@@ -50,7 +50,6 @@ export const FunkoInfo = (props) => {
 
           <div className='col'>
 
-            {/*  */}
             <img src={funko.imageName} width='300' height='400' style={{ marginLeft: '15%', marginTop: '15%' }} />
           </div>
 
