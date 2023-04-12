@@ -3,13 +3,35 @@ import { Link } from 'react-router-dom';
 import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
 import { getSeries, getFunkos } from './../../data';
+import ReactPaginate from 'react-paginate';
 
-export const Home = () => {
+export const Home = ({ itemsPerPage }) => {
   const [form, toggleForm] = useState(false);
   const [filter, setFilter] = useState(false);
   const [search, setSearch] = useState('');
   const [funkoList, setFunkoList] = useState(getFunkos().map(item => <Funko key={item.handle} funko={item} />));
   const items = [];
+
+  // Here we use item offsets; we could also use page offsets
+  // following the API or data you're working with.
+  const [itemOffset, setItemOffset] = useState(0);
+
+  // Simulate fetching items from another resources.
+  // (This could be items from props; or items loaded in a local state
+  // from an API endpoint with useEffect and useState)
+  const endOffset = itemOffset + itemsPerPage;
+  console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+  const currentItems = funkoList.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(funkoList.length / itemsPerPage);
+
+  // Invoke when user click to request another page.
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % funkoList.length;
+    console.log(
+        `User requested page number ${event.selected}, which is offset ${newOffset}`
+    );
+    setItemOffset(newOffset);
+  };
 
   getSeries()
     .forEach(item => items.push(
@@ -69,7 +91,7 @@ export const Home = () => {
           <div className='border rounded p-2'>
             <div className='list-group'>
               <h6 className='mx-2'>Marca:</h6>
-              <div className='overflow-auto' style={{ 'max-height': '300px' }}>
+              <div className='overflow-auto' style={{ maxHeight: '300px' }}>
                 {items}
               </div>
             </div>
@@ -100,13 +122,28 @@ export const Home = () => {
         {/* <-- Seccion --> */}
         <section className='col-9 m-4'>
           <h2 className='text-center border-bottom border-top'>Catálogo</h2>
-          <div className='row'>
-            {funkoList}
+          <div className=''>
+            {currentItems && currentItems.map((funko) => (
+              <span>
+                {funko}
+              </span>
+            ))}
           </div>
-
+          <ReactPaginate
+            previousLabel='← Previous'
+            nextLabel='Next →'
+            pageCount={pageCount}
+            onPageChange={handlePageClick}
+            containerClassName='pagination'
+            previousLinkClassName='pagination__link'
+            nextLinkClassName='pagination__link'
+            disabledClassName='pagination__link--disabled'
+            activeClassName='pagination__link--active'
+          />
         </section>
       </div>
     </>
   );
 };
+
 export default Home;
