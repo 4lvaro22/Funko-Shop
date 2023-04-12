@@ -2,11 +2,8 @@ import { useParams } from 'react-router';
 import { useState, useEffect } from 'react';
 import { getFunkoById } from '../../data';
 import { addFunko } from '../../data/storage';
-import { Link } from 'react-router-dom';
-import Stars from './Stars';
-import IndividualReview from './IndividualReview';
 import AddedModal from '../../components/addedModal';
-import Reviews from './Reviews';
+import Reviews from './Review';
 
 // import bootstrap from 'bootstrap';
 
@@ -21,6 +18,7 @@ const generateOptions = (quantity) => {
 export const FunkoInfo = (props) => {
   const [funko, setFunko] = useState(
     {
+      handle: '',
       imageName: '',
       title: '',
       scale: '',
@@ -37,6 +35,8 @@ export const FunkoInfo = (props) => {
   const { id } = useParams();
 
   useEffect(() => {
+    if (!id) return;
+
     setFunko(getFunkoById(id));
   }, [id]);
 
@@ -95,7 +95,7 @@ export const FunkoInfo = (props) => {
           </div>
         </div>
 
-        <Reviews funko={funko} />
+        {funko.handle.length && <Reviews funko={funko} />}
 
       </div>
 
