@@ -104,6 +104,13 @@ export const Home = () => {
             {funkoList}
           </div>
 
+          {funkoList.length == 0 &&
+            <div>
+              <h4 className='text-center mt-4'>
+                No hay resultados para esa busqueda.
+              </h4>
+            </div>}
+
         </section>
       </div>
     </>
