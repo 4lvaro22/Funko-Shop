@@ -165,40 +165,50 @@ export const Home = ({ itemsPerPage }) => {
               {funko}
             </span>
           ))}
-          <div className='row'>
-            <div className='px-2 col-10'>
-              <ReactPaginate
-                previousLabel='Previous'
-                nextLabel='Next'
-                breakLabel='...'
-                break1='page-item'
-                breakLinkClassName='page-link'
-                pageCount={pageCount}
-                onPageChange={handlePageClick}
-                containerClassName='pagination  d-flex justify-content-center my-2 p-3'
-                previousLinkClassName='pagination__link mx-3 btn btn-primary'
-                nextLinkClassName='pagination__link mx-3 btn btn-primary'
-                disabledClassName='pagination__link--disabled'
-                activeClassName='pagination__link--active'
-                pageClassName='page-item'
-                pageLinkClassName='page-link text-dark'
-                previousClassName='page-item'
-                nextClassName='page-item'
-                activeLinkClassName='disabled bg-secondary'
+
+          {funkoList.length == 0 &&
+            <div>
+              <h4 className='text-center mt-4'>
+                No hay resultados para esa busqueda.
+              </h4>
+            </div>}
+
+          {funkoList.length > 0 &&
+            <div className='row'>
+              <div className='px-2 col-10'>
+                <ReactPaginate
+                  previousLabel='Previous'
+                  nextLabel='Next'
+                  breakLabel='...'
+                  break1='page-item'
+                  breakLinkClassName='page-link'
+                  pageCount={pageCount}
+                  onPageChange={handlePageClick}
+                  containerClassName='pagination  d-flex justify-content-center my-2 p-3'
+                  previousLinkClassName='pagination__link mx-3 btn btn-primary'
+                  nextLinkClassName='pagination__link mx-3 btn btn-primary'
+                  disabledClassName='pagination__link--disabled'
+                  activeClassName='pagination__link--active'
+                  pageClassName='page-item'
+                  pageLinkClassName='page-link text-dark'
+                  previousClassName='page-item'
+                  nextClassName='page-item'
+                  activeLinkClassName='disabled bg-secondary'
               // eslint-disable-next-line no-unused-vars
-                hrefAllControls
-                onClick={(clickEvent) => {
-                  console.log('onClick', clickEvent);
-                // Return false to prevent standard page change,
-                // return false; // --> Will do nothing.
-                // return a number to choose the next page,
-                // return 4; --> Will go to page 5 (index 4)
-                // return nothing (undefined) to let standard behavior take place.
-                }}
-              />
-            </div>
-            <div className='col-4 mx-2' />
-          </div>
+                  hrefAllControls
+                  onClick={(clickEvent) => {
+                    console.log('onClick', clickEvent);
+                    // Return false to prevent standard page change,
+                    // return false; // --> Will do nothing.
+                    // return a number to choose the next page,
+                    // return 4; --> Will go to page 5 (index 4)
+                    // return nothing (undefined) to let standard behavior take place.
+                  }}
+                />
+              </div>
+              <div className='col-4 mx-2' />
+            </div>}
+
         </section>
       </div>
     </>

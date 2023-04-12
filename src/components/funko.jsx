@@ -7,12 +7,12 @@ export const Funko = ({ funko }) => {
     <>
       <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
       <div
-        className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3'
+        className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
       >
 
-        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='250' height='333' alt='Imagen de Funko' title={funko.title} /> </Link>
+        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='215' height='286' alt='Imagen de Funko' title={funko.title} /> </Link>
 
-        <h4 className='mt-3'>{funko.title}</h4>
+        <h4 className='mt-3' style={{ 'max-width': '215px' }}>{funko.title}</h4>
 
         <div>
           <div className='mb-3'>
