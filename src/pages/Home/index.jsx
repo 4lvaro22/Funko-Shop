@@ -3,13 +3,73 @@ import { Link } from 'react-router-dom';
 import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
 import { getSeries, getFunkos } from './../../data';
+import ReactPaginate from 'react-paginate';
+import styled from 'styled-components';
 
-export const Home = () => {
+const MyPaginate = styled(ReactPaginate).attrs({
+  // You can redefine classes here, if you want.
+  activeClassName: 'active' // default to "selected"
+})`
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 5rem;
+
+  li a {
+    border-radius: 7px;
+    padding: 0.1rem 1rem;
+    border: gray 1px solid;
+    cursor: pointer;
+  }
+  li.previous a,
+  li.next a,
+  li.break a {
+    border-color: transparent;
+  }
+  li.active a {
+    background-color: #0366d6;
+    border-color: transparent;
+    color: white;
+    min-width: 32px;
+  }
+  li.disabled a {
+    color: grey;
+  }
+  li.disable,
+  li.disabled a {
+    cursor: default;
+  }
+`;
+
+export const Home = ({ itemsPerPage }) => {
   const [form, toggleForm] = useState(false);
   const [filter, setFilter] = useState(false);
   const [search, setSearch] = useState('');
   const [funkoList, setFunkoList] = useState(getFunkos().map(item => <Funko key={item.handle} funko={item} />));
   const items = [];
+
+  // Here we use item offsets; we could also use page offsets
+  // following the API or data you're working with.
+  const [itemOffset, setItemOffset] = useState(0);
+
+  // Simulate fetching items from another resources.
+  // (This could be items from props; or items loaded in a local state
+  // from an API endpoint with useEffect and useState)
+  const endOffset = itemOffset + itemsPerPage;
+  console.log(`Loading items from ${itemOffset} to ${endOffset}`);
+  const currentItems = funkoList.slice(itemOffset, endOffset);
+  const pageCount = Math.ceil(funkoList.length / itemsPerPage);
+
+  // Invoke when user click to request another page.
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * itemsPerPage) % funkoList.length;
+    console.log(
+        `User requested page number ${event.selected}, which is offset ${newOffset}`
+    );
+    setItemOffset(newOffset);
+  };
 
   getSeries()
     .forEach(item => items.push(
@@ -69,7 +129,7 @@ export const Home = () => {
           <div className='border rounded p-2'>
             <div className='list-group'>
               <h6 className='mx-2'>Marca:</h6>
-              <div className='overflow-auto' style={{ 'max-height': '300px' }}>
+              <div className='overflow-auto' style={{ maxHeight: '300px' }}>
                 {items}
               </div>
             </div>
@@ -100,8 +160,44 @@ export const Home = () => {
         {/* <-- Seccion --> */}
         <section className='col-9 m-4'>
           <h2 className='text-center border-bottom border-top'>Catálogo</h2>
+          {currentItems && currentItems.map((funko) => (
+            <span>
+              {funko}
+            </span>
+          ))}
           <div className='row'>
-            {funkoList}
+            <div className='px-2 col-10'>
+              <ReactPaginate
+                previousLabel='Previous'
+                nextLabel='Next'
+                breakLabel='...'
+                break1='page-item'
+                breakLinkClassName='page-link'
+                pageCount={pageCount}
+                onPageChange={handlePageClick}
+                containerClassName='pagination  d-flex justify-content-center my-2 p-3'
+                previousLinkClassName='pagination__link mx-3 btn btn-primary'
+                nextLinkClassName='pagination__link mx-3 btn btn-primary'
+                disabledClassName='pagination__link--disabled'
+                activeClassName='pagination__link--active'
+                pageClassName='page-item'
+                pageLinkClassName='page-link text-dark'
+                previousClassName='page-item'
+                nextClassName='page-item'
+                activeLinkClassName='disabled bg-secondary'
+              // eslint-disable-next-line no-unused-vars
+                hrefAllControls
+                onClick={(clickEvent) => {
+                  console.log('onClick', clickEvent);
+                // Return false to prevent standard page change,
+                // return false; // --> Will do nothing.
+                // return a number to choose the next page,
+                // return 4; --> Will go to page 5 (index 4)
+                // return nothing (undefined) to let standard behavior take place.
+                }}
+              />
+            </div>
+            <div className='col-4 mx-2' />
           </div>
 
           {funkoList.length == 0 &&
@@ -116,4 +212,5 @@ export const Home = () => {
     </>
   );
 };
+
 export default Home;

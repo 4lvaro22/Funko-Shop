@@ -35,7 +35,7 @@ function App () {
       {/* <ScrollRestoration /> */}
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Home itemsPerPage={16} />} />
           <Route path='Login' element={<Login />} />
           <Route path='Home' element={<Home />} />
           <Route path='AboutUs' element={<AboutUs />} />
