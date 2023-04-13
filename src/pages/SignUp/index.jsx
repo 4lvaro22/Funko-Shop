@@ -88,20 +88,14 @@ export const SignUp = () => {
                   <div className='form-group mt-3'>
                     <label>Direccion</label>
                     <div className='input-group'>
-                      <div className='input-group-prepend'>
-                        <span className='input-group-text'><i className='bi bi-house' /></span>
-                      </div>
-                      <input id='txtDireccion' type='text' className='form-control' />
+                      <span className='input-group-text'><i className='bi bi-house' /></span><input id='txtDireccion' type='text' className='form-control' />
                     </div>
                   </div>
                   {/* TELEFONO */}
                   <div className='form-group mt-3'>
                     <label>Teléfono</label>
                     <div className='input-group'>
-                      <div className='input-group-prepend'>
-                        <span className='input-group-text'><i className='bi bi-telephone' /></span>
-                      </div>
-                      <input id='txtTelefono' type='number' className='form-control' />
+                      <span className='input-group-text'><i className='bi bi-telephone' /></span><input id='txtTelefono' type='number' className='form-control' />
                     </div>
                   </div>
                   {/* BOTON ENVIAR */}
