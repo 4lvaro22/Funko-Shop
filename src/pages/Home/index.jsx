@@ -177,8 +177,8 @@ export const Home = ({ itemsPerPage }) => {
             <div className='row'>
               <div className='px-2 col-10'>
                 <ReactPaginate
-                  previousLabel='Previous'
-                  nextLabel='Next'
+                  previousLabel='Anterior'
+                  nextLabel='Siguiente'
                   breakLabel='...'
                   break1='page-item'
                   breakLinkClassName='page-link'
