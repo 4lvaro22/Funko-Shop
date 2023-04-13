@@ -10,6 +10,7 @@ export const Home = ({ itemsPerPage }) => {
   const [form, toggleForm] = useState(false);
   const [filter, setFilter] = useState(false);
   const [search, setSearch] = useState('');
+  const [buscado, setBuscado] = useState('');
   const [funkoList, setFunkoList] = useState(getFunkos().map(item => <Funko key={item.handle} funko={item} />));
   const items = [];
 
@@ -37,7 +38,7 @@ export const Home = ({ itemsPerPage }) => {
   getSeries()
     .forEach(item => items.push(
       <label className='list-group-item border-0'>
-        <input className='form-check-input me-1' type='checkbox' value='' />
+        <input className='form-check-input me-1' type='checkbox' value={item} name='serie' />
         {item.normalize().replace('Pop! ', '').replace('Pops! ', '').replace('POP! ', '')}
       </label>
     ));
@@ -53,6 +54,7 @@ export const Home = ({ itemsPerPage }) => {
   const handleBusqueda = () => {
     console.log('Buscando: ' + search);
     // setFilter(true);
+    setBuscado(search);
     setFunkoList(getFunkos().filter(item => item.title.toLowerCase().includes(search.toLowerCase())).map(element => <Funko key={element.handle} funko={element} />));
   };
 
@@ -87,12 +89,14 @@ export const Home = ({ itemsPerPage }) => {
 
       <div className='row align mx-auto'>
         {/* <-- Lado --> */}
+
         <aside className='col-2 m-4'>  {/* <-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... --> */}
+
           <h2 className='text-center border-bottom border-top'>Filtros</h2>
           <div className='border rounded p-2'>
             <div className='list-group'>
               <h6 className='mx-2'>Marca:</h6>
-              <div className='overflow-auto' style={{ maxHeight: '300px' }}>
+              <div className='overflow-auto' style={{ maxHeight: '500px' }}>
                 {items}
               </div>
             </div>
@@ -100,21 +104,21 @@ export const Home = ({ itemsPerPage }) => {
             <div className='list-group my-2'>
               <h6 className='mx-2'>Precio:</h6>
               <label className='list-group-item border-0'>
-                <input className='form-check-input me-1' type='checkbox' value='' />
-                Menor a 10€
+                <input className='form-check-input me-1' type='checkbox' name='precio' value='menorVein' />
+                Menor a 20€
               </label>
               <label className='list-group-item border-0'>
-                <input className='form-check-input me-1' type='checkbox' value='' />
-                10€ - 20€
+                <input className='form-check-input me-1' type='checkbox' name='precio' value='veinCincuen' />
+                20€ - 50€
               </label>
               <label className='list-group-item border-0'>
-                <input className='form-check-input me-1' type='checkbox' value='' />
-                20€ - 30€
+                <input className='form-check-input me-1' type='checkbox' name='precio' value='mayorCincuen' />
+                Mayor a 50
               </label>
             </div>
 
             <div className='list-group'>
-              <button className='float-end btn btn-primary'>Aplicar filtros</button>
+              <input className='float-end btn btn-primary' type='submit' value='Aplicar Filtros' />
             </div>
           </div>
 
@@ -123,10 +127,11 @@ export const Home = ({ itemsPerPage }) => {
         {/* <-- Seccion --> */}
         <section className='col-9 m-4'>
           <h2 className='text-center border-bottom border-top'>Catálogo</h2>
+          {buscado && <p className='fs-5 fw-bold text-left'>Resultados de '{buscado}'</p>}
           {currentItems && currentItems.map((funko) => (
-            <span>
+            <div className='d-inline-flex'>
               {funko}
-            </span>
+            </div>
           ))}
 
           {funkoList.length == 0 &&

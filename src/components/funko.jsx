@@ -2,6 +2,16 @@ import { Link } from 'react-router-dom';
 import { addFunko } from '../data/storage';
 import AddedModal from './addedModal';
 
+function tituloModificado (tituloOri) {
+  let tituloFinal = tituloOri;
+
+  if (tituloOri.length > 22) {
+    tituloFinal = tituloOri.slice(0, 22) + '...';
+  }
+
+  return tituloFinal;
+}
+
 export const Funko = ({ funko }) => {
   return (
     <>
@@ -10,9 +20,9 @@ export const Funko = ({ funko }) => {
         className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
       >
 
-        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='215' height='286' alt='Imagen de Funko' title={funko.title} /> </Link>
+        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='200' height='266' alt='Imagen de Funko' title={funko.title} /> </Link>
 
-        <h4 className='mt-3' style={{ maxWidth: '215px' }}>{funko.title}</h4>
+        <h4 className='mt-3 fs-6' style={{ 'max-width': '200px' }}>{tituloModificado(funko.title)}</h4>
 
         <div>
           <div className='mb-3'>
