@@ -8,6 +8,7 @@ export const Home = () => {
   const [form, toggleForm] = useState(false);
   const [filter, setFilter] = useState(false);
   const [search, setSearch] = useState('');
+  const [buscado, setBuscado] = useState('');
   const [funkoList, setFunkoList] = useState(getFunkos().map(item => <Funko key={item.handle} funko={item} />));
   const items = [];
 
@@ -30,6 +31,7 @@ export const Home = () => {
   const handleBusqueda = () => {
     console.log('Buscando: ' + search);
     // setFilter(true);
+    setBuscado(search);
     setFunkoList(getFunkos().filter(item => item.title.toLowerCase().includes(search.toLowerCase())).map(element => <Funko key={element.handle} funko={element} />));
   };
 
@@ -100,6 +102,7 @@ export const Home = () => {
         {/* <-- Seccion --> */}
         <section className='col-9 m-4'>
           <h2 className='text-center border-bottom border-top'>Catálogo</h2>
+          {buscado && <p className='fs-5 fw-bold text-left'>Resultados de '{buscado}'</p>}
           <div className='row'>
             {funkoList}
           </div>
