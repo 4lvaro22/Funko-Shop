@@ -17,12 +17,12 @@ export const PaymentForm = () => {
                 <div className='col-8'>
                   <div className='row'>
                     <div className='col-5'>
-                      <div className='form-group'>
+                      <div className='form-group mt-3'>
                         <label for='name' className='form-label'>
                           Nombre del Dueño
                         </label>
                         <input
-                          className='form-control'
+                          className='form-form-control mt-1'
                           id='name'
                           type='text'
                           placeholder='Enter your name'
