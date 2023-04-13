@@ -15,23 +15,23 @@ export const SignUp = () => {
   const [confirmPassword, setValueConfirmPassword] = useState('');
 
   const validateName = () => {
-    return name.length;
+    return name.length >= 4;
   };
   const validateSurname = () => {
-    return surname.length;
+    return surname.length >= 4;
   };
   const validateEmail = () => {
-    return email.includes('@');
+    return email.includes('@') && email.length >= 4;
   };
   const validatePassword = () => {
-    return password.length;
+    return password.length && password.length >= 8 && password.length <= 20 && password === confirmPassword;
   };
   const validateConfirmPassword = () => {
-    return confirmPassword.length;
+    return confirmPassword.length && confirmPassword.length >= 8 && confirmPassword.length <= 20 && password === confirmPassword;
   };
 
   const validate = () => {
-    return name.length && surname.length && email.length && password.length && confirmPassword.length;
+    return validateName() && validateSurname() && validateEmail() && validatePassword() && validateConfirmPassword() && password === confirmPassword;
   };
 
   return (
@@ -48,56 +48,102 @@ export const SignUp = () => {
                 <div className='Auth-form-content'>
                   <h2 className='Auth-form-title'>Registrarme</h2>
                   {/* NOMBRE */}
-                  <div className='form-group mt-3'>
-                    <label>Nombre <span style={{ color: 'red' }}>*</span></label>
-                    <div className='input-group'>
-                      <input id='txtNombre' type='text' className='form-control' minLength={4} value={name} onChange={(e) => setValueName(e.target.value)} /> <h2><i class={'bi bi' + (validateName() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateName() ? 'visually-hidden' : '')}>Mínimo numero de carácteres 4</p>
+                  <div class='row g-3 align-items-center'>
+                    <div class='col-3'>
+                      <label for='txtNombre' class='col-form-label'>Nombre</label>
+                      <div className='input-group d-flex flex-row'>
+                        <input id='txtNombre' class='form-control' type='text' className='form-control' onChange={(e) => setValueName(e.target.value)} />
+                      </div>
+                    </div>
+                    <div className='col-5'>
+                      <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
+                        <h2 className='d-flex '><i className={'bi bi' + (validateName() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateName() ? 'visually-hidden' : '')}>Mínimo numero de carácteres 4</p>
+                      </div>
                     </div>
                   </div>
                   {/* APELLIDO */}
-                  <div className='form-group mt-3'>
-                    <label>Apellido <span style={{ color: 'red' }}>*</span></label>
-                    <div className='input-group'>
-                      <input id='txtApellido' type='text' className='form-control' minLength={4} value={surname} onChange={(e) => setValueSurname(e.target.value)} /> <h2><i class={'bi bi' + (validateSurname() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateSurname() ? 'visually-hidden' : '')}>Mínimo numero de carácteres 4</p>
+                  <div class='row g-3 align-items-center'>
+                    <div class='col-3'>
+                      <label for='txtApellido' class='col-form-label'>Apellidos</label>
+                      <div className='input-group d-flex flex-row'>
+                        <input id='txtApellido' class='form-control' type='text' className='form-control' onChange={(e) => setValueSurname(e.target.value)} />
+                      </div>
+                    </div>
+                    <div className='col-5'>
+                      <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
+                        <h2 className='d-flex '><i className={'bi bi' + (validateSurname() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateSurname() ? 'visually-hidden' : '')}>Mínimo numero de carácteres 4</p>
+                      </div>
                     </div>
                   </div>
                   {/* CORREO ELECTRONICO */}
-                  <div className='form-group mt-3'>
-                    <label>Correo Electrónico <span style={{ color: 'red' }}>*</span></label>
-                    <div className='input-group'>
-                      <span className='input-group-text'><i className='bi bi-envelope-at' /></span><input id='txtEmail' type='email' className='form-control' value={email} onChange={(e) => setValueEmail(e.target.value)} /> <h2><i class={'bi bi' + (validateEmail() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateEmail() ? 'visually-hidden' : '')}>Debe contener un carácter @</p>
+                  <div class='row g-3 align-items-center'>
+                    <div class='col-4'>
+                      <label for='txtEmail' class='col-form-label'>Correo Electrónico <span style={{ color: 'red' }}>*</span></label>
+                      <div className='input-group d-flex flex-row'>
+                        <span className='input-group-text'><i className='bi bi-envelope-at' /></span><input id='txtEmail' class='form-control' type='text' className='form-control' onChange={(e) => setValueEmail(e.target.value)} />
+                      </div>
+                    </div>
+                    <div className='col-5'>
+                      <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
+                        <h2 className='d-flex '><i className={'bi bi' + (validateEmail() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateEmail() ? 'visually-hidden' : '')}>Mínimo numero de carácteres 4</p>
+                      </div>
                     </div>
                   </div>
                   {/* CONTRASEÑA */}
-                  <div className='form-group mt-3'>
-                    <label>Contraseña <span style={{ color: 'red' }}>*</span></label>
-                    <div className='input-group'>
-                      <span className='input-group-text'><i className='bi bi-lock' /></span><input ID='txtPassword' type={'Password'.replace('Password', (!passwordEye ? 'text' : 'Password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} className='form-control' /><span className='input-group-text'><i class={'bi bi-eye' + (passwordEye ? '-slash' : '')} onClick={() => setValuePasswordEye(!passwordEye)} /></span> <h2><i class={'bi bi' + (validatePassword() ? '-check text-success' : '-x text-danger')} /></h2>
+                  <div class='row g-3 align-items-center'>
+                    <div class='col-auto'>
+                      <label for='txtPassword' class='col-form-label'>Contraseña <span style={{ color: 'red' }}>*</span></label>
+                      <div className='input-group d-flex flex-row'>
+                        <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' class='form-control' aria-describedby='passwordHelpInline' type={'Password'.replace('Password', (!passwordEye ? 'text' : 'Password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} className='form-control' /><span className='input-group-text'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} onClick={() => setValuePasswordEye(!passwordEye)} /></span>
+                      </div>
                     </div>
-                    {/* SEGURIDAD DE LA CONTRASEÑA */}
-                    <div id='strengthMessage' />
+                    <div className='col-6'>
+                      <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
+                        <h2 className='d-flex '><i className={'bi bi' + (validatePassword() ? '-check text-success' : '-x text-danger')} /></h2><p className='mt-2'>Debe ser una contraseña de 8-20 caracteres.</p>
+                      </div>
+                    </div>
                   </div>
                   {/* CONFIRMAR CONTRASEÑA */}
-                  <div className='form-group mt-3'>
-                    <label>Confirmar contraseña <span style={{ color: 'red' }}>*</span></label>
-                    <div className='input-group'>
-                      <span className='input-group-text'><i className='bi bi-lock-fill' /></span><input ID='txtPassword' type={'Password' + (confirmPasswordEye ? '' : 'text')} value={confirmPassword} onChange={(e) => setValueConfirmPassword(e.target.value)} className='form-control' /><span className='input-group-text'><i class={'bi bi-eye' + (confirmPasswordEye ? '-slash' : '')} onClick={() => setValueConfirmPasswordEye(!confirmPasswordEye)} /></span><h2><i class={'bi bi' + (validateConfirmPassword() ? '-check text-success' : '-x text-danger')} /></h2>
+                  <div class='row g-3 align-items-center'>
+                    <div class='col-auto'>
+                      <label for='txtConfirmPassword' class='col-form-label'>Confirmar Contraseña <span style={{ color: 'red' }}>*</span></label>
+                      <div className='input-group d-flex flex-row'>
+                        <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtConfirmPassword' class='form-control' aria-describedby='passwordHelpInline' onChange={(e) => setValueConfirmPassword(e.target.value)} type={'Password'.replace('Password', (!confirmPasswordEye ? 'text' : 'Password'))} value={confirmPassword} className='form-control' /><span className='input-group-text'><i className={'bi bi-eye' + (confirmPasswordEye ? '-slash' : '')} onClick={() => setValueConfirmPasswordEye(!confirmPasswordEye)} /></span>
+                      </div>
+                    </div>
+                    <div className='col-6'>
+                      <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
+                        <h2 className='d-flex '><i className={'bi bi' + (validateConfirmPassword() ? '-check text-success' : '-x text-danger')} /></h2><p className='mt-2'>Debe ser una contraseña de 8-20 caracteres.</p>
+                      </div>
                     </div>
                   </div>
                   {/* DIRECCION */}
-                  <div className='form-group mt-3'>
-                    <label>Direccion</label>
-                    <div className='input-group'>
-                      <span className='input-group-text'><i className='bi bi-house' /></span><input id='txtDireccion' type='text' className='form-control' />
+                  <div class='row g-3 align-items-center'>
+                    <div class='col-7'>
+                      <label for='txtConfirmPassword' class='col-form-label'>Direccion</label>
+                      <div className='input-group d-flex flex-row'>
+                        <span className='input-group-text'><i className='bi bi-house' /></span><input id='txtDireccion' class='form-control' type='text' className='form-control' />
+                      </div>
+                    </div>
+                    {/* CODIGO POSTAL */}
+                    <div class='col-3'>
+                      <label for='txtDireccion' class='col-form-label'>Código Postal</label>
+                      <div className='input-group d-flex flex-row'>
+                        <input id='txtDireccion' class='form-control' type='text' className='form-control' />
+                      </div>
                     </div>
                   </div>
+
                   {/* TELEFONO */}
-                  <div className='form-group mt-3'>
-                    <label>Teléfono</label>
-                    <div className='input-group'>
-                      <span className='input-group-text'><i className='bi bi-telephone' /></span><input id='txtTelefono' type='number' className='form-control' />
+                  <div class='row g-3 align-items-center my-1'>
+                    <div class='col-7'>
+                      <label for='txtTelefono' class='col-form-label'>Telefono</label>
+                      <div className='input-group d-flex flex-row'>
+                        <span className='input-group-text'><i className='bi bi-telephone' /></span><input id='txtTelefono' class='form-control' type='text' className='form-control' />
+                      </div>
                     </div>
                   </div>
+
                   {/* BOTON ENVIAR */}
                   <div className='d-grid gap-2 mt-5'>
                     <button
