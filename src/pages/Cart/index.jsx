@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
 import { FunkoEnCarrito } from './../../components/funkoEnCarrito';
 import { React, useEffect, useState } from 'react';
 import data from '../../data';
 import { removeFunko, getFunkosData } from '../../data/storage';
+import AddedModal from '../../components/addedModal';
 
 export const Cart = (props) => {
   const [funko, setFunko] = useState(getFunkosData());
@@ -19,6 +19,12 @@ export const Cart = (props) => {
     removeFunko(funkoItem.handle);
 
     setFunko(funkoCopy);
+  };
+
+  const deleteShoppingCart = () => {
+    funko.forEach(element => {
+      removeFunko(element.id);
+    });
   };
 
   const updateQuantity = () => {
@@ -66,7 +72,7 @@ export const Cart = (props) => {
           <h4 className='mt-3'>Total articulos: {total}€</h4>
           <h4>Envío: 2.00€ <button type='button' className='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' /></h4>
 
-          <div className='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+          <div className='modal fade' id='exampleModal' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
             <div className='modal-dialog'>
               <div className='modal-content'>
                 <div className='modal-header'>
@@ -95,7 +101,15 @@ export const Cart = (props) => {
 
       <div className='row'>
         <div className='col-2 offset-md-10'>
-          <button style={{ float: 'right' }} type='button' class='btn btn-success mt-4 mb-4'>Completar compra</button>
+
+          <AddedModal id='botonCompra' value={2} out='Salir' alert='Compra completada. Su pedido se esta enviando.' />
+          <button
+            onClick={() => {
+              deleteShoppingCart();
+              new bootstrap.Modal(document.getElementById('botonCompra')).show();
+            }} className='btn btn-primary my-4' data-bs-toggle='modal' data-bs-target='#botonCompra'
+          >Completar compra
+          </button>
         </div>
       </div>
 
