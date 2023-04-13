@@ -11,7 +11,7 @@ export const Nav = () => {
 
   return (
     <>
-      <nav className='navbar navbar-expand-lg navbar-light bg-light p-2'>
+      <nav className='navbar navbar-expand-lg navbar-light p-2'>
         <h6 className={'text-dark' + (validateNav() ? '' : 'visually-hidden')}><a className='text-decoration-none text-dark' href='http://127.0.0.1:5173/Proyecto-Interfaces-Grupo-H/#/'>INICIO</a>{path}</h6>
       </nav>
     </>

@@ -19,8 +19,9 @@ export const BASE_PATH = '/Proyecto-Interfaces-Grupo-H';
 const testUser = {
   name: 'Test User',
   surname: 'apellido',
-  img: 'https://st3.depositphotos.com/1017228/18878/i/450/depositphotos_188781580-stock-photo-handsome-cheerful-young-man-standing.jpg',
+  img: 'https://cdn-icons-png.flaticon.com/512/17/17004.png',
   email: 'test@gmail.com',
+  password: '1234',
   card: {
     number: '1234 5678 9012 3456',
     exp: '12/24',

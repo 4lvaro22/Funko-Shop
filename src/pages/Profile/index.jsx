@@ -12,6 +12,7 @@ export const Profile = ({
   //     name,
   //     img,
   //     email,
+  //     password,
   //     card: {
   //         number,
   //         exp,
@@ -21,28 +22,30 @@ export const Profile = ({
 }) => {
   const [page, setPage] = useState('payments');
 
+  const [usuario, setUsuario] = useState(user);
+
   return (
     <>
-      <div id='profile__header' className='m-4 p-3 bg-light'>
+      <div id='profile__header' className='m-4 p-3 bg-light shadow'>
         <div className='row justify-center'>
           <div className='col-2'>
             <img
-              src={user.img}
-              width='75px'
-              height='75px'
+              src={usuario.img}
+              width='100px'
+              height='100px'
               className='rounded-5 float-start'
             />
           </div>
           <div className='col-10 align-self-center'>
-            <h2>{user.name}</h2>
+            <h2>{usuario.name} {usuario.surname}</h2>
           </div>
         </div>
       </div>
 
-      <div className='row justify-center m-2'>
+      <div className='row justify-center m-2 mb-5'>
         <div className='d-flex align-items-start'>
           <div
-            className='nav flex-column m-2 me-3 bg-light gap-2 p-3 col-sm-4 col-md-3 col-lg-2'
+            className='nav flex-column m-2 me-3 bg-light shadow gap-2 p-3 col-sm-4 col-md-3 col-lg-2'
             id='v-pills-tab'
             role='tablist'
             aria-orientation='vertical'
@@ -63,9 +66,9 @@ export const Profile = ({
               {' Métodos de pago '}
             </button>
           </div>
-          <div className='p-3 bg-light w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
-            {page === 'personal' ? <Data user={user} /> : null}
-            {page === 'payments' ? <PaymentSection user={user} /> : null}
+          <div className='p-3 bg-light shadow w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
+            {page === 'personal' ? <Data usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} /> : null}
+            {page === 'payments' ? <PaymentSection user={usuario} /> : null}
           </div>
         </div>
       </div>
