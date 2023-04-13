@@ -19,8 +19,8 @@ export const PaymentSection = ({ user }) => {
         </div>
       </div>
 
-      <button className={'btn btn-primary ' + (form ? 'visually-hidden' : 'm-2')} onClick={() => toggleForm(!form)}>
-        Añadir nuevo método de pago
+      <button className={'btn btn-primary mt-4 ' + (form ? 'visually-hidden' : 'm-2')} onClick={() => toggleForm(!form)}>
+        Cambiar método de pago
       </button>
 
       {form ? <PaymentForm /> : null}

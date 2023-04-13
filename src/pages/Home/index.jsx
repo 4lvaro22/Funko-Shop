@@ -104,7 +104,7 @@ export const Home = ({ itemsPerPage }) => {
 
   return (
     <>
-      <nav className='container-fluid bg-light'>
+      <nav className='container-fluid '>
         <div className='row'>
           <div className='col-4' />
           <div className='col-4'>
