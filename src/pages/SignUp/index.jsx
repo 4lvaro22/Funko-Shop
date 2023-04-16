@@ -1,8 +1,7 @@
 import logoFunko from '../../assets/images/funkoIcono.png';
-import '../../assets/js/CheckPassword.js';
-import '../../assets/styles/CheckPassword.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import AddedModal from '../../components/addedModal';
+import PasswordStrengthBar from 'react-password-strength-bar';
 import { useState } from 'react';
 
 export const SignUp = () => {
@@ -57,7 +56,7 @@ export const SignUp = () => {
                     </div>
                     <div className='col-5'>
                       <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
-                        <h2 className='d-flex '><i className={'bi bi' + (validateName() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateName() ? 'visually-hidden' : '')}>Mínimo numero de carácteres 4</p>
+                        <h2 className='d-flex '><i className={'bi bi' + (validateName() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateName() ? 'visually-hidden' : '')}>Mínimo número de carácteres 4</p>
                       </div>
                     </div>
                   </div>
@@ -71,7 +70,7 @@ export const SignUp = () => {
                     </div>
                     <div className='col-5'>
                       <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
-                        <h2 className='d-flex '><i className={'bi bi' + (validateSurname() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateSurname() ? 'visually-hidden' : '')}>Mínimo numero de carácteres 4</p>
+                        <h2 className='d-flex '><i className={'bi bi' + (validateSurname() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateSurname() ? 'visually-hidden' : '')}>Mínimo número de carácteres 4</p>
                       </div>
                     </div>
                   </div>
@@ -85,7 +84,7 @@ export const SignUp = () => {
                     </div>
                     <div className='col-5'>
                       <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
-                        <h2 className='d-flex '><i className={'bi bi' + (validateEmail() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateEmail() ? 'visually-hidden' : '')}>Mínimo numero de carácteres 4</p>
+                        <h2 className='d-flex '><i className={'bi bi' + (validateEmail() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateEmail() ? 'visually-hidden' : '')}>Mínimo número de carácteres 4</p>
                       </div>
                     </div>
                   </div>
@@ -94,13 +93,16 @@ export const SignUp = () => {
                     <div class='col-auto'>
                       <label for='txtPassword' class='col-form-label'>Contraseña <span style={{ color: 'red' }}>*</span></label>
                       <div className='input-group d-flex flex-row'>
-                        <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' class='form-control' aria-describedby='passwordHelpInline' type={'Password'.replace('Password', (!passwordEye ? 'text' : 'Password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} className='form-control' /><span className='input-group-text'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} onClick={() => setValuePasswordEye(!passwordEye)} /></span>
+                        <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' class='form-control' aria-describedby='passwordHelpInline' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} className='form-control' /><span className='input-group-text'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} onClick={() => setValuePasswordEye(!passwordEye)} /></span>
                       </div>
                     </div>
                     <div className='col-6'>
-                      <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
+                      <div class='col-auto d-flex mt-5 align-items-center'>
                         <h2 className='d-flex '><i className={'bi bi' + (validatePassword() ? '-check text-success' : '-x text-danger')} /></h2><p className='mt-2'>Debe ser una contraseña de 8-20 caracteres.</p>
                       </div>
+                    </div>
+                    <div className='col-5'>
+                      <PasswordStrengthBar minLength={4} password={password} />
                     </div>
                   </div>
                   {/* CONFIRMAR CONTRASEÑA */}
@@ -108,7 +110,7 @@ export const SignUp = () => {
                     <div class='col-auto'>
                       <label for='txtConfirmPassword' class='col-form-label'>Confirmar Contraseña <span style={{ color: 'red' }}>*</span></label>
                       <div className='input-group d-flex flex-row'>
-                        <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtConfirmPassword' class='form-control' aria-describedby='passwordHelpInline' onChange={(e) => setValueConfirmPassword(e.target.value)} type={'Password'.replace('Password', (!confirmPasswordEye ? 'text' : 'Password'))} value={confirmPassword} className='form-control' /><span className='input-group-text'><i className={'bi bi-eye' + (confirmPasswordEye ? '-slash' : '')} onClick={() => setValueConfirmPasswordEye(!confirmPasswordEye)} /></span>
+                        <span className='input-group-text'><i class='bi bi-lock-fill' /></span><input id='txtConfirmPassword' class='form-control' aria-describedby='passwordHelpInline' onChange={(e) => setValueConfirmPassword(e.target.value)} type={'password'.replace('password', (!confirmPasswordEye ? 'text' : 'Password'))} value={confirmPassword} className='form-control' /><span className='input-group-text'><i className={'bi bi-eye' + (confirmPasswordEye ? '-slash' : '')} onClick={() => setValueConfirmPasswordEye(!confirmPasswordEye)} /></span>
                       </div>
                     </div>
                     <div className='col-6'>
