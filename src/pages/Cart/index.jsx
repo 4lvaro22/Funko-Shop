@@ -107,7 +107,7 @@ export const Cart = (props) => {
             onClick={() => {
               deleteShoppingCart();
               new bootstrap.Modal(document.getElementById('botonCompra')).show();
-            }} className='btn btn-primary my-4' data-bs-toggle='modal' data-bs-target='#botonCompra'
+            }} className='btn btn-success my-4' data-bs-toggle='modal' data-bs-target='#botonCompra'
           >Completar compra
           </button>
         </div>
