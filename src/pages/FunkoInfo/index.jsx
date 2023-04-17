@@ -85,7 +85,7 @@ export const FunkoInfo = (props) => {
 
             <div className='p-2'>
               <button
-                className=' btn btn-dark m-1' id='añadirCesta' onClick={() => {
+                className=' btn btn-success m-1' id='añadirCesta' onClick={() => {
                   addFunko(funko, quantity);
                   new bootstrap.Modal(document.getElementById('exampleModal')).show();
                 }}
