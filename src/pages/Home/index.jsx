@@ -136,7 +136,8 @@ export const Home = ({ itemsPerPage }) => {
               </div>
             </div>
 
-            <div className='list-group my-2'>
+            <hr className='border-3 border-top border-dark' />
+            <div className='list-group my-2 '>
               <h6 className='mx-2'>Precio:</h6>
               <label className='list-group-item border-0'>
                 <input className='form-check-input me-1' type='checkbox' name='precio' value='menorVein' />
