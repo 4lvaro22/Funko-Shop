@@ -2,11 +2,11 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export const AddedModal = (props) => {
   return (
-    <div className='modal fade modal-show' id='exampleModal' role='dialog' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div className='modal fade modal-show' id={props.id ?? 'exampleModal'} role='dialog' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
       <div className='modal-dialog'>
         <div className='modal-content'>
           <div className='modal-header'>
-            <h5 className='modal-title' id='exampleModalLabel'><i className='bi bi-check' /> {props.alert}</h5>
+            <h5 className='modal-title' id='exampleModalLabel'><i className={'bi bi-' + (props.id === 'botonCompra' ? 'truck' : 'check')} /> {props.alert}</h5>
             <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
           </div>
           <div className='modal-footer mx-auto'>
@@ -14,10 +14,19 @@ export const AddedModal = (props) => {
 
             <button
               type='button' className='btn btn-success float-end'
+              data-dismiss='modal'
+              data-backdrop='false'
               onClick={() => {
-                $('#exampleModal').modal('hide');
+                $('#' + (props.id ?? 'exampleModal')).modal('hide');
+                $('.modal-backdrop').remove();
+                $(document.body).removeClass('modal-open');
                 setTimeout(() => {
                   window.location.href = ((props.value === '0') ? '/Proyecto-Interfaces-Grupo-H/#/Cart' : (((props.value === '1') ? '/Proyecto-Interfaces-Grupo-H/#/LogIn' : '/Proyecto-Interfaces-Grupo-H/#/Contact')));
+                }, 500);
+
+                setTimeout(() => {
+                  window.location.href = '/Proyecto-Interfaces-Grupo-H/#/Cart';
+                  window.location.reload();
                 }, 500);
               }}
             >{props.out}
