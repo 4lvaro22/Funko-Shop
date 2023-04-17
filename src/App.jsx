@@ -1,6 +1,7 @@
 import { Home } from './pages/Home';
 import { Layout } from './pages/Layout';
-import { HashRouter as Router, Route, Routes, ScrollRestoration } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
 import { Login } from './pages/Login';
 import { AboutUs } from './pages/AboutUs';
 import { TermsAndConditions } from './pages/TermsAndConditions';
@@ -10,7 +11,6 @@ import { Cart } from './pages/Cart';
 import { Faq } from './pages/Faq';
 import './assets/styles/App.css';
 import { Profile } from './pages/Profile';
-import { PaymentSection } from './pages/Profile/Payments';
 import Contact from './pages/Contact';
 import ScrollTop from './components/ScrollTop';
 
@@ -30,14 +30,16 @@ const testUser = {
 };
 
 function App () {
+  const [session, setSession] = useState(false);
+
   return (
     <Router>
       <ScrollTop />
       {/* <ScrollRestoration /> */}
       <Routes>
-        <Route path='/' element={<Layout />}>
+        <Route path='/' element={<Layout session={session} setSession={setSession} />}>
           <Route index element={<Home itemsPerPage={16} />} />
-          <Route path='Login' element={<Login />} />
+          <Route path='Login' element={<Login setSession={setSession} session={session} />} />
           <Route path='Home' element={<Home />} />
           <Route path='AboutUs' element={<AboutUs />} />
           <Route path='Contact' element={<Contact />} />
