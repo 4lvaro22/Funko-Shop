@@ -25,7 +25,6 @@ export const PaymentForm = () => {
                           className='form-control'
                           id='name'
                           type='text'
-                          placeholder='Enter your name'
                           required
                         />
                       </div>
@@ -42,7 +41,6 @@ export const PaymentForm = () => {
                             id='cardNumber'
                             className='form-control'
                             type='text'
-                            placeholder='0000 0000 0000 0000'
                             maxLength={16}
                             minLength={16}
                             autocomplete='email'
@@ -59,9 +57,13 @@ export const PaymentForm = () => {
                     <div className='col-2'> </div>
                   </div>
 
-                  <div className='row mt-3'>
+                  <div className='mt-4'>
+                    <i><u>Fecha de caducidad:</u></i>
+                  </div>
+
+                  <div className='row mt-1'>
                     <div className='form-group col-4 '>
-                      <label for='ccmonth'>Mes</label>
+                      <label for='ccmonth' className='fs-7'>Mes</label>
                       <select className='form-select' id='ccmonth'>
                         {months.map((month) => (
                           <option value={month}>{month}</option>
@@ -83,7 +85,6 @@ export const PaymentForm = () => {
                           className='form-control'
                           id='cvv'
                           type='text'
-                          placeholder='123'
                           maxLength={3}
                           minLength={3}
                           required
