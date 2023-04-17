@@ -19,6 +19,8 @@ const load = () => {
         i++;
       }
 
+      funko.price = Number.parseInt(funko.price);
+
       funko.rating = parseInt(funko.rating);
       set.add(funko.handle);
     });
@@ -63,7 +65,8 @@ export const getSeries = () => {
       set.add(serie);
     });
   });
-  return set;
+
+  return Array.from(set).map(item => item.normalize().replace('Pop! ', '').replace('Pops! ', '').replace('POP! ', '')).sort();
 };
 
 export default {
