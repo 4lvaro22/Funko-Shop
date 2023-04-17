@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <>
       <div className='container m-4'>
-        <AddedModal alert='Se ha enviado su colicitud correctamente' out='Salir' />
+        <AddedModal alert='Se ha enviado su colicitud correctamente' out='Salir' value='3' />
         <h1><strong>Contacta con nosotros</strong></h1>
         <p>Si tienes cualquier duda sobre tu compra o consulta sobre nuestras tiendas, puedes contactar con nosotros como prefieras:</p>
         <p>Puedes enviarnos tu consulta a través de este formulario:</p>
@@ -88,7 +88,7 @@ export const Contact = () => {
               href='https://www.instagram.com/'
             >
               <i className='bi bi-instagram d-inline mx-2' />
-              <p className='d-inline'>FunkoShopInterfaces</p>
+              FunkoShopInterfaces
             </a>
           </p>
         </div>
@@ -99,7 +99,7 @@ export const Contact = () => {
               href='https://es-es.facebook.com/'
             >
               <i className='bi bi-facebook d-inline mx-2' />
-              <p className='d-inline'>FunkoShopInterfaces</p>
+              FunkoShopInterfaces
             </a>
           </p>
         </div>
@@ -110,7 +110,7 @@ export const Contact = () => {
               href='https://twitter.com/'
             >
               <i className='bi bi-twitter d-inline mx-2' />
-              <p className='d-inline'>FunkoShopInterfaces</p>
+              FunkoShopInterfaces
             </a>
           </p>
         </div>
