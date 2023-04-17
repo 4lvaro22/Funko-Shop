@@ -79,7 +79,7 @@ export const Footer = () => {
 
           <div className='col-1 d-flex' id='idioma'>
             <p className='text-white m-3'>
-              <img src={spanish} alt='Idioma Español' /> ES
+              <img src={spanish} alt='Idioma Español' width={30} height={30} /> ES
             </p>
           </div>
         </div>

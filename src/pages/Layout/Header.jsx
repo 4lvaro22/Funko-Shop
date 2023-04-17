@@ -23,7 +23,7 @@ export const Header = () => {
 
             <span className='col-4 text-white d-flex justify-content-center my-auto'>
               <Link to='/' className='align-self-center'>
-                <img src={icono} className='mx-1 ' height={44} width={44} />
+                <img src={icono} className='mx-1 ' height={44} width={44} alt='icono' />
               </Link>
               <Link to='/' className='text-decoration-none align-self-center'>
                 <h1 className='text-white'>FunkoShop</h1>
