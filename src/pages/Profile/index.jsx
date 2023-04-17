@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import Data from './Data';
 import { PaymentSection } from './Payments';
+import { useNavigate } from 'react-router-dom';
 
 const getButtonClass = (page, currentPage) => {
   return page === currentPage ? 'btn-primary' : 'btn-secondary';
 };
 
 export const Profile = ({
-  user
+  user,
   //     : {
   //     name,
   //     img,
@@ -18,11 +19,12 @@ export const Profile = ({
   //         exp,
   //         cvv
   //     }
-  // }
+  // },
+  session, setSession
 }) => {
   const [page, setPage] = useState('payments');
-
   const [usuario, setUsuario] = useState(user);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -65,10 +67,19 @@ export const Profile = ({
               <i className='bi bi-credit-card' />{' '}
               {' Métodos de pago '}
             </button>
+            <button
+              className='btn btn-danger mt-3 mx-auto'
+              onClick={() => {
+                setSession(false);
+                navigate('/');
+              }}
+            >Cerrar sesión
+            </button>
           </div>
           <div className='p-3 bg-light shadow w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
             {page === 'personal' ? <Data usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} /> : null}
             {page === 'payments' ? <PaymentSection user={usuario} /> : null}
+
           </div>
         </div>
       </div>

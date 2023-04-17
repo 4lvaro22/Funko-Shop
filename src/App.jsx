@@ -48,7 +48,7 @@ function App () {
           <Route path='SignUp' element={<SignUp />} />
           <Route path='Funko/:id' element={<FunkoInfo />} />
           <Route path='Cart' element={<Cart />} />
-          <Route path='Profile' element={<Profile user={testUser} />} />
+          <Route path='Profile' element={<Profile user={testUser} session={session} setSession={setSession} />} />
           <Route path='*' element={<h1>404: Not Found</h1>} />
           {/* <Route path="*"> */}
           {/*    <Redirect to="/Proyecto-Interfaces-Grupo-H"/> */}

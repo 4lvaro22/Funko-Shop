@@ -1,6 +1,9 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useNavigate } from 'react-router-dom';
 
 export const AddedModal = (props) => {
+  const navigate = useNavigate();
+
   return (
     <div className='modal fade modal-show' id={props.id ?? 'exampleModal'} role='dialog' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
       <div className='modal-dialog'>
@@ -21,12 +24,7 @@ export const AddedModal = (props) => {
                 $('.modal-backdrop').remove();
                 $(document.body).removeClass('modal-open');
                 setTimeout(() => {
-                  window.location.href = ((props.value === '0') ? '/Proyecto-Interfaces-Grupo-H/#/Cart' : (((props.value === '1') ? '/Proyecto-Interfaces-Grupo-H/#/LogIn' : '/Proyecto-Interfaces-Grupo-H/#/Contact')));
-                }, 500);
-
-                setTimeout(() => {
-                  window.location.href = '/Proyecto-Interfaces-Grupo-H/#/Cart';
-                  window.location.reload();
+                  navigate((props.value === '0') ? '/Cart' : (((props.value === '1') ? '/LogIn' : '/')));
                 }, 500);
               }}
             >{props.out}
