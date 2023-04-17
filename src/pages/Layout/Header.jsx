@@ -18,12 +18,12 @@ export const Header = ({ session }) => {
         <div className='container-fluid'>
           <div className='center-block row bg-dark p-1'>
             <span className='col-4 d-flex my-auto'>
-              <Link to='/'><button class='btn btn-light my-2'><i class='bi bi-house-door-fill' /></button></Link>
+              <Link to='/'><button className='btn btn-light my-2'><i className='bi bi-house-door-fill' /></button></Link>
             </span>
 
             <span className='col-4 text-white d-flex justify-content-center my-auto'>
               <Link to='/' className='align-self-center'>
-                <img src={icono} className='mx-1 ' height={44} width={44} />
+                <img src={icono} className='mx-1 ' height={44} width={44} alt='icono' />
               </Link>
               <Link to='/' className='text-decoration-none align-self-center'>
                 <h1 className='text-white'>FunkoShop</h1>
@@ -31,6 +31,7 @@ export const Header = ({ session }) => {
             </span>
 
             <span className='col-4 d-flex align-self-center justify-content-end my-auto'>
+
               {session
                 ? <>
                   <Link to='/Profile'><button id='Perfil' class=' btn btn-light mx-1'>Perfil</button></Link>
