@@ -2,14 +2,15 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useNavigate } from 'react-router-dom';
 
 export const AddedModal = (props) => {
+  const modalId = props.id ?? 'exampleModal';
   const navigate = useNavigate();
 
   return (
-    <div className='modal fade modal-show' id={props.id ?? 'exampleModal'} role='dialog' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div className='modal fade modal-show' id={modalId} role='dialog' tabIndex='-1' aria-labelledby={modalId + 'Label'} aria-hidden='true'>
       <div className='modal-dialog'>
         <div className='modal-content'>
           <div className='modal-header'>
-            <h5 className='modal-title' id='exampleModalLabel'><i className={'bi bi-' + (props.id === 'botonCompra' ? 'truck' : 'check')} /> {props.alert}</h5>
+            <h5 className='modal-title' id={modalId + 'Label'}><i className={'bi bi-' + (props.id === 'botonCompra' ? 'truck' : 'check')} /> {props.alert}</h5>
             <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
           </div>
           <div className='modal-footer mx-auto'>

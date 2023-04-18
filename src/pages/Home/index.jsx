@@ -36,7 +36,7 @@ export const Home = ({ itemsPerPage }) => {
 
   getSeries()
     .forEach(item => items.push(
-      <label className='list-group-item border-0'>
+      <label key={item} className='list-group-item border-0'>
         <input className='form-check-input me-1' type='checkbox' value={item} name='serie' onChange={handleCheckSeries} />
         {item}
       </label>
