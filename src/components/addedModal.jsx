@@ -21,7 +21,7 @@ export const AddedModal = (props) => {
               data-dismiss='modal'
               data-backdrop='false'
               onClick={() => {
-                $('#' + (props.id ?? 'exampleModal')).modal('hide');
+                $('#' + (modalId)).modal('hide');
                 $('.modal-backdrop').remove();
                 $(document.body).removeClass('modal-open');
                 setTimeout(() => {
