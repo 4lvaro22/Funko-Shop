@@ -32,21 +32,23 @@ const testUser = {
 function App () {
   const [session, setSession] = useState(false);
 
+  console.log('session', session);
+
   return (
     <Router>
       <ScrollTop />
-      {/* <ScrollRestoration /> */}
+
       <Routes>
         <Route path='/' element={<Layout session={session} setSession={setSession} />}>
-          <Route index element={<Home itemsPerPage={16} />} />
+          <Route index element={<Home itemsPerPage={16} session={session} />} />
           <Route path='Login' element={<Login setSession={setSession} session={session} />} />
-          <Route path='Home' element={<Home />} />
+          <Route path='Home' element={<Home itemsPerPage={16} session={session} />} />
           <Route path='AboutUs' element={<AboutUs />} />
           <Route path='Contact' element={<Contact />} />
           <Route path='TermsAndConditions' element={<TermsAndConditions />} />
           <Route path='Faq' element={<Faq />} />
           <Route path='SignUp' element={<SignUp />} />
-          <Route path='Funko/:id' element={<FunkoInfo />} />
+          <Route path='Funko/:id' element={<FunkoInfo session={session} />} />
           <Route path='Cart' element={<Cart />} />
           <Route path='Profile' element={<Profile user={testUser} session={session} setSession={setSession} />} />
           <Route path='*' element={<h1>404: Not Found</h1>} />
