@@ -13,7 +13,7 @@ export const Footer = () => {
                 className='link-light text-decoration-none'
                 href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'
               >
-                <i class='bi bi-instagram' />{' '}
+                <i className='bi bi-instagram' />{' '}
                 <strong>FunkoShopInterfaces</strong>
               </a>
             </div>
@@ -23,7 +23,7 @@ export const Footer = () => {
                 className='link-light text-decoration-none'
                 href='https://es-es.facebook.com/' target='_blank' rel='noreferrer noopener'
               >
-                <i class='bi bi-facebook' />{' '}
+                <i className='bi bi-facebook' />{' '}
                 <strong>FunkoShopInterfaces</strong>
               </a>
             </div>
@@ -33,7 +33,7 @@ export const Footer = () => {
                 className='link-light text-decoration-none'
                 href='https://twitter.com/' target='_blank' rel='noreferrer noopener'
               >
-                <i class='bi bi-twitter' />{' '}
+                <i className='bi bi-twitter' />{' '}
                 <strong>FunkoShopInterfaces</strong>
               </a>
             </div>
@@ -79,7 +79,7 @@ export const Footer = () => {
 
           <div className='col-1 d-flex' id='idioma'>
             <p className='text-white m-3'>
-              <img src={spanish} alt='Idioma Español' /> ES
+              <img src={spanish} alt='Idioma Español' width={30} height={30} /> ES
             </p>
           </div>
         </div>

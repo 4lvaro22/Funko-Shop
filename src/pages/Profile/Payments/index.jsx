@@ -1,6 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import card from '../../../assets/images/payment/card.png';
-import { PaymentForm } from '../form';
+import { PaymentForm } from './form';
 import { useState } from 'react';
 
 export const PaymentSection = ({ user }) => {
@@ -14,7 +14,7 @@ export const PaymentSection = ({ user }) => {
           <img src={card} className='col-2' />
           <span className='col-4 align-middle '>
             {' '}
-            {user?.card?.number.substring(0, 4)}...{' '}
+            {' '}...{user?.card?.number.substring(12, 16)}
           </span>
         </div>
       </div>

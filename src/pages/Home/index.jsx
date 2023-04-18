@@ -53,7 +53,7 @@ export const Home = ({ itemsPerPage }) => {
   const filter = () => {
     console.log(prices);
     const filtered = getFunkos().filter(item => item.title.toLowerCase().includes(search.toLowerCase()))
-      .filter(item => series.length === 0 || item.series.some(element => series.includes(element)))
+      .filter(item => series.length === 0 || item.series.some(element => series.includes(element.replace('Pop! ', '').replace('Pops! ', '').replace('POP! ', ''))))
       .filter(item => (prices === '' || (prices === 'menorVein' && item.price < 20) ||
         (prices === 'veinCincuen' && item.price >= 20 && item.price <= 50) ||
         (prices === 'mayorCincuen' && item.price > 50)));

@@ -23,7 +23,7 @@ const testUser = {
   email: 'test@gmail.com',
   password: '1234',
   card: {
-    number: '1234 5678 9012 3456',
+    number: '1234567890123456',
     exp: '12/24',
     cvv: '123'
   }
