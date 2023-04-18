@@ -15,7 +15,7 @@ const generateOptions = (quantity) => {
   return options;
 };
 
-export const FunkoInfo = (props) => {
+export const FunkoInfo = ({ session }) => {
   const [funko, setFunko] = useState(
     {
       handle: '',
@@ -85,6 +85,7 @@ export const FunkoInfo = (props) => {
 
             <div className='p-2'>
               <button
+                disabled={!session}
                 className=' btn btn-success m-1' id='añadirCesta' onClick={() => {
                   addFunko(funko, quantity);
                   new bootstrap.Modal(document.getElementById('exampleModal')).show();
