@@ -15,7 +15,7 @@ function tituloModificado (tituloOri) {
 export const Funko = ({ funko }) => {
   return (
     <>
-      <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
+      <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
       <div
         className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
       >
@@ -31,7 +31,13 @@ export const Funko = ({ funko }) => {
           <div>
 
             <p className='d-inline ms-1 align-middle'>{funko.rating}  <i className='bi bi-star-fill text-warning' /></p>
-            <button id='anadir' className='btn btn-success btn-sm float-end' onClick={() => { addFunko(funko, 1); }}>Añadir a la cesta</button>
+            <button
+              id='anadir' className='btn btn-success btn-sm float-end' onClick={() => {
+                addFunko(funko, 1);
+                new bootstrap.Modal(document.getElementById(funko.handle + 'Modal')).show();
+              }}
+            >Añadir a la cesta
+            </button>
 
           </div>
         </div>
