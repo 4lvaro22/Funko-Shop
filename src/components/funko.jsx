@@ -22,7 +22,7 @@ export const Funko = ({ funko }) => {
 
         <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='200' height='266' alt='Imagen de Funko' title={funko.title} /> </Link>
 
-        <h4 className='mt-3 fs-6' style={{ 'max-width': '200px' }}>{tituloModificado(funko.title)}</h4>
+        <h4 className='mt-3 fs-6' style={{ maxWidth: '200px' }}>{tituloModificado(funko.title)}</h4>
 
         <div>
           <div className='mb-3'>
