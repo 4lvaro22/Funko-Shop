@@ -63,7 +63,7 @@ export const Login = ({ setSession, session }) => {
                                 setSession(true);
                                 setTimeout(() => {
                                   navigate('/');
-                                }, 300);
+                                }, 500);
                               }}
                             >
                               Iniciar Sesión

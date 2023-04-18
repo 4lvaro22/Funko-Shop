@@ -1,4 +1,4 @@
-import { useParams } from 'react-router';
+import { useParams, useNavigate } from 'react-router';
 import { useState, useEffect } from 'react';
 import { getFunkoById } from '../../data';
 import { addFunko } from '../../data/storage';
@@ -16,6 +16,7 @@ const generateOptions = (quantity) => {
 };
 
 export const FunkoInfo = ({ session }) => {
+  const navigate = useNavigate();
   const [funko, setFunko] = useState(
     {
       handle: '',
@@ -83,7 +84,14 @@ export const FunkoInfo = ({ session }) => {
               </select>
             </div>
 
-            <div className='p-2'>
+            <div
+              className='p-2'
+              onClick={() => {
+                if (!session) {
+                  navigate('/Login');
+                }
+              }}
+            >
               <button
                 disabled={!session}
                 className=' btn btn-success m-1' id='añadirCesta' onClick={() => {
