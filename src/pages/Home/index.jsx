@@ -5,7 +5,7 @@ import { getSeries, getFunkos } from './../../data';
 import { Pagination } from './Pagination';
 import { Search } from './Search';
 
-export const Home = ({ itemsPerPage }) => {
+export const Home = ({ session, itemsPerPage }) => {
   const [pricesPreview, setPricesPreview] = useState('');
   const [prices, setPrices] = useState('');
 
@@ -13,8 +13,10 @@ export const Home = ({ itemsPerPage }) => {
   const [series, setSeries] = useState([]);
 
   const [search, setSearch] = useState('');
-  const [funkoList, setFunkoList] = useState(getFunkos().map(item => <Funko key={item.handle} funko={item} />));
+  const [funkoList, setFunkoList] = useState(getFunkos().map(item => <Funko key={item.handle} funko={item} session={session} />));
   const items = [];
+
+  console.log(session);
 
   const handleCheckSeries = () => {
     const copySeries = [];
@@ -51,14 +53,13 @@ export const Home = ({ itemsPerPage }) => {
   }, [series, search, prices]);
 
   const filter = () => {
-    console.log(prices);
     const filtered = getFunkos().filter(item => item.title.toLowerCase().includes(search.toLowerCase()))
       .filter(item => series.length === 0 || item.series.some(element => series.includes(element.replace('Pop! ', '').replace('Pops! ', '').replace('POP! ', ''))))
       .filter(item => (prices === '' || (prices === 'menorVein' && item.price < 20) ||
         (prices === 'veinCincuen' && item.price >= 20 && item.price <= 50) ||
         (prices === 'mayorCincuen' && item.price > 50)));
 
-    setFunkoList(filtered.map(element => <Funko key={element.handle} funko={element} />));
+    setFunkoList(filtered.map(element => <Funko key={element.handle} funko={element} session={session} />));
   };
 
   return (

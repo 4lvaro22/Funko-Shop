@@ -12,7 +12,7 @@ function tituloModificado (tituloOri) {
   return tituloFinal;
 }
 
-export const Funko = ({ funko }) => {
+export const Funko = ({ funko, session }) => {
   return (
     <>
       <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
@@ -32,6 +32,7 @@ export const Funko = ({ funko }) => {
 
             <p className='d-inline ms-1 align-middle'>{funko.rating}  <i className='bi bi-star-fill text-warning' /></p>
             <button
+              disabled={!session}
               id='anadir' className='btn btn-success btn-sm float-end' onClick={() => {
                 addFunko(funko, 1);
                 new bootstrap.Modal(document.getElementById(funko.handle + 'Modal')).show();
