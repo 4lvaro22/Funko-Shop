@@ -86,7 +86,8 @@ Error generating stack: `+o.message+`
         "title": "Vhagar",\r
         "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1324891/Vhagar_Vinyl_Art_Toys_ec3ccb6d-491a-4a06-83cd-92b921a145ec.png",\r
         "series": [\r
-            "Pop! Digital"\r
+            "Pop! Digital",\r
+            "House of the Dragon"\r
         ],\r
         "scale": "3.75",\r
         "released": {\r
@@ -102,7 +103,8 @@ Error generating stack: `+o.message+`
         "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1324888/Rhaenyra_Targaryen_Vinyl_Art_Toys_4fb7ebdb-25d5-4aaa-9071-633c0513cdb2.png",\r
         "series": [\r
             "Pop! Vinyl",\r
-            "Pop! Digital"\r
+            "Pop! Digital",\r
+            "House of the Dragon"\r
         ],\r
         "scale": "3.75",\r
         "released": {\r
@@ -118,7 +120,8 @@ Error generating stack: `+o.message+`
         "imageName": "https://images.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/1324887/Aemond_Targaryen_Vinyl_Art_Toys_c6683be0-ffcd-4f0f-9a7e-53e0190f62db.png",\r
         "series": [\r
             "Pop! Vinyl",\r
-            "Pop! Digital"\r
+            "Pop! Digital",\r
+            "House of the Dragon"\r
         ],\r
         "scale": "3.75",\r
         "released": {\r
