@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import logoFunko from '../../assets/images/funkoIcono.png';
 import { useState } from 'react';
+import validator from 'validator';
 
 export const Login = ({ setSession, session }) => {
   const [passwordEye, setValuePasswordEye] = useState(true);
@@ -8,15 +9,22 @@ export const Login = ({ setSession, session }) => {
   const [password, setValuePassword] = useState('');
   const navigate = useNavigate();
 
-  const validateEmail = () => {
-    return email.length;
-  };
   const validatePassword = () => {
     return password.length;
   };
 
   const validate = () => {
     return validateEmail() && validatePassword();
+  };
+
+  const validateEmail = () => {
+    const posicionDominio = email.lastIndexOf('.');
+
+    if (validator.isEmail(email)) {
+      return true;
+    } else if (email.substring(posicionDominio).length <= 3) {
+      return false;
+    }
   };
 
   return (
@@ -78,7 +86,7 @@ export const Login = ({ setSession, session }) => {
             </div>
 
             <div className='text-center'>
-              <Link to='/SignUp' className='text-decoration-none text-black'><p>No te has registrado? <u>Registrarme</u></p></Link>
+              <Link to='/SignUp' className='text-decoration-none text-black'><p>¿No te has registrado...? <u>Registrarme</u></p></Link>
             </div>
           </div>
         </div>
