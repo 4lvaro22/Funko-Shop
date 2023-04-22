@@ -3,6 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import AddedModal from '../../components/addedModal';
 import PasswordStrengthBar from 'react-password-strength-bar';
 import { useState } from 'react';
+import validator from 'validator';
 
 export const SignUp = () => {
   const [passwordEye, setValuePasswordEye] = useState(true);
@@ -20,8 +21,16 @@ export const SignUp = () => {
     return surname.length >= 4;
   };
   const validateEmail = () => {
-    return email.includes('@') && email.length >= 4;
+    const posicionDominio = email.lastIndexOf('.');
+
+    if (validator.isEmail(email)) {
+      return true;
+    } else if (email.substring(posicionDominio).length <= 3) {
+      return false;
+    }
+    return false;
   };
+
   const validatePassword = () => {
     return password.length && password.length >= 8 && password.length <= 20 && password === confirmPassword;
   };
@@ -84,7 +93,7 @@ export const SignUp = () => {
                     </div>
                     <div className='col-5'>
                       <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
-                        <h2 className='d-flex '><i className={'bi bi' + (validateEmail() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateEmail() ? 'visually-hidden' : '')}>Mínimo número de carácteres 4</p>
+                        <h2 className='d-flex '><i className={'bi bi' + (validateEmail() ? '-check text-success' : '-x text-danger')} /></h2><p className={'mt-2 ' + (validateEmail() ? 'visually-hidden' : '')}>Registrese con un correo válido.</p>
                       </div>
                     </div>
                   </div>
@@ -115,7 +124,7 @@ export const SignUp = () => {
                     </div>
                     <div className='col-6'>
                       <div class='col-auto d-flex mt-5 mb-1 align-items-center'>
-                        <h2 className='d-flex '><i className={'bi bi' + (validateConfirmPassword() ? '-check text-success' : '-x text-danger')} /></h2><p className='mt-2'>Debe ser una contraseña de 8-20 caracteres.</p>
+                        <h2 className='d-flex '><i className={'bi bi' + (validateConfirmPassword() ? '-check text-success' : '-x text-danger')} /></h2><p className='mt-2'>Debe coincidir con contraseña.</p>
                       </div>
                     </div>
                   </div>
