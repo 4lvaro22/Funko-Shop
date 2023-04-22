@@ -17,9 +17,6 @@ export const Pagination = ({ itemsPerPage, items }) => {
   // Invoke when user click to request another page.
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
-    console.log(
-        `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
     setItemOffset(newOffset);
   };
   useEffect(() => {
@@ -30,12 +27,8 @@ export const Pagination = ({ itemsPerPage, items }) => {
 
   return (
     <>
-      <div>
-        {currentItems && currentItems.map((funko) => (
-          <div key={funko} className='d-inline-flex'>
-            {funko}
-          </div>
-        ))}
+      <div className='d-flex flex-wrap justify-content-center align-content-stretch'>
+        {currentItems}
       </div>
 
       {currentItems.length === 0 &&
