@@ -1,5 +1,5 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export const AddedModal = (props) => {
   const modalId = props.id ?? 'exampleModal';
@@ -10,11 +10,12 @@ export const AddedModal = (props) => {
       <div className='modal-dialog'>
         <div className='modal-content'>
           <div className='modal-header'>
-            <h5 className='modal-title' id={modalId + 'Label'}><i className={'bi bi-' + (props.id === 'botonCompra' ? 'truck' : 'check')} /> {props.alert}</h5>
+            <h5 className='modal-title' id={modalId + 'Label'}> {(props.value !== '1') ? <i className={'bi bi-' + (props.id === 'botonCompra' ? 'truck' : 'check')} /> : ''}  {props.alert}</h5>
             <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
           </div>
           <div className='modal-footer mx-auto'>
             {((props.value === '0') ? <button type='button' className='btn btn-secondary float-start me-5' data-bs-dismiss='modal'>Seguir comprando</button> : '')}
+            {((props.value === '1') ? <Link to='/SignUp'><button type='button' className='btn btn-secondary float-start me-5' data-bs-dismiss='modal'>Registrarse</button></Link> : '')}
 
             <button
               type='button' className='btn btn-success float-end'
@@ -29,7 +30,9 @@ export const AddedModal = (props) => {
                 }, 500);
               }}
             >{props.out}
+
             </button>
+
           </div>
         </div>
       </div>

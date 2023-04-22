@@ -17,7 +17,9 @@ export const Funko = ({ funko, session }) => {
 
   return (
     <>
+
       <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
+      <AddedModal id={funko.handle + 'modalNoLogeado'} alert='Para Añadir un funko al carrito debes iniciar sesión' out='Iniciar Sesion' value='1' />
       <div
         className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
       >
@@ -36,7 +38,7 @@ export const Funko = ({ funko, session }) => {
             <div
               className='float-end' onClick={() => {
                 if (!session) {
-                  navigate('/Login');
+                  new bootstrap.Modal(document.getElementById(funko.handle + 'modalNoLogeado')).show();
                 }
               }}
             >
@@ -44,7 +46,7 @@ export const Funko = ({ funko, session }) => {
                 disabled={!session}
                 id='anadir' className='btn btn-success btn-sm float-end' onClick={() => {
                   if (!session) {
-                    navigate('/Login');
+                    new bootstrap.Modal(document.getElementById(funko.handle + 'modalNoLogeado')).show();
                   } else {
                     addFunko(funko, 1);
                     new bootstrap.Modal(document.getElementById(funko.handle + 'Modal')).show();
@@ -52,6 +54,7 @@ export const Funko = ({ funko, session }) => {
                 }}
               >Añadir a la cesta
               </button>
+
             </div>
 
           </div>
