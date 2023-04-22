@@ -2,33 +2,70 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Funko } from './../../components/funko';
 import React, { useState, useEffect } from 'react';
 import { getSeries, getFunkos } from './../../data';
-import ReactPaginate from 'react-paginate';
-import styled from 'styled-components';
 import { Pagination } from './Pagination';
 import { Search } from './Search';
 
-export const Home = ({ itemsPerPage }) => {
-  const [filter, setFilter] = useState(false);
+export const Home = ({ session, itemsPerPage }) => {
+  const [pricesPreview, setPricesPreview] = useState('');
+  const [prices, setPrices] = useState('');
+
+  const [seriesPreview, setSeriesPreview] = useState([]);
+  const [series, setSeries] = useState([]);
+
   const [search, setSearch] = useState('');
-  const [funkoList, setFunkoList] = useState(getFunkos().map(item => <Funko key={item.handle} funko={item} />));
+  const [funkoList, setFunkoList] = useState(getFunkos().map(item => <Funko key={item.handle} funko={item} session={session} />));
   const items = [];
+
+  console.log(session);
+
+  const handleCheckSeries = () => {
+    const copySeries = [];
+    $('input:checkbox[name=serie]:checked').each(function () {
+      copySeries.push($(this).val());
+    });
+
+    setSeriesPreview(copySeries);
+  };
+
+  const handleCheckPrices = () => {
+    let copyPrices = '';
+    $('input:radio[name=precio]:checked').each(function () {
+      copyPrices = $(this).val();
+    });
+
+    setPricesPreview(copyPrices);
+  };
 
   getSeries()
     .forEach(item => items.push(
-      <label className='list-group-item border-0'>
-        <input className='form-check-input me-1' type='checkbox' value={item} name='serie' />
-        {item.normalize().replace('Pop! ', '').replace('Pops! ', '').replace('POP! ', '')}
+      <label key={item} className='list-group-item border-0'>
+        <input className='form-check-input me-1' type='checkbox' value={item} name='serie' onChange={handleCheckSeries} />
+        {item}
       </label>
     ));
 
   const updateSearch = (buscado) => {
     setSearch(buscado);
-    setFunkoList(getFunkos().filter(item => item.title.toLowerCase().includes(buscado.toLowerCase())).map(element => <Funko key={element.handle} funko={element} />));
+  };
+
+  useEffect(() => {
+    filter();
+  }, [series, search, prices]);
+
+  const filter = () => {
+    const filtered = getFunkos().filter(item => item.title.toLowerCase().includes(search.toLowerCase()))
+      .filter(item => series.length === 0 || item.series.some(element => series.includes(element.replace('Pop! ', '').replace('Pops! ', '').replace('POP! ', ''))))
+      .filter(item => (prices === '' || (prices === 'menorVein' && item.price < 20) ||
+        (prices === 'veinCincuen' && item.price >= 20 && item.price <= 50) ||
+        (prices === 'mayorCincuen' && item.price > 50)));
+
+    setFunkoList(filtered.map(element => <Funko key={element.handle} funko={element} session={session} />));
   };
 
   return (
     <>
       <Search updateSearch={updateSearch} />
+      <h5 className={'text-center text-danger my-1 ' + (!session ? '' : 'invisible')}>¡¡ Para poder comprar un artículo necesitas registrarte !!</h5>
 
       <div className='row align mx-auto'>
         {/* <-- Lado --> */}
@@ -48,21 +85,25 @@ export const Home = ({ itemsPerPage }) => {
             <div className='list-group my-2 '>
               <h6 className='mx-2'>Precio:</h6>
               <label className='list-group-item border-0'>
-                <input className='form-check-input me-1' type='checkbox' name='precio' value='menorVein' />
+                <input className='form-check-input me-1' type='radio' name='precio' value='menorVein' onChange={handleCheckPrices} />
                 Menor a 20€
               </label>
               <label className='list-group-item border-0'>
-                <input className='form-check-input me-1' type='checkbox' name='precio' value='veinCincuen' />
+                <input className='form-check-input me-1' type='radio' name='precio' value='veinCincuen' onChange={handleCheckPrices} />
                 20€ - 50€
               </label>
               <label className='list-group-item border-0'>
-                <input className='form-check-input me-1' type='checkbox' name='precio' value='mayorCincuen' />
-                Mayor a 50
+                <input className='form-check-input me-1' type='radio' name='precio' value='mayorCincuen' onChange={handleCheckPrices} />
+                Mayor a 50€
+              </label>
+              <label className='list-group-item border-0'>
+                <input className='form-check-input me-1' type='radio' name='precio' value='' onChange={handleCheckPrices} checked={pricesPreview === ''} />
+                Sin límite de precio
               </label>
             </div>
 
             <div className='list-group'>
-              <input className='float-end btn btn-primary' type='submit' value='Aplicar Filtros' />
+              <input className='float-end btn btn-primary' type='submit' value='Aplicar Filtros' onClick={() => { setSeries(seriesPreview); setPrices(pricesPreview); }} />
             </div>
           </div>
 
