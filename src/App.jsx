@@ -38,9 +38,9 @@ function App () {
 
       <Routes>
         <Route path='/' element={<Layout session={session} setSession={setSession} />}>
-          <Route index element={<Home itemsPerPage={16} session={session} />} />
+          <Route index element={<Home itemsPerPage={15} session={session} />} />
           <Route path='Login' element={<Login setSession={setSession} session={session} />} />
-          <Route path='Home' element={<Home itemsPerPage={16} session={session} />} />
+          <Route path='Home' element={<Home itemsPerPage={15} session={session} />} />
           <Route path='AboutUs' element={<AboutUs />} />
           <Route path='Contact' element={<Contact />} />
           <Route path='TermsAndConditions' element={<TermsAndConditions />} />
