@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { addFunko } from '../data/storage';
 import AddedModal from './addedModal';
 
@@ -13,6 +13,8 @@ function tituloModificado (tituloOri) {
 }
 
 export const Funko = ({ funko, session }) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
@@ -31,14 +33,26 @@ export const Funko = ({ funko, session }) => {
           <div>
 
             <p className='d-inline ms-1 align-middle'>{funko.rating}  <i className='bi bi-star-fill text-warning' /></p>
-            <button
-              disabled={!session}
-              id='anadir' className='btn btn-success btn-sm float-end' onClick={() => {
-                addFunko(funko, 1);
-                new bootstrap.Modal(document.getElementById(funko.handle + 'Modal')).show();
+            <div
+              className='float-end' onClick={() => {
+                if (!session) {
+                  navigate('/Login');
+                }
               }}
-            >Añadir a la cesta
-            </button>
+            >
+              <button
+                disabled={!session}
+                id='anadir' className='btn btn-success btn-sm float-end' onClick={() => {
+                  if (!session) {
+                    navigate('/Login');
+                  } else {
+                    addFunko(funko, 1);
+                    new bootstrap.Modal(document.getElementById(funko.handle + 'Modal')).show();
+                  }
+                }}
+              >Añadir a la cesta
+              </button>
+            </div>
 
           </div>
         </div>

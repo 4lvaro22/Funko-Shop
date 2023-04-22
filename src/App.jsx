@@ -1,7 +1,6 @@
 import { Home } from './pages/Home';
 import { Layout } from './pages/Layout';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-import { useState } from 'react';
 import { Login } from './pages/Login';
 import { AboutUs } from './pages/AboutUs';
 import { TermsAndConditions } from './pages/TermsAndConditions';
@@ -13,6 +12,7 @@ import './assets/styles/App.css';
 import { Profile } from './pages/Profile';
 import Contact from './pages/Contact';
 import ScrollTop from './components/ScrollTop';
+import { useStorage } from './hooks/useStorage';
 
 export const BASE_PATH = '/Proyecto-Interfaces-Grupo-H';
 
@@ -30,9 +30,7 @@ const testUser = {
 };
 
 function App () {
-  const [session, setSession] = useState(false);
-
-  console.log('session', session);
+  const [session, setSession] = useStorage({ key: 'session', def: false });
 
   return (
     <Router>
