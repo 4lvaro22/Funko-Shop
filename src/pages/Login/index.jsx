@@ -1,11 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logoFunko from '../../assets/images/funkoIcono.png';
 import { useState } from 'react';
 
-export const Login = () => {
+export const Login = ({ setSession, session }) => {
   const [passwordEye, setValuePasswordEye] = useState(true);
   const [email, setValueEmail] = useState('');
   const [password, setValuePassword] = useState('');
+  const navigate = useNavigate();
+
   const validateEmail = () => {
     return email.length;
   };
@@ -57,7 +59,11 @@ export const Login = () => {
                             <button
                               disabled={!validate()}
                               type='submit' className='btn btn-primary' onClick={() => {
-                                new bootstrap.Modal(document.getElementById('exampleModal')).show();
+                                // new bootstrap.Modal(document.getElementById('exampleModal')).show();
+                                setSession(true);
+                                setTimeout(() => {
+                                  navigate('/');
+                                }, 500);
                               }}
                             >
                               Iniciar Sesión

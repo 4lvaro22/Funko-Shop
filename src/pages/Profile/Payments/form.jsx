@@ -1,5 +1,5 @@
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
+const years = [2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030];
 
 export const PaymentForm = () => {
   return (
@@ -16,24 +16,23 @@ export const PaymentForm = () => {
                 <div className='col-2'> </div>
                 <div className='col-8'>
                   <div className='row'>
-                    <div className='col-5'>
-                      <div className='form-group mt-3'>
+                    <div className='col-12'>
+                      <div className='form-group'>
                         <label for='name' className='form-label'>
-                          Nombre del Dueño
+                          Titular
                         </label>
                         <input
-                          className='form-form-control mt-1'
+                          className='form-control'
                           id='name'
                           type='text'
-                          placeholder='Enter your name'
                           required
                         />
                       </div>
                     </div>
                   </div>
 
-                  <div className='row'>
-                    <div className='col-5'>
+                  <div className='row mt-2'>
+                    <div className='col-12'>
                       <div className='form-group'>
                         <label for='cardNumber'>Número de Tarjeta</label>
 
@@ -42,7 +41,6 @@ export const PaymentForm = () => {
                             id='cardNumber'
                             className='form-control'
                             type='text'
-                            placeholder='0000 0000 0000 0000'
                             maxLength={16}
                             minLength={16}
                             autocomplete='email'
@@ -59,18 +57,22 @@ export const PaymentForm = () => {
                     <div className='col-2'> </div>
                   </div>
 
-                  <div className='row'>
-                    <div className='form-group col-2 '>
-                      <label for='ccmonth'>Mes</label>
-                      <select className='form-control' id='ccmonth'>
+                  <div className='mt-4'>
+                    <i><u>Fecha de caducidad:</u></i>
+                  </div>
+
+                  <div className='row mt-1'>
+                    <div className='form-group col-4 '>
+                      <label for='ccmonth' className='fs-7'>Mes</label>
+                      <select className='form-select' id='ccmonth'>
                         {months.map((month) => (
                           <option value={month}>{month}</option>
                         ))}
                       </select>
                     </div>
-                    <div className='form-group col-3'>
+                    <div className='form-group col-5'>
                       <label for='ccyear'>Año</label>
-                      <select className='form-control' id='ccyear'>
+                      <select className='form-select ' id='ccyear'>
                         {years.map((year) => (
                           <option value={year}>{year}</option>
                         ))}
@@ -83,7 +85,6 @@ export const PaymentForm = () => {
                           className='form-control'
                           id='cvv'
                           type='text'
-                          placeholder='123'
                           maxLength={3}
                           minLength={3}
                           required

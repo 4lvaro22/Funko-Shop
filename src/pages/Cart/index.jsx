@@ -102,12 +102,13 @@ export const Cart = (props) => {
       <div className='row'>
         <div className='col-2 offset-md-10'>
 
-          <AddedModal id='botonCompra' value={2} out='Salir' alert='Compra completada. Su pedido se esta enviando.' />
+          <AddedModal id='botonCompra' value='2' out='Salir' alert='Compra completada. Su pedido se esta enviando.' />
           <button
+            disabled={items.length === 0}
             onClick={() => {
               deleteShoppingCart();
               new bootstrap.Modal(document.getElementById('botonCompra')).show();
-            }} className='btn btn-primary my-4' data-bs-toggle='modal' data-bs-target='#botonCompra'
+            }} className='btn btn-success my-4'
           >Completar compra
           </button>
         </div>
