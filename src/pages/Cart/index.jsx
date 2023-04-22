@@ -62,11 +62,18 @@ export const Cart = (props) => {
 
     <div className='container'>
 
-      <div>
+      <div className='row'>
+        <div className='col-12'>
+          <h1 className='mt-2'>Carrito</h1>
+        </div>
+      </div>
+
+      <div className='container'>
+        {items.length === 0 && <div className='mt-3 border border-2'> <h4 className='m-3'>No hay articulos en el carrito</h4> </div>}
         {items}
       </div>
 
-      <div className='mt-5 border border-2'>
+      <div className='mt-4 border border-2'>
 
         <div className='mx-2'>
           <h4 className='mt-3'>Total articulos: {total}€</h4>
@@ -90,9 +97,8 @@ export const Cart = (props) => {
           </div>
 
         </div>
-
-        <div className='mb-3 mx-2'>
-          <h2 style={{ float: 'left' }}> Total a pagar:</h2>
+        <div className='mb-3 mx-2 me-3'>
+          <h2 className='float-start'> Total a pagar:</h2>
 
           <h3 className='text-end'>{total + 2}€</h3>
         </div>
