@@ -56,20 +56,19 @@ export const Pagination = ({ itemsPerPage, items }) => {
               breakLinkClassName='page-link'
               pageCount={pageCount}
               onPageChange={handlePageClick}
-              containerClassName='pagination  d-flex justify-content-center my-2 p-3'
-              previousLinkClassName='pagination__link mx-3 btn btn-primary'
-              nextLinkClassName='pagination__link mx-3 btn btn-primary'
-              disabledClassName='pagination__link--disabled'
-              activeClassName='pagination__link--active'
+              containerClassName='pagination d-flex justify-content-center my-2 p-3'
+              previousLinkClassName='mx-3 btn btn-primary'
+              nextLinkClassName='mx-3 btn btn-primary'
+              disabledClassName='d-none'
+              activeClassName='bg-primary-subtle'
               pageClassName='page-item'
               pageLinkClassName='page-link text-dark'
               previousClassName='page-item'
               nextClassName='page-item'
-              activeLinkClassName='disabled bg-secondary'
+              activeLinkClassName='disabled'
     // eslint-disable-next-line no-unused-vars
               hrefAllControls
               onClick={(clickEvent) => {
-                console.log('onClick', clickEvent);
               // Return false to prevent standard page change,
               // return false; // --> Will do nothing.
               // return a number to choose the next page,
