@@ -86,7 +86,7 @@ export const Login = ({ setSession, session }) => {
             </div>
 
             <div className='text-center'>
-              <Link to='/SignUp' className='text-decoration-none text-black'><p>¿No te has registrado...? <u>Registrarme</u></p></Link>
+              <Link to='/SignUp' className='text-decoration-none text-black'><p>¿No te has registrado? <u>Registrarme</u></p></Link>
             </div>
           </div>
         </div>
