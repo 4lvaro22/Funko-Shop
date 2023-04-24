@@ -19,17 +19,17 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
   }, [quantity]);
 
   return (
-    <div className='row border border-2 d-flex align-items-center' style={{ marginTop: '2%' }}>
+    <div className='row border border-2 mt-2 d-flex align-items-center '>
 
-      <div className='col'>
-        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='110' height='145' className='mt-5 mb-5 mx-5' /></Link>
+      <div className='col col-lg-2'>
+        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='110' height='145' className='mt-4 mb-4 mx-5' /></Link>
       </div>
 
-      <div className='col'>
+      <div className='col col-lg-2'>
         <h4 className='text-center '>{funko.title}</h4>
       </div>
 
-      <span className='col'>
+      <span className='col col-lg-3 ms-auto'>
         Cantidad:
         <select
           className='form-select w-50' aria-label='Default select example' onChange={(e) => {
@@ -41,12 +41,12 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
         </select>
       </span>
 
-      <div className='col'>
+      <div className='col col-lg-2'>
         <h4 className='text-center'>{funko.price * quantity}€</h4>
       </div>
 
-      <div className='col'>
-        <button id='login' className=' btn btn-danger mx-1' onClick={() => { remove(funko); }}>Eliminar Funko</button>
+      <div className='col col-lg-3'>
+        <button id='remove' className=' btn btn-danger mx-1' onClick={() => { remove(funko); }}>Eliminar Funko</button>
       </div>
 
     </div>
