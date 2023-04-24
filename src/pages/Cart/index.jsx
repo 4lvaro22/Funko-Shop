@@ -108,7 +108,7 @@ export const Cart = (props) => {
       <div className='row'>
         <div className='col-2 offset-md-10'>
 
-          <AddedModal id='botonCompra' value='2' out='Salir' alert='Compra completada. Su pedido se esta enviando.' />
+          <AddedModal id='botonCompra' value='3' out='Salir' alert='Compra completada. Su pedido se esta enviando.' />
           <button
             disabled={items.length === 0}
             onClick={() => {

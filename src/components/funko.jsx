@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { addFunko } from '../data/storage';
 import AddedModal from './addedModal';
 
@@ -13,11 +13,10 @@ function tituloModificado (tituloOri) {
 }
 
 export const Funko = ({ funko, session }) => {
-  const navigate = useNavigate();
-
   return (
     <>
-      <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
+      <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente.' out='Ir al carrito' value='0' />
+      <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener iniciada sesión.' out='Registrarse' value='2' />
       <div
         className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
       >
@@ -36,7 +35,7 @@ export const Funko = ({ funko, session }) => {
             <div
               className='float-end' onClick={() => {
                 if (!session) {
-                  navigate('/Login');
+                  new bootstrap.Modal(document.getElementById('noAccountModal')).show();
                 }
               }}
             >
@@ -44,7 +43,7 @@ export const Funko = ({ funko, session }) => {
                 disabled={!session}
                 id='anadir' className='btn btn-success btn-sm float-end' onClick={() => {
                   if (!session) {
-                    navigate('/Login');
+                    new bootstrap.Modal(document.getElementById('noAccountModal')).show();
                   } else {
                     addFunko(funko, 1);
                     new bootstrap.Modal(document.getElementById(funko.handle + 'Modal')).show();
