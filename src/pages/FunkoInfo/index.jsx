@@ -47,6 +47,7 @@ export const FunkoInfo = ({ session }) => {
       <div className='container mb-5'>
 
         <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
+        <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener cuenta.' out='Registrarse' value='2' />
         <div className='row my-3'>
 
           <div className='col'>
@@ -88,7 +89,7 @@ export const FunkoInfo = ({ session }) => {
               className='p-2'
               onClick={() => {
                 if (!session) {
-                  navigate('/Login');
+                  new bootstrap.Modal(document.getElementById('noAccountModal')).show();
                 }
               }}
             >
