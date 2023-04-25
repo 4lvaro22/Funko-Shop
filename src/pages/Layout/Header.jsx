@@ -18,12 +18,12 @@ export const Header = ({ session }) => {
         <div className='container-fluid'>
           <div className='center-block row bg-dark p-1'>
             <span className='col-4 d-flex flex-column flex-sm-row my-auto'>
-              <Link to='/'><button className='btn btn-light my-2'><i className='bi bi-house-door-fill' /></button></Link>
+              <Link to='/'><button className='btn btn-light my-2' aria-label='Botón de Inicio'><i className='bi bi-house-door-fill' /></button></Link>
             </span>
 
             <span className='col-4 text-white d-flex flex-column flex-sm-row justify-content-center my-auto'>
               <Link to='/' className='align-self-center'>
-                <img src={icono} className='mx-1 ' height={44} width={44} alt='icono' />
+                <img src={icono} className='mx-1 ' height={44} width={44} alt='icono Funkoshop' />
               </Link>
               <Link to='/' className='text-decoration-none align-self-center'>
                 <h1 className='text-white'>FunkoShop</h1>

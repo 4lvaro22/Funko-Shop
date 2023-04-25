@@ -33,7 +33,7 @@ export const Login = ({ setSession, session }) => {
       <div className='container my-5'>
         <div className='row justify-content-md-center'>
           <div className='col col-lg-5'>
-            <span className='align-middle'><img className='w-100' src={logoFunko} /></span>
+            <span className='align-middle'><img className='w-100' src={logoFunko} alt='icono Funkoshop' /></span>
           </div>
           <div className='col col-lg-5'>
             <div className='Auth-form-container'>
