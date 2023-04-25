@@ -49,7 +49,7 @@ export const Login = ({ setSession, session }) => {
                             <div className='col-12'>
                               <label htmlFor='txtEmail' className='col-form-label'>Correo Electrónico <span style={{ color: 'red' }}>*</span></label>
                               <div className='input-group d-flex flex-row'>
-                                <span className='input-group-text'><i className='bi bi-envelope-at' /></span><input id='txtEmail' className='form-control' type='text' className='form-control' onChange={(e) => setValueEmail(e.target.value)} />
+                                <span className='input-group-text'><i className='bi bi-envelope-at' /></span><input id='txtEmail' className='form-control' type='text' onChange={(e) => setValueEmail(e.target.value)} />
                               </div>
                             </div>
                           </div>
@@ -58,7 +58,7 @@ export const Login = ({ setSession, session }) => {
                             <div className='col-auto'>
                               <label htmlFor='txtPassword' className='col-form-label'>Contraseña <span style={{ color: 'red' }}>*</span></label>
                               <div className='input-group d-flex flex-row'>
-                                <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-describedby='passwordHelpInline' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} className='form-control' /><span className='input-group-text'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} onClick={() => setValuePasswordEye(!passwordEye)} /></span>
+                                <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-describedby='passwordHelpInline' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} /><span className='input-group-text'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} onClick={() => setValuePasswordEye(!passwordEye)} /></span>
                               </div>
                             </div>
                           </div>
