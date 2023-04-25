@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 export const Footer = () => {
   return (
     <>
-      <footer className='bg-dark footer'>
+      <footer className='bg-dark pt-3' style={{ bottom: '0', marginTop: 'auto', position: 'relative', padding: '3rem', fontSize: '105%' }}>
         <div className=' d-flex flex-column flex-sm-row container-fluid'>
           <div className='col-2 mt-3 mx-4' id='redes'>
             <div id='instagram'>
