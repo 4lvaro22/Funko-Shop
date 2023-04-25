@@ -21,7 +21,7 @@ export const Funko = ({ funko, session }) => {
         className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
       >
 
-        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='200' height='266' alt='Imagen de Funko' title={funko.title} /> </Link>
+        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='200' height='266' alt={funko.title} title={funko.title} /> </Link>
 
         <h4 className='mt-3 fs-6' style={{ maxWidth: '200px' }}>{tituloModificado(funko.title)}</h4>
 

@@ -11,7 +11,7 @@ export const PaymentSection = ({ user }) => {
       <h3>Información de pago</h3>
       <div className='container'>
         <div className='row bg-white rounded p-1 align-items-center'>
-          <img src={card} className='col-2' />
+          <img src={card} className='col-2' alt='Tarjeta de pago' />
           <span className='col-4 align-middle '>
             {' '}
             {' '}...{user?.card?.number.substring(12, 16)}

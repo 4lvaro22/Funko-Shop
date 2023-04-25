@@ -22,7 +22,7 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
     <div className='row border border-2 mt-2 d-flex align-items-center '>
 
       <div className='col col-lg-2'>
-        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='110' height='145' className='mt-4 mb-4 mx-5' /></Link>
+        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} alt={funko.title} width='110' height='145' className='mt-4 mb-4 mx-5' /></Link>
       </div>
 
       <div className='col col-lg-2'>

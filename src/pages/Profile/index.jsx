@@ -36,6 +36,7 @@ export const Profile = ({
               width='100px'
               height='100px'
               className='rounded-5 float-start'
+              alt='Foto de perfil'
             />
           </div>
           <div className='col-10 align-self-center'>
