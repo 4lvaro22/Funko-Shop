@@ -24,13 +24,16 @@ export const Search = ({ updateSearch }) => {
           <div className='col-4' />
           <div className='col-4'>
             <span className='input-group m-1 d-flex justify-content-center'>
+              <span className='input-group-text bg-secondary text-white'>
+                <label htmlFor='buscador'>Buscador:</label>
+              </span>
               <input
                 type='text' className='form-control' id='buscador' aria-label='Campo de busqueda' aria-describedby='Buscar'
                 value={cachedSearch}
                 onChange={e => setCachedSearch(e.target.value)}
                 onKeyUp={e => e.key === 'Enter' ? updateFixedSearch() : null}
               />
-              <button aria-label='Botón de Buscar' className={'btn btn-outline-' + (form ? 'dark' : 'white') + ' bg-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2' onClick={updateFixedSearch}><i className='bi bi-search' /></button>
+              <button aria-label='Botón de Buscar' className={'btn btn-outline-white' + ' bg-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2' onClick={updateFixedSearch}><i className='bi bi-search' style={{ color: '#FFFFFF' }} /></button>
             </span>
           </div>
           <div className='col-4' />
