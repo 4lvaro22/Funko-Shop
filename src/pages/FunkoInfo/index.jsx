@@ -78,9 +78,10 @@ export const FunkoInfo = ({ session }) => {
 
             <div className='col-2'>
 
-              Cantidad:
+              <label htmlFor='cantidad'>Cantidad:</label>
 
               <select
+                id='cantidad'
                 className='form-select' aria-label='Default select example' onChange={(e) => {
                   setQuantity(e.target.value);
                 }} value={quantity}
@@ -90,21 +91,27 @@ export const FunkoInfo = ({ session }) => {
               </select>
             </div>
 
-            <div
-              className='p-2'
-              onClick={() => {
-                if (!session) {
-                  showNoAccountModal();
-                  // new bootstrap.Modal(document.getElementById('noAccountModal')).show();
-                }
-              }}
-            >
+            <div className='p-2'>
               <button
-                disabled={!session}
-                className=' btn btn-success m-1' id='añadirCesta' onClick={() => {
-                  addFunko(funko, quantity);
-                  showCarritoModal();
-                  // new bootstrap.Modal(document.getElementById('exampleModal')).show();
+                type='button'
+                tabIndex='0'
+                aria-labelledby='Añadir a la cesta'
+                className='btn btn-success m-1' id='añadirCesta'
+                onKeyDown={(e) => {
+                  if (session) {
+                    if (e.key === 'Enter') { addFunko(funko, quantity); showCarritoModal(); }
+                  } else {
+                    showNoAccountModal();
+                  }
+                }}
+                onClick={() => {
+                  if (session) {
+                    addFunko(funko, quantity);
+                    showCarritoModal();
+                    // new bootstrap.Modal(document.getElementById('exampleModal')).show();}
+                  } else {
+                    showNoAccountModal();
+                  }
                 }}
               >Añadir a la cesta
               </button>
