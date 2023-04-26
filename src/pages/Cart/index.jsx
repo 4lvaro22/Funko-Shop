@@ -78,7 +78,7 @@ export const Cart = (props) => {
 
         <div className='mx-2'>
           <h4 className='mt-3'>Total articulos: {total}€</h4>
-          <h4>Envío: 2.00€ <button type='button' className='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' /></h4>
+          <h4>Envío: 2.00€ <button type='button' className='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' aria-label='Boton informacion sobre precio envío' /></h4>
 
           <div className='modal fade' id='exampleModal' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
             <div className='modal-dialog'>
@@ -107,7 +107,7 @@ export const Cart = (props) => {
       </div>
 
       <div className='row'>
-        <div className='col-2 offset-md-10'>
+        <div className='col-2 offset-md-10' aria-label={`Boton completar compra, precio total todos los funkos y envio ${total + 2} `}>
 
           {modal}
           <button

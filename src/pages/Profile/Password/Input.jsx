@@ -4,7 +4,7 @@ const Input = ({ label, name, type, value, onChange }) => {
       <div className='col-md-1' />
       <h6 for={name} className='col-sm-12 col-md-4 col-lg-4 form-label'>{label}:</h6>
       <div className='col-sm-12 col-md-5 col-lg-auto me-auto float-start'>
-        <input id={name} className='form-control' type={type} value={value} onChange={onChange} />
+        <input id={name} className='form-control' type={type} value={value} onChange={onChange} aria-label={label} />
       </div>
       <div className='col-md-auto' />
     </div>
