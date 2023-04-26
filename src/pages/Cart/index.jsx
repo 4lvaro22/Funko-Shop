@@ -69,7 +69,7 @@ export const Cart = (props) => {
       </div>
 
       <div className='container'>
-        {items.length === 0 && <div className='mt-3 border border-2'> <h4 className='m-3'>No hay articulos en el carrito</h4> </div>}
+        {items.length === 0 && <div className='mt-3 border border-2 row'> <h4 className='m-2'>No hay articulos en el carrito</h4> </div>}
         {items}
       </div>
 
