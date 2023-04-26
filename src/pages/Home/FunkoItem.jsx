@@ -23,7 +23,7 @@ export const FunkoItem = ({ funko, session }) => {
       {/* <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente.' out='Ir al carrito' value='0' /> */}
       {/* <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener iniciada sesión.' out='Registrarse' value='2' /> */}
       <div
-        className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
+        aria-label={`Cuadro del funko ${funko.title}`} className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
       >
 
         <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='200' height='266' alt={funko.title} title={funko.title} /> </Link>
@@ -32,12 +32,13 @@ export const FunkoItem = ({ funko, session }) => {
 
         <div>
           <div className='mb-3'>
-            <p className='ms-1'><strong>{funko.price} €</strong></p>
+            <p aria-label={`Precio del funko ${funko.title}: ${funko.price} €`} className='ms-1'><strong>{funko.price} €</strong></p>
           </div>
           <div>
 
             <p className='d-inline ms-1 align-middle'>{funko.rating}  <i className='bi bi-star-fill' style={{ color: '#000000' }} /></p>
             <div
+              aria-label={`Añadir al carrito funko ${funko.title}`}
               className='float-end' onClick={() => {
                 if (!session) {
                   showNoAccountModal();

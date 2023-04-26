@@ -43,22 +43,24 @@ export const Filters = ({ setPrices, setSeries }) => {
         <hr className='border-3 border-top border-dark' />
         <div className='list-group my-2 '>
           <h6 className='mx-2'>Precio:</h6>
-          <label className='list-group-item border-0'>
-            <input className='form-check-input me-1' type='radio' name='precio' value='menorVein' onChange={handleCheckPrices} />
-            Menor a 20€
-          </label>
-          <label className='list-group-item border-0'>
-            <input className='form-check-input me-1' type='radio' name='precio' value='veinCincuen' onChange={handleCheckPrices} />
-            20€ - 50€
-          </label>
-          <label className='list-group-item border-0'>
-            <input className='form-check-input me-1' type='radio' name='precio' value='mayorCincuen' onChange={handleCheckPrices} />
-            Mayor a 50€
-          </label>
-          <label className='list-group-item border-0'>
-            <input className='form-check-input me-1' type='radio' name='precio' value='' onChange={handleCheckPrices} checked={cachedPrices === ''} />
-            Sin límite de precio
-          </label>
+          <div aria-label='Intervalos de precio'>
+            <label className='list-group-item border-0'>
+              <input className='form-check-input me-1' type='radio' name='precio' value='menorVein' onChange={handleCheckPrices} />
+              Menor a 20€
+            </label>
+            <label className='list-group-item border-0'>
+              <input className='form-check-input me-1' type='radio' name='precio' value='veinCincuen' onChange={handleCheckPrices} />
+              20€ - 50€
+            </label>
+            <label className='list-group-item border-0'>
+              <input className='form-check-input me-1' type='radio' name='precio' value='mayorCincuen' onChange={handleCheckPrices} />
+              Mayor a 50€
+            </label>
+            <label className='list-group-item border-0'>
+              <input className='form-check-input me-1' type='radio' name='precio' value='' onChange={handleCheckPrices} checked={cachedPrices === ''} />
+              Sin límite de precio
+            </label>
+          </div>
         </div>
 
         <div className='list-group'>
