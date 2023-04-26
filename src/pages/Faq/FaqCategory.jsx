@@ -2,6 +2,12 @@ import { Question } from './Question';
 import QuestionTheme from './QuestionTheme';
 import { useState } from 'react';
 
+function enterKeyEvent () {
+  if (window.event.keyCode === 13) {
+    document.getElementById('TituloCategoria').click();
+  }
+}
+
 export const FaqCategory = ({ theme, questions }) => {
   const [form, toggleForm] = useState(true);
   const items = [];
@@ -15,7 +21,7 @@ export const FaqCategory = ({ theme, questions }) => {
   return (
     <>
       <div className='border mb-4 h-50 p-3 mb-5'>
-        <div onClick={() => toggleForm(!form)}>
+        <div id='TituloCategoria' onKeyDown={() => enterKeyEvent()} onClick={() => toggleForm(!form)}>
           <QuestionTheme name={theme} form={form} />
         </div>
 
