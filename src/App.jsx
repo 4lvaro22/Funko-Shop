@@ -49,10 +49,7 @@ function App () {
           <Route path='Funko/:id' element={<FunkoInfo session={session} />} />
           <Route path='Cart' element={<Cart />} />
           <Route path='Profile' element={<Profile user={testUser} session={session} setSession={setSession} />} />
-          <Route path='*' element={<h1>404: Not Found</h1>} />
-          {/* <Route path="*"> */}
-          {/*    <Redirect to="/Proyecto-Interfaces-Grupo-H"/> */}
-          {/* </Route> */}
+          <Route path='*' element={<main className='my-auto pb-4'><h1 className='text-center m-auto'> 404: Not Found</h1></main>} />
         </Route>
       </Routes>
     </Router>

@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { getFunkos } from '../data';
-import { Funko } from '../components/funko';
+import { FunkoItem } from '../pages/Home/FunkoItem';
 
 export const useFunko = ({ filter, session }) => {
   const [funkosData, setFunkosData] = useState(getFunkos());
@@ -15,7 +15,7 @@ export const useFunko = ({ filter, session }) => {
   };
 
   const funkos = useMemo(() => {
-    return funkosData.map(item => <Funko key={item.handle} funko={item} session={session} />);
+    return funkosData.map(item => <FunkoItem key={item.handle} funko={item} session={session} />);
   }, [funkosData, session]);
 
   return [funkos, updateFunkos];

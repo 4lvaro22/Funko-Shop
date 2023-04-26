@@ -41,7 +41,7 @@ export const Stars = ({ oldRating, updateRating }) => {
               outline: 'none',
               cursor: 'pointer',
               fontSize: '1.2rem',
-              color: `${index <= (hover || rating) ? '#FFE400' : '#ccc'}`
+              color: `${index <= (hover || rating) ? '#000000' : '#000000'}`
             }}
           >
             <span className='star'><i className={index <= (hover || rating) ? 'bi bi-star-fill shadow-sm' : 'bi bi-star shadow-sm'} /></span>

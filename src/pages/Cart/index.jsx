@@ -1,13 +1,14 @@
-import { FunkoEnCarrito } from './../../components/funkoEnCarrito';
+import { FunkoEnCarrito } from './FunkoItemCarrito';
 import { React, useEffect, useState } from 'react';
 import data from '../../data';
 import { removeFunko, getFunkosData } from '../../data/storage';
-import AddedModal from '../../components/addedModal';
+import { useModal } from '../../components/Modal';
 
 export const Cart = (props) => {
   const [funko, setFunko] = useState(getFunkosData());
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(0);
+  const [modal, showModal] = useModal({ type: 'completado' });
 
   const deleteFunkoChild = (funkoItem) => {
     const funkoCopy = [];
@@ -69,7 +70,7 @@ export const Cart = (props) => {
       </div>
 
       <div className='container'>
-        {items.length === 0 && <div className='mt-3 border border-2'> <h4 className='m-3'>No hay articulos en el carrito</h4> </div>}
+        {items.length === 0 && <div className='mt-3 border border-2 row'> <h4 className='m-2'>No hay articulos en el carrito</h4> </div>}
         {items}
       </div>
 
@@ -108,12 +109,12 @@ export const Cart = (props) => {
       <div className='row'>
         <div className='col-2 offset-md-10'>
 
-          <AddedModal id='botonCompra' value='3' out='Salir' alert='Compra completada. Su pedido se esta enviando.' />
+          {modal}
           <button
             disabled={items.length === 0}
             onClick={() => {
               deleteShoppingCart();
-              new bootstrap.Modal(document.getElementById('botonCompra')).show();
+              showModal();
             }} className='btn btn-success my-4'
           >Completar compra
           </button>

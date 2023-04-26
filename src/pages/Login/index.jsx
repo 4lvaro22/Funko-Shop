@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import logoFunko from '../../assets/images/funkoIcono.png';
 import { useState } from 'react';
 import validator from 'validator';
+import './login.css';
 
 export const Login = ({ setSession, session }) => {
   const [passwordEye, setValuePasswordEye] = useState(true);
@@ -27,7 +28,16 @@ export const Login = ({ setSession, session }) => {
     }
   };
 
+  const buttonColor = (!validate()) ? '#000000' : '#FFFFFF';
+
+  function enterKeyEvent () {
+    if (window.event.keyCode === 13) {
+      document.getElementById('eye').click();
+    }
+  }
+
   return (
+
     <>
 
       <div className='container my-5'>
@@ -47,7 +57,7 @@ export const Login = ({ setSession, session }) => {
                           {/* CORREO ELECTRONICO */}
                           <div className='row g-3 align-items-center'>
                             <div className='col-12'>
-                              <label htmlFor='txtEmail' className='col-form-label'>Correo Electrónico <span style={{ color: 'red' }}>*</span></label>
+                              <label htmlFor='txtEmail' className='col-form-label'>Correo Electrónico <span style={{ color: '#D90000' }}>*</span></label>
                               <div className='input-group d-flex flex-row'>
                                 <span className='input-group-text'><i className='bi bi-envelope-at' /></span><input id='txtEmail' className='form-control' type='text' onChange={(e) => setValueEmail(e.target.value)} />
                               </div>
@@ -56,9 +66,9 @@ export const Login = ({ setSession, session }) => {
                           {/* CONTRASEÑA */}
                           <div className='row g-3 align-items-center'>
                             <div className='col-auto'>
-                              <label htmlFor='txtPassword' className='col-form-label'>Contraseña <span style={{ color: 'red' }}>*</span></label>
+                              <label htmlFor='txtPassword' className='col-form-label'>Contraseña <span style={{ color: '#D90000' }}>*</span></label>
                               <div className='input-group d-flex flex-row'>
-                                <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-describedby='passwordHelpInline' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} /><span className='input-group-text'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} onClick={() => setValuePasswordEye(!passwordEye)} /></span>
+                                <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-describedby='passwordHelpInline' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} /><span id='eye' tabIndex='0' onKeyDown={() => enterKeyEvent()} onClick={() => setValuePasswordEye(!passwordEye)} className='input-group-text bg-primary'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} /></span>
                               </div>
                             </div>
                           </div>
@@ -66,7 +76,7 @@ export const Login = ({ setSession, session }) => {
                           <div className='d-grid gap-2 mt-5'>
                             <button
                               disabled={!validate()}
-                              type='submit' className='btn btn-primary' onClick={() => {
+                              type='submit' className='btn btn-primary' style={{ color: buttonColor }} onClick={() => {
                                 // new bootstrap.Modal(document.getElementById('exampleModal')).show();
                                 setSession(true);
                                 setTimeout(() => {
@@ -86,7 +96,7 @@ export const Login = ({ setSession, session }) => {
             </div>
 
             <div className='text-center'>
-              <Link to='/SignUp' className='text-decoration-none text-black'><p>¿No te has registrado...? <u>Registrarme</u></p></Link>
+              <Link to='/SignUp' className='text-decoration-none text-black'><p>¿No te has registrado? <u>Registrarme</u></p></Link>
             </div>
           </div>
         </div>
