@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { changeQuantity } from '../data/storage';
+import { changeQuantity } from '../../data/storage';
 
 const generateOptions = (quantity) => {
   const options = [];
@@ -19,20 +19,20 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
   }, [quantity]);
 
   return (
-    <div className='row border border-2 mt-2 d-flex align-items-center '>
+    <div className='row border border-2 mt-2 p-2 d-flex align-items-center align-content-center flex-wrap'>
 
-      <div className='col col-lg-2'>
+      <div className='col-6 col-sm-6 col-md-3 col-lg-2'>
         <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} alt={funko.title} width='110' height='145' className='mt-4 mb-4 mx-5' /></Link>
       </div>
 
-      <div className='col col-lg-2'>
+      <div className='col-6 col-sm-6 col-md-2 col-lg-2'>
         <h4 className='text-center '>{funko.title}</h4>
       </div>
 
-      <span className='col col-lg-3 ms-auto'>
+      <span className='col col-md-3 col-lg-3 item-align-center mb-2 mb-0-sm '>
         Cantidad:
         <select
-          className='form-select w-50' aria-label='Default select example' onChange={(e) => {
+          className='form-select w-50 float-sm-end float-md-none' aria-label='Default select example' onChange={(e) => {
             setQuantity(e.target.value);
           }} value={quantity}
         >
@@ -41,12 +41,12 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
         </select>
       </span>
 
-      <div className='col col-lg-2'>
-        <h4 className='text-center'>{funko.price * quantity}€</h4>
+      <div className='col col-md-1 col-lg-2'>
+        <h4 className='text-center '>{funko.price * quantity}€</h4>
       </div>
 
-      <div className='col col-lg-3'>
-        <button id='remove' className=' btn btn-danger mx-1' onClick={() => { remove(funko); }}>Eliminar Funko</button>
+      <div className='col col-md-1 col-lg-3'>
+        <button id='remove' className=' btn btn-danger mx-1' onClick={() => { remove(funko); }}>Eliminar</button>
       </div>
 
     </div>

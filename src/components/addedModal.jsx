@@ -27,7 +27,7 @@ export const AddedModal = (props) => {
                     }, 500);
                   }}
                 >Iniciar Sesión
-              </button>
+                </button>
               : '')}
 
             <button

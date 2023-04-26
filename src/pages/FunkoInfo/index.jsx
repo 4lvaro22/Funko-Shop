@@ -4,6 +4,7 @@ import { getFunkoById } from '../../data';
 import { addFunko } from '../../data/storage';
 import AddedModal from '../../components/addedModal';
 import Reviews from './Review';
+import { useModal } from '../../components/Modal';
 
 // import bootstrap from 'bootstrap';
 
@@ -34,6 +35,8 @@ export const FunkoInfo = ({ session }) => {
   );
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
+  const [carritoModal, showCarritoModal] = useModal({ type: 'compra' });
+  const [noAccountModal, showNoAccountModal] = useModal({ type: 'noAccount' });
 
   useEffect(() => {
     if (!id) return;
@@ -45,9 +48,11 @@ export const FunkoInfo = ({ session }) => {
     <>
 
       <div className='container mb-5'>
+        {carritoModal}
+        {noAccountModal}
 
-        <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
-        <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener cuenta.' out='Registrarse' value='2' />
+        {/* <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
+        <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener cuenta.' out='Registrarse' value='2' /> */}
         <div className='row my-3'>
 
           <div className='col'>
@@ -89,7 +94,8 @@ export const FunkoInfo = ({ session }) => {
               className='p-2'
               onClick={() => {
                 if (!session) {
-                  new bootstrap.Modal(document.getElementById('noAccountModal')).show();
+                  showNoAccountModal();
+                  // new bootstrap.Modal(document.getElementById('noAccountModal')).show();
                 }
               }}
             >
@@ -97,7 +103,8 @@ export const FunkoInfo = ({ session }) => {
                 disabled={!session}
                 className=' btn btn-success m-1' id='añadirCesta' onClick={() => {
                   addFunko(funko, quantity);
-                  new bootstrap.Modal(document.getElementById('exampleModal')).show();
+                  showCarritoModal();
+                  // new bootstrap.Modal(document.getElementById('exampleModal')).show();
                 }}
               >Añadir a la cesta
               </button>

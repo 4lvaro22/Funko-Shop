@@ -19,11 +19,11 @@ export const Password = ({ usuario, updateUsuario }) => {
 
         <div className='grid gap-3 row-gap-3 '>
 
-          <Input label='Contraseña Actual' name='password' type='password' />
+          <Input label='Contraseña actual' name='password' type='password' />
 
           <hr className='bg-danger border-2 border-top' />
 
-          <Input label='Nueva Contraseña' name='password' type='password' onChange={(e) => { update(e.target.value, 'password'); }} />
+          <Input label='Nueva contraseña' name='password' type='password' onChange={(e) => { update(e.target.value, 'password'); }} />
           <Input label='Repetir nueva contraseña' name='password' type='password' onChange={(e) => { update(e.target.value, 'password'); }} />
 
           <div className='row'>
