@@ -28,7 +28,6 @@ export const Home = ({ session, itemsPerPage }) => {
   return (
     <>
       <Search updateSearch={setSearch} />
-      <h5 className={'text-center text-danger my-1 ' + (!session ? '' : 'invisible')}>¡¡ Para poder comprar un artículo necesitas registrarte !!</h5>
 
       <div className='d-flex flex-column flex-sm-row align mx-auto'>
         {/* <-- Lado --> */}

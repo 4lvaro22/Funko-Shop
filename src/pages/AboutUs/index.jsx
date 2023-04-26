@@ -8,7 +8,7 @@ export const AboutUs = () => {
         <strong>FunkoShop</strong>
         <small className='text-muted mx-3'>Grupo-H</small>
       </h1>
-      <img src={grupoPersonas} alt='Our Team' className='float-start me-auto' width='50%' alt='fotoGrupo' />
+      <img src={grupoPersonas} alt='Foto de nuestro equipo' className='float-start me-auto' width='50%' />
       <LoremIpsum />
     </div>
   );
