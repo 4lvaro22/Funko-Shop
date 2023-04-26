@@ -23,13 +23,13 @@ export const Filters = ({ setPrices, setSeries }) => {
   };
 
   return (
-    <aside className='m-2 mt-md-4 mx-md-3 col-md-3 col-sm-4 col-lg-2'>  {/* <-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... --> */}
+    <aside aria-label='Filtros' className='m-2 mt-md-4 mx-md-3 col-md-3 col-sm-4 col-lg-2'>  {/* <-- Para el menú de selección de marca (a modo de filtro): Marvel, GoT, Harry Potter... --> */}
 
       <h2 className='text-center border-bottom border-top p-1'>Filtros</h2>
       <div className='border rounded p-2'>
         <div className='list-group'>
           <h5 className='mx-2'>Marca:</h5>
-          <div className='overflow-auto' style={{ maxHeight: '500px' }}>
+          <div aria-label='Marcas' className='overflow-auto' style={{ maxHeight: '500px' }}>
             {getSeries()
               .map(item => (
                 <label key={item} className='list-group-item border-0' lang='en'>

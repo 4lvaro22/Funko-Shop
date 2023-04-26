@@ -30,14 +30,13 @@ export const Home = ({ session, itemsPerPage }) => {
       <Search updateSearch={setSearch} />
       <h5 className={'text-center text-danger my-1 ' + (!session ? '' : 'invisible')}>¡¡ Para poder comprar un artículo necesitas registrarte !!</h5>
 
-      <div className='d-flex flex-column flex-sm-row align mx-auto'>
-        {/* <-- Lado --> */}
+      <div aria-label='Filtros y catálogo' className='d-flex flex-column flex-sm-row align mx-auto'>
 
-        {/* ADD FILTROS */}
+        {/* <-- Lado --> */}
         <Filters setPrices={setPrices} setSeries={setSeries} />
 
         {/* <-- Seccion --> */}
-        <section className='m-2 mt-md-4 mx-md-2'>
+        <section aria-label='Catálogo' className='m-2 mt-md-4 mx-md-2'>
           <h2 className='text-center border-bottom border-top p-1'>Catálogo</h2>
           {search && <p className='fs-5 fw-bold text-left'>Resultados de '{search}'</p>}
 
