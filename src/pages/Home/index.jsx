@@ -27,7 +27,7 @@ export const Home = ({ session, itemsPerPage }) => {
 
   return (
     <>
-      <Search updateSearch={setSearch} />
+      <Search id='buscador' updateSearch={setSearch} />
 
       <div className='d-flex flex-column flex-sm-row align mx-auto'>
         {/* <-- Lado --> */}
