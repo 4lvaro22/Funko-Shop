@@ -28,7 +28,7 @@ export const Filters = ({ setPrices, setSeries }) => {
       <h2 className='text-center border-bottom border-top p-1'>Filtros</h2>
       <div className='border rounded p-2'>
         <div className='list-group'>
-          <h6 className='mx-2'>Marca:</h6>
+          <h5 className='mx-2'>Marca:</h5>
           <div className='overflow-auto' style={{ maxHeight: '500px' }}>
             {getSeries()
               .map(item => (
