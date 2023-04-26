@@ -17,9 +17,6 @@ export const Pagination = ({ itemsPerPage, items }) => {
   // Invoke when user click to request another page.
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
-    console.log(
-        `User requested page number ${event.selected}, which is offset ${newOffset}`
-    );
     setItemOffset(newOffset);
   };
   useEffect(() => {
@@ -30,12 +27,8 @@ export const Pagination = ({ itemsPerPage, items }) => {
 
   return (
     <>
-      <div>
-        {currentItems && currentItems.map((funko) => (
-          <div key={funko} className='d-inline-flex'>
-            {funko}
-          </div>
-        ))}
+      <div className='d-flex flex-wrap justify-content-center align-content-stretch'>
+        {currentItems}
       </div>
 
       {currentItems.length === 0 &&
@@ -56,20 +49,19 @@ export const Pagination = ({ itemsPerPage, items }) => {
               breakLinkClassName='page-link'
               pageCount={pageCount}
               onPageChange={handlePageClick}
-              containerClassName='pagination  d-flex justify-content-center my-2 p-3'
-              previousLinkClassName='pagination__link mx-3 btn btn-primary'
-              nextLinkClassName='pagination__link mx-3 btn btn-primary'
-              disabledClassName='pagination__link--disabled'
-              activeClassName='pagination__link--active'
+              containerClassName='pagination d-flex justify-content-center my-2 p-3'
+              previousLinkClassName='mx-3 btn btn-primary'
+              nextLinkClassName='mx-3 btn btn-primary'
+              disabledClassName='d-none'
+              activeClassName='bg-primary-subtle'
               pageClassName='page-item'
               pageLinkClassName='page-link text-dark'
               previousClassName='page-item'
               nextClassName='page-item'
-              activeLinkClassName='disabled bg-secondary'
+              activeLinkClassName='disabled'
     // eslint-disable-next-line no-unused-vars
               hrefAllControls
               onClick={(clickEvent) => {
-                console.log('onClick', clickEvent);
               // Return false to prevent standard page change,
               // return false; // --> Will do nothing.
               // return a number to choose the next page,
