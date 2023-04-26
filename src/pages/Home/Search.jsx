@@ -23,7 +23,7 @@ export const Search = ({ updateSearch }) => {
         <div className='row'>
           <div className='col-4' />
           <div className='col-4'>
-            <span className='input-group m-1 d-flex justify-content-center'>
+            <span className='input-group m-1 d-flex justify-content-center shadow'>
               <input
                 type='text' className='form-control' id='buscador' aria-label='Buscador' aria-describedby='Buscar'
                 value={cachedSearch}
