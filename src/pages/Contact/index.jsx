@@ -1,11 +1,14 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import AddedModal from '../../components/addedModal';
+import { useModal } from '../../components/Modal';
 
 export const Contact = () => {
+  const [modal, showModal] = useModal({ type: 'solicitud' });
   return (
     <>
       <div className='container m-4'>
-        <AddedModal alert='Se ha enviado su colicitud correctamente' out='Salir' value='3' />
+        {modal}
+        {/* <AddedModal alert='Se ha enviado su colicitud correctamente' out='Salir' value='3' /> */}
         <h1><strong>Contacta con nosotros</strong></h1>
         <p>Si tienes cualquier duda sobre tu compra o consulta sobre nuestras tiendas, puedes contactar con nosotros como prefieras:</p>
         <p>Puedes enviarnos tu consulta a través de este formulario:</p>
@@ -70,7 +73,8 @@ export const Contact = () => {
           <div className='d-flex justify-content-center'>
             <button
               className='btn btn-primary' onClick={() => {
-                new bootstrap.Modal(document.getElementById('exampleModal')).show();
+                showModal();
+                // new bootstrap.Modal(document.getElementById('exampleModal')).show();
               }}
             >Enviar<i className='bi bi-send mx-1' />
             </button>

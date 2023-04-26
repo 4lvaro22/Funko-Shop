@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { addFunko } from '../../data/storage';
 import AddedModal from '../../components/addedModal';
+import { useModal } from '../../components/Modal';
 
 function tituloModificado (tituloOri) {
   let tituloFinal = tituloOri;
@@ -13,10 +14,14 @@ function tituloModificado (tituloOri) {
 }
 
 export const FunkoItem = ({ funko, session }) => {
+  const [compraModal, showCompraModal] = useModal({ type: 'compra' });
+  const [noAccountModal, showNoAccountModal] = useModal({ type: 'noAccount' });
   return (
     <>
-      <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente.' out='Ir al carrito' value='0' />
-      <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener iniciada sesión.' out='Registrarse' value='2' />
+      {compraModal}
+      {noAccountModal}
+      {/* <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente.' out='Ir al carrito' value='0' /> */}
+      {/* <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener iniciada sesión.' out='Registrarse' value='2' /> */}
       <div
         className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
       >
@@ -35,7 +40,8 @@ export const FunkoItem = ({ funko, session }) => {
             <div
               className='float-end' onClick={() => {
                 if (!session) {
-                  new bootstrap.Modal(document.getElementById('noAccountModal')).show();
+                  showNoAccountModal();
+                  // new bootstrap.Modal(document.getElementById('noAccountModal')).show();
                 }
               }}
             >
@@ -43,10 +49,12 @@ export const FunkoItem = ({ funko, session }) => {
                 disabled={!session}
                 id='anadir' className='btn btn-success btn-sm float-end' onClick={() => {
                   if (!session) {
-                    new bootstrap.Modal(document.getElementById('noAccountModal')).show();
+                    showNoAccountModal();
+                    // new bootstrap.Modal(document.getElementById('noAccountModal')).show();
                   } else {
                     addFunko(funko, 1);
-                    new bootstrap.Modal(document.getElementById(funko.handle + 'Modal')).show();
+                    showCompraModal();
+                    // new bootstrap.Modal(document.getElementById(funko.handle + 'Modal')).show();
                   }
                 }}
               >Añadir a la cesta

@@ -4,6 +4,7 @@ import AddedModal from '../../components/addedModal';
 import PasswordStrengthBar from 'react-password-strength-bar';
 import { useState } from 'react';
 import validator from 'validator';
+import { useModal } from '../../components/Modal';
 
 export const SignUp = () => {
   const [passwordEye, setValuePasswordEye] = useState(true);
@@ -13,6 +14,7 @@ export const SignUp = () => {
   const [email, setValueEmail] = useState('');
   const [password, setValuePassword] = useState('');
   const [confirmPassword, setValueConfirmPassword] = useState('');
+  const [registeredModal, showRegisteredModal] = useModal({ type: 'registro' });
 
   const validateName = () => {
     return name.length >= 4;
@@ -44,7 +46,8 @@ export const SignUp = () => {
 
   return (
     <>
-      <AddedModal alert='Usted se ha registrado correctamente' out='Ir a la para Iniciar Sesión' value='1' />
+      {registeredModal}
+      {/* <AddedModal alert='Usted se ha registrado correctamente' out='Ir a la para Iniciar Sesión' value='1' /> */}
       <div className='container my-5'>
         <div className='row justify-content-md-center'>
           <div className='col col-lg-5'>
@@ -159,7 +162,8 @@ export const SignUp = () => {
                   <div className='d-grid gap-2 mt-5'>
                     <button
                       type='submit' disabled={!validate()} className='btn btn-primary' onClick={() => {
-                        new bootstrap.Modal(document.getElementById('exampleModal')).show();
+                        showRegisteredModal();
+                        // new bootstrap.Modal(document.getElementById('exampleModal')).show();
                       }}
                     >
                       Enviar
