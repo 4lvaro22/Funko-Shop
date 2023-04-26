@@ -36,7 +36,7 @@ export const FunkoItem = ({ funko, session }) => {
           </div>
           <div>
 
-            <p className='d-inline ms-1 align-middle'>{funko.rating}  <i className='bi bi-star-fill text-warning' /></p>
+            <p className='d-inline ms-1 align-middle'>{funko.rating}  <i className='bi bi-star-fill' style={{ color: '#000000' }} /></p>
             <div
               className='float-end' onClick={() => {
                 if (!session) {
@@ -46,8 +46,7 @@ export const FunkoItem = ({ funko, session }) => {
               }}
             >
               <button
-                disabled={!session}
-                id='anadir' className='btn btn-success btn-sm float-end' onClick={() => {
+                id='anadir' className='btn btn-success btn-sm float-end text-white' onClick={() => {
                   if (!session) {
                     showNoAccountModal();
                     // new bootstrap.Modal(document.getElementById('noAccountModal')).show();
