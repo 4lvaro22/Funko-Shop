@@ -19,13 +19,13 @@ export const Search = ({ updateSearch }) => {
 
   return (
     <>
-      <nav className='container-fluid'>
+      <nav aria-label='Buscador por texto' className='container-fluid'>
         <div className='row'>
           <div className='col-4' />
           <div className='col-4'>
             <span className='input-group m-1 d-flex justify-content-center'>
               <input
-                type='text' className='form-control' id='buscador' aria-label='Buscador' aria-describedby='Buscar'
+                type='text' className='form-control' id='buscador' aria-label='Campo de busqueda' aria-describedby='Buscar'
                 value={cachedSearch}
                 onChange={e => setCachedSearch(e.target.value)}
                 onKeyUp={e => e.key === 'Enter' ? updateFixedSearch() : null}

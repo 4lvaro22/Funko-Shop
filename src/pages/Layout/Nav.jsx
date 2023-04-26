@@ -11,7 +11,7 @@ export const Nav = () => {
 
   return (
     <>
-      <nav className='navbar navbar-expand-lg navbar-light p-2'>
+      <nav aria-label='Localización' className='navbar navbar-expand-lg navbar-light p-2'>
         <h6 className={'text-dark' + (validateNav() ? '' : 'visually-hidden')}><Link to='/' className='text-decoration-none text-dark'>INICIO</Link>{path}</h6>
       </nav>
     </>
