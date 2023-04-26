@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { changeQuantity } from '../data/storage';
+import { changeQuantity } from '../../data/storage';
 
 const generateOptions = (quantity) => {
   const options = [];

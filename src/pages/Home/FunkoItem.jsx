@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { addFunko } from '../data/storage';
-import AddedModal from './addedModal';
+import { addFunko } from '../../data/storage';
+import AddedModal from '../../components/addedModal';
 
 function tituloModificado (tituloOri) {
   let tituloFinal = tituloOri;
@@ -12,7 +12,7 @@ function tituloModificado (tituloOri) {
   return tituloFinal;
 }
 
-export const Funko = ({ funko, session }) => {
+export const FunkoItem = ({ funko, session }) => {
   return (
     <>
       <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente.' out='Ir al carrito' value='0' />
@@ -60,4 +60,4 @@ export const Funko = ({ funko, session }) => {
   );
 };
 
-export default Funko;
+export default FunkoItem;

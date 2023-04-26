@@ -79,42 +79,6 @@ export const Contact = () => {
 
       </div>
 
-      <h2 className='mx-5'><u>Nuestras Redes Sociales</u></h2>
-      <div className='mx-5 text-black' id='redes'>
-        <div className='row mt-3' id='instagram'>
-          <p>
-            <a
-              className='link-dark text-decoration-none'
-              href='https://www.instagram.com/'
-            >
-              <i className='bi bi-instagram d-inline mx-2' />
-              FunkoShopInterfaces
-            </a>
-          </p>
-        </div>
-        <div className='row' id='facebook'>
-          <p>
-            <a
-              className='link-dark text-decoration-none'
-              href='https://es-es.facebook.com/'
-            >
-              <i className='bi bi-facebook d-inline mx-2' />
-              FunkoShopInterfaces
-            </a>
-          </p>
-        </div>
-        <div className='row' id='twitter'>
-          <p>
-            <a
-              className='link-dark text-decoration-none'
-              href='https://twitter.com/'
-            >
-              <i className='bi bi-twitter d-inline mx-2' />
-              FunkoShopInterfaces
-            </a>
-          </p>
-        </div>
-      </div>
     </>
   );
 };

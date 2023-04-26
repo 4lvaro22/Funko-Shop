@@ -1,4 +1,4 @@
-import { FunkoEnCarrito } from './../../components/funkoEnCarrito';
+import { FunkoEnCarrito } from './FunkoItemCarrito';
 import { React, useEffect, useState } from 'react';
 import data from '../../data';
 import { removeFunko, getFunkosData } from '../../data/storage';
