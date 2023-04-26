@@ -5,10 +5,10 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 export const Footer = () => {
   return (
     <>
-      <footer className='bg-dark pt-3' style={{ bottom: '0', marginTop: 'auto', position: 'relative', padding: '3rem', fontSize: '105%' }}>
+      <footer aria-label='Pie de página' className='bg-dark pt-3' style={{ bottom: '0', marginTop: 'auto', position: 'relative', padding: '3rem', fontSize: '105%' }}>
         <div className=' d-flex flex-column flex-sm-row container-fluid'>
-          <div className='col-2 mt-3 mx-4' id='redes'>
-            <div id='instagram'>
+          <div aria-label='Redes sociales' className='col-2 mt-3 mx-4' id='redes'>
+            <div aria-label='Instagram' id='instagram'>
               <a
                 className='link-light text-decoration-none'
                 href='https://www.instagram.com/' target='_blank' rel='noreferrer noopener'
@@ -18,7 +18,7 @@ export const Footer = () => {
               </a>
             </div>
 
-            <div id='facebook'>
+            <div aria-label='Facebook' id='facebook'>
               <a
                 className='link-light text-decoration-none'
                 href='https://es-es.facebook.com/' target='_blank' rel='noreferrer noopener'
@@ -28,7 +28,7 @@ export const Footer = () => {
               </a>
             </div>
 
-            <div id='twitter'>
+            <div aria-label='Twitter' id='twitter'>
               <a
                 className='link-light text-decoration-none'
                 href='https://twitter.com/' target='_blank' rel='noreferrer noopener'
@@ -39,7 +39,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className='col-7 d-flex flex-column mt-3 mx-2' id='info'>
+          <div aria-label='Información sobre nosotros' className='col-7 d-flex flex-column mt-3 mx-2' id='info'>
             <span className='block d-flex flex-column flex-sm-row justify-content-center m-2'>
               <Link
                 to='/TermsAndConditions'
@@ -72,7 +72,7 @@ export const Footer = () => {
 
           </div>
 
-          <div className='col-2 d-flex flex-column flex-sm-row justify-content-end mx-2' id='idioma'>
+          <div aria-label='Idioma español' className='col-2 d-flex flex-column flex-sm-row justify-content-end mx-2' id='idioma'>
             <p className='text-white m-3'>
               <img src={spanish} alt='Idioma Español' width={30} height={30} /> ES
             </p>
