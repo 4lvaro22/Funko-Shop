@@ -45,7 +45,7 @@ export const ReviewForm = ({ sendReview }) => {
           </div>
           <div className='row'>
             <span className='col-4 d-flex justify-content-center'>
-              <button disabled={!validate()} onClick={() => { sendReview(title, review, rating); }} className='btn btn-primary' data-bs-toggle='modal' data-bs-target='#botonReview'>Publicar</button>
+              <button disabled={!validate()} style={{ color: (!validate()) ? '#000000' : '#ffffff' }} onClick={() => { sendReview(title, review, rating); }} className='btn btn-primary' data-bs-toggle='modal' data-bs-target='#botonReview'>Publicar</button>
 
               <div className='modal fade' id='botonReview' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
                 <div className='modal-dialog'>

@@ -1,0 +1,15 @@
+button.rating:hover{
+    color: #f1c40f !important; text-shadow: 0.1px 0.1px 4px #353433 !important; 
+}
+
+button.rating:focus{
+    color: #f1c40f !important; text-shadow: 0.1px 0.1px 4px #353433 !important;
+}
+
+button:hover{
+    text-shadow: 0.1px 0.1px 4px #353433 !important; 
+}
+
+button:focus{
+    text-shadow: 0.1px 0.1px 4px #353433 !important;
+}
