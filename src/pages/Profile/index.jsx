@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Data from './Data';
 import { PaymentSection } from './Payments';
+import { Password } from './Password';
 import { useNavigate } from 'react-router-dom';
 
 const getButtonClass = (page, currentPage) => {
@@ -22,7 +23,7 @@ export const Profile = ({
   // },
   session, setSession
 }) => {
-  const [page, setPage] = useState('payments');
+  const [page, setPage] = useState('personal');
   const [usuario, setUsuario] = useState(user);
   const navigate = useNavigate();
 
@@ -61,6 +62,13 @@ export const Profile = ({
               Datos Personales
             </button>
             <button
+              className={'btn ' + getButtonClass('password', page)}
+              type='button'
+              onClick={() => setPage('password')}
+            >
+              Cambiar Contraseña
+            </button>
+            <button
               className={'btn ' + getButtonClass('payments', page)}
               type='button'
               onClick={() => setPage('payments')}
@@ -80,7 +88,7 @@ export const Profile = ({
           <div className='p-3 bg-light shadow w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
             {page === 'personal' ? <Data usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} /> : null}
             {page === 'payments' ? <PaymentSection user={usuario} /> : null}
-
+            {page === 'password' ? <Password usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} /> : null}
           </div>
         </div>
       </div>
