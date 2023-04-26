@@ -1,24 +1,21 @@
 import { useState, useEffect } from 'react';
+import { useCached } from '../../hooks/useCached';
 
 export const Search = ({ updateSearch }) => {
   const [form, toggleForm] = useState(false);
-  const [search, setSearch] = useState('');
-  const [buscado, setBuscado] = useState('');
+  const [cachedSearch, setCachedSearch, search, updateFixedSearch] = useCached('');
 
   useEffect(() => {
-    if (search.length > 0) {
-      toggleForm(true);
-    } else {
-      toggleForm(false);
-    }
-  }, [search]);
+    toggleForm(cachedSearch.length > 0);
 
-  const handleBusqueda = () => {
-    console.log('Buscando: ' + search);
-    // setFilter(true);
-    setBuscado(search);
+    return () => {
+      toggleForm(false);
+    };
+  }, [cachedSearch]);
+
+  useEffect(() => {
     updateSearch(search);
-  };
+  }, [search]);
 
   return (
     <>
@@ -29,11 +26,11 @@ export const Search = ({ updateSearch }) => {
             <span className='input-group m-1 d-flex justify-content-center'>
               <input
                 type='text' className='form-control' id='buscador' aria-label='Buscador' aria-describedby='Buscar'
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                onKeyUp={e => e.key === 'Enter' ? handleBusqueda() : null}
+                value={cachedSearch}
+                onChange={e => setCachedSearch(e.target.value)}
+                onKeyUp={e => e.key === 'Enter' ? updateFixedSearch() : null}
               />
-              <button className={'btn btn-outline-' + (form ? 'dark' : 'white') + ' bg-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2' onClick={() => handleBusqueda()}><i className='bi bi-search' /></button>
+              <button aria-label='Botón de Buscar' className={'btn btn-outline-' + (form ? 'dark' : 'white') + ' bg-' + (form ? 'primary' : 'secondary')} type='button' id='button-addon2' onClick={updateFixedSearch}><i className='bi bi-search' /></button>
             </span>
           </div>
           <div className='col-4' />

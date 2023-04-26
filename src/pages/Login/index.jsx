@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import logoFunko from '../../assets/images/funkoIcono.png';
 import { useState } from 'react';
+import validator from 'validator';
 
 export const Login = ({ setSession, session }) => {
   const [passwordEye, setValuePasswordEye] = useState(true);
@@ -8,9 +9,6 @@ export const Login = ({ setSession, session }) => {
   const [password, setValuePassword] = useState('');
   const navigate = useNavigate();
 
-  const validateEmail = () => {
-    return email.length;
-  };
   const validatePassword = () => {
     return password.length;
   };
@@ -19,13 +17,23 @@ export const Login = ({ setSession, session }) => {
     return validateEmail() && validatePassword();
   };
 
+  const validateEmail = () => {
+    const posicionDominio = email.lastIndexOf('.');
+
+    if (validator.isEmail(email)) {
+      return true;
+    } else if (email.substring(posicionDominio).length <= 3) {
+      return false;
+    }
+  };
+
   return (
     <>
 
       <div className='container my-5'>
         <div className='row justify-content-md-center'>
           <div className='col col-lg-5'>
-            <span className='align-middle'><img className='w-100' src={logoFunko} /></span>
+            <span className='align-middle'><img className='w-100' src={logoFunko} alt='icono Funkoshop' /></span>
           </div>
           <div className='col col-lg-5'>
             <div className='Auth-form-container'>
@@ -37,20 +45,20 @@ export const Login = ({ setSession, session }) => {
                         <div className='Auth-form-content'>
                           <h2 className='Auth-form-title'>Iniciar Sesión</h2>
                           {/* CORREO ELECTRONICO */}
-                          <div class='row g-3 align-items-center'>
-                            <div class='col-12'>
-                              <label for='txtEmail' class='col-form-label'>Correo Electrónico <span style={{ color: 'red' }}>*</span></label>
+                          <div className='row g-3 align-items-center'>
+                            <div className='col-12'>
+                              <label htmlFor='txtEmail' className='col-form-label'>Correo Electrónico <span style={{ color: 'red' }}>*</span></label>
                               <div className='input-group d-flex flex-row'>
-                                <span className='input-group-text'><i className='bi bi-envelope-at' /></span><input id='txtEmail' class='form-control' type='text' className='form-control' onChange={(e) => setValueEmail(e.target.value)} />
+                                <span className='input-group-text'><i className='bi bi-envelope-at' /></span><input id='txtEmail' className='form-control' type='text' onChange={(e) => setValueEmail(e.target.value)} />
                               </div>
                             </div>
                           </div>
                           {/* CONTRASEÑA */}
-                          <div class='row g-3 align-items-center'>
-                            <div class='col-auto'>
-                              <label for='txtPassword' class='col-form-label'>Contraseña <span style={{ color: 'red' }}>*</span></label>
+                          <div className='row g-3 align-items-center'>
+                            <div className='col-auto'>
+                              <label htmlFor='txtPassword' className='col-form-label'>Contraseña <span style={{ color: 'red' }}>*</span></label>
                               <div className='input-group d-flex flex-row'>
-                                <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' class='form-control' aria-describedby='passwordHelpInline' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} className='form-control' /><span className='input-group-text'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} onClick={() => setValuePasswordEye(!passwordEye)} /></span>
+                                <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-describedby='passwordHelpInline' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} /><span className='input-group-text'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} onClick={() => setValuePasswordEye(!passwordEye)} /></span>
                               </div>
                             </div>
                           </div>
@@ -78,7 +86,7 @@ export const Login = ({ setSession, session }) => {
             </div>
 
             <div className='text-center'>
-              <Link to='/SignUp' className='text-decoration-none text-black'><p>No te has registrado? <u>Registrarme</u></p></Link>
+              <Link to='/SignUp' className='text-decoration-none text-black'><p>¿No te has registrado...? <u>Registrarme</u></p></Link>
             </div>
           </div>
         </div>

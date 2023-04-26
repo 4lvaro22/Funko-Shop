@@ -47,11 +47,12 @@ export const FunkoInfo = ({ session }) => {
       <div className='container mb-5'>
 
         <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
+        <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener cuenta.' out='Registrarse' value='2' />
         <div className='row my-3'>
 
           <div className='col'>
 
-            <img src={funko.imageName} width='300' height='400' style={{ marginLeft: '15%', marginTop: '15%' }} />
+            <img src={funko.imageName} alt={funko.title} width='300' height='400' style={{ marginLeft: '15%', marginTop: '15%' }} />
           </div>
 
           <div className='col d-grid gap-3'>
@@ -88,7 +89,7 @@ export const FunkoInfo = ({ session }) => {
               className='p-2'
               onClick={() => {
                 if (!session) {
-                  navigate('/Login');
+                  new bootstrap.Modal(document.getElementById('noAccountModal')).show();
                 }
               }}
             >

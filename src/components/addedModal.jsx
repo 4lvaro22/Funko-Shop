@@ -10,12 +10,25 @@ export const AddedModal = (props) => {
       <div className='modal-dialog'>
         <div className='modal-content'>
           <div className='modal-header'>
-            <h5 className='modal-title' id={modalId + 'Label'}> {(props.value !== '1') ? <i className={'bi bi-' + (props.id === 'botonCompra' ? 'truck' : 'check')} /> : ''}  {props.alert}</h5>
+            <h5 className='modal-title' id={modalId + 'Label'}><i className={'bi bi-' + (props.id === 'botonCompra' ? 'truck' : (props.id === 'noAccountModal' ? 'person-x' : 'check'))} /> {props.alert}</h5>
             <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
           </div>
           <div className='modal-footer mx-auto'>
             {((props.value === '0') ? <button type='button' className='btn btn-secondary float-start me-5' data-bs-dismiss='modal'>Seguir comprando</button> : '')}
-            {((props.value === '1') ? <Link to='/SignUp'><button type='button' className='btn btn-secondary float-start me-5' data-bs-dismiss='modal'>Registrarse</button></Link> : '')}
+            {((props.value === '2')
+              ? <button
+                  type='button' className='btn btn-secondary float-start me-5' data-bs-dismiss='modal'
+                  onClick={() => {
+                    $('#' + (modalId)).modal('hide');
+                    $('.modal-backdrop').remove();
+                    $(document.body).removeClass('modal-open');
+                    setTimeout(() => {
+                      navigate('/LogIn');
+                    }, 500);
+                  }}
+                >Iniciar Sesión
+              </button>
+              : '')}
 
             <button
               type='button' className='btn btn-success float-end'
@@ -26,7 +39,7 @@ export const AddedModal = (props) => {
                 $('.modal-backdrop').remove();
                 $(document.body).removeClass('modal-open');
                 setTimeout(() => {
-                  navigate((props.value === '0') ? '/Cart' : (((props.value === '1') ? '/LogIn' : '/')));
+                  navigate((props.value === '0') ? '/Cart' : (((props.value === '1') ? '/LogIn' : (props.value === '2') ? '/SignUp' : '/')));
                 }, 500);
               }}
             >{props.out}
