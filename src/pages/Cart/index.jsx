@@ -107,7 +107,7 @@ export const Cart = (props) => {
       </div>
 
       <div className='row'>
-        <div className='col-2 offset-md-10' aria-label='Boton completar compra'>
+        <div className='col-2 offset-md-10' aria-label={`Boton completar compra, precio total todos los funkos y envio ${total + 2} `}>
 
           {modal}
           <button

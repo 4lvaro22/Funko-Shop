@@ -29,7 +29,7 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
         <h4 className='text-center '>{funko.title}</h4>
       </div>
 
-      <span className='col col-md-3 col-lg-3 item-align-center mb-2 mb-0-sm ' aria-label='Seleccionar Cantidad'>
+      <span className='col col-md-3 col-lg-3 item-align-center mb-2 mb-0-sm ' aria-label={`Seleccionar Cantidad, precio total cantidad funko ${funko.price * quantity}`}>
         <label htmlFor='selectQuantity'>Cantidad:</label>
         <select
           className='form-select w-50 float-sm-end float-md-none' id='selectQuantity' aria-label='Default select example' onChange={(e) => {
