@@ -51,6 +51,7 @@ export const FunkoItem = ({ funko, session }) => {
                 }}
               >Añadir a la cesta
               </button>
+
             </div>
 
           </div>
