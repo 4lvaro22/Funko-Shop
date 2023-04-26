@@ -27,8 +27,7 @@ export const Home = ({ session, itemsPerPage }) => {
 
   return (
     <>
-      <Search updateSearch={setSearch} />
-      <h5 className={'text-center text-danger my-1 ' + (!session ? '' : 'invisible')}>¡¡ Para poder comprar un artículo necesitas registrarte !!</h5>
+      <Search id='buscador' updateSearch={setSearch} />
 
       <div aria-label='Filtros y catálogo' className='d-flex flex-column flex-sm-row align mx-auto'>
 

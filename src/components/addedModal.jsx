@@ -1,5 +1,5 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export const AddedModal = (props) => {
   const modalId = props.id ?? 'exampleModal';
@@ -27,7 +27,7 @@ export const AddedModal = (props) => {
                     }, 500);
                   }}
                 >Iniciar Sesión
-              </button>
+                </button>
               : '')}
 
             <button
@@ -43,7 +43,9 @@ export const AddedModal = (props) => {
                 }, 500);
               }}
             >{props.out}
+
             </button>
+
           </div>
         </div>
       </div>

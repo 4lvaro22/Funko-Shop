@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Data from './Data';
 import { PaymentSection } from './Payments';
+import { Password } from './Password';
 import { useNavigate } from 'react-router-dom';
 
 const getButtonClass = (page, currentPage) => {
@@ -22,13 +23,13 @@ export const Profile = ({
   // },
   session, setSession
 }) => {
-  const [page, setPage] = useState('payments');
+  const [page, setPage] = useState('personal');
   const [usuario, setUsuario] = useState(user);
   const navigate = useNavigate();
 
   return (
     <>
-      <div id='profile__header' className='m-4 p-3 bg-light shadow'>
+      <div id='profile__header' className='m-4 p-3 bg-light shadow-sm'>
         <div className='row justify-center'>
           <div className='col-2'>
             <img
@@ -48,7 +49,7 @@ export const Profile = ({
       <div className='row justify-center m-2 mb-5'>
         <div className='d-flex align-items-start'>
           <div
-            className='nav flex-column m-2 me-3 bg-light shadow gap-2 p-3 col-sm-4 col-md-3 col-lg-2'
+            className='nav flex-column m-2 me-3 bg-light shadow-sm gap-2 p-3 col-sm-4 col-md-3 col-lg-2'
             id='v-pills-tab'
             role='tablist'
             aria-orientation='vertical'
@@ -59,6 +60,13 @@ export const Profile = ({
               onClick={() => setPage('personal')}
             >
               Datos Personales
+            </button>
+            <button
+              className={'btn ' + getButtonClass('password', page)}
+              type='button'
+              onClick={() => setPage('password')}
+            >
+              Cambiar Contraseña
             </button>
             <button
               className={'btn ' + getButtonClass('payments', page)}
@@ -77,10 +85,10 @@ export const Profile = ({
             >Cerrar sesión
             </button>
           </div>
-          <div className='p-3 bg-light shadow w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
+          <div className='p-3 bg-light shadow-sm w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
             {page === 'personal' ? <Data usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} /> : null}
             {page === 'payments' ? <PaymentSection user={usuario} /> : null}
-
+            {page === 'password' ? <Password usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} /> : null}
           </div>
         </div>
       </div>

@@ -2,14 +2,13 @@
 import { useState } from 'react';
 import Input from './Input';
 
-const Data = ({ usuario, updateUsuario }) => {
+export const Password = ({ usuario, updateUsuario }) => {
   const [usuarioEditado, setUsuario] = useState(usuario);
 
   function update (value, key) {
     const newUsuario = { ...usuarioEditado, [key]: value };
     setUsuario(newUsuario);
   }
-
   return (
     <>
       <div id='d'>
@@ -20,9 +19,12 @@ const Data = ({ usuario, updateUsuario }) => {
 
         <div className='grid gap-3 row-gap-3 '>
 
-          <Input label='Nombre' name='name' type='text' value={usuarioEditado.name} onChange={(e) => { update(e.target.value, 'name'); }} />
-          <Input label='Apellido' name='surname' type='text' value={usuarioEditado.surname} onChange={(e) => { update(e.target.value, 'surname'); }} />
-          <Input label='Correo' name='email' type='text' value={usuarioEditado.email} onChange={(e) => { update(e.target.value, 'email'); }} />
+          <Input label='Contraseña actual' name='password' type='password' />
+
+          <hr className='bg-danger border-2 border-top' />
+
+          <Input label='Nueva contraseña' name='password' type='password' onChange={(e) => { update(e.target.value, 'password'); }} />
+          <Input label='Repetir nueva contraseña' name='password' type='password' onChange={(e) => { update(e.target.value, 'password'); }} />
 
           <div className='row'>
             <div className='col-lg-9 col-md-6 col-sm-4' />
@@ -43,7 +45,7 @@ const Data = ({ usuario, updateUsuario }) => {
                     <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
                   </div>
                   <div className='modal-body'>
-                    Todos los datos han sido actualizados correctamente.
+                    La contraseña ha sido actualizada correctamente.
                   </div>
                   <div className='modal-footer'>
                     <button type='button' className='btn btn-primary' data-bs-dismiss='modal'>Cerrar</button>
@@ -60,4 +62,4 @@ const Data = ({ usuario, updateUsuario }) => {
   );
 };
 
-export default Data;
+export default Password;
