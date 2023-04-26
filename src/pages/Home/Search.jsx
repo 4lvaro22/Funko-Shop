@@ -23,7 +23,7 @@ export const Search = ({ updateSearch }) => {
         <div className='row'>
           <div className='col-4' />
           <div className='col-4'>
-            <span className='input-group m-1 d-flex justify-content-center'>
+            <span className='input-group m-1 d-flex justify-content-center shadow'>
               <span className='input-group-text bg-secondary text-white'>
                 <label htmlFor='buscador'>Buscador:</label>
               </span>
