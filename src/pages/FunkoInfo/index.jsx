@@ -57,7 +57,13 @@ export const FunkoInfo = ({ session }) => {
 
           <div className='col'>
 
-            <img src={funko.imageName} alt={funko.title} width='300' height='400' style={{ marginLeft: '15%', marginTop: '15%' }} />
+            <img
+              src={funko.imageName} alt={funko.title} width='300' height='400' style={{
+                marginLeft: '15%',
+                marginTop: '15%',
+                'object-fit': 'scale-down'
+              }}
+            />
           </div>
 
           <div className='col d-grid gap-3'>

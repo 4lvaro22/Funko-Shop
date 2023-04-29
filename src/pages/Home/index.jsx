@@ -2,6 +2,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import React, { useState, useEffect } from 'react';
 import { Filters } from './Filters';
 import { Pagination } from './Pagination';
+import { FunkoItem } from './FunkoItem';
 import { Search } from './Search';
 import { useFunko } from '../../hooks/useFunko';
 
@@ -39,7 +40,7 @@ export const Home = ({ session, itemsPerPage }) => {
           <h2 className='text-center border-bottom border-top p-1'>Catálogo</h2>
           {search && <p className='fs-5 fw-bold text-left'>Resultados de '{search}'</p>}
 
-          <Pagination itemsPerPage={itemsPerPage} items={funkoList} />
+          <Pagination itemsPerPage={itemsPerPage} items={funkoList.map(item => <FunkoItem key={item.handle} funko={item} session={session} />)} />
 
         </section>
       </div>
