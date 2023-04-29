@@ -26,7 +26,12 @@ export const FunkoItem = ({ funko, session }) => {
         aria-label={`Cuadro del funko ${funko.title}`} className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
       >
 
-        <Link to={`/Funko/${funko.handle}`}> <img src={funko.imageName} width='200' height='266' alt={funko.title} title={funko.title} /> </Link>
+        <Link to={`/Funko/${funko.handle}`}> <img
+          src={funko.imageName} width='200' height='266' style={{
+            'object-fit': 'scale-down'
+          }} alt={funko.title} title={funko.title}
+                                             />
+        </Link>
 
         <h4 className='mt-3 fs-6' style={{ maxWidth: '200px' }}>{tituloModificado(funko.title)}</h4>
 
