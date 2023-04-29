@@ -36,7 +36,7 @@ export const Home = ({ session, itemsPerPage }) => {
         <Filters setPrices={setPrices} setSeries={setSeries} />
 
         {/* <-- Seccion --> */}
-        <section aria-label='Catálogo' className='m-2 mt-md-4 mx-md-2'>
+        <section aria-label='Catálogo' className='m-2 mt-md-4 mx-md-2 flex-fill'>
           <h2 className='text-center border-bottom border-top p-1'>Catálogo</h2>
           {search && <p className='fs-5 fw-bold text-left'>Resultados de '{search}'</p>}
 
