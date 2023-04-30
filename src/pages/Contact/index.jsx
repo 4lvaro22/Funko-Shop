@@ -31,78 +31,134 @@ export const Contact = () => {
           <li>O Puedes enviarnos tu consulta a través de este formulario:</li>
 
         </ul>
+        <div className='container my-3' title='Registro' aria-label='Contacto'>
+          <div className='row'>
+            <div className='col col-lg-7'>
+              <form title='Formulario de Contacto'>
+                <h2>Registrarme</h2>
+                {/* NOMBRE */}
+                <div className='m-3 d-flex d-flex-row'>
+                  <div>
+                    <label className='' htmlFor='nombre'>Nombre <span style={{ color: '#cd2026' }}>*</span></label>
+                  </div>
 
-        <fieldset className='border p-3'>
-          <legend className='w-auto'>Formulario de contacto</legend>
-          <p>Los campos marcados con un asterisco (<span style={{ color: '#cd2026' }}>*</span>) son obligatorios</p>
+                  <div className='col-1 mx-1' />
+                  <div className='mx-4 col-2'>
+                    <input onChange={(e) => setNombre(e.target.value)} className='form-control' id='nombre' type='text' />
+                  </div>
+                </div>
 
-          <div className='m-3 col-5 Auth-form-container'>
-            <div className='m-3 d-flex d-flex-row'>
-              <label className='input-group' htmlFor='nombre'>Nombre <span style={{ color: '#cd2026' }}>*</span></label><input onChange={(e) => setNombre(e.target.value)} className='form-control' id='nombre' type='text' />
-            </div>
+                {/* APELLIDO */}
+                <div className='m-3 d-flex d-flex-row'>
+                  <div>
+                    <label className='' htmlFor='apellidos'>Apellidos <span style={{ color: '#cd2026' }}>*</span></label>
+                  </div>
+                  <div className='col-1' />
+                  <div className=' col-2 mx-4'>
+                    <input onChange={(e) => setApellidos(e.target.value)} className='form-control' id='apellidos' type='text' />
+                  </div>
+                </div>
 
-            <div className='m-3 d-flex d-flex-row'>
-              <label className='input-group' htmlFor='apellidos'>Apellidos <span style={{ color: '#cd2026' }}>*</span></label><input onChange={(e) => setApellidos(e.target.value)} className='form-control' id='apellidos' type='text' />
-            </div>
+                {/* TELEFONO */}
+                <div className='m-3 d-flex d-flex-row'>
+                  <div>
+                    <label className='' htmlFor='telefono'>Número de teléfono</label>
+                  </div>
+                  <div className='mx-3 col-2'>
+                    <input className='form-control' id='telefono' type='text' />
+                  </div>
+                </div>
 
-            <div className='m-3 d-flex d-flex-row'>
-              <label className='input-group' htmlFor='telefono'>Número de teléfono</label><input className='form-control' id='telefono' type='text' />
-            </div>
+                {/* CORREO */}
+                <div className='m-3 d-flex d-flex-row'>
+                  <div>
+                    <label className='' htmlFor='email'>Correo electrónico<span style={{ color: '#cd2026' }}>*</span></label>
+                  </div>
 
-            <div className='m-3 d-flex d-flex-row'>
-              <label className='input-group' htmlFor='email'>Correo electrónico <span style={{ color: '#cd2026' }}>*</span></label><input onChange={(e) => setEmail(e.target.value)} className='form-control' id='email' type='text' />
-            </div>
+                  <div className='mx-4'>
+                    <input onChange={(e) => setEmail(e.target.value)} className='form-control' id='email' type='text' />
+                  </div>
+                </div>
 
-            <div className='m-3 d-flex d-flex-row'>
-              <label className='input-group' htmlFor='confimarEmail'>Confirma tu correo<span style={{ color: '#cd2026' }}>*</span></label><input onChange={(e) => setConfirmarEmail(e.target.value)} className='form-control' id='confimarEmail' type='text' />
-            </div>
+                {/* CONFIRMAR CORREO */}
+                <div className='m-3 d-flex d-flex-row'>
+                  <div>
+                    <label className='' htmlFor='confimarEmail'>Confirma tu correo<span style={{ color: '#cd2026' }}>*</span></label>
+                  </div>
+                  <div className='mx-3'>
+                    <input onChange={(e) => setConfirmarEmail(e.target.value)} className='form-control' id='confimarEmail' type='text' />
+                  </div>
+                </div>
 
-            <div className='m-3 d-flex d-flex-row'>
-              <label className='input-group' htmlFor='pedido'>Número de pedido</label><input className='form-control' id='pedido' type='text' />
-            </div>
+                {/* PEDIDO */}
+                <div className='m-3 d-flex d-flex-row'>
+                  <div>
+                    <label className='' htmlFor='pedido'>Número de pedido</label>
+                  </div>
+                  <div className='col-3 mx-4'>
+                    <input className='form-control' id='pedido' type='text' />
+                  </div>
+                </div>
 
-            <div className='m-3 d-flex d-flex-row'>
-              <label className='input-group' htmlFor='tema'>Tema de la consulta <span style={{ color: '#cd2026' }}>*</span></label>
-              <select id='tema' className='mx-2 p-2 w-75' onChange={(e) => setTema(e.target.value)}>
-                <option selected='true'>Selecciona una categoría</option>
-                <option>Información y compras</option>
-                <option>Proceso de cobro</option>
-                <option>Pedidos</option>
-                <option>Devoluciones</option>
-                <option>Servicio</option>
-                <option>Tratamiento de datos personales</option>
-                <option>Otros</option>
-              </select>
-            </div>
+                {/* TEMA CONSULTA */}
+                <div className='m-3 d-flex d-flex-row'>
+                  <div>
+                    <label className='' htmlFor='tema'>Tema de la consulta <span style={{ color: '#cd2026' }}>*</span></label>
+                  </div>
 
-            <div className='m-3'>
-              <label className='input-group' htmlFor='consulta'>Consulta <span style={{ color: '#cd2026' }}>*</span></label><textarea onChange={(e) => setConsulta(e.target.value)} cols={55} rows={5} id='consulta' />
-            </div>
+                  <div className='col-6 mx-3'>
+                    <select id='tema' className='p-2' onChange={(e) => setTema(e.target.value)}>
+                      <option selected='true'>Selecciona una categoría</option>
+                      <option>Información y compras</option>
+                      <option>Proceso de cobro</option>
+                      <option>Pedidos</option>
+                      <option>Devoluciones</option>
+                      <option>Servicio</option>
+                      <option>Tratamiento de datos personales</option>
+                      <option>Otros</option>
+                    </select>
+                  </div>
+                </div>
 
-            <div className='m-3'>
-              <label className='mx-3'>Anexar Documentos</label><button className='mx-3 btn btn-secondary'>Adjuntar documentos</button>
-            </div>
-            <p className='mx-3'>Los campos (<span style={{ color: '#cd2026' }}>*</span>) marcados con un asterisco son obligatorios.</p>
-            <div className='d-flex justify-content-center'>
-              <button
-                disabled={!validate()}
-                className='btn btn-primary '
-                style={{
-                  backgroundColor: !validate() ? '#12206B !important' : '#2641DE !important',
-                  opacity: !validate() ? '0.75' : '1'
-                }}
-                onClick={() => {
-                  showModal();
-                // new bootstrap.Modal(document.getElementById('exampleModal')).show();
-                }}
-              >Enviar<i className='bi bi-send mx-1' />
-              </button>
+                {/* CONSULTA */}
+                <div className='m-3'>
+                  <div>
+
+                    <label className='' htmlFor='consulta'>Consulta <span style={{ color: '#cd2026' }}>*</span></label>
+                  </div>
+                  <div>
+                    <textarea onChange={(e) => setConsulta(e.target.value)} cols={55} rows={5} id='consulta' />
+
+                  </div>
+                </div>
+
+                {/* DOCUMENTOS */}
+                <div className='m-3'>
+                  <label className='mx-3'>Anexar Documentos</label><button className='mx-3 btn btn-secondary'>Adjuntar documentos</button>
+                </div>
+
+                {/* BOTON ENVIAR */}
+                <p className='mx-3'>Los campos (<span style={{ color: '#cd2026' }}>*</span>) marcados con un asterisco son obligatorios.</p>
+                <div className='d-flex justify-content-center col-8'>
+                  <button
+                    disabled={!validate()}
+                    className='btn btn-primary '
+                    style={{
+                      backgroundColor: !validate() ? '#12206B !important' : '#2641DE !important',
+                      opacity: !validate() ? '0.75' : '1'
+                    }}
+                    onClick={() => {
+                      showModal();
+                    // new bootstrap.Modal(document.getElementById('exampleModal')).show();
+                    }}
+                  >Enviar<i className='bi bi-send mx-1' />
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-
-        </fieldset>
+        </div>
       </div>
-
     </>
   );
 };
