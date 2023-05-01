@@ -1,6 +1,7 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useModal } from '../../components/Modal';
 import { useState } from 'react';
+import validator from 'validator';
 
 export const Contact = () => {
   const [modal, showModal] = useModal({ type: 'solicitud' });
@@ -11,8 +12,30 @@ export const Contact = () => {
   const [tema, setTema] = useState('');
   const [consulta, setConsulta] = useState('');
 
+  const validateEmail = () => {
+    const posicionDominio = email.lastIndexOf('.');
+
+    if (validator.isEmail(email)) {
+      return true;
+    } else if (email.substring(posicionDominio).length <= 3) {
+      return false;
+    }
+    return false;
+  };
+
+  const validateConfirmarEmail = () => {
+    const posicionDominio = confirmarEmail.lastIndexOf('.');
+
+    if (validator.isEmail(confirmarEmail) && email === confirmarEmail) {
+      return true;
+    } else if (confirmarEmail.substring(posicionDominio).length <= 3) {
+      return false;
+    }
+    return false;
+  };
+
   function validate () {
-    return nombre.length && apellidos.length && email.length && confirmarEmail.length && tema.length && consulta.length;
+    return nombre.length && apellidos.length && validateEmail() && validateConfirmarEmail() && tema.length && consulta.length;
   }
 
   return (
@@ -38,76 +61,74 @@ export const Contact = () => {
                 <h2>Registrarme</h2>
                 {/* NOMBRE */}
                 <div className='m-3 d-flex d-flex-row'>
-                  <div>
+                  <div className='col-3'>
                     <label className='' htmlFor='nombre'>Nombre <span style={{ color: '#cd2026' }}>*</span></label>
                   </div>
 
-                  <div className='col-1 mx-1' />
-                  <div className='mx-4 col-2'>
+                  <div className='col-2 mx-2'>
                     <input onChange={(e) => setNombre(e.target.value)} className='form-control' id='nombre' type='text' />
                   </div>
                 </div>
 
                 {/* APELLIDO */}
                 <div className='m-3 d-flex d-flex-row'>
-                  <div>
+                  <div className='col-3'>
                     <label className='' htmlFor='apellidos'>Apellidos <span style={{ color: '#cd2026' }}>*</span></label>
                   </div>
-                  <div className='col-1' />
-                  <div className=' col-2 mx-4'>
+                  <div className='col-2 mx-2'>
                     <input onChange={(e) => setApellidos(e.target.value)} className='form-control' id='apellidos' type='text' />
                   </div>
                 </div>
 
                 {/* TELEFONO */}
                 <div className='m-3 d-flex d-flex-row'>
-                  <div>
+                  <div className='col-3'>
                     <label className='' htmlFor='telefono'>Número de teléfono</label>
                   </div>
-                  <div className='mx-3 col-2'>
+                  <div className='col-2 mx-2'>
                     <input className='form-control' id='telefono' type='text' />
                   </div>
                 </div>
 
                 {/* CORREO */}
                 <div className='m-3 d-flex d-flex-row'>
-                  <div>
+                  <div className='col-3'>
                     <label className='' htmlFor='email'>Correo electrónico<span style={{ color: '#cd2026' }}>*</span></label>
                   </div>
 
-                  <div className='mx-4'>
+                  <div className='mx-2'>
                     <input onChange={(e) => setEmail(e.target.value)} className='form-control' id='email' type='text' />
                   </div>
                 </div>
 
                 {/* CONFIRMAR CORREO */}
                 <div className='m-3 d-flex d-flex-row'>
-                  <div>
+                  <div className='col-3'>
                     <label className='' htmlFor='confimarEmail'>Confirma tu correo<span style={{ color: '#cd2026' }}>*</span></label>
                   </div>
-                  <div className='mx-3'>
+                  <div className='mx-2'>
                     <input onChange={(e) => setConfirmarEmail(e.target.value)} className='form-control' id='confimarEmail' type='text' />
                   </div>
                 </div>
 
                 {/* PEDIDO */}
                 <div className='m-3 d-flex d-flex-row'>
-                  <div>
+                  <div className='col-3'>
                     <label className='' htmlFor='pedido'>Número de pedido</label>
                   </div>
-                  <div className='col-3 mx-4'>
+                  <div className='col-3 mx-2'>
                     <input className='form-control' id='pedido' type='text' />
                   </div>
                 </div>
 
                 {/* TEMA CONSULTA */}
                 <div className='m-3 d-flex d-flex-row'>
-                  <div>
-                    <label className='' htmlFor='tema'>Tema de la consulta <span style={{ color: '#cd2026' }}>*</span></label>
+                  <div className='col-3'>
+                    <label className='' htmlFor='tema'>Tema de la consulta<span style={{ color: '#cd2026' }}>*</span></label>
                   </div>
 
-                  <div className='col-6 mx-3'>
-                    <select id='tema' className='p-2' onChange={(e) => setTema(e.target.value)}>
+                  <div className='col-6 mx-2'>
+                    <select id='tema' className='p-2 w-100' onChange={(e) => setTema(e.target.value)}>
                       <option selected='true'>Selecciona una categoría</option>
                       <option>Información y compras</option>
                       <option>Proceso de cobro</option>
@@ -127,14 +148,19 @@ export const Contact = () => {
                     <label className='' htmlFor='consulta'>Consulta <span style={{ color: '#cd2026' }}>*</span></label>
                   </div>
                   <div>
-                    <textarea onChange={(e) => setConsulta(e.target.value)} cols={55} rows={5} id='consulta' />
-
+                    <textarea onChange={(e) => setConsulta(e.target.value)} style={{ width: '60%' }} rows={5} id='consulta' />
                   </div>
                 </div>
 
                 {/* DOCUMENTOS */}
-                <div className='m-3'>
-                  <label className='mx-3'>Anexar Documentos</label><button className='mx-3 btn btn-secondary'>Adjuntar documentos</button>
+                <div className='m-3 d-flex d-flex-row'>
+                  <div>
+                    <label htmlFor='documentos' className='mx-3'>Anexar Documentos</label>
+                  </div>
+
+                  <div id='documentos'>
+                    <button className='mx-3 btn btn-secondary'>Adjuntar documentos</button>
+                  </div>
                 </div>
 
                 {/* BOTON ENVIAR */}
@@ -145,7 +171,8 @@ export const Contact = () => {
                     className='btn btn-primary '
                     style={{
                       backgroundColor: !validate() ? '#12206B !important' : '#2641DE !important',
-                      opacity: !validate() ? '0.75' : '1'
+                      opacity: !validate() ? '0.75' : '1',
+                      color: '#000'
                     }}
                     onClick={() => {
                       showModal();
