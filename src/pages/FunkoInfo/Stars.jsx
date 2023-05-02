@@ -26,12 +26,21 @@ export const Stars = ({ oldRating, updateRating }) => {
 
   return (
     <fieldset className='d-flex' role='radiogroup'>
+      <input
+        type='radio' className='visually-hidden'
+        tabIndex={0}
+        title='Valoración 0 de 5'
+        role='radio'
+        onClick={() => {
+          updateRate(0);
+          updateHover(0);
+        }}
+      />
       {[...Array(5)].map((_, index) => {
         index += 1;
         return (
           <button
             type='button'
-            aria-labelledby={'Valoración' + { index } + ' de 5'}
             key={index}
             tabIndex={-1}
             className={(oldRating === undefined) ? 'rating ' : '' + index <= (hover || rating) ? 'on' : 'off'}
