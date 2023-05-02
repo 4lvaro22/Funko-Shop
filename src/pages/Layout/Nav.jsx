@@ -15,14 +15,14 @@ export const Nav = () => {
   return (
     <>
       <nav aria-label='breadcrumb' className='navbar navbar-expand-lg navbar-light p-2'>
-        <ol class='breadcrumb'>
+        <ol className='breadcrumb'>
           {path &&
             (<>
-              <li class='breadcrumb-item'><Link to='/' aria-label='Página de inicio' className='text-decoration-none text-dark fw-bold'>INICIO</Link></li>
-              <li class='breadcrumb-item active fw-bold' aria-current='page'><Link to='#' disabled className='text-decoration-none text-dark fw-bold'>{path}</Link></li>
-             </>)}
+              <li className='breadcrumb-item'><Link to='/' aria-label='Página de inicio' className='text-decoration-none text-dark fw-bold'>INICIO</Link></li>
+              <li className='breadcrumb-item active fw-bold' aria-current='page'><Link to='#' disabled className='text-decoration-none text-dark fw-bold'>{path}</Link></li>
+            </>)}
           {!path &&
-            <li class='breadcrumb-item active' aria-current='page'><Link to='/' aria-label='Página de inicio' className='text-decoration-none text-dark fw-bold'>INICIO</Link></li>}
+            <li className='breadcrumb-item active' aria-current='page'><Link to='/' aria-label='Página de inicio' className='text-decoration-none text-dark fw-bold'>INICIO</Link></li>}
         </ol>
       </nav>
     </>
