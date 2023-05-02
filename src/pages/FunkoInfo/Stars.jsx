@@ -50,7 +50,7 @@ export const Stars = ({ oldRating, updateRating }) => {
               color: `${index <= (hover || rating) ? '#000000' : '#000000'}`
             }}
           >
-            <span tabIndex={-1}><i tabIndex={-1} className={(index <= (hover || rating)) ? 'bi bi-star-fill shadow-sm' : 'bi bi-star shadow-sm'} /></span>
+            <i tabIndex={-1} className={(index <= (hover || rating)) ? 'bi bi-star-fill shadow-sm' : 'bi bi-star shadow-sm'} />
           </button>
         );
       })}
