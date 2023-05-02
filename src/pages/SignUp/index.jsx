@@ -103,7 +103,7 @@ export const SignUp = () => {
                 <div className='col-auto'>
                   <label htmlFor='txtPassword' className='col-form-label' aria-label='Contraseña'>Contraseña <span style={{ color: '#cd2026' }}>*</span></label>
                   <div className='input-group d-flex flex-row'>
-                    <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-describedby='passwordHelpInline' aria-required='true' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} className='form-control' />
+                    <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-describedby='passwordHelpInline' aria-required='true' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} />
                     <span className='input-group-text' role='button' tabIndex='0' onKeyDown={(e) => { if (e.key === 'Enter') setValueConfirmPasswordEye(!confirmPasswordEye); }} onClick={() => setValuePasswordEye(!passwordEye)}>
                       <i alt='Mostrar contraseña' className={'bi bi-eye' + (passwordEye ? '-slash' : '')} />
                     </span>
@@ -127,7 +127,7 @@ export const SignUp = () => {
                 <div className='col-auto'>
                   <label htmlFor='txtConfirmPassword' className='col-form-label'>Confirmar Contraseña <span style={{ color: '#cd2026' }}>*</span></label>
                   <div className='input-group d-flex flex-row'>
-                    <span className='input-group-text'><i className='bi bi-lock-fill' /></span><input id='txtConfirmPassword' className='form-control' aria-describedby='passwordHelpInline' aria-required='true' onChange={(e) => setValueConfirmPassword(e.target.value)} type={'password'.replace('password', (!confirmPasswordEye ? 'text' : 'Password'))} value={confirmPassword} className='form-control' />
+                    <span className='input-group-text'><i className='bi bi-lock-fill' /></span><input id='txtConfirmPassword' className='form-control' aria-describedby='passwordHelpInline' aria-required='true' onChange={(e) => setValueConfirmPassword(e.target.value)} type={'password'.replace('password', (!confirmPasswordEye ? 'text' : 'Password'))} value={confirmPassword} />
                     <span className='input-group-text' role='button' tabIndex='0' onKeyDown={(e) => { if (e.key === 'Enter') setValueConfirmPasswordEye(!confirmPasswordEye); }} onClick={() => setValuePasswordEye(!passwordEye)}>
                       <i alt='Mostrar contraseña' className={'bi bi-eye' + (confirmPasswordEye ? '-slash' : '')} />
                     </span>
