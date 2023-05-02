@@ -25,8 +25,9 @@ export const Cart = (props) => {
 
   const deleteShoppingCart = () => {
     funko.forEach(element => {
-      removeFunko(element.id);
+      removeFunko(element.handle);
     });
+    setFunko([]);
   };
 
   const updateQuantity = () => {
@@ -50,7 +51,7 @@ export const Cart = (props) => {
       itemsList.push(
         <FunkoEnCarrito key={itemFunko.handle} funko={itemFunko} fixQuantity={quantity} remove={deleteFunkoChild} updateQuantity={updateQuantity} />
       );
-    });
+    }, [funko]);
 
     setTotal(newTotal);
     setItems(itemsList);
