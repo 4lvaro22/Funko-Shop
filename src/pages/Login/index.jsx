@@ -40,7 +40,7 @@ export const Login = ({ setSession, session }) => {
 
     <>
 
-      <div className='container my-5'>
+      <div className='container my-5' title='Iniciar sesión' aria-label='Iniciar sesión'>
         <div className='row justify-content-md-center'>
           <div className='col col-lg-5'>
             <span className='align-middle'><img className='w-100' src={logoFunko} alt='icono Funkoshop' /></span>
@@ -57,18 +57,25 @@ export const Login = ({ setSession, session }) => {
                           {/* CORREO ELECTRONICO */}
                           <div className='row g-3 align-items-center'>
                             <div className='col-12'>
-                              <label htmlFor='txtEmail' className='col-form-label'>Correo Electrónico <span style={{ color: '#D90000' }}>*</span></label>
+                              <label aria-label='Correo electrónico' htmlFor='txtEmail' className='col-form-label'>Correo Electrónico <span style={{ color: '#D90000' }}>*</span></label>
                               <div className='input-group d-flex flex-row'>
-                                <span className='input-group-text'><i className='bi bi-envelope-at' /></span><input id='txtEmail' className='form-control' type='text' onChange={(e) => setValueEmail(e.target.value)} />
+                                <span className='input-group-text'><i className='bi bi-envelope-at' /></span>
+                                <input aria-required='true' id='txtEmail' className='form-control' type='text' onChange={(e) => setValueEmail(e.target.value)} />
                               </div>
                             </div>
                           </div>
                           {/* CONTRASEÑA */}
                           <div className='row g-3 align-items-center'>
                             <div className='col-auto'>
-                              <label htmlFor='txtPassword' className='col-form-label'>Contraseña <span style={{ color: '#D90000' }}>*</span></label>
+                              <label aria-label='Contraseña' htmlFor='txtPassword' className='col-form-label'>Contraseña <span style={{ color: '#D90000' }}>*</span></label>
                               <div className='input-group d-flex flex-row'>
-                                <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-describedby='passwordHelpInline' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} /><span id='eye' tabIndex='0' onKeyDown={() => enterKeyEvent()} onClick={() => setValuePasswordEye(!passwordEye)} className='input-group-text bg-primary'><i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} /></span>
+                                <span className='input-group-text'>
+                                  <i className='bi bi-lock' />
+                                </span>
+                                <input aria-required='true' id='txtPassword' className='form-control' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} />
+                                <span role='button' aria-label={passwordEye ? 'Mostrar Contraseña' : 'Ocultar Contraseña'} id='eye' tabIndex='0' onKeyDown={() => enterKeyEvent()} onClick={() => setValuePasswordEye(!passwordEye)} className='input-group-text'>
+                                  <i className={'bi bi-eye' + (passwordEye ? '-slash' : '')} />
+                                </span>
                               </div>
                             </div>
                           </div>
@@ -96,7 +103,7 @@ export const Login = ({ setSession, session }) => {
             </div>
 
             <div className='text-center'>
-              <Link to='/SignUp' className='text-decoration-none text-black'><p>¿No te has registrado? <u>Registrarme</u></p></Link>
+              <Link to='/SignUp' className='text-black'><p>¿No te has registrado? Registrarme</p></Link>
             </div>
           </div>
         </div>
