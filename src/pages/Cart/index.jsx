@@ -70,7 +70,7 @@ export const Cart = (props) => {
       </div>
 
       <div className='container'>
-        {items.length === 0 && <div className='mt-3 border border-2 row'> <p className='m-2 fs-4 fw-bold fst-italic'>No hay articulos en el carrito</p> </div>}
+        {items.length === 0 && <div className='mt-3 border border-2 row'> <p className='m-2 fs-4 fw-bold fst-italic'>No hay artículos en el carrito</p> </div>}
         {items}
       </div>
 
@@ -78,7 +78,7 @@ export const Cart = (props) => {
         <div className='mt-4 border border-2 w-50'>
 
           <div className='mx-2'>
-            <p className='mt-3 fs-3 text-center'>Total articulos: {total}€</p>
+            <p className='mt-3 fs-3 text-center'>Total artículos: {total}€</p>
             <p className='fs-3 text-center'>Envío: 2.00€ <button type='button' className='bi bi-info-circle' data-bs-toggle='modal' data-bs-target='#exampleModal' aria-label='Boton informacion sobre precio envío' /></p>
 
             <div className='modal fade' id='exampleModal' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
@@ -89,7 +89,7 @@ export const Cart = (props) => {
                     <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
                   </div>
                   <div className='modal-body'>
-                    En cualquier pedido, independientemente del coste total de los articulos, se le aplicara un coste de envió total de 2€.
+                    En cualquier pedido, independientemente del coste total de los artículos, se le aplicara un coste de envió total de 2€.
                   </div>
                   <div className='modal-footer'>
                     <button type='button' className='btn btn-primary' data-bs-dismiss='modal'>Cerrar</button>

@@ -101,7 +101,7 @@ export const FunkoInfo = ({ session }) => {
               <button
                 type='button'
                 tabIndex='0'
-                aria-labelledby='Añadir a la cesta'
+                aria-label='Añadir a la cesta'
                 className='btn btn-success m-1' id='añadirCesta'
                 onKeyDown={(e) => {
                   if (session) {
