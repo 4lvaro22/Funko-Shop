@@ -19,7 +19,7 @@ export const FaqCategory = ({ theme, questions }) => {
 
   return (
     <>
-      <div className='border mb-4 h-50 p-3 mb-5'>
+      <section className='border mb-4 h-50 p-3 mb-5'>
         <div id={theme} onKeyDown={() => enterKeyEvent()} onClick={() => toggleForm(!form)}>
           <QuestionTheme name={theme} form={form} />
         </div>
@@ -28,7 +28,7 @@ export const FaqCategory = ({ theme, questions }) => {
 
         {form ? <div>{items} </div> : null}
 
-      </div>
+      </section>
     </>
   );
 };

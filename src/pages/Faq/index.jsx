@@ -95,7 +95,7 @@ export const Faq = () => {
   }, []);
   return (
     <>
-      <section>
+      <main>
         <div className='row mt-5'>
           <h1 className='text-center'><strong><i>Preguntas Frecuentes</i></strong></h1>
           <div className='p-5 mb-5' id='faq'>
@@ -121,7 +121,7 @@ export const Faq = () => {
             </div>
           </div>
         </div>
-      </section>
+      </main>
     </>
   );
 };
