@@ -3,7 +3,7 @@ import FaqCategory from './FaqCategory';
 const ProductsQuestions = [
   {
     question: '¿Puedo devolver un producto?',
-    reponse: 'No, no se aceptan devoluciones'
+    reponse: 'Sí, puedes devolver un producto en un plazo máximo de 60 días naturales desde la fecha de compra. Para ello, deberás presentar el ticket de compra y el producto en perfectas condiciones. El abono se realizará en el mismo método de pago que utilizaste para realizar la compra. En caso de que el pago se haya realizado con tarjeta de crédito, el abono se realizará en un plazo máximo de 30 días naturales. En caso de que el pago se haya realizado con tarjeta de débito, el abono se realizará en un plazo máximo de 15 días naturales.'
   },
   {
     question: '¿Puedo cambiar un producto?',
@@ -11,15 +11,15 @@ const ProductsQuestions = [
   },
   {
     question: '¿Puedo cambiar el tamaño de un producto?',
-    reponse: 'No, no se aceptan cambios'
+    reponse: 'No, no se aceptan cambios de tamaño'
   },
   {
     question: '¿Puedo cambiar el color de un producto?',
-    reponse: 'No, no se aceptan cambios'
+    reponse: 'No, no se aceptan cambios de color'
   },
   {
-    question: '¿Puedo cambiar el modelo de un producto?',
-    reponse: 'No, no se aceptan cambios'
+    question: '¿Los productos son oficiales de la marca Funko?',
+    reponse: 'Sí, todos nuestros productos son oficiales de la marca Funko. De hecho somos distribuidores oficiales de la marca Funko en España.'
   }
 ];
 
@@ -66,10 +66,6 @@ const RefundQuestions = [
   {
     question: '¿Qué importe se me abonará por la devolución de un producto?',
     reponse: 'El importe que se te abonará por la devolución de un producto será el importe total de la compra, incluyendo los gastos de envío.'
-  },
-  {
-    question: '¿Puedo recoger mi pedido en una tienda diferente a la que he realizado la compra?',
-    reponse: 'No, no es posible recoger el pedido en una tienda diferente a la que has realizado la compra.'
   }
 ];
 
@@ -97,7 +93,7 @@ export const Faq = () => {
     <>
       <section>
         <div className='row mt-5'>
-          <label for='faq' className='d-flex justify-content-center m-2 underline'><h1><strong><i>Preguntas Frecuentes</i></strong></h1></label>
+          <h1 className='text-center'><strong><i>Preguntas Frecuentes</i></strong></h1>
           <div className='p-5 mb-5' id='faq'>
             <div className='row mx-4 d-flex justify-items-center'>
               <FaqCategory

@@ -58,6 +58,7 @@ export const Profile = ({
             id='v-pills-tab'
             role='tablist'
             aria-orientation='vertical'
+            aria-busy='true'
           >
             <button
               className={'btn ' + getButtonClass('personal', page)}

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useId, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { changeQuantity } from '../../data/storage';
 
@@ -12,6 +12,7 @@ const generateOptions = (quantity) => {
 
 export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) => {
   const [quantity, setQuantity] = useState(fixQuantity);
+  const quantityId = useId();
 
   useEffect(() => {
     changeQuantity(funko.handle, quantity);
@@ -30,14 +31,13 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
       </div>
 
       <span className='col col-md-3 col-lg-3 item-align-center mb-2 mb-0-sm ' aria-label={`Seleccionar Cantidad, precio total cantidad funko ${funko.price * quantity}`}>
-        <label htmlFor='selectQuantity'>Cantidad:</label>
+        <label htmlFor={quantityId}>Cantidad:</label>
         <select
-          className='form-select w-50 float-sm-end float-md-none' id='selectQuantity' aria-label='Default select example' onChange={(e) => {
+          className='form-select w-50 float-sm-end float-md-none' id={quantityId} aria-label='Default select example' onChange={(e) => {
             setQuantity(e.target.value);
           }} value={quantity}
         >
           {generateOptions(10)}
-
         </select>
       </span>
 
