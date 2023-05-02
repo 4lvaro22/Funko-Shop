@@ -1,7 +1,11 @@
 import grupoPersonas from '../../assets/images/grupoPersonas.jpg';
 import { LoremIpsum } from './LoremIpsum';
+import { useEffect } from 'react';
 
 export const AboutUs = () => {
+  useEffect(() => {
+    document.title = 'Acerca de Nosotros | FunkoShop';
+  }, []);
   return (
     <div>
       <h1 className='text-center'>

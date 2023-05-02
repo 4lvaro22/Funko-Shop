@@ -1,8 +1,7 @@
 import logoFunko from '../../assets/images/funkoIcono.png';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import AddedModal from '../../components/addedModal';
 import PasswordStrengthBar from 'react-password-strength-bar';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import validator from 'validator';
 import { useModal } from '../../components/Modal';
 
@@ -43,6 +42,10 @@ export const SignUp = () => {
   const validate = () => {
     return validateName() && validateSurname() && validateEmail() && validatePassword() && validateConfirmPassword() && password === confirmPassword;
   };
+
+  useEffect(() => {
+    document.title = 'Registro - FunkoShop';
+  }, []);
 
   return (
     <>

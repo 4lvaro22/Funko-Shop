@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import FaqCategory from './FaqCategory';
 
 const ProductsQuestions = [
@@ -89,6 +90,9 @@ const DataQuestions = [
 ];
 
 export const Faq = () => {
+  useEffect(() => {
+    document.title = 'Faq | FunkoShop';
+  }, []);
   return (
     <>
       <section>

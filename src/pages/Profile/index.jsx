@@ -32,6 +32,10 @@ export const Profile = ({
     if (update && update.current) { update.current.focus(); }
   }, [page]);
 
+  useEffect(() => {
+    document.title = 'Perfil - FunkoShop';
+  }, []);
+
   return (
     <>
       <div id='profile__header' className='m-4 p-3 bg-light shadow-sm'>

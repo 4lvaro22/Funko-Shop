@@ -44,6 +44,10 @@ export const FunkoInfo = ({ session }) => {
     setFunko(getFunkoById(id));
   }, [id]);
 
+  useEffect(() => {
+    document.title = `Funko ${funko.title} | FunkoShop`;
+  }, [funko]);
+
   return (
     <>
 
