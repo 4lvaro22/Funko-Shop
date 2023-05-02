@@ -1,6 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useModal } from '../../components/Modal';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import validator from 'validator';
 
 export const Contact = () => {
@@ -44,6 +44,10 @@ export const Contact = () => {
   function validate () {
     return validateName() && validateSurname() && validateEmail() && validateConfirmarEmail() && tema.length && consulta.length;
   }
+
+  useEffect(() => {
+    document.title = 'Contacto | FunkoShop';
+  }, []);
 
   const buttonColor = (!validate()) ? '#000000' : '#FFFFFF';
 

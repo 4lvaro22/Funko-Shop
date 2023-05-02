@@ -44,6 +44,10 @@ export const FunkoInfo = ({ session }) => {
     setFunko(getFunkoById(id));
   }, [id]);
 
+  useEffect(() => {
+    document.title = `Funko ${funko.title} | FunkoShop`;
+  }, [funko]);
+
   return (
     <>
 
@@ -61,7 +65,7 @@ export const FunkoInfo = ({ session }) => {
               src={funko.imageName} alt={funko.title} width='300' height='400' style={{
                 marginLeft: '15%',
                 marginTop: '15%',
-                'object-fit': 'scale-down'
+                objectFit: 'scale-down'
               }}
             />
           </div>
@@ -101,7 +105,7 @@ export const FunkoInfo = ({ session }) => {
               <button
                 type='button'
                 tabIndex='0'
-                aria-labelledby='Añadir a la cesta'
+                aria-label='Añadir a la cesta'
                 className='btn btn-success m-1' id='añadirCesta'
                 onKeyDown={(e) => {
                   if (session) {

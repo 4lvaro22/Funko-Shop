@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import logoFunko from '../../assets/images/funkoIcono.png';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import validator from 'validator';
 import './login.css';
 
@@ -35,6 +35,10 @@ export const Login = ({ setSession, session }) => {
       document.getElementById('eye').click();
     }
   }
+
+  useEffect(() => {
+    document.title = 'Login | FunkoShop';
+  }, []);
 
   return (
 
