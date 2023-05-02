@@ -61,7 +61,7 @@ export const FunkoInfo = ({ session }) => {
               src={funko.imageName} alt={funko.title} width='300' height='400' style={{
                 marginLeft: '15%',
                 marginTop: '15%',
-                'object-fit': 'scale-down'
+                objectFit: 'scale-down'
               }}
             />
           </div>
