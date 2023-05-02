@@ -17,11 +17,10 @@ export const FaqCategory = ({ theme, questions }) => {
       <Question name={item.question} id={item.question} reponse={item.reponse} />
     ));
 
-  console.log(items);
   return (
     <>
       <div className='border mb-4 h-50 p-3 mb-5'>
-        <div id='TituloCategoria' onKeyDown={() => enterKeyEvent()} onClick={() => toggleForm(!form)}>
+        <div id={theme} onKeyDown={() => enterKeyEvent()} onClick={() => toggleForm(!form)}>
           <QuestionTheme name={theme} form={form} />
         </div>
 
