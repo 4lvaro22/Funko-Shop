@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './../../assets/styles/stars.css';
 
 export const Stars = ({ oldRating, updateRating }) => {
   const [rating, setRating] = useState(oldRating ?? 0);
@@ -30,9 +31,14 @@ export const Stars = ({ oldRating, updateRating }) => {
         return (
           <button
             type='button'
+            tabIndex={0}
+            aria-labelledby={'Valoración' + { index } + ' de 5'}
             key={index}
-            className={index <= (hover || rating) ? 'on' : 'off'}
+            className={(oldRating === undefined) ? 'rating ' : '' + index <= (hover || rating) ? 'on' : 'off'}
             onClick={() => { updateRate(index); }}
+            onFocus={() => { updateHover(index); }}
+            onKeyDown={(e) => { if (e.key === 'Enter') { updateRate(index); } }}
+            onKeyUp={(e) => { if (e.key === 'Enter') { updateRate(rating); } }}
             onMouseEnter={() => { updateHover(index); }}
             onMouseLeave={() => { updateHover(rating); }}
             style={{
@@ -44,7 +50,7 @@ export const Stars = ({ oldRating, updateRating }) => {
               color: `${index <= (hover || rating) ? '#000000' : '#000000'}`
             }}
           >
-            <span className='star'><i className={index <= (hover || rating) ? 'bi bi-star-fill shadow-sm' : 'bi bi-star shadow-sm'} /></span>
+            <span tabIndex={-1}><i tabIndex={-1} className={(index <= (hover || rating)) ? 'bi bi-star-fill shadow-sm' : 'bi bi-star shadow-sm'} /></span>
           </button>
         );
       })}

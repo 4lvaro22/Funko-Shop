@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Input from './Input';
 
-export const Password = ({ usuario, updateUsuario }) => {
+export const Password = ({ usuario, updateUsuario, toFocus }) => {
   const [usuarioEditado, setUsuario] = useState(usuario);
 
   function update (value, key) {
@@ -19,7 +19,7 @@ export const Password = ({ usuario, updateUsuario }) => {
 
         <div className='grid gap-3 row-gap-3 '>
 
-          <Input label='Contraseña actual' name='password' type='password' />
+          <Input toFocus={toFocus} label='Contraseña actual' name='password' type='password' />
 
           <hr className='bg-danger border-2 border-top' />
 

@@ -3,7 +3,7 @@ import card from '../../../assets/images/payment/card.png';
 import { PaymentForm } from './form';
 import { useState } from 'react';
 
-export const PaymentSection = ({ user }) => {
+export const PaymentSection = ({ user, toFocus }) => {
   const [form, toggleForm] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ export const PaymentSection = ({ user }) => {
         </div>
       </div>
 
-      <button className={'btn btn-primary mt-4 ' + (form ? 'visually-hidden' : 'm-2')} onClick={() => toggleForm(!form)}>
+      <button ref={toFocus} className={'btn btn-primary mt-4 ' + (form ? 'visually-hidden' : 'm-2')} onClick={() => toggleForm(!form)}>
         Cambiar método de pago
       </button>
 

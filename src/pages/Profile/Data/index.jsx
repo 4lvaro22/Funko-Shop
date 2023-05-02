@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Input from './Input';
 
-const Data = ({ usuario, updateUsuario }) => {
+const Data = ({ usuario, updateUsuario, toFocus }) => {
   const [usuarioEditado, setUsuario] = useState(usuario);
 
   function update (value, key) {
@@ -20,7 +20,7 @@ const Data = ({ usuario, updateUsuario }) => {
 
         <div className='grid gap-3 row-gap-3 '>
 
-          <Input label='Nombre' name='name' type='text' value={usuarioEditado.name} onChange={(e) => { update(e.target.value, 'name'); }} />
+          <Input toFocus={toFocus} label='Nombre' name='name' type='text' value={usuarioEditado.name} onChange={(e) => { update(e.target.value, 'name'); }} />
           <Input label='Apellido' name='surname' type='text' value={usuarioEditado.surname} onChange={(e) => { update(e.target.value, 'surname'); }} />
           <Input label='Correo' name='email' type='text' value={usuarioEditado.email} onChange={(e) => { update(e.target.value, 'email'); }} />
 
