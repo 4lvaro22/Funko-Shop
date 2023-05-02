@@ -144,7 +144,7 @@ export const SkeletonModal = ({ id, title, footer }) => {
       <div className='modal-dialog'>
         <div className='modal-content'>
           <div className='modal-header'>
-            <h5 className='modal-title' id={modalId + 'Label'}>{title}</h5>
+            <p className='modal-title fs-5' id={modalId + 'Label'}>{title}</p>
             <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
           </div>
           <div className='modal-footer mx-auto'>

@@ -27,8 +27,8 @@ export const Filters = ({ setPrices, setSeries }) => {
 
       <h2 className='text-center border-bottom border-top p-1'>Filtros</h2>
       <div className='border rounded p-2'>
-        <div className='list-group'>
-          <h5 className='mx-2'>Marca:</h5>
+        <fieldset className='list-group'>
+          <legend className='mx-2'>Marca:</legend>
           <div aria-label='Marcas' className='overflow-auto' style={{ maxHeight: '500px' }}>
             {getSeries()
               .map(item => (
@@ -38,11 +38,11 @@ export const Filters = ({ setPrices, setSeries }) => {
                 </label>
               ))}
           </div>
-        </div>
+        </fieldset>
 
         <hr className='border-3 border-top border-dark' />
-        <div className='list-group my-2 '>
-          <h6 className='mx-2'>Precio:</h6>
+        <fieldset className='list-group my-2 '>
+          <legend className='mx-2'>Precio:</legend>
           <div aria-label='Intervalos de precio'>
             <label className='list-group-item border-0'>
               <input className='form-check-input me-1' type='radio' name='precio' value='menorVein' onChange={handleCheckPrices} />
@@ -61,7 +61,7 @@ export const Filters = ({ setPrices, setSeries }) => {
               Sin límite de precio
             </label>
           </div>
-        </div>
+        </fieldset>
 
         <div className='list-group'>
           <input className='float-end btn btn-primary' type='submit' value='Aplicar Filtros' onClick={() => { setSeries(cachedSeries); setPrices(cachedPrices); }} />

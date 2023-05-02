@@ -39,24 +39,24 @@ export const Pagination = ({ itemsPerPage, items }) => {
         </div>}
 
       {items.length > 0 &&
-        <menu className='d-flex justify-content-center'>
+        <menu className='d-flex justify-content-center col-auto'>
           <ReactPaginate
             previousLabel='Anterior'
             nextLabel='Siguiente'
             breakLabel='...'
             break1='page-item'
-            breakLinkClassName='page-link'
+            breakLinkClassName='page-link mb-2 text-dark'
             pageCount={pageCount}
             onPageChange={handlePageClick}
-            containerClassName='pagination d-flex justify-content-center my-2 p-3'
+            containerClassName='pagination d-flex justify-content-center my-2 p-3 flex-wrap'
             previousLinkClassName='me-3 btn btn-primary'
             nextLinkClassName='ms-3 btn btn-primary'
             disabledClassName='d-none'
             activeClassName='bg-primary-subtle'
-            pageClassName='page-item'
+            pageClassName='page-item mb-2'
             pageLinkClassName='page-link text-dark'
-            previousClassName='page-item'
-            nextClassName='page-item'
+            previousClassName='page-item mb-2'
+            nextClassName='page-item mb-2'
             activeLinkClassName='disabled'
     // eslint-disable-next-line no-unused-vars
             hrefAllControls
