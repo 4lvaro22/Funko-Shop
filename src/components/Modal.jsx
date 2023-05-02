@@ -138,13 +138,14 @@ const modals = {
 
 export const SkeletonModal = ({ id, title, footer }) => {
   const modalId = id ?? 'exampleModal';
+  const labelId = useId();
 
   return (
     <div className='modal fade modal-show' id={modalId} role='dialog' tabIndex='-1' aria-labelledby={modalId + 'Label'} aria-hidden='true'>
       <div className='modal-dialog'>
         <div className='modal-content'>
           <div className='modal-header'>
-            <p className='modal-title fs-5' id={modalId + 'Label'}>{title}</p>
+            <p className='modal-title fs-5' id={modalId + 'Label' + labelId}>{title}</p>
             <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
           </div>
           <div className='modal-footer mx-auto'>
