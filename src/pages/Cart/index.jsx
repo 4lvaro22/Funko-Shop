@@ -9,6 +9,7 @@ export const Cart = (props) => {
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(0);
   const [modal, showModal] = useModal({ type: 'completado' });
+  const buttonColor = (items.length === 0) ? '#000000' : '#FFFFFF';
 
   const deleteFunkoChild = (funkoItem) => {
     const funkoCopy = [];
@@ -111,6 +112,7 @@ export const Cart = (props) => {
 
           {modal}
           <button
+            style={{ buttonColor }}
             disabled={items.length === 0}
             onClick={() => {
               deleteShoppingCart();
