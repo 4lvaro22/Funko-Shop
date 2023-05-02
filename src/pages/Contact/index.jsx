@@ -1,6 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useModal } from '../../components/Modal';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import validator from 'validator';
 
 export const Contact = () => {
@@ -37,6 +37,10 @@ export const Contact = () => {
   function validate () {
     return nombre.length && apellidos.length && validateEmail() && validateConfirmarEmail() && tema.length && consulta.length;
   }
+
+  useEffect(() => {
+    document.title = 'Contacto | FunkoShop';
+  }, []);
 
   return (
     <>

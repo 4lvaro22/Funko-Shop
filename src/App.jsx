@@ -13,6 +13,7 @@ import { Profile } from './pages/Profile';
 import Contact from './pages/Contact';
 import ScrollTop from './components/ScrollTop';
 import { useStorage } from './hooks/useStorage';
+import { useRef } from 'react';
 
 export const BASE_PATH = '/Proyecto-Interfaces-Grupo-H';
 

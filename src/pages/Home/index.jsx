@@ -26,6 +26,10 @@ export const Home = ({ session, itemsPerPage }) => {
     updateFunkoList();
   }, [series, search, prices]);
 
+  useEffect(() => {
+    document.title = 'Catálogo | FunkoShop';
+  }, []);
+
   return (
     <>
       <Search id='buscador' updateSearch={setSearch} />

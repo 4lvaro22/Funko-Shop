@@ -59,6 +59,10 @@ export const Cart = (props) => {
     };
   }, [funko]);
 
+  useEffect(() => {
+    document.title = 'Cesta | FunkoShop';
+  }, []);
+
   return (
 
     <div className='container'>
