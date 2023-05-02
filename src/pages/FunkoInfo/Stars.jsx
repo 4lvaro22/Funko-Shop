@@ -25,18 +25,17 @@ export const Stars = ({ oldRating, updateRating }) => {
   };
 
   return (
-    <div className='d-flex'>
+    <fieldset className='d-flex' role='radiogroup'>
       {[...Array(5)].map((_, index) => {
         index += 1;
         return (
           <button
             type='button'
-            tabIndex={0}
             aria-labelledby={'Valoración' + { index } + ' de 5'}
             key={index}
+            tabIndex={-1}
             className={(oldRating === undefined) ? 'rating ' : '' + index <= (hover || rating) ? 'on' : 'off'}
             onClick={() => { updateRate(index); }}
-            onFocus={() => { updateHover(index); }}
             onKeyDown={(e) => { if (e.key === 'Enter') { updateRate(index); } }}
             onKeyUp={(e) => { if (e.key === 'Enter') { updateRate(rating); } }}
             onMouseEnter={() => { updateHover(index); }}
@@ -50,11 +49,21 @@ export const Stars = ({ oldRating, updateRating }) => {
               color: `${index <= (hover || rating) ? '#000000' : '#000000'}`
             }}
           >
-            <span tabIndex={-1}><i tabIndex={-1} className={(index <= (hover || rating)) ? 'bi bi-star-fill shadow-sm' : 'bi bi-star shadow-sm'} /></span>
+            <input
+              type='radio' className='visually-hidden'
+              tabIndex={0}
+              title={'Valoración ' + index + ' de 5'}
+              role='radio'
+              onClick={() => {
+                updateRate(index);
+                updateHover(index);
+              }}
+            />
+            <i tabIndex={-1} className={(index <= (hover || rating)) ? 'bi bi-star-fill shadow-sm' : 'bi bi-star shadow-sm'} />
           </button>
         );
       })}
-    </div>
+    </fieldset>
   );
 };
 
