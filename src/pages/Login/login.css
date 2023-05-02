@@ -6,7 +6,7 @@ btn.disabled, .btn:disabled {
 }
 
 span#eye {
-    background-color: dodgerblue;
+    background-color: dodgerblue !important;
 }
 
 span#eye:focus-visible {
@@ -15,4 +15,8 @@ span#eye:focus-visible {
 
 span#eye:hover {
     background-color: darkgray !important;
+}
+
+#eye {
+    color:#000000;
 }
