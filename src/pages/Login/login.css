@@ -1,7 +1,7 @@
 btn.disabled, .btn:disabled {
     cursor: not-allowed;
     background-color: #f2f2f2 !important;
-    color: rgba(148, 152, 155, 0.5);
+    color: #000000 !important;
     border-color: #000000 !important;
 }
 

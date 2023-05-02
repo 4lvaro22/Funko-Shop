@@ -12,6 +12,13 @@ export const Contact = () => {
   const [tema, setTema] = useState('');
   const [consulta, setConsulta] = useState('');
 
+  const validateName = () => {
+    return nombre.length >= 3;
+  };
+  const validateSurname = () => {
+    return apellidos.length >= 3;
+  };
+
   const validateEmail = () => {
     const posicionDominio = email.lastIndexOf('.');
 
@@ -35,12 +42,14 @@ export const Contact = () => {
   };
 
   function validate () {
-    return nombre.length && apellidos.length && validateEmail() && validateConfirmarEmail() && tema.length && consulta.length;
+    return validateName() && validateSurname() && validateEmail() && validateConfirmarEmail() && tema.length && consulta.length;
   }
 
   useEffect(() => {
     document.title = 'Contacto | FunkoShop';
   }, []);
+
+  const buttonColor = (!validate()) ? '#000000' : '#FFFFFF';
 
   return (
     <>
@@ -59,135 +68,151 @@ export const Contact = () => {
 
         </ul>
         <div className='container my-3' title='Registro' aria-label='Contacto'>
-          <div className='row'>
-            <div className='col col-lg-7'>
-              <form title='Formulario de Contacto'>
-                <h2>Registrarme</h2>
-                {/* NOMBRE */}
-                <div className='m-3 d-flex d-flex-row'>
-                  <div className='col-3'>
-                    <label className='' htmlFor='nombre'>Nombre <span style={{ color: '#cd2026' }}>*</span></label>
-                  </div>
-
-                  <div className='col-2 mx-2'>
-                    <input onChange={(e) => setNombre(e.target.value)} className='form-control' id='nombre' type='text' />
+          <fieldset className='row col-11'>
+            <legend className='fs-3'><strong>Formulario de contacto</strong></legend>
+            <form title='Formulario de Contacto'>
+              {/* NOMBRE */}
+              <div className='m-3 d-flex d-flex-row'>
+                <div className='col-3'>
+                  <label htmlFor='nombre'>Nombre <span style={{ color: '#cd2026' }}>*</span></label>
+                </div>
+                <div className='col-sm-2'>
+                  <input onChange={(e) => setNombre(e.target.value)} className='form-control' id='nombre' type='text' arial-required='true' />
+                </div>
+                <div className='col-5'>
+                  <div className='col-auto d-flex'>
+                    <p className='d-flex'><i alt={validateName() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateName() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateName() ? 'visually-hidden' : '')}>Mínimo número de carácteres 3</p>
                   </div>
                 </div>
+              </div>
 
-                {/* APELLIDO */}
-                <div className='m-3 d-flex d-flex-row'>
-                  <div className='col-3'>
-                    <label className='' htmlFor='apellidos'>Apellidos <span style={{ color: '#cd2026' }}>*</span></label>
-                  </div>
-                  <div className='col-2 mx-2'>
-                    <input onChange={(e) => setApellidos(e.target.value)} className='form-control' id='apellidos' type='text' />
+              {/* APELLIDO */}
+              <div className='m-3 d-flex d-flex-row'>
+                <div className='col-3'>
+                  <label className='' htmlFor='apellidos'>Apellidos <span style={{ color: '#cd2026' }}>*</span></label>
+                </div>
+                <div className='col-3'>
+                  <input onChange={(e) => setApellidos(e.target.value)} className='form-control' id='apellidos' type='text' arial-required='true' />
+                </div>
+                <div className='col-5'>
+                  <div className='col-auto d-flex align-items-center'>
+                    <p className='d-flex '><i alt={validateSurname() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateSurname() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateSurname() ? 'visually-hidden' : '')}>Mínimo número de carácteres 3</p>
                   </div>
                 </div>
+              </div>
 
-                {/* TELEFONO */}
-                <div className='m-3 d-flex d-flex-row'>
-                  <div className='col-3'>
-                    <label className='' htmlFor='telefono'>Número de teléfono</label>
-                  </div>
-                  <div className='col-2 mx-2'>
-                    <input className='form-control' id='telefono' type='text' />
-                  </div>
+              {/* TELEFONO */}
+              <div className='m-3 d-flex d-flex-row'>
+                <div className='col-3'>
+                  <label className='' htmlFor='telefono'>Número de teléfono</label>
+                </div>
+                <div className='col-2 mx-2'>
+                  <input className='form-control' id='telefono' type='text' />
+                </div>
+              </div>
+
+              {/* CORREO */}
+              <div className='m-3 d-flex d-flex-row'>
+                <div className='col-3'>
+                  <label className='' htmlFor='email'>Correo electrónico<span style={{ color: '#cd2026' }}>*</span></label>
                 </div>
 
-                {/* CORREO */}
-                <div className='m-3 d-flex d-flex-row'>
-                  <div className='col-3'>
-                    <label className='' htmlFor='email'>Correo electrónico<span style={{ color: '#cd2026' }}>*</span></label>
-                  </div>
-
-                  <div className='mx-2'>
-                    <input onChange={(e) => setEmail(e.target.value)} className='form-control' id='email' type='text' />
-                  </div>
+                <div className='mx-2 col-3'>
+                  <input onChange={(e) => setEmail(e.target.value)} className='form-control' id='email' type='text' arial-required='true' />
                 </div>
 
-                {/* CONFIRMAR CORREO */}
-                <div className='m-3 d-flex d-flex-row'>
-                  <div className='col-3'>
-                    <label className='' htmlFor='confimarEmail'>Confirma tu correo<span style={{ color: '#cd2026' }}>*</span></label>
-                  </div>
-                  <div className='mx-2'>
-                    <input onChange={(e) => setConfirmarEmail(e.target.value)} className='form-control' id='confimarEmail' type='text' />
+                <div className='col-5'>
+                  <div className='col-auto d-flex align-items-center'>
+                    <p className='d-flex '><i aria-label={validateEmail() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateEmail() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateEmail() ? 'visually-hidden' : '')}>Introduzca un correo válido.</p>
                   </div>
                 </div>
+              </div>
 
-                {/* PEDIDO */}
-                <div className='m-3 d-flex d-flex-row'>
-                  <div className='col-3'>
-                    <label className='' htmlFor='pedido'>Número de pedido</label>
-                  </div>
-                  <div className='col-3 mx-2'>
-                    <input className='form-control' id='pedido' type='text' />
-                  </div>
+              {/* CONFIRMAR CORREO */}
+              <div className='m-3 d-flex d-flex-row'>
+                <div className='col-3'>
+                  <label className='' htmlFor='confimarEmail'>Confirma tu correo<span style={{ color: '#cd2026' }}>*</span></label>
+                </div>
+                <div className='mx-2 col-3'>
+                  <input onChange={(e) => setConfirmarEmail(e.target.value)} className='form-control' id='confimarEmail' type='text' arial-required='true' />
                 </div>
 
-                {/* TEMA CONSULTA */}
-                <div className='m-3 d-flex d-flex-row'>
-                  <div className='col-3'>
-                    <label className='' htmlFor='tema'>Tema de la consulta<span style={{ color: '#cd2026' }}>*</span></label>
-                  </div>
-
-                  <div className='col-6 mx-2'>
-                    <select id='tema' className='p-2 w-100' onChange={(e) => setTema(e.target.value)}>
-                      <option selected='true'>Selecciona una categoría</option>
-                      <option>Información y compras</option>
-                      <option>Proceso de cobro</option>
-                      <option>Pedidos</option>
-                      <option>Devoluciones</option>
-                      <option>Servicio</option>
-                      <option>Tratamiento de datos personales</option>
-                      <option>Otros</option>
-                    </select>
+                <div className='col-5'>
+                  <div className='col-auto d-flex align-items-center'>
+                    <p className='d-flex '><i aria-label={validateConfirmarEmail() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateConfirmarEmail() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateConfirmarEmail() ? 'visually-hidden' : '')}>Debe coincidir con Correo Electrónico.</p>
                   </div>
                 </div>
+              </div>
 
-                {/* CONSULTA */}
-                <div className='m-3'>
-                  <div>
+              {/* PEDIDO */}
+              <div className='m-3 d-flex d-flex-row'>
+                <div className='col-3'>
+                  <label className='' htmlFor='pedido'>Número de pedido</label>
+                </div>
+                <div className='col-3 mx-2'>
+                  <input className='form-control' id='pedido' type='text' />
+                </div>
+              </div>
 
-                    <label className='' htmlFor='consulta'>Consulta <span style={{ color: '#cd2026' }}>*</span></label>
-                  </div>
-                  <div>
-                    <textarea onChange={(e) => setConsulta(e.target.value)} style={{ width: '60%' }} rows={5} id='consulta' />
-                  </div>
+              {/* TEMA CONSULTA */}
+              <div className='m-3 d-flex d-flex-row'>
+                <div className='col-3'>
+                  <label className='' htmlFor='tema'>Tema de la consulta<span style={{ color: '#cd2026' }}>*</span></label>
                 </div>
 
-                {/* DOCUMENTOS */}
-                <div className='m-3 d-flex d-flex-row'>
-                  <div>
-                    <label htmlFor='documentos' className='mx-3'>Anexar Documentos</label>
-                  </div>
+                <div className='col-6 mx-2'>
+                  <select id='tema' className='p-2 w-750' onChange={(e) => setTema(e.target.value)} arial-required='true'>
+                    <option selected='true'>Selecciona una categoría</option>
+                    <option>Información y compras</option>
+                    <option>Proceso de cobro</option>
+                    <option>Pedidos</option>
+                    <option>Devoluciones</option>
+                    <option>Servicio</option>
+                    <option>Tratamiento de datos personales</option>
+                    <option>Otros</option>
+                  </select>
+                </div>
+              </div>
 
-                  <div id='documentos'>
-                    <button className='mx-3 btn btn-secondary'>Adjuntar documentos</button>
-                  </div>
+              {/* CONSULTA */}
+              <div className='m-3'>
+                <div>
+
+                  <label htmlFor='consulta'>Consulta <span style={{ color: '#cd2026' }}>*</span></label>
+                </div>
+                <div>
+                  <textarea onChange={(e) => setConsulta(e.target.value)} style={{ width: '60%' }} rows={5} id='consulta' arial-required='true' />
+                </div>
+              </div>
+
+              {/* DOCUMENTOS */}
+              <div className='m-3 d-flex d-flex-row'>
+                <div>
+                  <p className='mx-3'>Anexar Documentos</p>
                 </div>
 
-                {/* BOTON ENVIAR */}
-                <p className='mx-3'>Los campos (<span style={{ color: '#cd2026' }}>*</span>) marcados con un asterisco son obligatorios.</p>
-                <div className='d-flex justify-content-center col-8'>
-                  <button
-                    disabled={!validate()}
-                    className='btn btn-primary '
-                    style={{
-                      backgroundColor: !validate() ? '#12206B !important' : '#2641DE !important',
-                      opacity: !validate() ? '0.75' : '1',
-                      color: '#000'
-                    }}
-                    onClick={() => {
-                      showModal();
+                <div id='documentos'>
+                  <button className='mx-3 btn btn-secondary'>Adjuntar documentos</button>
+                </div>
+              </div>
+
+              {/* BOTON ENVIAR */}
+              <p className='mx-3'>Los campos (<span style={{ color: '#cd2026' }}>*</span>) marcados con un asterisco son obligatorios.</p>
+              <div className='d-flex justify-content-center col-8'>
+                <button
+                  disabled={!validate()}
+                  tabIndex={!validate() ? '-1' : 0} role='button' aria-disabled={!validate()}
+                  className='btn btn-primary '
+                  style={{ buttonColor }}
+                  onClick={() => {
+                    showModal();
                     // new bootstrap.Modal(document.getElementById('exampleModal')).show();
-                    }}
-                  >Enviar<i className='bi bi-send mx-1' />
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
+                  }}
+                >Enviar<i className='bi bi-send mx-1' />
+                </button>
+              </div>
+            </form>
+          </fieldset>
         </div>
       </div>
     </>

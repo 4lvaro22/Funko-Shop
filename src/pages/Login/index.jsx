@@ -86,6 +86,7 @@ export const Login = ({ setSession, session }) => {
                           {/* BOTON ENVIAR */}
                           <div className='d-grid gap-2 mt-5'>
                             <button
+                              tabIndex={!validate() ? '-1' : 0} role='button' aria-disabled={!validate()}
                               disabled={!validate()}
                               type='submit' className='btn btn-primary' style={{ color: buttonColor }} onClick={() => {
                                 // new bootstrap.Modal(document.getElementById('exampleModal')).show();

@@ -16,10 +16,10 @@ export const SignUp = () => {
   const [registeredModal, showRegisteredModal] = useModal({ type: 'registro' });
 
   const validateName = () => {
-    return name.length >= 4;
+    return name.length >= 3;
   };
   const validateSurname = () => {
-    return surname.length >= 4;
+    return surname.length >= 3;
   };
   const validateEmail = () => {
     const posicionDominio = email.lastIndexOf('.');
@@ -42,6 +42,7 @@ export const SignUp = () => {
   const validate = () => {
     return validateName() && validateSurname() && validateEmail() && validatePassword() && validateConfirmPassword() && password === confirmPassword;
   };
+  const buttonColor = (!validate()) ? '#000000' : '#FFFFFF';
 
   useEffect(() => {
     document.title = 'Registro - FunkoShop';
@@ -69,7 +70,7 @@ export const SignUp = () => {
                 </div>
                 <div className='col-5'>
                   <div className='col-auto d-flex mt-5 mb-1 align-items-center'>
-                    <p className='d-flex '><i alt={validateName() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateName() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateName() ? 'visually-hidden' : '')}>Mínimo número de carácteres 4</p>
+                    <p className='d-flex '><i alt={validateName() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateName() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateName() ? 'visually-hidden' : '')}>Mínimo número de carácteres 3</p>
                   </div>
                 </div>
               </div>
@@ -83,7 +84,7 @@ export const SignUp = () => {
                 </div>
                 <div className='col-5'>
                   <div className='col-auto d-flex mt-5 mb-1 align-items-center'>
-                    <p className='d-flex '><i alt={validateSurname() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateSurname() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateSurname() ? 'visually-hidden' : '')}>Mínimo número de carácteres 4</p>
+                    <p className='d-flex '><i alt={validateSurname() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateSurname() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateSurname() ? 'visually-hidden' : '')}>Mínimo número de carácteres 3</p>
                   </div>
                 </div>
               </div>
@@ -106,7 +107,7 @@ export const SignUp = () => {
                 <div className='col-auto'>
                   <label htmlFor='txtPassword' className='col-form-label' aria-label='Contraseña'>Contraseña <span style={{ color: '#cd2026' }}>*</span></label>
                   <div className='input-group d-flex flex-row'>
-                    <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-describedby='passwordHelpInline' aria-required='true' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} />
+                    <span className='input-group-text'><i className='bi bi-lock' /></span><input id='txtPassword' className='form-control' aria-required='true' type={'password'.replace('password', (!passwordEye ? 'text' : 'password'))} value={password} onChange={(e) => setValuePassword(e.target.value)} />
                     <span className='input-group-text' role='button' tabIndex='0' onKeyDown={(e) => { if (e.key === 'Enter') setValueConfirmPasswordEye(!confirmPasswordEye); }} onClick={() => setValuePasswordEye(!passwordEye)}>
                       <i alt='Mostrar contraseña' className={'bi bi-eye' + (passwordEye ? '-slash' : '')} />
                     </span>
@@ -119,6 +120,7 @@ export const SignUp = () => {
                 </div>
                 <div className='col-5'>
                   <PasswordStrengthBar
+                    scoreWordClassName='text-dark'
                     minLength={4} password={password} style={{
                       color: 'white'
                     }}
@@ -128,9 +130,9 @@ export const SignUp = () => {
               {/* CONFIRMAR CONTRASEÑA */}
               <div className='row g-3 align-items-center'>
                 <div className='col-auto'>
-                  <label htmlFor='txtConfirmPassword' className='col-form-label'>Confirmar Contraseña <span style={{ color: '#cd2026' }}>*</span></label>
+                  <label htmlFor='txtConfirmPassword' className='col-form-label' aria-label='Confirmar contraseña'>Confirmar Contraseña <span style={{ color: '#cd2026' }}>*</span></label>
                   <div className='input-group d-flex flex-row'>
-                    <span className='input-group-text'><i className='bi bi-lock-fill' /></span><input id='txtConfirmPassword' className='form-control' aria-describedby='passwordHelpInline' aria-required='true' onChange={(e) => setValueConfirmPassword(e.target.value)} type={'password'.replace('password', (!confirmPasswordEye ? 'text' : 'Password'))} value={confirmPassword} />
+                    <span className='input-group-text'><i className='bi bi-lock-fill' /></span><input id='txtConfirmPassword' className='form-control' aria-required='true' onChange={(e) => setValueConfirmPassword(e.target.value)} type={'password'.replace('password', (!confirmPasswordEye ? 'text' : 'Password'))} value={confirmPassword} />
                     <span className='input-group-text' role='button' tabIndex='0' onKeyDown={(e) => { if (e.key === 'Enter') setValueConfirmPasswordEye(!confirmPasswordEye); }} onClick={() => setValuePasswordEye(!passwordEye)}>
                       <i alt='Mostrar contraseña' className={'bi bi-eye' + (confirmPasswordEye ? '-slash' : '')} />
                     </span>
@@ -173,11 +175,11 @@ export const SignUp = () => {
               {/* BOTON ENVIAR */}
               <div className='d-grid gap-2 mt-5'>
                 <button
-                  type='submit' className='btn btn-primary '
-                  style={{
-                    backgroundColor: !validate() ? '#12206B' : '#2641DE',
-                    opacity: !validate() ? '0.75' : '1'
-                  }}
+                  id='RegisterButton'
+                  disabled={!validate()}
+                  className='btn btn-primary'
+                  type='submit'
+                  style={{ color: buttonColor }}
                   tabIndex={!validate() ? '-1' : 0} role='button' aria-disabled={!validate()}
                   onClick={() => {
                     showRegisteredModal();
