@@ -45,7 +45,7 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
         <h4 className='text-center '>{funko.price * quantity}€</h4>
       </div>
 
-      <div className='col col-md-1 col-lg-3' aria-label='Boton eliminar funko'>
+      <div className='col col-md-1 col-lg-3 ' aria-label='Boton eliminar funko'>
         <button id='remove' className=' btn btn-danger mx-1' onClick={() => { remove(funko); }}>Eliminar</button>
       </div>
 
