@@ -37,7 +37,7 @@ export const ReviewForm = ({ sendReview }) => {
           </div>
           <div className='row my-3'>
             <span className='text-end col-md-2'>
-              <h4><label htmlFor='opinion'>Puntuación:</label></h4>
+              <h4><label>Puntuación:</label></h4>
             </span>
             <span className='col-md-4 col-lg-2 col-12 d-flex justify-content-center'>
               <Stars updateRating={updateRating} />
