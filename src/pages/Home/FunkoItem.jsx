@@ -29,11 +29,11 @@ export const FunkoItem = ({ funko, session }) => {
         <Link to={`/Funko/${funko.handle}`}> <img
           src={funko.imageName} width='200' height='266' style={{
             'object-fit': 'scale-down'
-          }} alt={funko.title} title={funko.title}
+          }} alt={'Imagen del producto funko llamado' + funko.title} title={funko.title}
                                              />
         </Link>
 
-        <h4 className='mt-3 fs-6' style={{ maxWidth: '200px' }}>{tituloModificado(funko.title)}</h4>
+        <p className='mt-3 fs-5' style={{ maxWidth: '200px' }}>{tituloModificado(funko.title)}</p>
 
         <div>
           <div className='mb-3'>
@@ -52,7 +52,7 @@ export const FunkoItem = ({ funko, session }) => {
               }}
             >
               <button
-                id='anadir' className='btn btn-success btn-sm float-end text-white' onClick={() => {
+                className='btn btn-success btn-sm float-end text-white' onClick={() => {
                   if (!session) {
                     showNoAccountModal();
                     // new bootstrap.Modal(document.getElementById('noAccountModal')).show();
