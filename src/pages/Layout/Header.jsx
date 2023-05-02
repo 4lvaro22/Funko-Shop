@@ -18,15 +18,19 @@ export const Header = ({ session }) => {
         <div className='container-fluid'>
           <div className='center-block row bg-dark p-1'>
             <span className='col-4 d-flex flex-column flex-sm-row my-auto'>
-              <Link to='/'><button className='btn btn-light my-2' aria-label='Botón de Inicio'><i className='bi bi-house-door-fill' /></button></Link>
+              <Link to='/' aria-label='Botón de Inicio' tabIndex={-1}><button className='btn btn-light my-2' aria-label='Botón de Inicio'><i className='bi bi-house-door-fill' /></button></Link>
             </span>
 
-            <span className='col-4 text-white d-flex flex-column flex-sm-row justify-content-center my-auto'>
-              <Link to='/' className='align-self-center'>
-                <img src={icono} className='mx-1 ' height={44} width={44} alt='icono Funkoshop' />
-              </Link>
-              <Link to='/' className='text-decoration-none align-self-center'>
-                <h1 className='text-white'>FunkoShop</h1>
+            <span className='col-4 text-white d-flex flex-row flex-sm-row justify-content-center my-auto'>
+              <Link to='/' className='d-flex flex-row justify-content-center text-decoration-none' tabIndex={-1}>
+
+                <div className='align-self-center'>
+
+                  <img src={icono} className='mx-1 ' height={44} width={44} alt='icono Funkoshop' />
+                </div>
+                <div className='align-self-center'>
+                  <h1 className='text-white'>FunkoShop</h1>
+                </div>
               </Link>
             </span>
 
@@ -34,12 +38,12 @@ export const Header = ({ session }) => {
 
               {session
                 ? <>
-                  <Link to='/Profile'><button id='Perfil' className=' btn btn-light mx-1 my-1'>Perfil</button></Link>
-                  <Link to='/Cart'><button id='cart' className='btn btn-light mx-3 my-1'><i className={`bi ${cart ? 'bi-cart' : 'bi-cart-plus-fill'}`} /> Carrito</button></Link>
+                  <Link to='/Profile' aria-label='Botón perfil' tabIndex={-1}><button id='Perfil' className=' btn btn-light mx-1 my-1'>Perfil</button></Link>
+                  <Link to='/Cart' aria-label='Botón de Carrito' tabIndex={-1}><button id='cart' className='btn btn-light mx-3 my-1'><i className={`bi ${cart ? 'bi-cart' : 'bi-cart-plus-fill'}`} /> Carrito</button></Link>
                   </>
                 : <>
-                  <Link to='/Login'><button id='login' className=' btn btn-light mx-1 my-1'>Iniciar Sesión</button></Link>
-                  <Link to='/SignUp'><button id='signup' className='btn btn-light mx-1 my-1'>Registrarse</button></Link>
+                  <Link to='/Login' tabIndex={-1}><button id='login' className=' btn btn-light mx-1 my-1'>Iniciar Sesión</button></Link>
+                  <Link to='/SignUp' tabIndex={-1}><button id='signup' className='btn btn-light mx-1 my-1'>Registrarse</button></Link>
                   </>}
             </span>
           </div>

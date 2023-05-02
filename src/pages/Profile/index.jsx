@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Data from './Data';
 import { PaymentSection } from './Payments';
 import { Password } from './Password';
@@ -26,6 +26,11 @@ export const Profile = ({
   const [page, setPage] = useState('personal');
   const [usuario, setUsuario] = useState(user);
   const navigate = useNavigate();
+  const update = useRef();
+
+  useEffect(() => {
+    if (update && update.current) { update.current.focus(); }
+  }, [page]);
 
   return (
     <>
@@ -86,9 +91,9 @@ export const Profile = ({
             </button>
           </div>
           <div className='p-3 bg-light shadow-sm w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
-            {page === 'personal' ? <Data usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} /> : null}
-            {page === 'payments' ? <PaymentSection user={usuario} /> : null}
-            {page === 'password' ? <Password usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} /> : null}
+            {page === 'personal' ? <Data usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} toFocus={update} /> : null}
+            {page === 'payments' ? <PaymentSection user={usuario} toFocus={update} /> : null}
+            {page === 'password' ? <Password usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} toFocus={update} /> : null}
           </div>
         </div>
       </div>
