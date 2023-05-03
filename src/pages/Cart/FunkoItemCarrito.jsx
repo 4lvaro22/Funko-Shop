@@ -38,7 +38,7 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
       <span className='col col-md-3 col-lg-3 item-align-center mb-2 mb-0-sm ' aria-label={`Seleccionar Cantidad, precio total cantidad funko ${funko.price * quantity}`}>
         <label htmlFor={quantityId}>Cantidad:</label>
         <select
-          className='form-select w-50 float-sm-end float-md-none' id={quantityId} aria-label='Default select example' onChange={(e) => {
+          className='form-select w-50 float-sm-end float-md-none' id={quantityId} aria-label='Desplegable de cantidad' onChange={(e) => {
             setQuantity(e.target.value);
           }} value={quantity}
         >
