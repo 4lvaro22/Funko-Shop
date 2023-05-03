@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { addFunko } from '../../data/storage';
-import AddedModal from '../../components/addedModal';
+import './../../assets/styles/zoom.css';
 import { useModal } from '../../components/Modal';
 
 function tituloModificado (tituloOri) {
@@ -23,12 +23,12 @@ export const FunkoItem = ({ funko, session }) => {
       {/* <AddedModal id={funko.handle + 'Modal'} alert='Se ha añadido al carrito correctamente.' out='Ir al carrito' value='0' /> */}
       {/* <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener iniciada sesión.' out='Registrarse' value='2' /> */}
       <div
-        aria-label={`Cuadro del funko ${funko.title}`} className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 '
+        aria-label={`Cuadro del funko ${funko.title}`} className='shadow col-auto border border-2 rounded m-2 d-inline-block p-3 zoom'
       >
-
         <Link to={`/Funko/${funko.handle}`}> <img
           src={funko.imageName} width='200' height='266' style={{
             'object-fit': 'scale-down'
+
           }} alt={'Imagen del producto funko llamado' + funko.title} title={funko.title}
                                              />
         </Link>

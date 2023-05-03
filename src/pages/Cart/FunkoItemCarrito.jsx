@@ -32,7 +32,7 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
       </div>
 
       <div className='col-6 col-sm-6 col-md-2 col-lg-2' aria-label='Nombre funko'>
-        <h4 className='text-center '>{funko.title}</h4>
+        <p className='text-center fs-4'>{funko.title}</p>
       </div>
 
       <span className='col col-md-3 col-lg-3 item-align-center mb-2 mb-0-sm ' aria-label={`Seleccionar Cantidad, precio total cantidad funko ${funko.price * quantity}`}>
