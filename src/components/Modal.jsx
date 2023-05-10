@@ -110,6 +110,7 @@ const modals = {
         </>)
     };
   },
+
   completado: (navigate) => {
     return {
       id: 'completadoModal',
@@ -130,6 +131,72 @@ const modals = {
               }, 500);
             }}
           >Salir
+          </button>
+        </>)
+    };
+  },
+
+  tarjeta: (navigate) => {
+    return {
+      id: 'tarjetaModal',
+      title: <><i className='bi bi-check' /> Tarjeta actualizada</>,
+      footer: (
+        <>
+
+          <button
+            type='button' className='btn btn-success float-end'
+            data-dismiss='modal'
+            data-backdrop='false'
+            onClick={() => {
+              $('#tarjetaModal').modal('hide');
+              $('.modal-backdrop').remove();
+              $(document.body).removeClass('modal-open');
+            }}
+          >Cerrar
+          </button>
+        </>)
+    };
+  },
+
+  datos: (navigate) => {
+    return {
+      id: 'datosModal',
+      title: <><i className='bi bi-check' /> Datos actualizados</>,
+      footer: (
+        <>
+
+          <button
+            type='button' className='btn btn-success float-end'
+            data-dismiss='modal'
+            data-backdrop='false'
+            onClick={() => {
+              $('#datosModal').modal('hide');
+              $('.modal-backdrop').remove();
+              $(document.body).removeClass('modal-open');
+            }}
+          >Cerrar
+          </button>
+        </>)
+    };
+  },
+
+  contrasena: (navigate) => {
+    return {
+      id: 'contrasenaModal',
+      title: <><i className='bi bi-check' /> Contraseña actualizada</>,
+      footer: (
+        <>
+
+          <button
+            type='button' className='btn btn-success float-end'
+            data-dismiss='modal'
+            data-backdrop='false'
+            onClick={() => {
+              $('#contrasenaModal').modal('hide');
+              $('.modal-backdrop').remove();
+              $(document.body).removeClass('modal-open');
+            }}
+          >Cerrar
           </button>
         </>)
     };

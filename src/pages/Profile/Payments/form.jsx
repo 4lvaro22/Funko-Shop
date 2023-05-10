@@ -1,15 +1,28 @@
+import Input from './Input';
+import { useState } from 'react';
+import { useModal } from '../../../components/Modal';
+
 const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const years = [2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030];
 
-export const PaymentForm = () => {
+export const PaymentForm = ({ usuario, updateUsuario, toFocus }) => {
+  const [usuarioEditado, setUsuario] = useState(usuario);
+  const [tarjetaModal, showTarjetaActualizada] = useModal({ type: 'tarjeta' });
+
+  function update (value, key) {
+    const newUsuario = { ...usuarioEditado, [key]: value };
+    setUsuario(newUsuario);
+  }
+
   return (
     <div className='padding m-4'>
+      {tarjetaModal}
       <div className='row'>
         <div className='col-sm-9'>
           <div className='card'>
             <form className='needs-validation'>
               <div className='card-header '>
-                <strong>Nueva tarjeta de crédito</strong>
+                <strong>Editar tarjeta de crédito</strong>
                 {/* <small>enter your card details</small> */}
               </div>
               <div className='card-body g-3 row'>
@@ -19,13 +32,10 @@ export const PaymentForm = () => {
                     <div className='col-12'>
                       <div className='form-group'>
                         <label for='name' className='form-label'>
-                          Titular
+                          Titular(Por defecto)
                         </label>
-                        <input
-                          className='form-control'
-                          id='name'
-                          type='text'
-                          required
+                        <Input
+                          label='Titular' name='nombre' type='text' value={usuarioEditado.name + ' ' + usuarioEditado.surname}
                         />
                       </div>
                     </div>
@@ -35,16 +45,13 @@ export const PaymentForm = () => {
                     <div className='col-12'>
                       <div className='form-group'>
                         <label for='cardNumber'>Número de Tarjeta</label>
-
                         <div className='input-group'>
-                          <input
-                            id='cardNumber'
-                            className='form-control'
-                            type='text'
-                            maxLength={16}
-                            minLength={16}
-                            autocomplete='email'
-                            required
+                          <Input
+                            label='Numero de Tarjeta' name='number' type='text' value={usuarioEditado.card.number} onChange={(e) => {
+                              console.log(usuarioEditado.card.number);
+                              update({ ...usuarioEditado.card, number: e.target.value }, 'card');
+                              console.log(usuarioEditado.card.number);
+                            }}
                           />
                           <div className='input-group-append'>
                             <span className='input-group-text'>
@@ -81,26 +88,21 @@ export const PaymentForm = () => {
                     <div className='col-3'>
                       <div className='form-group'>
                         <label for='cvv'>CVV/CVC</label>
-                        <input
-                          className='form-control'
-                          id='cvv'
-                          type='text'
-                          maxLength={3}
-                          minLength={3}
-                          required
-                        />
+                        <Input label='CVV' name='cvv' type='text' value={usuarioEditado.card.cvv} onChange={(e) => { update({ ...usuarioEditado.card, cvv: e.target.value }, 'card'); }} />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className='card-footer'>
-                <button
-                  className='btn btn-sm btn-success float-right'
-                  type='submit'
-                >
-                  <i className='mdi mdi-gamepad-circle' /> Añadir
-                </button>
+                <input
+                  value='Guardar' name='save' type='button'
+                  className='btn btn-sm btn-success float-right '
+                  onClick={() => {
+                    updateUsuario(usuarioEditado);
+                    showTarjetaActualizada();
+                  }}
+                />
               </div>
             </form>
           </div>

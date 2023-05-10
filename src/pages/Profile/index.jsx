@@ -97,7 +97,7 @@ export const Profile = ({
           </div>
           <div className='p-3 bg-light shadow-sm w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
             {page === 'personal' ? <Data usuario={user} updateUsuario={updateUser} toFocus={update} /> : null}
-            {page === 'payments' ? <PaymentSection user={user} toFocus={update} /> : null}
+            {page === 'payments' ? <PaymentSection user={user} updateUsuario={updateUser} toFocus={update} /> : null}
             {page === 'password' ? <Password usuario={user} updateUsuario={updateUser} toFocus={update} /> : null}
           </div>
         </div>

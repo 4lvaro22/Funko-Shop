@@ -3,7 +3,7 @@ import card from '../../../assets/images/payment/card.png';
 import { PaymentForm } from './form';
 import { useState } from 'react';
 
-export const PaymentSection = ({ user, toFocus }) => {
+export const PaymentSection = ({ usuario, updateUsuario, toFocus }) => {
   const [form, toggleForm] = useState(false);
 
   return (
@@ -14,16 +14,16 @@ export const PaymentSection = ({ user, toFocus }) => {
           <img src={card} className='col-2' alt='Tarjeta de pago' />
           <span className='col-4 align-middle '>
             {' '}
-            {' '}...{user?.card?.number.substring(12, 16)}
+            {' '}XXXX-{usuario?.card?.number.substring(4, 16)}
           </span>
         </div>
       </div>
 
       <button ref={toFocus} className={'btn btn-primary mt-4 ' + (form ? 'visually-hidden' : 'm-2')} onClick={() => toggleForm(!form)}>
-        Cambiar método de pago
+        Editar método de pago
       </button>
 
-      {form ? <PaymentForm /> : null}
+      {form ? <PaymentForm usuario={usuario} updateUsuario={updateUsuario} toFocus={toFocus} /> : null}
     </>
   );
 };
