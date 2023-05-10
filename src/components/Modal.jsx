@@ -170,7 +170,7 @@ const modals = {
             data-dismiss='modal'
             data-backdrop='false'
             onClick={() => {
-              $('#tarjetaModal').modal('hide');
+              $('#datosModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
             }}
@@ -192,7 +192,7 @@ const modals = {
             data-dismiss='modal'
             data-backdrop='false'
             onClick={() => {
-              $('#tarjetaModal').modal('hide');
+              $('#contrasenaModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
             }}
