@@ -57,7 +57,7 @@ export const Login = () => {
                     if (passwordRef.current.checkValidity() && emailRef.current.checkValidity()) {
                       event.preventDefault();
                       // new bootstrap.Modal(document.getElementById('exampleModal')).show();
-                                logIn({ emailRef.current.value, passwordRef.current.value });
+                      logIn({ email: emailRef.current.value, password: passwordRef.current.value });
                       setTimeout(() => {
                         navigate('/');
                       }, 500);
