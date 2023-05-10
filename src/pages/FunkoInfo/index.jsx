@@ -1,11 +1,11 @@
-import { useParams, useNavigate } from 'react-router';
-import { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
+import { useState, useEffect, useRef } from 'react';
 import { getFunkoById } from '../../data';
-import { addFunko } from '../../data/storage';
-import AddedModal from '../../components/addedModal';
 import Reviews from './Review';
 import { useModal } from '../../components/Modal';
-
+import { useCart } from '../../hooks/useCart';
+import { useSession } from '../../hooks/useSession';
+import './../Home/cartButton.css';
 // import bootstrap from 'bootstrap';
 
 const generateOptions = (quantity) => {
@@ -16,8 +16,7 @@ const generateOptions = (quantity) => {
   return options;
 };
 
-export const FunkoInfo = ({ session }) => {
-  const navigate = useNavigate();
+export const FunkoInfo = () => {
   const [funko, setFunko] = useState(
     {
       handle: '',
@@ -37,6 +36,9 @@ export const FunkoInfo = ({ session }) => {
   const { id } = useParams();
   const [carritoModal, showCarritoModal] = useModal({ type: 'compra' });
   const [noAccountModal, showNoAccountModal] = useModal({ type: 'noAccount' });
+  const { addToCart } = useCart();
+  const { active } = useSession();
+  const cartRef = useRef();
 
   useEffect(() => {
     if (!id) return;
@@ -55,8 +57,6 @@ export const FunkoInfo = ({ session }) => {
         {carritoModal}
         {noAccountModal}
 
-        {/* <AddedModal alert='Se ha añadido al carrito correctamente' out='Ir al carrito' value='0' />
-        <AddedModal id='noAccountModal' alert='Para realizar esta acción necesitas tener cuenta.' out='Registrarse' value='2' /> */}
         <div className='row my-3'>
 
           <div className='col'>
@@ -103,27 +103,25 @@ export const FunkoInfo = ({ session }) => {
 
             <div className='p-2'>
               <button
-                type='button'
-                tabIndex='0'
-                aria-label='Añadir a la cesta'
-                className='btn btn-success m-1' id='añadirCesta'
-                onKeyDown={(e) => {
-                  if (session) {
-                    if (e.key === 'Enter') { addFunko(funko, quantity); showCarritoModal(); }
-                  } else {
+                ref={cartRef}
+                className='cart__button btn btn-success m-1' onClick={(e) => {
+                  if (!active) {
                     showNoAccountModal();
-                  }
-                }}
-                onClick={() => {
-                  if (session) {
-                    addFunko(funko, quantity);
+                  } else {
+                    addToCart(funko, Number(quantity));
+                    cartRef.current.classList.add('clicked');
                     showCarritoModal();
-                    // new bootstrap.Modal(document.getElementById('exampleModal')).show();}
-                  } else {
-                    showNoAccountModal();
+                    setTimeout(() => {
+                      cartRef.current.classList.remove('clicked');
+                    }, 3000);
                   }
                 }}
-              >Añadir a la cesta
+              >
+                <span className='add__to-cart'>Añadir a la cesta</span>
+                <span className='added'>Añadido</span>
+                <i class='bi bi-cart' />
+                <i class='bi bi-box' />
+                {/* Añadir a la cesta */}
               </button>
             </div>
           </div>

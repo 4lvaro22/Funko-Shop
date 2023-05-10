@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { getFunkos } from '../data';
 
-export const useFunko = ({ filter, session }) => {
+export const useFunko = ({ filter }) => {
   const [funkosData, setFunkosData] = useState(getFunkos());
 
   const updateFunkos = () => {

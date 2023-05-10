@@ -1,15 +1,21 @@
 import { Outlet } from 'react-router-dom';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { CartProvider } from '../../context/cart';
+import { SessionProvider } from '../../context/session';
 
-export const Layout = ({ session, setSession }) => {
+export const Layout = () => {
   return (
     <>
-      <Header session={session} />
+      <SessionProvider>
+        <CartProvider>
+          <Header />
 
-      <Outlet />
+          <Outlet />
 
-      <Footer />
+          <Footer />
+        </CartProvider>
+      </SessionProvider>
     </>
   );
 };
