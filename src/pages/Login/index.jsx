@@ -3,11 +3,13 @@ import logoFunko from '../../assets/images/funkoIcono.png';
 import { useState, useEffect, useRef } from 'react';
 import validator from 'validator';
 import './login.css';
+import { useSession } from '../../hooks/useSession';
 
-export const Login = ({ setSession, session }) => {
+export const Login = () => {
   const [passwordEye, setValuePasswordEye] = useState(true);
   const emailRef = useRef();
   const passwordRef = useRef();
+  const { active, logIn } = useSession();
   const navigate = useNavigate();
 
   const validatePassword = () => {
@@ -41,9 +43,7 @@ export const Login = ({ setSession, session }) => {
   }, []);
 
   return (
-
     <>
-
       <div className='container my-5' title='Iniciar sesión' aria-label='Iniciar sesión'>
         <div className='row justify-content-md-center'>
           <div className='col d-none d-sm-block col-sm-4 col-lg-5'>
@@ -57,7 +57,7 @@ export const Login = ({ setSession, session }) => {
                     if (passwordRef.current.checkValidity() && emailRef.current.checkValidity()) {
                       event.preventDefault();
                       // new bootstrap.Modal(document.getElementById('exampleModal')).show();
-                      setSession(true);
+                                logIn({ emailRef.current.value, passwordRef.current.value });
                       setTimeout(() => {
                         navigate('/');
                       }, 500);

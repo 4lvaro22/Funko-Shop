@@ -3,13 +3,14 @@ import Data from './Data';
 import { PaymentSection } from './Payments';
 import { Password } from './Password';
 import { useNavigate } from 'react-router-dom';
+import { useSession } from '../../hooks/useSession';
 
 const getButtonClass = (page, currentPage) => {
   return page === currentPage ? 'btn-primary' : 'btn-secondary';
 };
 
 export const Profile = ({
-  user,
+
   //     : {
   //     name,
   //     img,
@@ -21,10 +22,9 @@ export const Profile = ({
   //         cvv
   //     }
   // },
-  session, setSession
 }) => {
   const [page, setPage] = useState('personal');
-  const [usuario, setUsuario] = useState(user);
+  const { user, logOut, updateUser } = useSession();
   const navigate = useNavigate();
   const update = useRef();
 
@@ -42,7 +42,7 @@ export const Profile = ({
         <div className='row justify-center'>
           <div className='col-2'>
             <img
-              src={usuario.img}
+              src={user.img}
               width='100px'
               height='100px'
               className='rounded-5 float-start'
@@ -50,7 +50,7 @@ export const Profile = ({
             />
           </div>
           <div className='col-10 align-self-center'>
-            <h2>{usuario.name} {usuario.surname}</h2>
+            <h2>{user.name} {user.surname}</h2>
           </div>
         </div>
       </div>
@@ -89,16 +89,16 @@ export const Profile = ({
             <button
               className='btn btn-danger mt-3 mx-auto'
               onClick={() => {
-                setSession(false);
+                logOut();
                 navigate('/');
               }}
             >Cerrar sesión
             </button>
           </div>
           <div className='p-3 bg-light shadow-sm w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
-            {page === 'personal' ? <Data usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} toFocus={update} /> : null}
-            {page === 'payments' ? <PaymentSection usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} toFocus={update} /> : null}
-            {page === 'password' ? <Password usuario={usuario} updateUsuario={(newUsuario) => setUsuario(newUsuario)} toFocus={update} /> : null}
+            {page === 'personal' ? <Data usuario={user} updateUsuario={updateUser} toFocus={update} /> : null}
+            {page === 'payments' ? <PaymentSection user={user} updateUsuario={updateUser} toFocus={update} /> : null}
+            {page === 'password' ? <Password usuario={user} updateUsuario={updateUser} toFocus={update} /> : null}
           </div>
         </div>
       </div>

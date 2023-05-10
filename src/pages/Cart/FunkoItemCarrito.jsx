@@ -1,6 +1,6 @@
 import { useEffect, useId, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { changeQuantity } from '../../data/storage';
+import { useCart } from '../../hooks/useCart';
 
 const generateOptions = (quantity) => {
   const options = [];
@@ -10,13 +10,13 @@ const generateOptions = (quantity) => {
   return options;
 };
 
-export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) => {
+export const FunkoEnCarrito = ({ funko, fixQuantity }) => {
   const [quantity, setQuantity] = useState(fixQuantity);
   const quantityId = useId();
+  const { setToCart, removeFromCart } = useCart();
 
   useEffect(() => {
-    changeQuantity(funko.handle, quantity);
-    updateQuantity();
+    setToCart(funko, Number(quantity));
   }, [quantity]);
 
   return (
@@ -51,7 +51,7 @@ export const FunkoEnCarrito = ({ funko, fixQuantity, remove, updateQuantity }) =
       </div>
 
       <div className='col col-md-1 col-lg-3 ' aria-label='Boton eliminar funko'>
-        <button id={`remove ${quantityId}`} className=' btn btn-danger mx-1' onClick={() => { remove(funko); }}>Eliminar</button>
+        <button id={`remove ${quantityId}`} className=' btn btn-danger mx-1' onClick={() => { removeFromCart(funko); }}>Eliminar</button>
       </div>
 
     </div>

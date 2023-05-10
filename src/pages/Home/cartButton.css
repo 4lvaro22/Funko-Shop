@@ -1,0 +1,155 @@
+.cart__button {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.cart__button:active {
+    transform: scale(0.9);
+}
+
+.cart__button .bi-cart {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -10%;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.cart__button .bi-box {
+    position: absolute;
+    z-index: 3;
+    top: -20%;
+    left: 52%;
+    font-size: 0.875rem;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.cart__button span {
+    /* position: absolute;
+    left: 50%;
+    z-index: 3;
+    top: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.cart__button span.add__to-cart {
+    opacity: 1;
+}
+
+.cart__button span.added {
+    opacity: 0;
+    display: none;
+}
+
+.cart__button.clicked {
+    /* animation: button 5s ease-in-out forwards; */
+    height: 3rem;
+    width: 6rem;
+}
+
+.cart__button.clicked .bi-cart {
+    animation: cart 1.5s ease-in-out forwards;
+    display: block;
+}
+
+.cart__button.clicked .bi-box {
+    animation: box 1.5s ease-in-out forwards;
+    display: block;
+}
+
+.cart__button.clicked span.add__to-cart {
+    animation: txt1 1.5s ease-in-out forwards;
+    display: none;
+}
+
+.cart__button.clicked span.added {
+    animation: txt2 1.5s ease-in-out forwards;
+    display: block;
+}
+
+@keyframes button {
+    0% {
+        height: 1rem;
+        width: 2rem;
+    }
+
+    30% {
+        height: 3rem;
+        width: 6rem;
+    }
+
+    100% {
+        height: inherit;
+        width: inherit;
+    }
+}
+
+@keyframes cart {
+    0% {
+        left: -30%;
+    }
+
+    10% {
+        left: -10%;
+    }
+
+    40%,
+    60% {
+        left: 50%;
+    }
+
+    100% {
+        left: 114%;
+    }
+}
+
+@keyframes box {
+    0% {
+
+        top: -25%;
+        left: 59%;
+    }
+
+    10%,
+    40% {
+        top: -20%;
+    }
+
+    60% {
+        top: 40%;
+        left: 52%;
+    }
+
+    100% {
+        top: 40%;
+        left: 116%;
+    }
+}
+
+@keyframes txt1 {
+    0% {
+        opacity: 1;
+    }
+
+    20%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes txt2 {
+
+    0%,
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

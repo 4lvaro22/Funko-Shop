@@ -1,65 +1,40 @@
 import { FunkoEnCarrito } from './FunkoItemCarrito';
 import { React, useEffect, useState } from 'react';
 import data from '../../data';
-import { removeFunko, getFunkosData } from '../../data/storage';
 import { useModal } from '../../components/Modal';
+import { useCart } from '../../hooks/useCart';
 
 export const Cart = (props) => {
-  const [funko, setFunko] = useState(getFunkosData());
-  const [items, setItems] = useState([]);
+  const { clearCart, cart } = useCart();
   const [total, setTotal] = useState(0);
   const [modal, showModal] = useModal({ type: 'completado' });
-  const buttonColor = (items.length === 0) ? '#000000' : '#FFFFFF';
-
-  const deleteFunkoChild = (funkoItem) => {
-    const funkoCopy = [];
-
-    funko.forEach(element => {
-      if (element.id !== funkoItem.handle) { funkoCopy.push(element); }
-    });
-
-    removeFunko(funkoItem.handle);
-
-    setFunko(funkoCopy);
-  };
+  const buttonColor = (cart.length === 0) ? '#000000' : '#FFFFFF';
 
   const deleteShoppingCart = () => {
-    funko.forEach(element => {
-      removeFunko(element.handle);
-    });
-    setFunko([]);
-  };
-
-  const updateQuantity = () => {
-    const funkosData = getFunkosData();
-    setFunko(funkosData);
+    clearCart();
   };
 
   useEffect(() => {
     let newTotal = 0;
-    const itemsList = [];
 
-    funko.forEach(element => {
+    cart.forEach(element => {
       const funkoId = element.id;
       const quantity = element.quantity;
 
+      console.log(funkoId, quantity);
+
       const itemFunko = data.getFunkoById(funkoId);
+      console.log(itemFunko);
       if (!itemFunko) { return; }
 
       newTotal += itemFunko.price * quantity;
-
-      itemsList.push(
-        <FunkoEnCarrito key={itemFunko.handle} funko={itemFunko} fixQuantity={quantity} remove={deleteFunkoChild} updateQuantity={updateQuantity} />
-      );
-    }, [funko]);
+    });
 
     setTotal(newTotal);
-    setItems(itemsList);
     return () => {
-      setItems([]);
       setTotal(0);
     };
-  }, [funko]);
+  }, [cart]);
 
   useEffect(() => {
     document.title = 'Cesta | FunkoShop';
@@ -76,8 +51,14 @@ export const Cart = (props) => {
       </div>
 
       <div className='container'>
-        {items.length === 0 && <div className='mt-3 border border-2 row'> <p className='m-2 fs-4 fw-bold fst-italic'>No hay artículos en el carrito</p> </div>}
-        {items}
+        {cart.length === 0 && <div className='mt-3 border border-2 row'> <p className='m-2 fs-4 fw-bold fst-italic'>No hay artículos en el carrito</p> </div>}
+        {cart.map(element => {
+          const itemFunko = data.getFunkoById(element.id);
+
+          if (!itemFunko) return null;
+
+          return <FunkoEnCarrito key={itemFunko.handle} funko={itemFunko} fixQuantity={element.quantity} />;
+        })}
       </div>
 
       <div className='d-flex justify-content-center'>
@@ -118,7 +99,7 @@ export const Cart = (props) => {
           {modal}
           <button
             style={{ buttonColor }}
-            disabled={items.length === 0}
+            disabled={cart.length === 0}
             onClick={() => {
               deleteShoppingCart();
               showModal();
