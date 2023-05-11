@@ -200,10 +200,33 @@ const modals = {
           </button>
         </>)
     };
+  },
+
+  review: (navigate) => {
+    return {
+      id: 'reviewModal',
+      title: <><i className='bi bi-check' /> Opinión publicada</>,
+      body: 'Su opinión ha sido publicada correctamente.',
+      footer: (
+        <>
+
+          <button
+            type='button' className='btn btn-success float-end'
+            data-dismiss='modal'
+            data-backdrop='false'
+            onClick={() => {
+              $('#reviewModal').modal('hide');
+              $('.modal-backdrop').remove();
+              $(document.body).removeClass('modal-open');
+            }}
+          >Cerrar
+          </button>
+        </>)
+    };
   }
 };
 
-export const SkeletonModal = ({ id, title, footer }) => {
+export const SkeletonModal = ({ id, title, body, footer }) => {
   const modalId = id ?? 'exampleModal';
   const labelId = useId();
 
@@ -215,6 +238,9 @@ export const SkeletonModal = ({ id, title, footer }) => {
             <p className='modal-title fs-5' id={modalId + 'Label' + labelId}>{title}</p>
             <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close' />
           </div>
+
+          {body && <div className='modal-body'> {body} </div>}
+
           <div className='modal-footer mx-auto'>
             {footer}
           </div>
