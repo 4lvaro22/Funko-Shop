@@ -27,7 +27,7 @@ export const Search = ({ updateSearch }) => {
                 <label htmlFor='buscador'>Buscador:</label>
               </span>
               <input
-                type='text' className='form-control' id='buscador' aria-label='Buscar nombre de personaje por texto'
+                type='search' className='form-control' id='buscador' aria-label='Buscar nombre de personaje por texto'
                 value={cachedSearch}
                 onChange={e => setCachedSearch(e.target.value)}
                 onKeyUp={e => e.key === 'Enter' ? updateFixedSearch() : null}
