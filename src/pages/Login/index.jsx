@@ -30,8 +30,6 @@ export const Login = () => {
     }
   };
 
-  const buttonColor = (!validate()) ? '#000000' : '#FFFFFF';
-
   function enterKeyEvent () {
     if (window.event.keyCode === 13) {
       document.getElementById('eye').click();
@@ -54,7 +52,7 @@ export const Login = () => {
               <div className='row justify-content-center'>
                 <form
                   className='col col-lg-7 justify-content-center' onSubmit={(event) => {
-                    if (passwordRef.current.checkValidity() && emailRef.current.checkValidity()) {
+                    if (passwordRef.current.checkValidity()) {
                       event.preventDefault();
                       // new bootstrap.Modal(document.getElementById('exampleModal')).show();
                       logIn({ email: emailRef.current.value, password: passwordRef.current.value });
@@ -106,7 +104,7 @@ export const Login = () => {
                     <button
                         // tabIndex={!validate() ? '-1' : 0} role='button' aria-disabled={!validate()}
                         // disabled={!validate()}
-                      type='submit' className='btn col-auto btn-primary' style={{ color: buttonColor }}
+                      type='submit' className='btn col-auto btn-primary'
                     >
                       Iniciar Sesión
                     </button>

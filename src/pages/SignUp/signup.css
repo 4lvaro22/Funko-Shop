@@ -1,0 +1,22 @@
+btn.disabled, .btn:disabled {
+    cursor: not-allowed;
+    background-color: #f2f2f2 !important;
+    color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+span#eye1,#eye2 {
+    background-color: dodgerblue !important;
+}
+
+span#eye1:focus-visible,#eye2:focus-visible {
+    background-color: darkgray !important;
+}
+
+span#eye1:hover,#eye2:hover {
+    background-color: darkgray !important;
+}
+
+#eye1,#eye2 {
+    color:#000000;
+}
