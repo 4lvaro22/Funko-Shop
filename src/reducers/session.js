@@ -1,11 +1,12 @@
 export const sessionInitialState = JSON.parse(window.localStorage.getItem('session')) || { active: false };
 
 const testUser = {
-  name: 'Test User',
-  surname: 'apellido',
+  name: 'Nombre',
+  surname: 'Apellidos',
   img: 'https://cdn-icons-png.flaticon.com/512/17/17004.png',
   email: 'test@gmail.com',
   password: '1234',
+  direccion: 'Calle falsa 123',
   card: {
     number: '1234567890123456',
     exp: '12/24',

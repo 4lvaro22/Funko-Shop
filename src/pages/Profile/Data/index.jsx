@@ -26,6 +26,7 @@ const Data = ({ usuario, updateUsuario, toFocus }) => {
           <Input toFocus={toFocus} label='Nombre' name='name' type='text' value={usuarioEditado.name} onChange={(e) => { update(e.target.value, 'name'); }} />
           <Input label='Apellido' name='surname' type='text' value={usuarioEditado.surname} onChange={(e) => { update(e.target.value, 'surname'); }} />
           <Input label='Correo' name='email' type='text' value={usuarioEditado.email} onChange={(e) => { update(e.target.value, 'email'); }} />
+          <Input label='Dirección' name='direccion' type='text' value={usuarioEditado.direccion} onChange={(e) => { update(e.target.value, 'direccion'); }} />
 
           <div className='row'>
             <div className='col-lg-9 col-md-6 col-sm-4' />
