@@ -11,11 +11,6 @@ import { Link, useNavigate } from 'react-router-dom';
 export const SignUp = () => {
   const [passwordEye, setValuePasswordEye] = useState(true);
   const [confirmPasswordEye, setValueConfirmPasswordEye] = useState(true);
-  const [name, setValueName] = useState('');
-  const [surname, setValueSurname] = useState('');
-  const [email, setValueEmail] = useState('');
-  const [password, setValuePassword] = useState('');
-  const [confirmPassword, setValueConfirmPassword] = useState('');
   const [registeredModal, showRegisteredModal] = useModal({ type: 'registro' });
 
   const emailRef = useRef();
@@ -24,33 +19,9 @@ export const SignUp = () => {
   const apellidosRef = useRef();
   const direccionRef = useRef();
   const confirmPasswordRef = useRef();
-  const { active, logIn } = useSession();
+  const { register } = useSession();
   const navigate = useNavigate();
 
-  const validateName = () => {
-    return name.length >= 3;
-  };
-  const validateSurname = () => {
-    return surname.length >= 3;
-  };
-  const validateEmail = () => {
-    const posicionDominio = email.lastIndexOf('.');
-
-    if (validator.isEmail(email)) {
-      return true;
-    } else if (email.substring(posicionDominio).length <= 3) {
-      return false;
-    }
-    return false;
-  };
-  /*
-  const validatePassword = () => {
-    return password.length && password.length >= 8 && password.length <= 20 && password === confirmPassword;
-  };
-  const validateConfirmPassword = () => {
-    return confirmPassword.length && confirmPassword.length >= 8 && confirmPassword.length <= 20 && password === confirmPassword;
-  };
-*/
   const validatePassword = () => {
     if (passwordRef.current.value !== confirmPasswordRef.current.value) {
       console.log(passwordRef.current.value);
@@ -61,10 +32,6 @@ export const SignUp = () => {
       confirmPasswordRef.current.setCustomValidity('');
       return true;
     }
-  };
-
-  const validate = () => {
-    return validateName() && validateSurname() && validateEmail() && validatePassword() && password === confirmPassword;
   };
 
   function enterKeyEvent1 () {
@@ -98,11 +65,19 @@ export const SignUp = () => {
                 <form
                   className='col col-lg-7 justify-content-center' onSubmit={(event) => {
                     if (validatePassword()) {
-                      if (nombreRef.current.checkValidity() && apellidosRef.current.checkValidity() && direccionRef.current.checkValidity() && passwordRef.current.checkValidity() &&
+                      if (nombreRef.current.checkValidity() && apellidosRef.current.checkValidity() &&
+                      direccionRef.current.checkValidity() && passwordRef.current.checkValidity() &&
                        emailRef.current.checkValidity() && confirmPasswordRef.current.checkValidity()) {
                         event.preventDefault();
-                        // new bootstrap.Modal(document.getElementById('exampleModal')).show();
-                        logIn({ email: emailRef.current.value, password: passwordRef.current.value });
+
+                        register({
+                          name: nombreRef.current.value,
+                          surname: apellidosRef.current.value,
+                          direccion: direccionRef.current.value,
+                          email: emailRef.current.value,
+                          password: passwordRef.current.value
+                        });
+
                         setTimeout(() => {
                           navigate('/');
                         }, 500);
