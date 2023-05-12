@@ -1,4 +1,4 @@
-export const cartInitialState = JSON.parse(window.localStorage.getItem('cart')) || [];
+export const cartInitialState = () => { return JSON.parse(window.localStorage.getItem('cart')) || []; };
 
 export const CART_ACTION_TYPES = {
   ADD_TO_CART: 'ADD_TO_CART',
@@ -85,7 +85,7 @@ const UPDATE_STATE_BY_ACTION = {
 
 export const cartReducer = (_, action) => {
   const { type: actionType } = action;
-  const copyState = cartInitialState;
+  const copyState = cartInitialState();
   const updateState = UPDATE_STATE_BY_ACTION[actionType];
   return updateState ? updateState(copyState, action) : copyState;
 };

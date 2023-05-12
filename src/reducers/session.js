@@ -16,6 +16,7 @@ const testUser = {
 
 export const SESSION_ACTION_TYPES = {
   LOG_IN: 'LOG_IN',
+  REGISTER: 'REGISTER',
   LOG_OUT: 'LOG_OUT',
   UPDATE_DATA: 'UPDATE_DATA'
 };
@@ -25,6 +26,25 @@ export const updateLocalStorage = state => {
 };
 
 const UPDATE_STATE_BY_ACTION = {
+  [SESSION_ACTION_TYPES.REGISTER]: (_, action) => {
+    const { name, surname, email, password, direccion } = action.payload;
+
+    console.log(action.payload);
+    const newState = {
+      active: true,
+      user: {
+        ...testUser,
+        name,
+        surname,
+        direccion,
+        email,
+        password
+      }
+    };
+
+    updateLocalStorage(newState);
+    return newState;
+  },
   [SESSION_ACTION_TYPES.LOG_IN]: (_, action) => {
     const { email, password } = action.payload;
 

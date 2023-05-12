@@ -40,7 +40,7 @@ export const Profile = ({
     <>
       <div id='profile__header' className='m-4 p-3 bg-light shadow-sm'>
         <div className='row justify-center'>
-          <div className='col-2'>
+          <div className='col-4 col-sm-2 col-md-2 col-xl-1'>
             <img
               src={user.img}
               width='100px'
@@ -49,16 +49,16 @@ export const Profile = ({
               alt='Foto de perfil'
             />
           </div>
-          <div className='col-10 align-self-center'>
+          <div className='col-7 col-md-9 col-xl-10 align-self-center'>
             <h2>{user.name} {user.surname}</h2>
           </div>
         </div>
       </div>
 
       <div className='row justify-center m-2 mb-5'>
-        <div className='d-flex align-items-start'>
+        <div className='d-flex flex-wrap justify-content-center align-items-start'>
           <div
-            className='nav flex-column m-2 me-3 bg-light shadow-sm gap-2 p-3 col-sm-4 col-md-3 col-lg-2'
+            className='nav flex-column m-2 me-3 bg-light shadow-sm gap-2 p-3 col-12 col-md-3 col-lg-2'
             id='v-pills-tab'
             role='tablist'
             aria-orientation='vertical'
@@ -95,9 +95,9 @@ export const Profile = ({
             >Cerrar sesión
             </button>
           </div>
-          <div className='p-3 bg-light shadow-sm w-50 mx-5 my-2 rounded' id='v-pills-tabContent'>
+          <div className='p-2 bg-light shadow-sm col-10 col-md-6 mx-5 my-2 rounded' id='v-pills-tabContent'>
             {page === 'personal' ? <Data usuario={user} updateUsuario={updateUser} toFocus={update} /> : null}
-            {page === 'payments' ? <PaymentSection user={user} updateUsuario={updateUser} toFocus={update} /> : null}
+            {page === 'payments' ? <PaymentSection usuario={user} updateUsuario={updateUser} toFocus={update} /> : null}
             {page === 'password' ? <Password usuario={user} updateUsuario={updateUser} toFocus={update} /> : null}
           </div>
         </div>
