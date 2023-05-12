@@ -4,7 +4,7 @@ import { cartReducer, cartInitialState, CART_ACTION_TYPES } from '../reducers/ca
 export const CartContext = createContext();
 
 function useCartReducer () {
-  const [state, dispatch] = useReducer(cartReducer, cartInitialState);
+  const [state, dispatch] = useReducer(cartReducer, cartInitialState());
 
   const addToCart = (product, quantity) => dispatch({
     type: CART_ACTION_TYPES.ADD_TO_CART,
