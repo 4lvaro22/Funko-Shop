@@ -25,11 +25,16 @@ export const Stars = ({ oldRating, updateRating }) => {
   };
 
   return (
-    <fieldset className='d-flex' role='radiogroup'>
+    <fieldset className='d-flex' id='startRating' role='radiogroup'>
+      <legend className='visually-hidden'>
+        Selecciona las estrellas de valoración
+      </legend>
+
       <input
         type='radio' className='visually-hidden'
         tabIndex={0}
-        title='Valoración 0 de 5'
+        aria-title='Valoración 0 de 5'
+        aria-labelledby='starRate'
         role='radio'
         onClick={() => {
           updateRate(0);
@@ -61,7 +66,8 @@ export const Stars = ({ oldRating, updateRating }) => {
             <input
               type='radio' className='visually-hidden'
               tabIndex={0}
-              title={'Valoración ' + index + ' de 5'}
+              aria-title={'Valoración ' + index + ' de 5'}
+              aria-labelledby='starRate'
               role='radio'
               onClick={() => {
                 updateRate(index);
