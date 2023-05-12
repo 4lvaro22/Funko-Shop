@@ -15,10 +15,10 @@ export const PaymentForm = ({ usuario, updateUsuario, toFocus }) => {
   }
 
   return (
-    <div className='padding m-4'>
+    <div className='padding m-2'>
       {tarjetaModal}
       <div className='row'>
-        <div className='col-sm-9'>
+        <div className='col-lg-10 col-xl-8'>
           <div className='card'>
             <form className='needs-validation'>
               <div className='card-header '>
@@ -26,8 +26,8 @@ export const PaymentForm = ({ usuario, updateUsuario, toFocus }) => {
                 {/* <small>enter your card details</small> */}
               </div>
               <div className='card-body g-3 row'>
-                <div className='col-2'> </div>
-                <div className='col-8'>
+                <div className='col-md-1 col-lg-1 col-xl-1'> </div>
+                <div className='col-10 col-md-11 col-lg-9 col-xl-8'>
                   <div className='row'>
                     <div className='col-12'>
                       <div className='form-group'>
@@ -73,7 +73,7 @@ export const PaymentForm = ({ usuario, updateUsuario, toFocus }) => {
                       <label for='ccmonth' className='fs-7'>Mes</label>
                       <select className='form-select' id='ccmonth'>
                         {months.map((month) => (
-                          <option value={month}>{month}</option>
+                          <option key={month} value={month}>{month}</option>
                         ))}
                       </select>
                     </div>
@@ -81,7 +81,7 @@ export const PaymentForm = ({ usuario, updateUsuario, toFocus }) => {
                       <label for='ccyear'>Año</label>
                       <select className='form-select ' id='ccyear'>
                         {years.map((year) => (
-                          <option value={year}>{year}</option>
+                          <option key={year} value={year}>{year}</option>
                         ))}
                       </select>
                     </div>

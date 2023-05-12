@@ -6,6 +6,8 @@ import { useState } from 'react';
 export const PaymentSection = ({ usuario, updateUsuario, toFocus }) => {
   const [form, toggleForm] = useState(false);
 
+  console.log(usuario);
+
   return (
     <>
       <h3>Información de pago</h3>
