@@ -63,6 +63,8 @@ export const Login = () => {
                   }}
                 >
                   <h2 className=''>Iniciar Sesión</h2>
+                  <p className='fs-6 fst-italic'>(<span style={{ color: '#cd2026' }}>*</span>) Los campos marcados con un asterisco en rojo son obligatorios.</p>
+
                   {/* CORREO ELECTRONICO */}
                   <div className='row g-3 align-items-center '>
                     <div className='col-auto'>

@@ -203,7 +203,7 @@ export const Contact = () => {
               </div>
 
               {/* BOTON ENVIAR */}
-              <p className='mx-3'>Los campos (<span style={{ color: '#cd2026' }}>*</span>) marcados con un asterisco son obligatorios.</p>
+              <p className='mx-3 fst-italic'>(<span style={{ color: '#cd2026' }}>*</span>) Los campos marcados con un asterisco en rojo son obligatorios.</p>
               <div className='d-flex justify-content-center col-8'>
                 <button
                   disabled={!validate()}

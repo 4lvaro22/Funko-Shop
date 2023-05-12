@@ -86,6 +86,7 @@ export const SignUp = () => {
                   }}
                 >
                   <h2 className=''>Registrarme</h2>
+                  <p className='fs-6 fst-italic'>(<span style={{ color: '#cd2026' }}>*</span>) Los campos marcados con un asterisco en rojo son obligatorios.</p>
                   {/* NOMBRE */}
                   <div className='row g-3 align-items-center '>
                     <div className='col-auto'>
@@ -197,7 +198,7 @@ export const SignUp = () => {
                         // disabled={!validate()}
                       type='submit' className='btn col-auto btn-primary'
                     >
-                      Iniciar Sesión
+                      Registrarme
                     </button>
                   </div>
                 </form>
