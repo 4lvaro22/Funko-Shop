@@ -70,107 +70,113 @@ export const Contact = () => {
         <div className='container my-3' title='Registro' aria-label='Contacto'>
           <fieldset className='row col-11'>
             <legend className='fs-3'><strong>Formulario de contacto</strong></legend>
-            <form title='Formulario de Contacto'>
+            <form className='mx-4' title='Formulario de Contacto'>
               {/* NOMBRE */}
-              <div className='m-3 d-flex d-flex-row'>
-                <div className='col-3'>
-                  <label htmlFor='nombre'>Nombre <span style={{ color: '#cd2026' }}>*</span></label>
-                </div>
-                <div className='col-sm-2'>
-                  <input onChange={(e) => setNombre(e.target.value)} className='form-control' id='nombre' type='text' arial-required='true' />
-                </div>
-                <div className='col-5'>
-                  <div className='col-auto d-flex'>
-                    <p className='d-flex'><i alt={validateName() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateName() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateName() ? 'visually-hidden' : '')}>Mínimo número de carácteres 3</p>
+              <div className='row g-3 align-items-center '>
+                <div className='col-auto'>
+                  <label htmlFor='txtNombre' className='col-form-label'>Nombre <span style={{ color: '#D90000' }}>*</span></label>
+                  <div className='input-group d-flex flex-row'>
+                    <span className='input-group-text'><i className='bi bi-person' /></span>
+                    <input
+                      aria-required='true' id='txtNombre' className='form-control' type='text'
+                      autofocus='' autocapitalize='none'
+                      required
+                    />
                   </div>
                 </div>
               </div>
 
-              {/* APELLIDO */}
-              <div className='m-3 d-flex d-flex-row'>
-                <div className='col-3'>
-                  <label className='' htmlFor='apellidos'>Apellidos <span style={{ color: '#cd2026' }}>*</span></label>
-                </div>
-                <div className='col-3'>
-                  <input onChange={(e) => setApellidos(e.target.value)} className='form-control' id='apellidos' type='text' arial-required='true' />
-                </div>
-                <div className='col-5'>
-                  <div className='col-auto d-flex align-items-center'>
-                    <p className='d-flex '><i alt={validateSurname() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateSurname() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateSurname() ? 'visually-hidden' : '')}>Mínimo número de carácteres 3</p>
+              {/* APELLIDOS */}
+              <div className='row g-3 align-items-center '>
+                <div className='col-auto'>
+                  <label htmlFor='txtApellidos' className='col-form-label'>Apellidos <span style={{ color: '#D90000' }}>*</span></label>
+                  <div className='input-group d-flex flex-row'>
+                    <span className='input-group-text'><i className='bi bi-person' /></span>
+                    <input
+                      aria-required='true' id='txtApellidos' className='form-control' type='text'
+                      autofocus='' autocapitalize='none'
+                      required
+                    />
                   </div>
                 </div>
               </div>
 
               {/* TELEFONO */}
-              <div className='m-3 d-flex d-flex-row'>
-                <div className='col-3'>
-                  <label className='' htmlFor='telefono'>Número de teléfono</label>
-                </div>
-                <div className='col-2 mx-2'>
-                  <input className='form-control' id='telefono' type='text' />
+              <div className='row g-3 align-items-center '>
+                <div className='col-auto'>
+                  <label htmlFor='txtTelefono' className='col-form-label'>Número de teléfono <span style={{ color: '#D90000' }}>*</span></label>
+                  <div className='input-group d-flex flex-row'>
+                    <span className='input-group-text'><i className='bi bi-telephone' /></span>
+                    <input
+                      aria-required='true' id='txtTelefono' className='form-control' type='text'
+                      autofocus='' autocapitalize='none'
+                      required
+                    />
+                  </div>
                 </div>
               </div>
 
               {/* CORREO */}
-              <div className='m-3 d-flex d-flex-row'>
-                <div className='col-3'>
-                  <label className='' htmlFor='email'>Correo electrónico<span style={{ color: '#cd2026' }}>*</span></label>
-                </div>
-
-                <div className='mx-2 col-3'>
-                  <input onChange={(e) => setEmail(e.target.value)} className='form-control' id='email' type='text' arial-required='true' />
-                </div>
-
-                <div className='col-5'>
-                  <div className='col-auto d-flex align-items-center'>
-                    <p className='d-flex '><i aria-label={validateEmail() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateEmail() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateEmail() ? 'visually-hidden' : '')}>Introduzca un correo válido.</p>
+              <div className='row g-3 align-items-center '>
+                <div className='col-auto'>
+                  <label htmlFor='txtCorreo' className='col-form-label'>Correo electrónico <span style={{ color: '#D90000' }}>*</span></label>
+                  <div className='input-group d-flex flex-row'>
+                    <span className='input-group-text'><i className='bi bi-envelope-at' /></span>
+                    <input
+                      aria-required='true' id='txtCorreo' className='form-control' type='text'
+                      autofocus='' autocapitalize='none'
+                      required
+                    />
                   </div>
                 </div>
               </div>
 
               {/* CONFIRMAR CORREO */}
-              <div className='m-3 d-flex d-flex-row'>
-                <div className='col-3'>
-                  <label className='' htmlFor='confimarEmail'>Confirma tu correo<span style={{ color: '#cd2026' }}>*</span></label>
-                </div>
-                <div className='mx-2 col-3'>
-                  <input onChange={(e) => setConfirmarEmail(e.target.value)} className='form-control' id='confimarEmail' type='text' arial-required='true' />
-                </div>
-
-                <div className='col-5'>
-                  <div className='col-auto d-flex align-items-center'>
-                    <p className='d-flex '><i aria-label={validateConfirmarEmail() ? 'Correcto' : 'Incorrecto'} className={'bi fs-2 bi' + (validateConfirmarEmail() ? '-check text-success' : '-x text-danger')} /></p><p className={'mt-2 ' + (validateConfirmarEmail() ? 'visually-hidden' : '')}>Debe coincidir con Correo Electrónico.</p>
+              <div className='row g-3 align-items-center '>
+                <div className='col-auto'>
+                  <label htmlFor='txtconfirmCorreo' className='col-form-label'>Confirmar correo electrónico <span style={{ color: '#D90000' }}>*</span></label>
+                  <div className='input-group d-flex flex-row'>
+                    <span className='input-group-text'><i className='bi bi-envelope-at' /></span>
+                    <input
+                      aria-required='true' id='txtconfirmCorreo' className='form-control' type='text'
+                      autofocus='' autocapitalize='none'
+                      required
+                    />
                   </div>
                 </div>
               </div>
 
               {/* PEDIDO */}
-              <div className='m-3 d-flex d-flex-row'>
-                <div className='col-3'>
-                  <label className='' htmlFor='pedido'>Número de pedido</label>
-                </div>
-                <div className='col-3 mx-2'>
-                  <input className='form-control' id='pedido' type='text' />
+              <div className='row g-3 align-items-center '>
+                <div className='col-auto'>
+                  <label htmlFor='txtPedido' className='col-form-label'>Número de pedido <span style={{ color: '#D90000' }}>*</span></label>
+                  <div className='input-group d-flex flex-row'>
+                    <span className='input-group-text'><i className='bi bi-box-seam' /></span>
+                    <input
+                      aria-required='true' id='txtPedido' className='form-control' type='text'
+                      autofocus='' autocapitalize='none'
+                      required
+                    />
+                  </div>
                 </div>
               </div>
 
               {/* TEMA CONSULTA */}
-              <div className='m-3 d-flex d-flex-row'>
-                <div className='col-3'>
-                  <label className='' htmlFor='tema'>Tema de la consulta<span style={{ color: '#cd2026' }}>*</span></label>
-                </div>
-
-                <div className='col-6 mx-2'>
-                  <select id='tema' className='p-2 w-750' onChange={(e) => setTema(e.target.value)} arial-required='true'>
-                    <option selected='true'>Selecciona una categoría</option>
-                    <option>Información y compras</option>
-                    <option>Proceso de cobro</option>
-                    <option>Pedidos</option>
-                    <option>Devoluciones</option>
-                    <option>Servicio</option>
-                    <option>Tratamiento de datos personales</option>
-                    <option>Otros</option>
-                  </select>
+              <div className='row g-3 align-items-center '>
+                <div className='col-auto'>
+                  <label htmlFor='txtConsulta' className='col-form-label'>Tema de consulta <span style={{ color: '#D90000' }}>*</span></label>
+                  <div className='input-group d-flex flex-row'>
+                    <select id='tema' className='p-2 w-750' onChange={(e) => setTema(e.target.value)} arial-required='true'>
+                      <option selected='true'>Selecciona una categoría</option>
+                      <option>Información y compras</option>
+                      <option>Proceso de cobro</option>
+                      <option>Pedidos</option>
+                      <option>Devoluciones</option>
+                      <option>Servicio</option>
+                      <option>Tratamiento de datos personales</option>
+                      <option>Otros</option>
+                    </select>
+                  </div>
                 </div>
               </div>
 
