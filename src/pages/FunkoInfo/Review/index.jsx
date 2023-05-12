@@ -54,8 +54,8 @@ export const Reviews = ({ funko }) => {
           <u>Opiniones sobre Funko {funko.title}</u>
         </h2>
         <div className='my-4'>
-          <h4>Puntuación</h4>
-          <h1><strong>{rating}/5</strong></h1>
+          <h3>Puntuación</h3>
+          <h3><strong>{rating}/5</strong></h3>
         </div>
 
       </div>

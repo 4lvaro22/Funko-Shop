@@ -18,6 +18,7 @@ const modals = {
               $('#botonCompra').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
 
               setTimeout(() => {
                 navigate('/Cart');
@@ -40,6 +41,7 @@ const modals = {
               $('#noAccountModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
               setTimeout(() => {
                 navigate('/LogIn');
               }, 500);
@@ -54,6 +56,7 @@ const modals = {
               $('#noAccountModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
               setTimeout(() => {
                 navigate('/SignUp');
               }, 500);
@@ -77,6 +80,7 @@ const modals = {
               $('#registroModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
               setTimeout(() => {
                 navigate('/LogIn');
               }, 500);
@@ -101,6 +105,7 @@ const modals = {
               $('#solicitudModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
               setTimeout(() => {
                 navigate('/');
               }, 500);
@@ -126,6 +131,7 @@ const modals = {
               $('#solicitudModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
               setTimeout(() => {
                 navigate('/');
               }, 500);
@@ -151,6 +157,7 @@ const modals = {
               $('#tarjetaModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
             }}
           >Cerrar
           </button>
@@ -173,6 +180,7 @@ const modals = {
               $('#datosModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
             }}
           >Cerrar
           </button>
@@ -195,6 +203,7 @@ const modals = {
               $('#contrasenaModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
             }}
           >Cerrar
           </button>
@@ -218,6 +227,7 @@ const modals = {
               $('#reviewModal').modal('hide');
               $('.modal-backdrop').remove();
               $(document.body).removeClass('modal-open');
+              document.body.removeAttribute('style');
             }}
           >Cerrar
           </button>
@@ -231,7 +241,7 @@ export const SkeletonModal = ({ id, title, body, footer }) => {
   const labelId = useId();
 
   return (
-    <div className='modal fade modal-show' id={modalId} role='dialog' tabIndex='-1' aria-labelledby={modalId + 'Label'} aria-hidden='true'>
+    <div className='modal fade modal-show' id={modalId} role='dialog' tabIndex='-1' aria-labelledby={modalId + 'Label' + labelId} aria-hidden='true'>
       <div className='modal-dialog'>
         <div className='modal-content'>
           <div className='modal-header'>

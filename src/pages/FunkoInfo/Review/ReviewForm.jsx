@@ -27,7 +27,7 @@ export const ReviewForm = ({ sendReview }) => {
         <div className='row my-5'>
           <div className='row my-3'>
             <span className='text-end col-2'>
-              <h4><label htmlFor='titulo'>Título:</label></h4>
+              <h3><label htmlFor='titulo'>Título:</label></h3>
             </span>
             <span className='col-md-9 mx-2'>
               <input ref={titleRef} type='text' className='form-control w-25 col-1' id='titulo' required />
@@ -43,7 +43,7 @@ export const ReviewForm = ({ sendReview }) => {
           </div>
           <div className='row my-3'>
             <span className='text-end col-md-2'>
-              <h4><label>Puntuación:</label></h4>
+              <h4><label id='starRate' for='starRating'>Puntuación:</label></h4>
             </span>
             <span className='col-md-4 col-lg-2 col-12 d-flex justify-content-center'>
               <Stars updateRating={updateRating} />
