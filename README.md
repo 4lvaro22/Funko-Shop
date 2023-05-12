@@ -15,3 +15,11 @@ Alvaro Portales Luna
 Teodoro Hidalgo Guerrero  
 Olivier Gabana Gomez  
 Jose Francisco Ruiz Sierras 
+
+## 📦 Como desplegar la aplicación
+La aplicación se puede desplegar de la siguiente manera.
+
+1. Clonar el repositorio en su dispositivo  
+2. Abrir con la herramienta Visual Studio Code
+3. Ejecutar en la terminal npm install
+4. Ejecutar en la terminal npm run dev
