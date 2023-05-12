@@ -82,7 +82,7 @@ export const FunkoInfo = () => {
                 <li><strong>Valoracion:</strong> {funko.rating} <i className='bi bi-star-fill' /></li>
               </ul>
 
-              <h4 className='mt-5' style={{}}>Precio: {funko.price} €</h4>
+              <p className='mt-5 fs-4' style={{}}>Precio: {funko.price} €</p>
 
             </div>
 
