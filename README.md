@@ -23,3 +23,5 @@ La aplicación se puede desplegar de la siguiente manera.
 2. Abrir con la herramienta Visual Studio Code
 3. Ejecutar en la terminal npm install
 4. Ejecutar en la terminal npm run dev
+
+Otra opción sería utilizar el link puesto en el apartado Enlace a la página de este README.
