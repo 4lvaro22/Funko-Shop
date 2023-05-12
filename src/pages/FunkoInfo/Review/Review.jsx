@@ -12,7 +12,7 @@ export const Review = ({ id, nombre, fecha, title, mensaje, rating, delReview })
         <div className='col-md-8 col-12 row'>
           <Stars oldRating={rating} />
           <div className='mt-1'>
-            <h5 className='text-left mb-0'><strong>{title}</strong></h5>
+            <p className='text-left mb-0 fs-4'><strong>{title}</strong></p>
             <p className='text-left'>{mensaje}</p>
           </div>
         </div>
