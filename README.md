@@ -1,4 +1,4 @@
-# Proyecto-Interfaces-Grupo-H  
+# Funko Shop
 
 
  ## ⭐ Temática
